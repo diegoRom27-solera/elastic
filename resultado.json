@@ -1,0 +1,132 @@
+[
+    {
+        "name": "Bluetooth ID Is Verified",
+        "documentation": "This function verifies the Bluetooth ID",
+        "arguments": [
+            "BLUETOOTH"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Click On Back",
+        "documentation": "",
+        "arguments": [],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Click On Update Omnitracs XRS Mobile",
+        "documentation": "",
+        "arguments": [],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Click On Update Omnitracs XRS Relay Now",
+        "documentation": "",
+        "arguments": [],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "HOS Engine Version Is Verified",
+        "documentation": "This function verifies the HOS Engine Version",
+        "arguments": [
+            "HOS_ENGINE_VERSION"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "IMEI Is Verified",
+        "documentation": "This function verifies the IMEI",
+        "arguments": [
+            "IMEI"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Omnitracs XRS CP Application Is Verified",
+        "documentation": "This function verifies the Omnitracs XRS CP Application",
+        "arguments": [
+            "CP"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Omnitracs XRS Jurisdiction DB Is Verified",
+        "documentation": "This function verifies the Omnitracs XRS Jurisdiction DB",
+        "arguments": [
+            "JURISDICTION_DB"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Omnitracs XRS MP Version Is Verified",
+        "documentation": "This function verifies the Omnitracs XRS MP Version",
+        "arguments": [
+            "MP"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Omnitracs XRS Relay ID Is Verified",
+        "documentation": "This function verifies the Omnitracs XRS Relay ID",
+        "arguments": [
+            "RELAY_ID"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Omnitracs XRS Relay Is Verified",
+        "documentation": "This function verifies the Omnitracs XRS Relay",
+        "arguments": [
+            "RELAY"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Omnitracs XRS Toll Road DB Is Verified",
+        "documentation": "This function verifies the Omnitracs XRS Toll Road DB",
+        "arguments": [
+            "ROAD_DB"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Phone Number Is Verified",
+        "documentation": "This function verifies the Phone Number",
+        "arguments": [
+            "PHONE_NUMBER"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Software Load Date Is Verified",
+        "documentation": "This function verifies the Software Load Date",
+        "arguments": [
+            "SOFTWARE_LOAD_VERSION"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Software Size Is Verified",
+        "documentation": "This function verifies the Software Size Is Verified",
+        "arguments": [
+            "SOFTWARE_SIZE"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Software Variant Is Verified",
+        "documentation": "This function verifies the Software Variant",
+        "arguments": [
+            "SOFTWARE_SIZE"
+        ],
+        "source": "AboutPage.Resource"
+    },
+    {
+        "name": "Software Version Is Verified",
+        "documentation": "This function verifies the Software Version",
+        "arguments": [
+            "SOFTWARE_VERSION"
+        ],
+        "source": "AboutPage.Resource"
+    }
+]
