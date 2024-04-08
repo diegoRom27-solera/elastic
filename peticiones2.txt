@@ -1,0 +1,151 @@
+DELETE /mobile_aut
+
+PUT /mobile-aut
+{
+  "mappings": {
+    "properties": {
+      "name": {
+        "type": "text"
+      }
+    }
+  }
+}
+
+PUT /mobile_aut
+{
+  "mappings": {
+    "properties": {
+      "KeyWordName": {
+        "type": "text"
+      },
+      "KeywordCode": {
+        "type": "text"
+      },
+      "PageObject": {
+        "type": "keyword"
+      }
+    }
+  }
+}
+
+
+
+GET /mobile_aut/_search
+{
+  "query": {
+    "match": {
+      "KeyWordName": "Click On Login Button"
+      
+    }
+  }
+}
+
+GET /mobile_aut/_search
+
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "KeyWordName": "Click on login button " }}
+      ]
+    }
+  }
+}
+
+
+POST /mobile_aut/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "multi_match": {
+            "query": "Click on login button",
+            "fields": ["KeyWordName", "KeywordCode"]
+          }
+        },
+        {
+          "multi_match": {
+            "query": "Wait to load login page",
+            "fields": ["KeyWordName", "KeywordCode"]
+          }
+        },
+        {
+          "multi_match": {
+            "query": "Input user",
+            "fields": ["KeyWordName", "KeywordCode"]
+          }
+        },
+        {
+          "multi_match": {
+            "query": "Input password",
+            "fields": ["KeyWordName", "KeywordCode"]
+          }
+        },
+          {
+          "multi_match": {
+            "query": "click on new biling button",
+            "fields": ["KeyWordName", "KeywordCode"]
+          }
+        },
+        {
+          "multi_match": {
+            "query": "select filing type standard",
+            "fields": ["KeyWordName", "KeywordCode"]
+          }
+        }
+      ]
+    }
+  },
+  "sort": [
+    { "_score": { "order": "desc" }}
+  ]
+}
+
+
+
+
+
+POST /mobile_aut/_bulk
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName":"OR HUT Tax Payer Warning Length","KeywordCode":"Scroll Element Into View ${appadmin_page_locators.or_hut_length_warning}\nWait Until Element Is Visible ${appadmin_page_locators.or_hut_length_warning} ${TIME}","PageObject":"appadmin_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName":"CT HUT Tax Payer Warning Length","KeywordCode":"Scroll Element Into View ${appadmin_page_locators.ct_hut_length_warning}\nWait Until Element Is Visible ${appadmin_page_locators.ct_hut_length_warning} ${TIME}","PageObject":"appadmin_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName":"Zip Code Invalid Format","KeywordCode":"Wait Until Element Is Visible ${appadmin_page_locators.zip_code_invalid_format_warning} ${TIME}","PageObject":"appadmin_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName":"Required Fields Company Warning","KeywordCode":"Scroll Element Into View ${appadmin_page_locators.company_name_warning}\nWait Until Element Is Visible ${appadmin_page_locators.company_name_warning} ${TIME}\nWait Until Element Is Visible ${appadmin_page_locators.street_warning} ${TIME}\nWait Until Element Is Visible ${appadmin_page_locators.city_warning} ${TIME}\nWait Until Element Is Visible ${appadmin_page_locators.zip_code_warning} ${TIME}\nWait Until Element Is Visible ${appadmin_page_locators.unit_measure_warning} ${TIME}","PageObject":"appadmin_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName":"Required Fields Tax Account Inf Warning","KeywordCode":"Scroll Element Into View ${appadmin_page_locators.acceptable_fuel_efficiency_min_label}\nWait Until Element Is Visible ${appadmin_page_locators.federal_id_warning} ${TIME}\nWait Until Element Is Visible ${appadmin_page_locators.ifta_account_warning} ${TIME}","PageObject":"appadmin_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName":"Existing Tax Account Error Message","KeywordCode":"Wait Until Element Is Visible ${appadmin_page_locators.existing_tax_account_error} ${TIME}\nWait Until Element Is Visible ${appadmin_page_locators.error_message} ${TIME}\nWait Until Element Is Visible ${appadmin_page_locators.accept_error_message} ${TIME}","PageObject":"appadmin_page"}
+
+
+
+POST /mobile_aut/_bulk
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName": "Load Tax Filing Page", "KeywordCode": "Wait Until Element Is Visible ${taxfilings_page_locators.tax_filings_title} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.begin_new_filing_span} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.pagination_nav} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.page_select_select} ${TIME}", "PageObject": "taxfilings_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName": "Click On Begin New Filing", "KeywordCode": "Wait Until Element Is Visible ${taxfilings_page_locators.begin_new_filing_span} ${TIME}\nClick Element ${taxfilings_page_locators.begin_new_filing_span}", "PageObject": "taxfilings_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName": "Load New Filing Tab", "KeywordCode": "Wait Until Element Is Visible ${taxfilings_page_locators.new_filing_title} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.tax_account_label} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.tax_account_select} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.filing_type_label} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.filing_type_select} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.filing_period_label} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.filing_period_select} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.turnpike_miles_label} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.turnpike_miles_input} ${TIME}\nWait Until Element Is Visible ${taxfilings_page_locators.close_icon_a} ${TIME}", "PageObject": "taxfilings_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName": "Select Tax Accounts", "KeywordCode": "[Arguments] ${taxaccount}\nWait Until Element Is Visible ${taxfilings_page_locators.tax_account_select} ${TIME}\nSelect From List By Label ${taxfilings_page_locators.tax_account_select} ${taxaccount}", "PageObject": "taxfilings_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName": "Select Filing Type", "KeywordCode": "[Arguments] ${filingType}\nWait Until Element Is Visible ${taxfilings_page_locators.filing_type_select} ${TIME}\nSelect From List By Label ${taxfilings_page_locators.filing_type_select} ${filingType}", "PageObject": "taxfilings_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName": "Select Filing Period", "KeywordCode": "[Arguments] ${filingPeriod}\nWait Until Element Is Visible ${taxfilings_page_locators.filing_period_select} ${TIME}\nSelect From List By Label ${taxfilings_page_locators.filing_period_select} ${filingPeriod}", "PageObject": "taxfilings_page"}
+
+
+
+
+
+POST /mobile_aut/_bulk
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName":"Load Login Page","KeywordCode":"Wait Until Element Is Visible ${login_page_locators.user_id} ${ME_TIME}\nWait Until Element Is Visible ${login_page_locators.password} ${TIME}\nWait Until Element Is Visible ${login_page_locators.forgot_password} ${TIME}\nWait Until Element Is Visible ${login_page_locators.login_button} ${TIME}","PageObject":"login_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName":"Introduce User","KeywordCode":"[Arguments] ${credentials}\nWait Until Element Is Visible ${login_page_locators.user_id} ${TIME}\nInput Text ${login_page_locators.user_id} ${credentials}[0]","PageObject":"login_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName":"Introduce Password","KeywordCode":"[Arguments] ${credentials}\nWait Until Element Is Visible ${login_page_locators.password} ${TIME}\nInput Text ${login_page_locators.password} ${credentials}[1]","PageObject":"login_page"}
+{"index":{"_index":"mobile_aut"}}
+{"KeyWordName":"Click On Login Button","KeywordCode":"Sleep ${SH_TIME}\nWait Until Element Is Visible ${login_page_locators.login_button} ${TIME}\nClick Element ${login_page_locators.login_button}","PageObject":"login_page"}
