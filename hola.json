@@ -1,0 +1,21 @@
+{
+    "name": "mi_api_key",
+    "expiration": "1d",
+    "role_descriptors": {
+        "role_name": {
+            "cluster": [
+                "all"
+            ],
+            "index": [
+                {
+                    "names": [
+                        "index_name"
+                    ],
+                    "privileges": [
+                        "all"
+                    ]
+                }
+            ]
+        }
+    }
+}

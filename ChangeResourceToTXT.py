@@ -29,7 +29,7 @@ for archivos_txt in archivos_repo:
             if not line:
                 if key and code:
                     formatted_code = '\n'.join(code)
-                    objetos.append({'key': key, 'code': formatted_code, 'filename': nombre_archivo})
+                    objetos.append({'KeywordName': key, 'KeywordCode': formatted_code, 'PageObject': nombre_archivo})
                     key = ''
                     code = []
             else:
@@ -48,4 +48,4 @@ with open(archivo_json, 'w') as json_file:
     json.dump(objetos, json_file)
 
 for obj in objetos:
-    print(f"Key: {obj['key']}\nCode:\n{obj['code']}\nFilename: {obj['filename']}\n")
+    print(f"Key: {obj['KeywordName']}\nCode:\n{obj['KeywordCode']}\nFilename: {obj['PageObject']}\n")
