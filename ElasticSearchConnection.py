@@ -14,7 +14,7 @@ from elasticsearch import Elasticsearch
 
 client = Elasticsearch(
   "https://localhost:9200",
-  api_key="a252Tnc0NEJmREd6UDFBV0swbTQ6ZjY4OER2d0JSZG1NNVZBdFU3QU1Udw==",
+  api_key="",
   verify_certs=False,
 #   ca_certs="C:\elastic-stack\elasticsearch-8.13.1\config\certs\http_ca"
 )
