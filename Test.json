@@ -1,0 +1,76 @@
+[{
+    "Title": "Load Login Page",
+    "Content": "Load Login Page \n 'Wait Until Element Is Visible    ${login_page_locators.user_id}            ${ME_TIME}' 'Wait Until Element Is Visible    ${login_page_locators.password}           ${TIME}' 'Wait Until Element Is Visible    ${login_page_locators.forgot_password}    ${TIME}' 'Wait Until Element Is Visible    ${login_page_locators.login_button}       ${TIME}'",
+    "ApplicableTo": {
+        "Keyword":"Load Login Page",
+        "URL": "https://ot1-qae-web.usdc.roadnet.com/Account/LogOn",
+        "Locators": [
+            "xpath=//input[@id='userid']",
+            "xpath=//input[@id='password']",
+            "xpath=//a[contains(.,'Forgot password')]",
+            "xpath=//span[contains(.,'Log In')]"
+        ],
+        "Language": "Robot Framework"
+
+    },
+    "Locators": [
+        "xpath=//input[@id='userid']",
+        "xpath=//input[@id='password']",
+        "xpath=//a[contains(.,'Forgot password')]",
+        "xpath=//span[contains(.,'Log In')]"
+    ]
+},
+{
+    "Title": "Introduce User",
+    "Content": "Introduce User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${login_page_locators.user_id}    ${TIME}' 'Input Text                       ${login_page_locators.user_id}    ${credentials}[0]'",
+    "ApplicableTo": {
+        "Keyword":"Introduce User",
+        "URL": "https://ot1-qae-web.usdc.roadnet.com/Account/LogOn",
+        "Locators": [
+            "xpath=//input[@id='userid']",
+            "xpath=//input[@id='userid']"
+        ],
+        "Language": "Robot Framework"
+
+    },
+    "Locators": [
+        "xpath=//input[@id='userid']",
+        "xpath=//input[@id='userid']"
+    ]
+},
+{
+    "Title": "Introduce Password",
+    "Content": "Introduce Password \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${login_page_locators.password}    ${TIME}' 'Input Text                       ${login_page_locators.password}    ${credentials}[1]'",
+    "ApplicableTo": {
+        "Keyword":"Introduce Password",
+        "URL": "https://ot1-qae-web.usdc.roadnet.com/Account/LogOn",
+        "Locators": [
+            "xpath=//input[@id='password']",
+            "xpath=//input[@id='password']"
+        ],
+        "Language": "Robot Framework"
+
+    },
+    "Locators": [
+        "xpath=//input[@id='password']",
+        "xpath=//input[@id='password']"
+    ]
+},
+{
+    "Title": "Click On Login Button",
+    "Content": "Click On Login Button \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${login_page_locators.login_button}    ${TIME}' 'Click Element                    ${login_page_locators.login_button}'",
+    "ApplicableTo": {
+        "Keyword":"Click On Login Button",
+        "URL": "https://ot1-qae-web.usdc.roadnet.com/Account/LogOn",
+        "Locators": [
+            "xpath=//span[contains(.,'Log In')]",
+            "xpath=//span[contains(.,'Log In')]"
+        ],
+        "Language": "Robot Framework"
+
+    },
+    "Locators": [
+        "xpath=//span[contains(.,'Log In')]",
+        "xpath=//span[contains(.,'Log In')]"
+    ]
+}]

@@ -1,0 +1,5 @@
+login_page_locators:
+  user_id:         xpath=//input[@id='userid']
+  password:        xpath=//input[@id='password']
+  forgot_password: xpath=//a[contains(.,'Forgot password')]
+  login_button:    xpath=//span[contains(.,'Log In')]

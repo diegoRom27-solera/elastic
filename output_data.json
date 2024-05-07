@@ -1,0 +1,2194 @@
+[
+    {
+        "Title": "Load Fuel Page",
+        "Content": "Load Fuel Page \n 'Wait Until Element Is Visible    ${fuel_page_locators.fuel_tab}                            ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.imports_tab}                         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuel_title}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.add_fuel_button}                     ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel}                         ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Fuel Page",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]",
+                "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]",
+                "xpath=//h3[contains(.,'Fuel Purchases')]",
+                "xpath=//span[contains(.,'Add Fuel Receipt')]",
+                "xpath=//i[contains(.,'tune')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]",
+            "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]",
+            "xpath=//h3[contains(.,'Fuel Purchases')]",
+            "xpath=//span[contains(.,'Add Fuel Receipt')]",
+            "xpath=//i[contains(.,'tune')]"
+        ]
+    },
+    {
+        "Title": "Add Fuel Receipt",
+        "Content": "Add Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.add_fuel_button}                     ${LO_TIME}' 'Click Element                    ${fuel_page_locators.add_fuel_button}'",
+        "ApplicableTo": {
+            "Keyword": "Add Fuel Receipt",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//span[contains(.,'Add Fuel Receipt')]",
+                "xpath=//span[contains(.,'Add Fuel Receipt')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//span[contains(.,'Add Fuel Receipt')]",
+            "xpath=//span[contains(.,'Add Fuel Receipt')]"
+        ]
+    },
+    {
+        "Title": "Load Fuel Receipt Page",
+        "Content": "Load Fuel Receipt Page \n 'Wait Until Element Is Visible    ${fuel_page_locators.fuel_title_receipt}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_label}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.city_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicleid_label}                     ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.date_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_label}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fueL_page_locators.units_label}                         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_label}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcardnumber_label}                ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_label}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_label}                      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_label}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_label}                      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.cancel_button}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.save_button}                         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_select}                 ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.city_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicleid_select}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.date_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_input}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.units_select}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_input}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcardnumber_input}                ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_input}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_select}                     ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_input}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_textarea}                   ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Fuel Receipt Page",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//h1[contains(.,'New Fuel Receipt')]",
+                "xpath=//label[contains(.,'Jurisdiction')]",
+                "xpath=//label[contains(.,'City')]",
+                "xpath=//label[contains(.,'Vehicle ID')]",
+                "xpath=//label[contains(.,'Date')]",
+                "xpath=//label[contains(.,'Time')]",
+                "xpath=//label[contains(.,'Site')]",
+                "xpath=//label[contains(.,'Volume')]",
+                "xpath=//label[contains(.,'Units')]",
+                "xpath=//label[contains(.,'Vendor')]",
+                "xpath=//label[contains(.,'Fuel Card Number')]",
+                "xpath=//label[contains(.,'Total Price')]",
+                "xpath=//label[contains(.,'Currency')]",
+                "xpath=//label[contains(.,'Invoice')]",
+                "xpath=//label[contains(.,'Comments')]",
+                "xpath=//button[contains(.,'Cancel')]",
+                "xpath=//button[contains(.,'Save')]",
+                "xpath=//select[@id='jurisdiction']",
+                "xpath=//input[@id='city']",
+                "xpath=//select[@id='vehicleId']",
+                "xpath=//input[@id='date']",
+                "xpath=//input[@id='time']",
+                "xpath=//input[@id='site']",
+                "xpath=//input[@id='volume']",
+                "xpath=//select[@id='units']",
+                "xpath=//input[@id='vendor']",
+                "xpath=//input[@id='fuelNumber']",
+                "xpath=//input[@id='totalPrice']",
+                "xpath=//select[@id='currency']",
+                "xpath=//input[@id='invoice']",
+                "xpath=//textarea[@id='comment']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//h1[contains(.,'New Fuel Receipt')]",
+            "xpath=//label[contains(.,'Jurisdiction')]",
+            "xpath=//label[contains(.,'City')]",
+            "xpath=//label[contains(.,'Vehicle ID')]",
+            "xpath=//label[contains(.,'Date')]",
+            "xpath=//label[contains(.,'Time')]",
+            "xpath=//label[contains(.,'Site')]",
+            "xpath=//label[contains(.,'Volume')]",
+            "xpath=//label[contains(.,'Units')]",
+            "xpath=//label[contains(.,'Vendor')]",
+            "xpath=//label[contains(.,'Fuel Card Number')]",
+            "xpath=//label[contains(.,'Total Price')]",
+            "xpath=//label[contains(.,'Currency')]",
+            "xpath=//label[contains(.,'Invoice')]",
+            "xpath=//label[contains(.,'Comments')]",
+            "xpath=//button[contains(.,'Cancel')]",
+            "xpath=//button[contains(.,'Save')]",
+            "xpath=//select[@id='jurisdiction']",
+            "xpath=//input[@id='city']",
+            "xpath=//select[@id='vehicleId']",
+            "xpath=//input[@id='date']",
+            "xpath=//input[@id='time']",
+            "xpath=//input[@id='site']",
+            "xpath=//input[@id='volume']",
+            "xpath=//select[@id='units']",
+            "xpath=//input[@id='vendor']",
+            "xpath=//input[@id='fuelNumber']",
+            "xpath=//input[@id='totalPrice']",
+            "xpath=//select[@id='currency']",
+            "xpath=//input[@id='invoice']",
+            "xpath=//textarea[@id='comment']"
+        ]
+    },
+    {
+        "Title": "Fill Jurisdiction",
+        "Content": "Fill Jurisdiction \n '[Arguments]    ${jurisdiction}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_select}                 ${LO_TIME}' 'Select From List By Label        ${fuel_page_locators.jurisdiction_select}                 ${jurisdiction}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Jurisdiction",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='jurisdiction']",
+                "xpath=//select[@id='jurisdiction']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='jurisdiction']",
+            "xpath=//select[@id='jurisdiction']"
+        ]
+    },
+    {
+        "Title": "Fill City",
+        "Content": "Fill City \n '[Arguments]    ${city}' 'Wait Until Element Is Visible    ${fuel_page_locators.city_input}                          ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.city_input}' 'Input Text                       ${fuel_page_locators.city_input}                          ${city}'",
+        "ApplicableTo": {
+            "Keyword": "Fill City",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='city']",
+                "xpath=//input[@id='city']",
+                "xpath=//input[@id='city']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='city']",
+            "xpath=//input[@id='city']",
+            "xpath=//input[@id='city']"
+        ]
+    },
+    {
+        "Title": "Fill Vehicle",
+        "Content": "Fill Vehicle \n '[Arguments]    ${vehicle}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicleid_select}                    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.vehicleid_select}' 'Sleep                            ${SH_TIME}' 'Select From List By Label        ${fuel_page_locators.vehicleid_select}                    ${vehicle}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Vehicle",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='vehicleId']",
+                "xpath=//select[@id='vehicleId']",
+                "xpath=//select[@id='vehicleId']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='vehicleId']",
+            "xpath=//select[@id='vehicleId']",
+            "xpath=//select[@id='vehicleId']"
+        ]
+    },
+    {
+        "Title": "Fill Date",
+        "Content": "Fill Date \n '[Arguments]    ${date}' 'Wait Until Element Is Visible    ${fuel_page_locators.date_input}                          ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.date_input}' 'Input Text                       ${fuel_page_locators.date_input}                          ${date}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='date']",
+                "xpath=//input[@id='date']",
+                "xpath=//input[@id='date']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='date']",
+            "xpath=//input[@id='date']",
+            "xpath=//input[@id='date']"
+        ]
+    },
+    {
+        "Title": "Fill Time",
+        "Content": "Fill Time \n '[Arguments]    ${time}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_input}                          ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.time_input}' 'Input Text                       ${fuel_page_locators.time_input}                          ${time}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Time",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='time']",
+                "xpath=//input[@id='time']",
+                "xpath=//input[@id='time']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='time']",
+            "xpath=//input[@id='time']",
+            "xpath=//input[@id='time']"
+        ]
+    },
+    {
+        "Title": "Fill Site",
+        "Content": "Fill Site \n '[Arguments]    ${site}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_input}                          ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.site_input}' 'Input Text                       ${fuel_page_locators.site_input}                          ${site}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Site",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='site']",
+                "xpath=//input[@id='site']",
+                "xpath=//input[@id='site']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='site']",
+            "xpath=//input[@id='site']",
+            "xpath=//input[@id='site']"
+        ]
+    },
+    {
+        "Title": "Fill Volume",
+        "Content": "Fill Volume \n '[Arguments]    ${volume}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_input}                        ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.volume_input}' 'Input Text                       ${fuel_page_locators.volume_input}                        ${volume}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Volume",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='volume']",
+                "xpath=//input[@id='volume']",
+                "xpath=//input[@id='volume']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='volume']",
+            "xpath=//input[@id='volume']",
+            "xpath=//input[@id='volume']"
+        ]
+    },
+    {
+        "Title": "Fill Units",
+        "Content": "Fill Units \n '[Arguments]    ${units}' 'Wait Until Element Is Visible    ${fuel_page_locators.units_select}                        ${LO_TIME}' 'Select From List By Label        ${fuel_page_locators.units_select}                        ${units}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Units",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='units']",
+                "xpath=//select[@id='units']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='units']",
+            "xpath=//select[@id='units']"
+        ]
+    },
+    {
+        "Title": "Fill Vendor",
+        "Content": "Fill Vendor \n '[Arguments]    ${vendor}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_input}                        ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.vendor_input}' 'Input Text                       ${fuel_page_locators.vendor_input}                        ${vendor}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Vendor",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='vendor']",
+                "xpath=//input[@id='vendor']",
+                "xpath=//input[@id='vendor']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='vendor']",
+            "xpath=//input[@id='vendor']",
+            "xpath=//input[@id='vendor']"
+        ]
+    },
+    {
+        "Title": "Fill Fuel Card",
+        "Content": "Fill Fuel Card \n '[Arguments]    ${card}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcardnumber_input}                ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.fuelcardnumber_input}' 'Input Text                       ${fuel_page_locators.fuelcardnumber_input}                ${card}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Fuel Card",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='fuelNumber']",
+                "xpath=//input[@id='fuelNumber']",
+                "xpath=//input[@id='fuelNumber']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='fuelNumber']",
+            "xpath=//input[@id='fuelNumber']",
+            "xpath=//input[@id='fuelNumber']"
+        ]
+    },
+    {
+        "Title": "Fill Total Price",
+        "Content": "Fill Total Price \n '[Arguments]    ${price}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_input}                    ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.totalprice_input}' 'Input Text                       ${fuel_page_locators.totalprice_input}                    ${price}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Total Price",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='totalPrice']",
+                "xpath=//input[@id='totalPrice']",
+                "xpath=//input[@id='totalPrice']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='totalPrice']",
+            "xpath=//input[@id='totalPrice']",
+            "xpath=//input[@id='totalPrice']"
+        ]
+    },
+    {
+        "Title": "Fill Currency",
+        "Content": "Fill Currency \n '[Arguments]    ${currency}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_select}                     ${LO_TIME}' 'Select From List By Label        ${fuel_page_locators.currency_select}                     ${currency}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Currency",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='currency']",
+                "xpath=//select[@id='currency']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='currency']",
+            "xpath=//select[@id='currency']"
+        ]
+    },
+    {
+        "Title": "Fill Invoice",
+        "Content": "Fill Invoice \n '[Arguments]    ${invoice}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_input}                       ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.invoice_input}' 'Input Text                       ${fuel_page_locators.invoice_input}                       ${invoice}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Invoice",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='invoice']",
+                "xpath=//input[@id='invoice']",
+                "xpath=//input[@id='invoice']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='invoice']",
+            "xpath=//input[@id='invoice']",
+            "xpath=//input[@id='invoice']"
+        ]
+    },
+    {
+        "Title": "Fill Comment",
+        "Content": "Fill Comment \n '[Arguments]    ${comment}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_textarea}                   ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.comments_textarea}' 'Input Text                       ${fuel_page_locators.comments_textarea}                   ${comment}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Comment",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//textarea[@id='comment']",
+                "xpath=//textarea[@id='comment']",
+                "xpath=//textarea[@id='comment']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//textarea[@id='comment']",
+            "xpath=//textarea[@id='comment']",
+            "xpath=//textarea[@id='comment']"
+        ]
+    },
+    {
+        "Title": "Save Receipt Fuel",
+        "Content": "Save Receipt Fuel \n 'Wait Until Element Is Visible    ${fuel_page_locators.save_button}                         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.save_button}' 'Sleep                                                                                      ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Save Receipt Fuel",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//button[contains(.,'Save')]",
+                "xpath=//button[contains(.,'Save')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//button[contains(.,'Save')]",
+            "xpath=//button[contains(.,'Save')]"
+        ]
+    },
+    {
+        "Title": "Load Filter",
+        "Content": "Load Filter \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_title}                   ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_startdate_label}         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_startdate_input}         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_enddate_label}           ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_enddate_input}           ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_label}        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_select}       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_vehicles_label}          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_vehicles_input}          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_jurisdiction_label}      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_jurisdiction_input}      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_resetall_button}         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_apply_button}            ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Filter",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//h5[contains(.,'Filters')]",
+                "xpath=//label[contains(.,'Start Date')]",
+                "xpath=//input[@id='startDate']",
+                "xpath=//label[contains(.,'End Date')]",
+                "xpath=//input[@id='endDate']",
+                "xpath=//label[contains(.,'Tax Account')]",
+                "xpath=//select[@id='taxAccount']",
+                "xpath=//label[contains(.,'Vehicles')]",
+                "xpath=//input[@placeholder=\"Vehicles\"]",
+                "xpath=//label[contains(.,'Jurisdiction')]",
+                "xpath=//input[@placeholder=\"Jurisdiction\"]",
+                "xpath=//button[contains(.,'Reset All')]",
+                "xpath=//button[contains(.,'Apply')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//h5[contains(.,'Filters')]",
+            "xpath=//label[contains(.,'Start Date')]",
+            "xpath=//input[@id='startDate']",
+            "xpath=//label[contains(.,'End Date')]",
+            "xpath=//input[@id='endDate']",
+            "xpath=//label[contains(.,'Tax Account')]",
+            "xpath=//select[@id='taxAccount']",
+            "xpath=//label[contains(.,'Vehicles')]",
+            "xpath=//input[@placeholder=\"Vehicles\"]",
+            "xpath=//label[contains(.,'Jurisdiction')]",
+            "xpath=//input[@placeholder=\"Jurisdiction\"]",
+            "xpath=//button[contains(.,'Reset All')]",
+            "xpath=//button[contains(.,'Apply')]"
+        ]
+    },
+    {
+        "Title": "Click On Filter Button",
+        "Content": "Click On Filter Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel}                         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Filter Button",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//i[contains(.,'tune')]",
+                "xpath=//i[contains(.,'tune')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//i[contains(.,'tune')]",
+            "xpath=//i[contains(.,'tune')]"
+        ]
+    },
+    {
+        "Title": "Click On Vehicles List",
+        "Content": "Click On Vehicles List \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_vehicles_input}          ${LO_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_vehicles_input}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_vehicles_input}          ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Vehicles List",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@placeholder=\"Vehicles\"]",
+                "xpath=//input[@placeholder=\"Vehicles\"]",
+                "xpath=//input[@placeholder=\"Vehicles\"]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@placeholder=\"Vehicles\"]",
+            "xpath=//input[@placeholder=\"Vehicles\"]",
+            "xpath=//input[@placeholder=\"Vehicles\"]"
+        ]
+    },
+    {
+        "Title": "Click On Tax Account List",
+        "Content": "Click On Tax Account List \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_select}       ${LO_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_taxaccount_select}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_select}       ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Tax Account List",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='taxAccount']",
+                "xpath=//select[@id='taxAccount']",
+                "xpath=//select[@id='taxAccount']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='taxAccount']",
+            "xpath=//select[@id='taxAccount']",
+            "xpath=//select[@id='taxAccount']"
+        ]
+    },
+    {
+        "Title": "Click On Jurisdiction List",
+        "Content": "Click On Jurisdiction List \n 'Scroll Element Into View         ${fuel_page_locators.jurisdiction_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_filter}                 ${LO_TIME}' 'Click Element                    ${fuel_page_locators.jurisdiction_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.search_input_text_filter}            ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Jurisdiction List",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
+                "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
+                "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
+                "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
+            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
+            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
+            "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+        ]
+    },
+    {
+        "Title": "Vehicles List Is Activated",
+        "Content": "Vehicles List Is Activated \n 'Wait Until Element Is Visible    ${fuel_page_locators.vehicles_filter_activated}           ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Vehicles List Is Activated",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Vehicles']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Vehicles']"
+        ]
+    },
+    {
+        "Title": "Jurisdiction List Is Activated",
+        "Content": "Jurisdiction List Is Activated \n 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_filter_activated}       ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Jurisdiction List Is Activated",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Jurisdiction']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Jurisdiction']"
+        ]
+    },
+    {
+        "Title": "Click On Reset All",
+        "Content": "Click On Reset All \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_resetall_button}         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_resetall_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Reset All",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//button[contains(.,'Reset All')]",
+                "xpath=//button[contains(.,'Reset All')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//button[contains(.,'Reset All')]",
+            "xpath=//button[contains(.,'Reset All')]"
+        ]
+    },
+    {
+        "Title": "Confirm Reset All",
+        "Content": "Confirm Reset All \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_confirm_button}          ${LO_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_confirm_button}' 'Sleep    ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Confirm Reset All",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//button[contains(.,'Confirm')]",
+                "xpath=//button[contains(.,'Confirm')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//button[contains(.,'Confirm')]",
+            "xpath=//button[contains(.,'Confirm')]"
+        ]
+    },
+    {
+        "Title": "Click On Generate Button",
+        "Content": "Click On Generate Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_apply_button}            ${LO_TIME}' 'Scroll Element Into View         ${fuel_page_locators.filter_fuel_apply_button}' 'Sleep    ${SH_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_apply_button}' 'Sleep    ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Generate Button",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//button[contains(.,'Apply')]",
+                "xpath=//button[contains(.,'Apply')]",
+                "xpath=//button[contains(.,'Apply')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//button[contains(.,'Apply')]",
+            "xpath=//button[contains(.,'Apply')]",
+            "xpath=//button[contains(.,'Apply')]"
+        ]
+    },
+    {
+        "Title": "Search By Vehicle",
+        "Content": "Search By Vehicle \n '[Arguments]    ${vehicles}' 'Sleep                            ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.all_vehicles_checkbox_filter}        ${LO_TIME}' 'Click Element                    ${fuel_page_locators.all_vehicles_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicles_filter_search_input}        ${LO_TIME}' 'Input Text                       ${fuel_page_locators.vehicles_filter_search_input}        ${vehicles}' '${XPATH} =    list_xpath.Obtain Xpath By Label    ${vehicles}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Search By Vehicle",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//label[@title='All Vehicles']",
+                "xpath=//ot-side-panel//label[@title='All Vehicles']",
+                "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+                "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//label[@title='All Vehicles']",
+            "xpath=//ot-side-panel//label[@title='All Vehicles']",
+            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+            "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+        ]
+    },
+    {
+        "Title": "Search By Juridistion",
+        "Content": "Search By Juridistion \n '[Arguments]    ${juridistion}' 'Wait Until Element Is Visible    ${fuel_page_locators.all_juridistion_checkbox_filter}    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.all_juridistion_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.search_input_text_filter}           ${LO_TIME}' 'Input Text                       ${fuel_page_locators.search_input_text_filter}           ${juridistion}' '${XPATH} =    list_xpath.Obtain Xpath By Label    ${juridistion}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}' 'Click Element                    ${fuel_page_locators.jurisdiction_filter}'",
+        "ApplicableTo": {
+            "Keyword": "Search By Juridistion",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
+                "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
+                "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+                "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+                "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
+            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
+            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+        ]
+    },
+    {
+        "Title": "Search By Tax Account",
+        "Content": "Search By Tax Account \n '[Arguments]    ${vehicles}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_select}       ${LO_TIME}' 'Select From List By Label        ${fuel_page_locators.filter_fuel_taxaccount_select}       ${vehicles}' 'Sleep                            ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Search By Tax Account",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='taxAccount']",
+                "xpath=//select[@id='taxAccount']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='taxAccount']",
+            "xpath=//select[@id='taxAccount']"
+        ]
+    },
+    {
+        "Title": "Select Two Vehicles",
+        "Content": "Select Two Vehicles \n '[Arguments]    ${vehicles}    ${vehicle1}' 'Sleep                            ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.all_vehicles_checkbox_filter}        ${LO_TIME}' 'Click Element                    ${fuel_page_locators.all_vehicles_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicles_filter_search_input}        ${LO_TIME}' 'Input Text                       ${fuel_page_locators.vehicles_filter_search_input}        ${vehicles}' '${XPATH} =    list_xpath.Obtain Xpath By Label    ${vehicles}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}' 'Input Text                       ${fuel_page_locators.vehicles_filter_search_input}        ${vehicle1}' '${XPATH} =    list_xpath.Obtain Xpath By Label    ${vehicle1}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_vehicles_input}'",
+        "ApplicableTo": {
+            "Keyword": "Select Two Vehicles",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//label[@title='All Vehicles']",
+                "xpath=//ot-side-panel//label[@title='All Vehicles']",
+                "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+                "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+                "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+                "xpath=//input[@placeholder=\"Vehicles\"]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//label[@title='All Vehicles']",
+            "xpath=//ot-side-panel//label[@title='All Vehicles']",
+            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
+            "xpath=//input[@placeholder=\"Vehicles\"]"
+        ]
+    },
+    {
+        "Title": "Warnings requiered fields",
+        "Content": "Warnings requiered fields \n 'Wait Until Element Is Visible    ${fuel_page_locators.vehicle_id_warning}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_warning}                      ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Warnings requiered fields",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is in an invalid format')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is in an invalid format')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+        ]
+    },
+    {
+        "Title": "Warnings requiered fields from Edit Fuel Receipt",
+        "Content": "Warnings requiered fields from Edit Fuel Receipt \n '# Wait Until Element Is Visible    ${fuel_page_locators.time_warning}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_warning}                      ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Warnings requiered fields from Edit Fuel Receipt",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+        ]
+    },
+    {
+        "Title": "No Warnings requiered fields",
+        "Content": "No Warnings requiered fields \n 'Wait Until Element Is Not Visible    ${fuel_page_locators.time_warning}                    ${LO_TIME}' 'Wait Until Element Is Not Visible    ${fuel_page_locators.volume_warning}                  ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "No Warnings requiered fields",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+        ]
+    },
+    {
+        "Title": "Date required field from Edit Fuel Receipt",
+        "Content": "Date required field from Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.date_warning}                        ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Date required field from Edit Fuel Receipt",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Date is required.')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Date is required.')]"
+        ]
+    },
+    {
+        "Title": "Time required field from Edit Fuel Receipt",
+        "Content": "Time required field from Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.time_warning}                        ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Time required field from Edit Fuel Receipt",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]"
+        ]
+    },
+    {
+        "Title": "Enable Required warning fields",
+        "Content": "Enable Required warning fields \n 'Element Should Not Be Visible    ${fuel_page_locators.vehicle_id_warning}                  ${LO_TIME}' 'Element Should Not Be Visible    ${fuel_page_locators.volume_warning}                      ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Enable Required warning fields",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is in an invalid format')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is in an invalid format')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+        ]
+    },
+    {
+        "Title": "Warnings Exceeded Length",
+        "Content": "Warnings Exceeded Length \n 'Wait Until Element Is Visible    ${fuel_page_locators.city_characters_warning}             ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_characters_warning}             ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_characters_warning}           ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_character_warnig}             ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcard_character_warning}          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_character_warning}        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_character_warning}           ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_character_warning}          ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Warnings Exceeded Length",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'City must be no more than 25 characters long.')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Site must be no more than 25 characters long.')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be no more than 10 characters long.')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vendor must be no more than 50 characters long.')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Fuel Card Number must be no more than 50 characters long.')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be no more than 2147483647.')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Invoice must be no more than 25 characters long.')]",
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Comments must be no more than 60 characters long.')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'City must be no more than 25 characters long.')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Site must be no more than 25 characters long.')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be no more than 10 characters long.')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vendor must be no more than 50 characters long.')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Fuel Card Number must be no more than 50 characters long.')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be no more than 2147483647.')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Invoice must be no more than 25 characters long.')]",
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Comments must be no more than 60 characters long.')]"
+        ]
+    },
+    {
+        "Title": "Click On Fuel Tab",
+        "Content": "Click On Fuel Tab \n 'Wait Until Element Is Visible    ${fuel_page_locators.fuel_tab}                           ${LO_TIME}' 'Click Element                    ${fuel_page_locators.fuel_tab}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Fuel Tab",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]",
+                "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]",
+            "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]"
+        ]
+    },
+    {
+        "Title": "Click On Import Tab",
+        "Content": "Click On Import Tab \n 'Wait Until Element Is Visible    ${fuel_page_locators.imports_tab}                         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.imports_tab}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Import Tab",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]",
+                "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]",
+            "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]"
+        ]
+    },
+    {
+        "Title": "Load Import Page",
+        "Content": "Load Import Page \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_title}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_file_button}                  ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Import Page",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//h3[contains(.,'Imports')]",
+                "xpath=//span[contains(.,'Import File')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//h3[contains(.,'Imports')]",
+            "xpath=//span[contains(.,'Import File')]"
+        ]
+    },
+    {
+        "Title": "Click on Import File",
+        "Content": "Click on Import File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_file_button}                  ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_file_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click on Import File",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//span[contains(.,'Import File')]",
+                "xpath=//span[contains(.,'Import File')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//span[contains(.,'Import File')]",
+            "xpath=//span[contains(.,'Import File')]"
+        ]
+    },
+    {
+        "Title": "Load Import Fuel Receipt Tab",
+        "Content": "Load Import Fuel Receipt Tab \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_fuel_receipt_title}           ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_add_file_button}              ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_vendor_label}                 ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_vendor_select}                ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_fuel_uits_label}              ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_fuel_units_select}            ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_currency_label}               ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_currency_select}              ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_save_button}                  ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Import Fuel Receipt Tab",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//h3[contains(.,'Import Fuel Receipt')]",
+                "xpath=//span[contains(.,'Add File')]",
+                "xpath=//label[contains(.,'Vendor')]",
+                "xpath=//select[@id='vendor']",
+                "xpath=//label[contains(.,'Fuel Units')]",
+                "xpath=//select[@id='unit']",
+                "xpath=//label[contains(.,'Currency')]",
+                "xpath=//select[@id='currency']",
+                "xpath=//button[contains(.,'Save')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//h3[contains(.,'Import Fuel Receipt')]",
+            "xpath=//span[contains(.,'Add File')]",
+            "xpath=//label[contains(.,'Vendor')]",
+            "xpath=//select[@id='vendor']",
+            "xpath=//label[contains(.,'Fuel Units')]",
+            "xpath=//select[@id='unit']",
+            "xpath=//label[contains(.,'Currency')]",
+            "xpath=//select[@id='currency']",
+            "xpath=//button[contains(.,'Save')]"
+        ]
+    },
+    {
+        "Title": "Click On Add File",
+        "Content": "Click On Add File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_add_file_button}              ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_add_file_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Add File",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//span[contains(.,'Add File')]",
+                "xpath=//span[contains(.,'Add File')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//span[contains(.,'Add File')]",
+            "xpath=//span[contains(.,'Add File')]"
+        ]
+    },
+    {
+        "Title": "Obtain Current Date",
+        "Content": "Obtain Current Date \n '${date} =    Get Current Date    UTC' '${date} =    list_xpath.Obtain Date Correct Format    ${date}' '[Return]    ${date}'",
+        "ApplicableTo": {
+            "Keyword": "Obtain Current Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Obtain Tomorrow Date",
+        "Content": "Obtain Tomorrow Date \n '${date} =    Get Current Date    UTC    + 1 day' '${date} =    list_xpath.Obtain Date Correct Format    ${date}' '[Return]    ${date}'",
+        "ApplicableTo": {
+            "Keyword": "Obtain Tomorrow Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Reacomodate Date DD/MM/YY",
+        "Content": "Reacomodate Date DD/MM/YY \n '[Arguments]    ${DATE}' '${date} =    list_xpath.Obtain Date MM DD AA    ${date}' '[Return]    ${date}'",
+        "ApplicableTo": {
+            "Keyword": "Reacomodate Date DD/MM/YY",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Obtain a past Week of Date",
+        "Content": "Obtain a past Week of Date \n '${date} =    Get Current Date    UTC    - 5 day' '${date} =    list_xpath.Obtain Date Correct Format    ${date}' '[Return]    ${date}'",
+        "ApplicableTo": {
+            "Keyword": "Obtain a past Week of Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Add Days Warning",
+        "Content": "Add Days Warning \n '[Arguments]    ${date}' '${XPATH} =    list_xpath.Obtain Xpath Add Days Warning    ${date}' 'Wait Until Element Is Visible    ${XPATH}                 ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Add Days Warning",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Default Value Jurisdiction",
+        "Content": "Default Value Jurisdiction \n '[Arguments]    ${jurisdiction}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_select}             ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.jurisdiction_select}             ${jurisdiction}'",
+        "ApplicableTo": {
+            "Keyword": "Default Value Jurisdiction",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='jurisdiction']",
+                "xpath=//select[@id='jurisdiction']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='jurisdiction']",
+            "xpath=//select[@id='jurisdiction']"
+        ]
+    },
+    {
+        "Title": "Default Value Date",
+        "Content": "Default Value Date \n '${value} =    Get Text                      ${fuel_page_locators.date_input}' 'Selenium2Library.Element Text Should Be     ${fuel_page_locators.date_input}           ${value}'",
+        "ApplicableTo": {
+            "Keyword": "Default Value Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='date']",
+                "xpath=//input[@id='date']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='date']",
+            "xpath=//input[@id='date']"
+        ]
+    },
+    {
+        "Title": "Default Value Time",
+        "Content": "Default Value Time \n '${time} =     Get Text                      ${fuel_page_locators.time_input}' 'Selenium2Library.Element Text Should Be     ${fuel_page_locators.time_input}           ${time}'",
+        "ApplicableTo": {
+            "Keyword": "Default Value Time",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='time']",
+                "xpath=//input[@id='time']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='time']",
+            "xpath=//input[@id='time']"
+        ]
+    },
+    {
+        "Title": "Default Value Unit",
+        "Content": "Default Value Unit \n '[Arguments]    ${unit}' 'Wait Until Element Is Visible    ${fuel_page_locators.units_select}                    ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.units_select}                    ${unit}'",
+        "ApplicableTo": {
+            "Keyword": "Default Value Unit",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='units']",
+                "xpath=//select[@id='units']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='units']",
+            "xpath=//select[@id='units']"
+        ]
+    },
+    {
+        "Title": "Default Value Currency",
+        "Content": "Default Value Currency \n '[Arguments]    ${currency}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_select}                 ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.currency_select}                 ${currency}'",
+        "ApplicableTo": {
+            "Keyword": "Default Value Currency",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='currency']",
+                "xpath=//select[@id='currency']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='currency']",
+            "xpath=//select[@id='currency']"
+        ]
+    },
+    {
+        "Title": "Obtain Current Hour",
+        "Content": "Obtain Current Hour \n '${time} =    Get Current Date    UTC    -6 hour' '${hour} =    list_xpath.Obtain Current Hour    ${time}' '[Return]    ${hour}'",
+        "ApplicableTo": {
+            "Keyword": "Obtain Current Hour",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Search By Jurisdiction on Table",
+        "Content": "Search By Jurisdiction on Table \n '[Arguments]    ${jurisdiction}    ${row}' '${XPATH} =    list_xpath.obtain_xpath_by_jurisdiction_row_fuel    ${jurisdiction}    ${row}' 'Wait Until Element Is Visible    ${XPATH}         ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Search By Jurisdiction on Table",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Click On Edit Button",
+        "Content": "Click On Edit Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.edit_button}                 ${LO_TIME}' 'Click Element                    ${fuel_page_locators.edit_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Edit Button",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//span[contains(.,'Edit')]",
+                "xpath=//span[contains(.,'Edit')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//span[contains(.,'Edit')]",
+            "xpath=//span[contains(.,'Edit')]"
+        ]
+    },
+    {
+        "Title": "Generate Random Values",
+        "Content": "Generate Random Values \n '${totalMiles}=    Generate Random String    3    [NUMBERS]' '[Return]    ${totalMiles}'",
+        "ApplicableTo": {
+            "Keyword": "Generate Random Values",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Search By Time on Table",
+        "Content": "Search By Time on Table \n '[Arguments]    ${time}    ${row}' '${XPATH} =    list_xpath.obtain_xpath_by_time_row_distance    ${time}    ${row}' 'Wait Until Element Is Visible    ${XPATH}    ${SH_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Search By Time on Table",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Click On Close Button From Filter",
+        "Content": "Click On Close Button From Filter \n 'Wait Until Element Is Visible    ${fuel_page_locators.close_filter_button}                       ${LO_TIME}' 'Click Element                    ${fuel_page_locators.close_filter_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Close Button From Filter",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//i[contains(.,'close')]",
+                "xpath=//ot-side-panel//i[contains(.,'close')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//i[contains(.,'close')]",
+            "xpath=//ot-side-panel//i[contains(.,'close')]"
+        ]
+    },
+    {
+        "Title": "Fill Start Date",
+        "Content": "Fill Start Date \n '[Arguments]    ${startDate}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_startdate_input}               ${LO_TIME}' 'Input Text                       ${fuel_page_locators.filter_fuel_startdate_input}               ${startDate}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Start Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='startDate']",
+                "xpath=//input[@id='startDate']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='startDate']",
+            "xpath=//input[@id='startDate']"
+        ]
+    },
+    {
+        "Title": "Fill End Date",
+        "Content": "Fill End Date \n '[Arguments]    ${endDate}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_enddate_input}                 ${LO_TIME}' 'Input Text                       ${fuel_page_locators.filter_fuel_enddate_input}                 ${endDate}'",
+        "ApplicableTo": {
+            "Keyword": "Fill End Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='endDate']",
+                "xpath=//input[@id='endDate']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='endDate']",
+            "xpath=//input[@id='endDate']"
+        ]
+    },
+    {
+        "Title": "Load Default Start Date",
+        "Content": "Load Default Start Date \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_startdate_input}               ${LO_TIME}' 'Selenium2Library.Element Text Should Be     ${fuel_page_locators.filter_fuel_startdate_input}    ${Empty}'",
+        "ApplicableTo": {
+            "Keyword": "Load Default Start Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='startDate']",
+                "xpath=//input[@id='startDate']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='startDate']",
+            "xpath=//input[@id='startDate']"
+        ]
+    },
+    {
+        "Title": "Load Default End Date",
+        "Content": "Load Default End Date \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_enddate_input}                 ${LO_TIME}' 'Selenium2Library.Element Text Should Be     ${fuel_page_locators.filter_fuel_enddate_input}      ${Empty}'",
+        "ApplicableTo": {
+            "Keyword": "Load Default End Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='endDate']",
+                "xpath=//input[@id='endDate']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='endDate']",
+            "xpath=//input[@id='endDate']"
+        ]
+    },
+    {
+        "Title": "Load Default Tax Account",
+        "Content": "Load Default Tax Account \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_select}             ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.filter_fuel_taxaccount_select}             Any'",
+        "ApplicableTo": {
+            "Keyword": "Load Default Tax Account",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='taxAccount']",
+                "xpath=//select[@id='taxAccount']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='taxAccount']",
+            "xpath=//select[@id='taxAccount']"
+        ]
+    },
+    {
+        "Title": "Load Default Vehicles",
+        "Content": "Load Default Vehicles \n 'Wait Until Element Is Visible    ${fuel_page_locators.all_vehicles_checkbox_filter}              ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.all_vehicles_checkbox_filter}              All Vehicles' 'Click Element                    ${fuel_page_locators.filter_fuel_vehicles_input}'",
+        "ApplicableTo": {
+            "Keyword": "Load Default Vehicles",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//label[@title='All Vehicles']",
+                "xpath=//ot-side-panel//label[@title='All Vehicles']",
+                "xpath=//input[@placeholder=\"Vehicles\"]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//label[@title='All Vehicles']",
+            "xpath=//ot-side-panel//label[@title='All Vehicles']",
+            "xpath=//input[@placeholder=\"Vehicles\"]"
+        ]
+    },
+    {
+        "Title": "Load Default Jurisdictions",
+        "Content": "Load Default Jurisdictions \n 'Wait Until Element Is Visible    ${fuel_page_locators.all_juridistion_checkbox_filter}           ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.all_juridistion_checkbox_filter}           All Jurisdictions'",
+        "ApplicableTo": {
+            "Keyword": "Load Default Jurisdictions",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
+                "xpath=//ot-side-panel//label[@title='All Jurisdictions']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
+            "xpath=//ot-side-panel//label[@title='All Jurisdictions']"
+        ]
+    },
+    {
+        "Title": "Load Negative Volume Warning",
+        "Content": "Load Negative Volume Warning \n 'Wait Until Element Is Visible    ${fuel_page_locators.volume_negative_value_warning}           ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Negative Volume Warning",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be at least 0.')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be at least 0.')]"
+        ]
+    },
+    {
+        "Title": "Load Negative Total Price Warning",
+        "Content": "Load Negative Total Price Warning \n 'Wait Until Element Is Visible    ${fuel_page_locators.total_price_negative_value_warning}      ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Negative Total Price Warning",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be at least 0.')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be at least 0.')]"
+        ]
+    },
+    {
+        "Title": "Load Format Currency Total Price Warning",
+        "Content": "Load Format Currency Total Price Warning \n 'Wait Until Element Is Visible    ${fuel_page_locators.total_price_format_value_warning}      ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Format Currency Total Price Warning",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be in a currency format')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be in a currency format')]"
+        ]
+    },
+    {
+        "Title": "Click On Cancel Reset Button",
+        "Content": "Click On Cancel Reset Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.reset_all_popup_menu_cancel}       ${LO_TIME}' 'Click Element                    ${fuel_page_locators.reset_all_popup_menu_cancel}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Cancel Reset Button",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-warning-window//button[contains(.,'Cancel')]",
+                "xpath=//ot-warning-window//button[contains(.,'Cancel')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-warning-window//button[contains(.,'Cancel')]",
+            "xpath=//ot-warning-window//button[contains(.,'Cancel')]"
+        ]
+    },
+    {
+        "Title": "Compare Jurisdiction",
+        "Content": "Compare Jurisdiction \n '${jurisdiction} =    Get Text    ${fuel_page_locators.jurisdiction_filter}' 'Element Should Contain    ${fuel_page_locators.all_juridistion_checkbox_filter}          ${jurisdiction}' 'Click Element             ${fuel_page_locators.jurisdiction_filter}'",
+        "ApplicableTo": {
+            "Keyword": "Compare Jurisdiction",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
+                "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
+                "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
+            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
+            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+        ]
+    },
+    {
+        "Title": "Compare Tax Account",
+        "Content": "Compare Tax Account \n 'Element Should Contain    ${fuel_page_locators.filter_fuel_taxaccount_select}            HUMBERTOS TAX ACCOUNT'",
+        "ApplicableTo": {
+            "Keyword": "Compare Tax Account",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//select[@id='taxAccount']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//select[@id='taxAccount']"
+        ]
+    },
+    {
+        "Title": "Compare Vehicles",
+        "Content": "Compare Vehicles \n '${vehicles} =    Get Text   ${fuel_page_locators.filter_fuel_vehicles_input}' 'Element Should Contain      ${fuel_page_locators.filter_fuel_vehicles_input}   ${vehicles}' 'Click Element               ${fuel_page_locators.filter_fuel_vehicles_input}'",
+        "ApplicableTo": {
+            "Keyword": "Compare Vehicles",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@placeholder=\"Vehicles\"]",
+                "xpath=//input[@placeholder=\"Vehicles\"]",
+                "xpath=//input[@placeholder=\"Vehicles\"]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@placeholder=\"Vehicles\"]",
+            "xpath=//input[@placeholder=\"Vehicles\"]",
+            "xpath=//input[@placeholder=\"Vehicles\"]"
+        ]
+    },
+    {
+        "Title": "Search By Vehicle on Table",
+        "Content": "Search By Vehicle on Table \n '[Arguments]    ${vehicle}    ${row}' '${XPATH} =    list_xpath.obtain_xpath_by_vehicle_row_fuel    ${vehicle}    ${row}' 'Wait Until Element Is Visible    ${XPATH}         ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Search By Vehicle on Table",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Compare Start Date",
+        "Content": "Compare Start Date \n '[Arguments]    ${startDate}' '${comparison} =    Obtain a past Week of Date' 'Should Be Equal As Strings    ${startDate}    ${comparison}'",
+        "ApplicableTo": {
+            "Keyword": "Compare Start Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Compare End Date",
+        "Content": "Compare End Date \n '[Arguments]    ${endDate}' '${comparison} =    Obtain Current Date' 'Should Be Equal As Strings    ${endDate}    ${comparison}'",
+        "ApplicableTo": {
+            "Keyword": "Compare End Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Reorder Fuel Page Columns",
+        "Content": "Reorder Fuel Page Columns \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}               ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_label_table}    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_label_table}            ${LO_TIME}' 'Drag And Drop                    ${fuel_page_locators.jurisdiction_label_table}    ${fuel_page_locators.site_label_table}'",
+        "ApplicableTo": {
+            "Keyword": "Reorder Fuel Page Columns",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[@ref='eHeaderContainer']",
+                "xpath=//span[@role='columnheader' and .='Jurisdiction']",
+                "xpath=//span[@role='columnheader' and contains(.,'Site')]",
+                "xpath=//span[@role='columnheader' and .='Jurisdiction']",
+                "xpath=//span[@role='columnheader' and contains(.,'Site')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[@ref='eHeaderContainer']",
+            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
+            "xpath=//span[@role='columnheader' and contains(.,'Site')]",
+            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
+            "xpath=//span[@role='columnheader' and contains(.,'Site')]"
+        ]
+    },
+    {
+        "Title": "Drag And Drop File Name Column To Last Position From Imports Tab",
+        "Content": "Drag And Drop File Name Column To Last Position From Imports Tab \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}               ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.file_name_label_table}       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.status_label_table}          ${LO_TIME}' 'Drag And Drop                    ${fuel_page_locators.file_name_label_table}       ${fuel_page_locators.status_label_table}'",
+        "ApplicableTo": {
+            "Keyword": "Drag And Drop File Name Column To Last Position From Imports Tab",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[@ref='eHeaderContainer']",
+                "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
+                "xpath=//span[@role='columnheader' and contains(.,'Status')]",
+                "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
+                "xpath=//span[@role='columnheader' and contains(.,'Status')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[@ref='eHeaderContainer']",
+            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
+            "xpath=//span[@role='columnheader' and contains(.,'Status')]",
+            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
+            "xpath=//span[@role='columnheader' and contains(.,'Status')]"
+        ]
+    },
+    {
+        "Title": "Validate That The Table Headers Are In New Position",
+        "Content": "Validate That The Table Headers Are In New Position \n 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}    ${LO_TIME}' 'Sleep    ${SH_TIME}' '${headers} =     Get Text    ${fuel_page_locators.headers_table}' '${headers_default} =    Set Variable    Vehicle ID\\nVolume\\nTotal Price\\nDate\\nTime\\nCity\\nSite\\nJurisdiction\\nVendor\\nInvoice\\nCard Number' 'Should Be Equal As Strings    ${headers}    ${headers_default}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That The Table Headers Are In New Position",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[@ref='eHeaderContainer']",
+                "xpath=//div[@ref='eHeaderContainer']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[@ref='eHeaderContainer']",
+            "xpath=//div[@ref='eHeaderContainer']"
+        ]
+    },
+    {
+        "Title": "Validate That The Table Headers Are In New Position From Imports Tab",
+        "Content": "Validate That The Table Headers Are In New Position From Imports Tab \n 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}    ${LO_TIME}' 'Sleep    ${SH_TIME}' '${headers} =     Get Text    ${fuel_page_locators.headers_table}' '${headers_default} =    Set Variable    Vendor\\nCurrency\\nUnits\\nDate Imported\\nTime\\nStatus\\nFile Name' 'Should Be Equal As Strings    ${headers}    ${headers_default}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That The Table Headers Are In New Position From Imports Tab",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[@ref='eHeaderContainer']",
+                "xpath=//div[@ref='eHeaderContainer']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[@ref='eHeaderContainer']",
+            "xpath=//div[@ref='eHeaderContainer']"
+        ]
+    },
+    {
+        "Title": "Default Fuel Page Table Columns",
+        "Content": "Default Fuel Page Table Columns \n 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_label_table}       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicle_id_label_table}         ${LO_TIME}' 'Drag And Drop                    ${fuel_page_locators.jurisdiction_label_table}       ${fuel_page_locators.vehicle_id_label_table}' 'Sleep                            ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Default Fuel Page Table Columns",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[@ref='eHeaderContainer']",
+                "xpath=//span[@role='columnheader' and .='Jurisdiction']",
+                "xpath=//span[@role='columnheader' and .='Vehicle ID']",
+                "xpath=//span[@role='columnheader' and .='Jurisdiction']",
+                "xpath=//span[@role='columnheader' and .='Vehicle ID']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[@ref='eHeaderContainer']",
+            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
+            "xpath=//span[@role='columnheader' and .='Vehicle ID']",
+            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
+            "xpath=//span[@role='columnheader' and .='Vehicle ID']"
+        ]
+    },
+    {
+        "Title": "Drag And Drop File Name Column To First Position From Imports Tab",
+        "Content": "Drag And Drop File Name Column To First Position From Imports Tab \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}               ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.file_name_label_table}       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.status_label_table}          ${LO_TIME}' 'Drag And Drop                    ${fuel_page_locators.file_name_label_table}       ${fuel_page_locators.vendor_label_table}'",
+        "ApplicableTo": {
+            "Keyword": "Drag And Drop File Name Column To First Position From Imports Tab",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[@ref='eHeaderContainer']",
+                "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
+                "xpath=//span[@role='columnheader' and contains(.,'Status')]",
+                "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
+                "xpath=//span[@role='columnheader' and contains(.,'Vendor')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[@ref='eHeaderContainer']",
+            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
+            "xpath=//span[@role='columnheader' and contains(.,'Status')]",
+            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
+            "xpath=//span[@role='columnheader' and contains(.,'Vendor')]"
+        ]
+    },
+    {
+        "Title": "Validate That The Table Headers Are In Default Position",
+        "Content": "Validate That The Table Headers Are In Default Position \n 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}    ${LO_TIME}' 'Sleep    ${SH_TIME}' '${headers} =     Get Text        ${fuel_page_locators.headers_table}' '${headers_default} =    Set Variable    Jurisdiction\\nVehicle ID\\nVolume\\nTotal Price\\nDate\\nTime\\nCity\\nSite\\nVendor\\nInvoice\\nCard Number' 'Should Be Equal As Strings    ${headers}    ${headers_default}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That The Table Headers Are In Default Position",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[@ref='eHeaderContainer']",
+                "xpath=//div[@ref='eHeaderContainer']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[@ref='eHeaderContainer']",
+            "xpath=//div[@ref='eHeaderContainer']"
+        ]
+    },
+    {
+        "Title": "Validate That The Table Headers Are In Default Position From Imports Tab",
+        "Content": "Validate That The Table Headers Are In Default Position From Imports Tab \n 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}    ${LO_TIME}' 'Sleep    ${SH_TIME}' '${headers} =     Get Text        ${fuel_page_locators.headers_table}' '${headers_default} =    Set Variable    File Name\\nVendor\\nCurrency\\nUnits\\nDate Imported\\nTime\\nStatus' 'Should Be Equal As Strings    ${headers}    ${headers_default}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That The Table Headers Are In Default Position From Imports Tab",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[@ref='eHeaderContainer']",
+                "xpath=//div[@ref='eHeaderContainer']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[@ref='eHeaderContainer']",
+            "xpath=//div[@ref='eHeaderContainer']"
+        ]
+    },
+    {
+        "Title": "Unselect Jurisdictions List",
+        "Content": "Unselect Jurisdictions List \n 'Scroll Element Into View         ${fuel_page_locators.AB_juridistion_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.AB_juridistion_checkbox_filter}    ${LO_TIME}' 'Scroll Element Into View         ${fuel_page_locators.AK_juridistion_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.AK_juridistion_checkbox_filter}    ${LO_TIME}' 'Scroll Element Into View         ${fuel_page_locators.AB_juridistion_checkbox_filter}' 'Click Element                    ${fuel_page_locators.AB_juridistion_checkbox_filter}' 'Scroll Element Into View         ${fuel_page_locators.AK_juridistion_checkbox_filter}' 'Click Element                    ${fuel_page_locators.AK_juridistion_checkbox_filter}'",
+        "ApplicableTo": {
+            "Keyword": "Unselect Jurisdictions List",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//label[@title='Alberta']",
+                "xpath=//ot-side-panel//label[@title='Alberta']",
+                "xpath=//ot-side-panel//label[@title='Alaska']",
+                "xpath=//ot-side-panel//label[@title='Alaska']",
+                "xpath=//ot-side-panel//label[@title='Alberta']",
+                "xpath=//ot-side-panel//label[@title='Alberta']",
+                "xpath=//ot-side-panel//label[@title='Alaska']",
+                "xpath=//ot-side-panel//label[@title='Alaska']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//label[@title='Alberta']",
+            "xpath=//ot-side-panel//label[@title='Alberta']",
+            "xpath=//ot-side-panel//label[@title='Alaska']",
+            "xpath=//ot-side-panel//label[@title='Alaska']",
+            "xpath=//ot-side-panel//label[@title='Alberta']",
+            "xpath=//ot-side-panel//label[@title='Alberta']",
+            "xpath=//ot-side-panel//label[@title='Alaska']",
+            "xpath=//ot-side-panel//label[@title='Alaska']"
+        ]
+    },
+    {
+        "Title": "Unselect Vehicle List",
+        "Content": "Unselect Vehicle List \n 'Scroll Element Into View         ${fuel_page_locators.one_vehicle_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.one_vehicle_checkbox_filter}        ${LO_TIME}' 'Scroll Element Into View         ${fuel_page_locators.humv1_vehicle_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.humv1_vehicle_checkbox_filter}      ${LO_TIME}' 'Scroll Element Into View         ${fuel_page_locators.one_vehicle_checkbox_filter}' 'Click Element                    ${fuel_page_locators.one_vehicle_checkbox_filter}' 'Scroll Element Into View         ${fuel_page_locators.humv1_vehicle_checkbox_filter}' 'Click Element                    ${fuel_page_locators.humv1_vehicle_checkbox_filter}'",
+        "ApplicableTo": {
+            "Keyword": "Unselect Vehicle List",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-side-panel//label[@title='0000000001']",
+                "xpath=//ot-side-panel//label[@title='0000000001']",
+                "xpath=//ot-side-panel//label[@title='HUM_V1']",
+                "xpath=//ot-side-panel//label[@title='HUM_V1']",
+                "xpath=//ot-side-panel//label[@title='0000000001']",
+                "xpath=//ot-side-panel//label[@title='0000000001']",
+                "xpath=//ot-side-panel//label[@title='HUM_V1']",
+                "xpath=//ot-side-panel//label[@title='HUM_V1']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-side-panel//label[@title='0000000001']",
+            "xpath=//ot-side-panel//label[@title='0000000001']",
+            "xpath=//ot-side-panel//label[@title='HUM_V1']",
+            "xpath=//ot-side-panel//label[@title='HUM_V1']",
+            "xpath=//ot-side-panel//label[@title='0000000001']",
+            "xpath=//ot-side-panel//label[@title='0000000001']",
+            "xpath=//ot-side-panel//label[@title='HUM_V1']",
+            "xpath=//ot-side-panel//label[@title='HUM_V1']"
+        ]
+    },
+    {
+        "Title": "Select From Vendor Dropdown",
+        "Content": "Select From Vendor Dropdown \n '[Arguments]    ${VENDOR}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_vendor_label}    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_vendor_label}' '${XPATH} =    list_xpath.Obtain Xpath By Vendor Selector    ${VENDOR}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Select From Vendor Dropdown",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//label[contains(.,'Vendor')]",
+                "xpath=//label[contains(.,'Vendor')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//label[contains(.,'Vendor')]",
+            "xpath=//label[contains(.,'Vendor')]"
+        ]
+    },
+    {
+        "Title": "Select From Fuel Units Dropdown",
+        "Content": "Select From Fuel Units Dropdown \n '[Arguments]    ${UNITS}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_vendor_label}    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_vendor_label}' '${XPATH} =    list_xpath.Obtain Xpath By Fuel Units Selector    ${UNITS}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Select From Fuel Units Dropdown",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//label[contains(.,'Vendor')]",
+                "xpath=//label[contains(.,'Vendor')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//label[contains(.,'Vendor')]",
+            "xpath=//label[contains(.,'Vendor')]"
+        ]
+    },
+    {
+        "Title": "Select From Currency Dropdown",
+        "Content": "Select From Currency Dropdown \n '[Arguments]    ${CURRENCY}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_vendor_label}    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_vendor_label}' '${XPATH} =    list_xpath.Obtain Xpath By Currency Selector    ${CURRENCY}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Select From Currency Dropdown",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//label[contains(.,'Vendor')]",
+                "xpath=//label[contains(.,'Vendor')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//label[contains(.,'Vendor')]",
+            "xpath=//label[contains(.,'Vendor')]"
+        ]
+    },
+    {
+        "Title": "Save Import File",
+        "Content": "Save Import File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_save_button}     ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_save_button}' 'Sleep                                                                         ${UL_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Save Import File",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//button[contains(.,'Save')]",
+                "xpath=//button[contains(.,'Save')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//button[contains(.,'Save')]",
+            "xpath=//button[contains(.,'Save')]"
+        ]
+    },
+    {
+        "Title": "Validate Value In Import Data Row",
+        "Content": "Validate Value In Import Data Row \n '[Arguments]    ${FILE}    ${VALUE}' '${XPATH} =    list_xpath.Validate Value From Import Row    ${FILE}    ${VALUE}' 'Wait Until Element Is Visible    ${XPATH}    ${MD_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Value In Import Data Row",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Validate Value In Imported Fuel File Data Row",
+        "Content": "Validate Value In Imported Fuel File Data Row \n '[Arguments]    ${VALUE}' '${XPATH} =    list_xpath.Validate Import Row    ${VALUE}' 'Wait Until Element Is Visible    ${XPATH}    ${MD_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Value In Imported Fuel File Data Row",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Click On Import Data Row",
+        "Content": "Click On Import Data Row \n '[Arguments]    ${FILE}' '${XPATH} =    list_xpath.Validate Import Row    ${FILE}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Import Data Row",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Click On Delete Button From Imported Fuel File",
+        "Content": "Click On Delete Button From Imported Fuel File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_delete_button}         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_delete_button}' 'Sleep                                                                               ${UL_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Delete Button From Imported Fuel File",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//button[contains(.,'Delete')]",
+                "xpath=//button[contains(.,'Delete')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//button[contains(.,'Delete')]",
+            "xpath=//button[contains(.,'Delete')]"
+        ]
+    },
+    {
+        "Title": "Click On Yes Button From Import Fuel File",
+        "Content": "Click On Yes Button From Import Fuel File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_yes_delete_button}     ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_yes_delete_button}' 'Sleep                                                                               ${UL_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Yes Button From Import Fuel File",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div/div[contains(.,'Yes')]",
+                "xpath=//div/div[contains(.,'Yes')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div/div[contains(.,'Yes')]",
+            "xpath=//div/div[contains(.,'Yes')]"
+        ]
+    },
+    {
+        "Title": "Click On Cancel Button",
+        "Content": "Click On Cancel Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_cancel_button}         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_cancel_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Cancel Button",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//i[@class='mdi mdi-close mdi-36px']",
+                "xpath=//i[@class='mdi mdi-close mdi-36px']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//i[@class='mdi mdi-close mdi-36px']",
+            "xpath=//i[@class='mdi mdi-close mdi-36px']"
+        ]
+    },
+    {
+        "Title": "No Invalid Records From Imported Fuel File",
+        "Content": "No Invalid Records From Imported Fuel File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_records_label}         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_records_value}         ${LO_TIME}' '${VALUE} =    Get Value          ${fuel_page_locators.import_records_value}' 'IF  '${VALUE}' == '0'' 'Log    There aren't invalid records' 'ELSE' 'Log    There are invalid records' 'Fail' 'END'",
+        "ApplicableTo": {
+            "Keyword": "No Invalid Records From Imported Fuel File",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//p[contains(.,'Number of invalid records')]",
+                "xpath=//p[@class='title']",
+                "xpath=//p[@class='title']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//p[contains(.,'Number of invalid records')]",
+            "xpath=//p[@class='title']",
+            "xpath=//p[@class='title']"
+        ]
+    },
+    {
+        "Title": "There are Invalid Records From Imported Fuel File",
+        "Content": "There are Invalid Records From Imported Fuel File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_records_label}         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_records_value}         ${LO_TIME}' '${VALUE} =    Get Value          ${fuel_page_locators.import_records_value}' 'IF  '${VALUE}' != '0'' 'Log    There are invalid records' 'ELSE' 'Log    There aren't invalid records' 'Fail' 'END'",
+        "ApplicableTo": {
+            "Keyword": "There are Invalid Records From Imported Fuel File",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//p[contains(.,'Number of invalid records')]",
+                "xpath=//p[@class='title']",
+                "xpath=//p[@class='title']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//p[contains(.,'Number of invalid records')]",
+            "xpath=//p[@class='title']",
+            "xpath=//p[@class='title']"
+        ]
+    },
+    {
+        "Title": "Click On Replace File Button",
+        "Content": "Click On Replace File Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_replace_file_button}    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_replace_file_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Replace File Button",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//button[contains(.,'Replace File')]",
+                "xpath=//button[contains(.,'Replace File')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//button[contains(.,'Replace File')]",
+            "xpath=//button[contains(.,'Replace File')]"
+        ]
+    },
+    {
+        "Title": "Click On Approve Button",
+        "Content": "Click On Approve Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_approve_button}         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_approve_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Approve Button",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//button[contains(.,'Approve')]",
+                "xpath=//button[contains(.,'Approve')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//button[contains(.,'Approve')]",
+            "xpath=//button[contains(.,'Approve')]"
+        ]
+    },
+    {
+        "Title": "Approve Button Is Not Visible",
+        "Content": "Approve Button Is Not Visible \n 'Wait Until Element Is Not Visible    ${fuel_page_locators.import_approve_button}     ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Approve Button Is Not Visible",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//button[contains(.,'Approve')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//button[contains(.,'Approve')]"
+        ]
+    },
+    {
+        "Title": "Click On Close Button From Edit Fuel Receipt",
+        "Content": "Click On Close Button From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_close_button}              ${LO_TIME}' 'Click Element                    ${fuel_page_locators.row_close_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Close Button From Edit Fuel Receipt",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]",
+                "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]",
+            "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]"
+        ]
+    },
+    {
+        "Title": "Click On Delete Button From Edit Fuel Receipt",
+        "Content": "Click On Delete Button From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_delete_button}             ${LO_TIME}' 'Click Element                    ${fuel_page_locators.row_delete_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Delete Button From Edit Fuel Receipt",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]",
+                "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]",
+            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
+        ]
+    },
+    {
+        "Title": "Verify that Delete Button is Disabled From Edit Fuel Receipt",
+        "Content": "Verify that Delete Button is Disabled From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_delete_button_disabled}    ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Verify that Delete Button is Disabled From Edit Fuel Receipt",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete') and @disabled]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete') and @disabled]"
+        ]
+    },
+    {
+        "Title": "Verify that Delete Button is Enabled From Edit Fuel Receipt",
+        "Content": "Verify that Delete Button is Enabled From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_delete_button}             ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Verify that Delete Button is Enabled From Edit Fuel Receipt",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
+        ]
+    },
+    {
+        "Title": "Click On Edit Button From Edit Fuel Receipt",
+        "Content": "Click On Edit Button From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_edit_button}               ${LO_TIME}' 'Click Element                    ${fuel_page_locators.row_edit_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Edit Button From Edit Fuel Receipt",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]",
+                "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]",
+            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
+        ]
+    },
+    {
+        "Title": "Verify that Edit Button is Enabled From Edit Fuel Receipt",
+        "Content": "Verify that Edit Button is Enabled From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_edit_button}               ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Verify that Edit Button is Enabled From Edit Fuel Receipt",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
+        ]
+    },
+    {
+        "Title": "Load Edit Fuel Receipt Page",
+        "Content": "Load Edit Fuel Receipt Page \n 'Wait Until Element Is Visible    ${fuel_page_locators.edit_title_receipt}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_label}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.city_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicleid_label}                     ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.date_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_label}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fueL_page_locators.units_label}                         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_label}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcardnumber_label}                ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_label}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_label}                      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_label}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_label}                      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.cancel_button}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.save_button}                         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_select}                 ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.city_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicleid_select}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.date_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_input}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.units_select}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_input}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcardnumber_input}                ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_input}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_select}                     ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_input}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_textarea}                   ${LO_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Edit Fuel Receipt Page",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//h1[contains(.,'Edit Fuel Receipt')]",
+                "xpath=//label[contains(.,'Jurisdiction')]",
+                "xpath=//label[contains(.,'City')]",
+                "xpath=//label[contains(.,'Vehicle ID')]",
+                "xpath=//label[contains(.,'Date')]",
+                "xpath=//label[contains(.,'Time')]",
+                "xpath=//label[contains(.,'Site')]",
+                "xpath=//label[contains(.,'Volume')]",
+                "xpath=//label[contains(.,'Units')]",
+                "xpath=//label[contains(.,'Vendor')]",
+                "xpath=//label[contains(.,'Fuel Card Number')]",
+                "xpath=//label[contains(.,'Total Price')]",
+                "xpath=//label[contains(.,'Currency')]",
+                "xpath=//label[contains(.,'Invoice')]",
+                "xpath=//label[contains(.,'Comments')]",
+                "xpath=//button[contains(.,'Cancel')]",
+                "xpath=//button[contains(.,'Save')]",
+                "xpath=//select[@id='jurisdiction']",
+                "xpath=//input[@id='city']",
+                "xpath=//select[@id='vehicleId']",
+                "xpath=//input[@id='date']",
+                "xpath=//input[@id='time']",
+                "xpath=//input[@id='site']",
+                "xpath=//input[@id='volume']",
+                "xpath=//select[@id='units']",
+                "xpath=//input[@id='vendor']",
+                "xpath=//input[@id='fuelNumber']",
+                "xpath=//input[@id='totalPrice']",
+                "xpath=//select[@id='currency']",
+                "xpath=//input[@id='invoice']",
+                "xpath=//textarea[@id='comment']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//h1[contains(.,'Edit Fuel Receipt')]",
+            "xpath=//label[contains(.,'Jurisdiction')]",
+            "xpath=//label[contains(.,'City')]",
+            "xpath=//label[contains(.,'Vehicle ID')]",
+            "xpath=//label[contains(.,'Date')]",
+            "xpath=//label[contains(.,'Time')]",
+            "xpath=//label[contains(.,'Site')]",
+            "xpath=//label[contains(.,'Volume')]",
+            "xpath=//label[contains(.,'Units')]",
+            "xpath=//label[contains(.,'Vendor')]",
+            "xpath=//label[contains(.,'Fuel Card Number')]",
+            "xpath=//label[contains(.,'Total Price')]",
+            "xpath=//label[contains(.,'Currency')]",
+            "xpath=//label[contains(.,'Invoice')]",
+            "xpath=//label[contains(.,'Comments')]",
+            "xpath=//button[contains(.,'Cancel')]",
+            "xpath=//button[contains(.,'Save')]",
+            "xpath=//select[@id='jurisdiction']",
+            "xpath=//input[@id='city']",
+            "xpath=//select[@id='vehicleId']",
+            "xpath=//input[@id='date']",
+            "xpath=//input[@id='time']",
+            "xpath=//input[@id='site']",
+            "xpath=//input[@id='volume']",
+            "xpath=//select[@id='units']",
+            "xpath=//input[@id='vendor']",
+            "xpath=//input[@id='fuelNumber']",
+            "xpath=//input[@id='totalPrice']",
+            "xpath=//select[@id='currency']",
+            "xpath=//input[@id='invoice']",
+            "xpath=//textarea[@id='comment']"
+        ]
+    },
+    {
+        "Title": "Select An Option From Record Per Page Dropdown",
+        "Content": "Select An Option From Record Per Page Dropdown \n '[Arguments]    ${number}' 'Wait Until Element Is Visible    ${fuel_page_locators.records_per_page_label}              ${LO_TIME}' 'Select From List By Label        ${fuel_page_locators.records_per_page_dropdown}           ${number}'",
+        "ApplicableTo": {
+            "Keyword": "Select An Option From Record Per Page Dropdown",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//div[@class='level-item' and contains(.,'Records per page')]",
+                "xpath=//select[@id='page-select']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//div[@class='level-item' and contains(.,'Records per page')]",
+            "xpath=//select[@id='page-select']"
+        ]
+    },
+    {
+        "Title": "Fill Date and Time With Default Empty Data",
+        "Content": "Fill Date and Time With Default Empty Data \n 'Wait Until Element Is Visible    ${fuel_page_locators.date_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_input}                          ${LO_TIME}' 'Click Element                    ${fuel_page_locators.date_input}' 'Press Keys                       ${fuel_page_locators.date_input}                          \\DELETE' 'Click Element                    ${fuel_page_locators.time_input}' 'Press Keys                       ${fuel_page_locators.time_input}                          \\DELETE'",
+        "ApplicableTo": {
+            "Keyword": "Fill Date and Time With Default Empty Data",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [
+                "xpath=//input[@id='date']",
+                "xpath=//input[@id='time']",
+                "xpath=//input[@id='date']",
+                "xpath=//input[@id='date']",
+                "xpath=//input[@id='time']",
+                "xpath=//input[@id='time']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='date']",
+            "xpath=//input[@id='time']",
+            "xpath=//input[@id='date']",
+            "xpath=//input[@id='date']",
+            "xpath=//input[@id='time']",
+            "xpath=//input[@id='time']"
+        ]
+    },
+    {
+        "Title": "Obtain a past year of Date",
+        "Content": "Obtain a past year of Date \n '${date} =    Get Current Date    UTC    - 367 day' '${date} =    list_xpath.Obtain Date Correct Format  ${date}' '[Return]    ${date}'",
+        "ApplicableTo": {
+            "Keyword": "Obtain a past year of Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Obtain a week after the past year of Date",
+        "Content": "Obtain a week after the past year of Date \n '${date} =    Get Current Date    UTC    - 364 day' '${date} =    list_xpath.Obtain Date Correct Format    ${date}' '[Return]    ${date}'",
+        "ApplicableTo": {
+            "Keyword": "Obtain a week after the past year of Date",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Search By Jurisdcition and Date and Value on Table",
+        "Content": "Search By Jurisdcition and Date and Value on Table \n '[Arguments]    ${jurisdiction}    ${day}    ${value}    ${time}' '${XPATH} =    list_xpath.obtain_xpath_by_fuel_row    ${jurisdiction}    ${day}    ${value}    ${time}' 'Wait Until Element Is Visible    ${XPATH}         ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Search By Jurisdcition and Date and Value on Table",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Obtain a past year of date correct format Table",
+        "Content": "Obtain a past year of date correct format Table \n '${date} =    Get Current Date    UTC    - 367 day' '${date} =    list_xpath.obtain_date_correct_format_distance_table    ${date}' '[Return]    ${date}'",
+        "ApplicableTo": {
+            "Keyword": "Obtain a past year of date correct format Table",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        },
+        "Locators": []
+    },
+    {
+        "Title": "Load Login Page",
+        "Content": "Load Login Page \n 'Wait Until Element Is Visible    ${login_page_locators.user_id}            ${ME_TIME}' 'Wait Until Element Is Visible    ${login_page_locators.password}           ${TIME}' 'Wait Until Element Is Visible    ${login_page_locators.forgot_password}    ${TIME}' 'Wait Until Element Is Visible    ${login_page_locators.login_button}       ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Login Page",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/login_page",
+            "Locators": [
+                "xpath=//input[@id='userid']",
+                "xpath=//input[@id='password']",
+                "xpath=//a[contains(.,'Forgot password')]",
+                "xpath=//span[contains(.,'Log In')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='userid']",
+            "xpath=//input[@id='password']",
+            "xpath=//a[contains(.,'Forgot password')]",
+            "xpath=//span[contains(.,'Log In')]"
+        ]
+    },
+    {
+        "Title": "Introduce User",
+        "Content": "Introduce User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${login_page_locators.user_id}    ${TIME}' 'Input Text                       ${login_page_locators.user_id}    ${credentials}[0]'",
+        "ApplicableTo": {
+            "Keyword": "Introduce User",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/login_page",
+            "Locators": [
+                "xpath=//input[@id='userid']",
+                "xpath=//input[@id='userid']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='userid']",
+            "xpath=//input[@id='userid']"
+        ]
+    },
+    {
+        "Title": "Introduce Password",
+        "Content": "Introduce Password \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${login_page_locators.password}    ${TIME}' 'Input Text                       ${login_page_locators.password}    ${credentials}[1]'",
+        "ApplicableTo": {
+            "Keyword": "Introduce Password",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/login_page",
+            "Locators": [
+                "xpath=//input[@id='password']",
+                "xpath=//input[@id='password']"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//input[@id='password']",
+            "xpath=//input[@id='password']"
+        ]
+    },
+    {
+        "Title": "Click On Login Button",
+        "Content": "Click On Login Button \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${login_page_locators.login_button}    ${TIME}' 'Click Element                    ${login_page_locators.login_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Login Button",
+            "URL": "https://ot1-qae-web.usdc.roadnet.com/login_page",
+            "Locators": [
+                "xpath=//span[contains(.,'Log In')]",
+                "xpath=//span[contains(.,'Log In')]"
+            ],
+            "Language": "Robot Framework"
+        },
+        "Locators": [
+            "xpath=//span[contains(.,'Log In')]",
+            "xpath=//span[contains(.,'Log In')]"
+        ]
+    }
+]

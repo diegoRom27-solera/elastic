@@ -2,8 +2,8 @@ import os
 import json
 import re
 
-directorio_p = './'
-archivo_json = 'result.json'
+directorio_p = './TaxManager-robot-testSuite-main'
+archivo_json = 'indice.json'
 
 objetos = []
 
@@ -33,25 +33,26 @@ for archivos_txt in archivos_repo:
             line = line.strip()
             if not line:
                 if key and code:
-                    formatted_code = '\n'.join(code)
+                    formatted_code = ' '.join(code)
                     locators = obtener_locators(formatted_code)
-                    objetos.append({'KeywordName': key, 'KeywordCode': formatted_code, 'PageObject': nombre_archivo, 'Locators': locators})
+                    objetos.append({'Title': key, 'Content': formatted_code, 'ApplicableTo': key,'Locators': locators, "PageOb":nombre_archivo})
                     key = ''
                     code = []
             else:
                 if not key:
                     key = line
+                    code.append(f"{key} \n")
                 else:
                     parts = line.split(':')
                     if len(parts) == 2:
                         key = parts[0].strip()
                         value = parts[1].strip()
-                        code.append(f"{key}: {value}")
+                        code.append(f"{value}")
                     else:
-                        code.append(line)
+                        code.append(f"'{line}'")
 
 with open(archivo_json, 'w') as json_file:
     json.dump(objetos, json_file)
 
 for obj in objetos:
-    print(f"Key: {obj['KeywordName']}\nCode:\n{obj['KeywordCode']}\nFilename: {obj['PageObject']}\nLocators: {obj['Locators']}\n")
+    print(f"Title: {obj['Title']}\nContent:\n{obj['Content']}\nApplicableTo: {obj['ApplicableTo']}\nLocators: {obj['Locators']}\n")
