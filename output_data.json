@@ -13,14 +13,7 @@
                 "xpath=//i[contains(.,'tune')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]",
-            "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]",
-            "xpath=//h3[contains(.,'Fuel Purchases')]",
-            "xpath=//span[contains(.,'Add Fuel Receipt')]",
-            "xpath=//i[contains(.,'tune')]"
-        ]
+        }
     },
     {
         "Title": "Add Fuel Receipt",
@@ -33,11 +26,7 @@
                 "xpath=//span[contains(.,'Add Fuel Receipt')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//span[contains(.,'Add Fuel Receipt')]",
-            "xpath=//span[contains(.,'Add Fuel Receipt')]"
-        ]
+        }
     },
     {
         "Title": "Load Fuel Receipt Page",
@@ -79,40 +68,7 @@
                 "xpath=//textarea[@id='comment']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//h1[contains(.,'New Fuel Receipt')]",
-            "xpath=//label[contains(.,'Jurisdiction')]",
-            "xpath=//label[contains(.,'City')]",
-            "xpath=//label[contains(.,'Vehicle ID')]",
-            "xpath=//label[contains(.,'Date')]",
-            "xpath=//label[contains(.,'Time')]",
-            "xpath=//label[contains(.,'Site')]",
-            "xpath=//label[contains(.,'Volume')]",
-            "xpath=//label[contains(.,'Units')]",
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//label[contains(.,'Fuel Card Number')]",
-            "xpath=//label[contains(.,'Total Price')]",
-            "xpath=//label[contains(.,'Currency')]",
-            "xpath=//label[contains(.,'Invoice')]",
-            "xpath=//label[contains(.,'Comments')]",
-            "xpath=//button[contains(.,'Cancel')]",
-            "xpath=//button[contains(.,'Save')]",
-            "xpath=//select[@id='jurisdiction']",
-            "xpath=//input[@id='city']",
-            "xpath=//select[@id='vehicleId']",
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='site']",
-            "xpath=//input[@id='volume']",
-            "xpath=//select[@id='units']",
-            "xpath=//input[@id='vendor']",
-            "xpath=//input[@id='fuelNumber']",
-            "xpath=//input[@id='totalPrice']",
-            "xpath=//select[@id='currency']",
-            "xpath=//input[@id='invoice']",
-            "xpath=//textarea[@id='comment']"
-        ]
+        }
     },
     {
         "Title": "Fill Jurisdiction",
@@ -125,11 +81,7 @@
                 "xpath=//select[@id='jurisdiction']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='jurisdiction']",
-            "xpath=//select[@id='jurisdiction']"
-        ]
+        }
     },
     {
         "Title": "Fill City",
@@ -143,12 +95,7 @@
                 "xpath=//input[@id='city']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='city']",
-            "xpath=//input[@id='city']",
-            "xpath=//input[@id='city']"
-        ]
+        }
     },
     {
         "Title": "Fill Vehicle",
@@ -162,12 +109,7 @@
                 "xpath=//select[@id='vehicleId']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='vehicleId']",
-            "xpath=//select[@id='vehicleId']",
-            "xpath=//select[@id='vehicleId']"
-        ]
+        }
     },
     {
         "Title": "Fill Date",
@@ -181,12 +123,7 @@
                 "xpath=//input[@id='date']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='date']"
-        ]
+        }
     },
     {
         "Title": "Fill Time",
@@ -200,12 +137,7 @@
                 "xpath=//input[@id='time']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='time']"
-        ]
+        }
     },
     {
         "Title": "Fill Site",
@@ -219,12 +151,7 @@
                 "xpath=//input[@id='site']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='site']",
-            "xpath=//input[@id='site']",
-            "xpath=//input[@id='site']"
-        ]
+        }
     },
     {
         "Title": "Fill Volume",
@@ -238,12 +165,7 @@
                 "xpath=//input[@id='volume']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='volume']",
-            "xpath=//input[@id='volume']",
-            "xpath=//input[@id='volume']"
-        ]
+        }
     },
     {
         "Title": "Fill Units",
@@ -256,11 +178,7 @@
                 "xpath=//select[@id='units']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='units']",
-            "xpath=//select[@id='units']"
-        ]
+        }
     },
     {
         "Title": "Fill Vendor",
@@ -274,12 +192,7 @@
                 "xpath=//input[@id='vendor']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='vendor']",
-            "xpath=//input[@id='vendor']",
-            "xpath=//input[@id='vendor']"
-        ]
+        }
     },
     {
         "Title": "Fill Fuel Card",
@@ -293,12 +206,7 @@
                 "xpath=//input[@id='fuelNumber']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='fuelNumber']",
-            "xpath=//input[@id='fuelNumber']",
-            "xpath=//input[@id='fuelNumber']"
-        ]
+        }
     },
     {
         "Title": "Fill Total Price",
@@ -312,12 +220,7 @@
                 "xpath=//input[@id='totalPrice']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='totalPrice']",
-            "xpath=//input[@id='totalPrice']",
-            "xpath=//input[@id='totalPrice']"
-        ]
+        }
     },
     {
         "Title": "Fill Currency",
@@ -330,11 +233,7 @@
                 "xpath=//select[@id='currency']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='currency']",
-            "xpath=//select[@id='currency']"
-        ]
+        }
     },
     {
         "Title": "Fill Invoice",
@@ -348,12 +247,7 @@
                 "xpath=//input[@id='invoice']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='invoice']",
-            "xpath=//input[@id='invoice']",
-            "xpath=//input[@id='invoice']"
-        ]
+        }
     },
     {
         "Title": "Fill Comment",
@@ -367,12 +261,7 @@
                 "xpath=//textarea[@id='comment']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//textarea[@id='comment']",
-            "xpath=//textarea[@id='comment']",
-            "xpath=//textarea[@id='comment']"
-        ]
+        }
     },
     {
         "Title": "Save Receipt Fuel",
@@ -385,11 +274,7 @@
                 "xpath=//button[contains(.,'Save')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//button[contains(.,'Save')]",
-            "xpath=//button[contains(.,'Save')]"
-        ]
+        }
     },
     {
         "Title": "Load Filter",
@@ -413,22 +298,7 @@
                 "xpath=//button[contains(.,'Apply')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//h5[contains(.,'Filters')]",
-            "xpath=//label[contains(.,'Start Date')]",
-            "xpath=//input[@id='startDate']",
-            "xpath=//label[contains(.,'End Date')]",
-            "xpath=//input[@id='endDate']",
-            "xpath=//label[contains(.,'Tax Account')]",
-            "xpath=//select[@id='taxAccount']",
-            "xpath=//label[contains(.,'Vehicles')]",
-            "xpath=//input[@placeholder=\"Vehicles\"]",
-            "xpath=//label[contains(.,'Jurisdiction')]",
-            "xpath=//input[@placeholder=\"Jurisdiction\"]",
-            "xpath=//button[contains(.,'Reset All')]",
-            "xpath=//button[contains(.,'Apply')]"
-        ]
+        }
     },
     {
         "Title": "Click On Filter Button",
@@ -441,11 +311,7 @@
                 "xpath=//i[contains(.,'tune')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//i[contains(.,'tune')]",
-            "xpath=//i[contains(.,'tune')]"
-        ]
+        }
     },
     {
         "Title": "Click On Vehicles List",
@@ -459,12 +325,7 @@
                 "xpath=//input[@placeholder=\"Vehicles\"]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@placeholder=\"Vehicles\"]",
-            "xpath=//input[@placeholder=\"Vehicles\"]",
-            "xpath=//input[@placeholder=\"Vehicles\"]"
-        ]
+        }
     },
     {
         "Title": "Click On Tax Account List",
@@ -478,12 +339,7 @@
                 "xpath=//select[@id='taxAccount']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='taxAccount']",
-            "xpath=//select[@id='taxAccount']",
-            "xpath=//select[@id='taxAccount']"
-        ]
+        }
     },
     {
         "Title": "Click On Jurisdiction List",
@@ -498,13 +354,7 @@
                 "xpath=//ot-multiselect//div[2]/div[1]/div/input"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input"
-        ]
+        }
     },
     {
         "Title": "Vehicles List Is Activated",
@@ -516,10 +366,7 @@
                 "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Vehicles']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Vehicles']"
-        ]
+        }
     },
     {
         "Title": "Jurisdiction List Is Activated",
@@ -531,10 +378,7 @@
                 "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Jurisdiction']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Jurisdiction']"
-        ]
+        }
     },
     {
         "Title": "Click On Reset All",
@@ -547,11 +391,7 @@
                 "xpath=//button[contains(.,'Reset All')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//button[contains(.,'Reset All')]",
-            "xpath=//button[contains(.,'Reset All')]"
-        ]
+        }
     },
     {
         "Title": "Confirm Reset All",
@@ -564,11 +404,7 @@
                 "xpath=//button[contains(.,'Confirm')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//button[contains(.,'Confirm')]",
-            "xpath=//button[contains(.,'Confirm')]"
-        ]
+        }
     },
     {
         "Title": "Click On Generate Button",
@@ -582,12 +418,7 @@
                 "xpath=//button[contains(.,'Apply')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//button[contains(.,'Apply')]",
-            "xpath=//button[contains(.,'Apply')]",
-            "xpath=//button[contains(.,'Apply')]"
-        ]
+        }
     },
     {
         "Title": "Search By Vehicle",
@@ -602,13 +433,7 @@
                 "xpath=//ot-multiselect//div[2]/div[1]/div/input"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input"
-        ]
+        }
     },
     {
         "Title": "Search By Juridistion",
@@ -624,14 +449,7 @@
                 "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
-            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
-        ]
+        }
     },
     {
         "Title": "Search By Tax Account",
@@ -644,11 +462,7 @@
                 "xpath=//select[@id='taxAccount']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='taxAccount']",
-            "xpath=//select[@id='taxAccount']"
-        ]
+        }
     },
     {
         "Title": "Select Two Vehicles",
@@ -665,15 +479,7 @@
                 "xpath=//input[@placeholder=\"Vehicles\"]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//input[@placeholder=\"Vehicles\"]"
-        ]
+        }
     },
     {
         "Title": "Warnings requiered fields",
@@ -686,11 +492,7 @@
                 "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is in an invalid format')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
-        ]
+        }
     },
     {
         "Title": "Warnings requiered fields from Edit Fuel Receipt",
@@ -703,11 +505,7 @@
                 "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
-        ]
+        }
     },
     {
         "Title": "No Warnings requiered fields",
@@ -720,11 +518,7 @@
                 "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
-        ]
+        }
     },
     {
         "Title": "Date required field from Edit Fuel Receipt",
@@ -736,10 +530,7 @@
                 "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Date is required.')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Date is required.')]"
-        ]
+        }
     },
     {
         "Title": "Time required field from Edit Fuel Receipt",
@@ -751,10 +542,7 @@
                 "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]"
-        ]
+        }
     },
     {
         "Title": "Enable Required warning fields",
@@ -767,11 +555,7 @@
                 "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is in an invalid format')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
-        ]
+        }
     },
     {
         "Title": "Warnings Exceeded Length",
@@ -790,17 +574,7 @@
                 "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Comments must be no more than 60 characters long.')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'City must be no more than 25 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Site must be no more than 25 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be no more than 10 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vendor must be no more than 50 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Fuel Card Number must be no more than 50 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be no more than 2147483647.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Invoice must be no more than 25 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Comments must be no more than 60 characters long.')]"
-        ]
+        }
     },
     {
         "Title": "Click On Fuel Tab",
@@ -813,11 +587,7 @@
                 "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]",
-            "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]"
-        ]
+        }
     },
     {
         "Title": "Click On Import Tab",
@@ -830,11 +600,7 @@
                 "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]",
-            "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]"
-        ]
+        }
     },
     {
         "Title": "Load Import Page",
@@ -847,11 +613,7 @@
                 "xpath=//span[contains(.,'Import File')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//h3[contains(.,'Imports')]",
-            "xpath=//span[contains(.,'Import File')]"
-        ]
+        }
     },
     {
         "Title": "Click on Import File",
@@ -864,11 +626,7 @@
                 "xpath=//span[contains(.,'Import File')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//span[contains(.,'Import File')]",
-            "xpath=//span[contains(.,'Import File')]"
-        ]
+        }
     },
     {
         "Title": "Load Import Fuel Receipt Tab",
@@ -888,18 +646,7 @@
                 "xpath=//button[contains(.,'Save')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//h3[contains(.,'Import Fuel Receipt')]",
-            "xpath=//span[contains(.,'Add File')]",
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//select[@id='vendor']",
-            "xpath=//label[contains(.,'Fuel Units')]",
-            "xpath=//select[@id='unit']",
-            "xpath=//label[contains(.,'Currency')]",
-            "xpath=//select[@id='currency']",
-            "xpath=//button[contains(.,'Save')]"
-        ]
+        }
     },
     {
         "Title": "Click On Add File",
@@ -912,11 +659,7 @@
                 "xpath=//span[contains(.,'Add File')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//span[contains(.,'Add File')]",
-            "xpath=//span[contains(.,'Add File')]"
-        ]
+        }
     },
     {
         "Title": "Obtain Current Date",
@@ -926,8 +669,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Obtain Tomorrow Date",
@@ -937,8 +679,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Reacomodate Date DD/MM/YY",
@@ -948,8 +689,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Obtain a past Week of Date",
@@ -959,8 +699,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Add Days Warning",
@@ -970,8 +709,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Default Value Jurisdiction",
@@ -984,11 +722,7 @@
                 "xpath=//select[@id='jurisdiction']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='jurisdiction']",
-            "xpath=//select[@id='jurisdiction']"
-        ]
+        }
     },
     {
         "Title": "Default Value Date",
@@ -1001,11 +735,7 @@
                 "xpath=//input[@id='date']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='date']"
-        ]
+        }
     },
     {
         "Title": "Default Value Time",
@@ -1018,11 +748,7 @@
                 "xpath=//input[@id='time']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='time']"
-        ]
+        }
     },
     {
         "Title": "Default Value Unit",
@@ -1035,11 +761,7 @@
                 "xpath=//select[@id='units']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='units']",
-            "xpath=//select[@id='units']"
-        ]
+        }
     },
     {
         "Title": "Default Value Currency",
@@ -1052,11 +774,7 @@
                 "xpath=//select[@id='currency']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='currency']",
-            "xpath=//select[@id='currency']"
-        ]
+        }
     },
     {
         "Title": "Obtain Current Hour",
@@ -1066,8 +784,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Search By Jurisdiction on Table",
@@ -1077,8 +794,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Click On Edit Button",
@@ -1091,11 +807,7 @@
                 "xpath=//span[contains(.,'Edit')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//span[contains(.,'Edit')]",
-            "xpath=//span[contains(.,'Edit')]"
-        ]
+        }
     },
     {
         "Title": "Generate Random Values",
@@ -1105,8 +817,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Search By Time on Table",
@@ -1116,8 +827,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Click On Close Button From Filter",
@@ -1130,11 +840,7 @@
                 "xpath=//ot-side-panel//i[contains(.,'close')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//i[contains(.,'close')]",
-            "xpath=//ot-side-panel//i[contains(.,'close')]"
-        ]
+        }
     },
     {
         "Title": "Fill Start Date",
@@ -1147,11 +853,7 @@
                 "xpath=//input[@id='startDate']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='startDate']",
-            "xpath=//input[@id='startDate']"
-        ]
+        }
     },
     {
         "Title": "Fill End Date",
@@ -1164,11 +866,7 @@
                 "xpath=//input[@id='endDate']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='endDate']",
-            "xpath=//input[@id='endDate']"
-        ]
+        }
     },
     {
         "Title": "Load Default Start Date",
@@ -1181,11 +879,7 @@
                 "xpath=//input[@id='startDate']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='startDate']",
-            "xpath=//input[@id='startDate']"
-        ]
+        }
     },
     {
         "Title": "Load Default End Date",
@@ -1198,11 +892,7 @@
                 "xpath=//input[@id='endDate']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='endDate']",
-            "xpath=//input[@id='endDate']"
-        ]
+        }
     },
     {
         "Title": "Load Default Tax Account",
@@ -1215,11 +905,7 @@
                 "xpath=//select[@id='taxAccount']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='taxAccount']",
-            "xpath=//select[@id='taxAccount']"
-        ]
+        }
     },
     {
         "Title": "Load Default Vehicles",
@@ -1233,12 +919,7 @@
                 "xpath=//input[@placeholder=\"Vehicles\"]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//input[@placeholder=\"Vehicles\"]"
-        ]
+        }
     },
     {
         "Title": "Load Default Jurisdictions",
@@ -1251,11 +932,7 @@
                 "xpath=//ot-side-panel//label[@title='All Jurisdictions']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
-            "xpath=//ot-side-panel//label[@title='All Jurisdictions']"
-        ]
+        }
     },
     {
         "Title": "Load Negative Volume Warning",
@@ -1267,10 +944,7 @@
                 "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be at least 0.')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be at least 0.')]"
-        ]
+        }
     },
     {
         "Title": "Load Negative Total Price Warning",
@@ -1282,10 +956,7 @@
                 "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be at least 0.')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be at least 0.')]"
-        ]
+        }
     },
     {
         "Title": "Load Format Currency Total Price Warning",
@@ -1297,10 +968,7 @@
                 "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be in a currency format')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be in a currency format')]"
-        ]
+        }
     },
     {
         "Title": "Click On Cancel Reset Button",
@@ -1313,11 +981,7 @@
                 "xpath=//ot-warning-window//button[contains(.,'Cancel')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-warning-window//button[contains(.,'Cancel')]",
-            "xpath=//ot-warning-window//button[contains(.,'Cancel')]"
-        ]
+        }
     },
     {
         "Title": "Compare Jurisdiction",
@@ -1331,12 +995,7 @@
                 "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
-            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
-        ]
+        }
     },
     {
         "Title": "Compare Tax Account",
@@ -1348,10 +1007,7 @@
                 "xpath=//select[@id='taxAccount']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//select[@id='taxAccount']"
-        ]
+        }
     },
     {
         "Title": "Compare Vehicles",
@@ -1365,12 +1021,7 @@
                 "xpath=//input[@placeholder=\"Vehicles\"]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@placeholder=\"Vehicles\"]",
-            "xpath=//input[@placeholder=\"Vehicles\"]",
-            "xpath=//input[@placeholder=\"Vehicles\"]"
-        ]
+        }
     },
     {
         "Title": "Search By Vehicle on Table",
@@ -1380,8 +1031,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Compare Start Date",
@@ -1391,8 +1041,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Compare End Date",
@@ -1402,8 +1051,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Reorder Fuel Page Columns",
@@ -1419,14 +1067,7 @@
                 "xpath=//span[@role='columnheader' and contains(.,'Site')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
-            "xpath=//span[@role='columnheader' and contains(.,'Site')]",
-            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
-            "xpath=//span[@role='columnheader' and contains(.,'Site')]"
-        ]
+        }
     },
     {
         "Title": "Drag And Drop File Name Column To Last Position From Imports Tab",
@@ -1442,14 +1083,7 @@
                 "xpath=//span[@role='columnheader' and contains(.,'Status')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
-            "xpath=//span[@role='columnheader' and contains(.,'Status')]",
-            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
-            "xpath=//span[@role='columnheader' and contains(.,'Status')]"
-        ]
+        }
     },
     {
         "Title": "Validate That The Table Headers Are In New Position",
@@ -1462,11 +1096,7 @@
                 "xpath=//div[@ref='eHeaderContainer']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//div[@ref='eHeaderContainer']"
-        ]
+        }
     },
     {
         "Title": "Validate That The Table Headers Are In New Position From Imports Tab",
@@ -1479,11 +1109,7 @@
                 "xpath=//div[@ref='eHeaderContainer']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//div[@ref='eHeaderContainer']"
-        ]
+        }
     },
     {
         "Title": "Default Fuel Page Table Columns",
@@ -1499,14 +1125,7 @@
                 "xpath=//span[@role='columnheader' and .='Vehicle ID']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
-            "xpath=//span[@role='columnheader' and .='Vehicle ID']",
-            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
-            "xpath=//span[@role='columnheader' and .='Vehicle ID']"
-        ]
+        }
     },
     {
         "Title": "Drag And Drop File Name Column To First Position From Imports Tab",
@@ -1522,14 +1141,7 @@
                 "xpath=//span[@role='columnheader' and contains(.,'Vendor')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
-            "xpath=//span[@role='columnheader' and contains(.,'Status')]",
-            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
-            "xpath=//span[@role='columnheader' and contains(.,'Vendor')]"
-        ]
+        }
     },
     {
         "Title": "Validate That The Table Headers Are In Default Position",
@@ -1542,11 +1154,7 @@
                 "xpath=//div[@ref='eHeaderContainer']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//div[@ref='eHeaderContainer']"
-        ]
+        }
     },
     {
         "Title": "Validate That The Table Headers Are In Default Position From Imports Tab",
@@ -1559,11 +1167,7 @@
                 "xpath=//div[@ref='eHeaderContainer']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//div[@ref='eHeaderContainer']"
-        ]
+        }
     },
     {
         "Title": "Unselect Jurisdictions List",
@@ -1582,17 +1186,7 @@
                 "xpath=//ot-side-panel//label[@title='Alaska']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//label[@title='Alberta']",
-            "xpath=//ot-side-panel//label[@title='Alberta']",
-            "xpath=//ot-side-panel//label[@title='Alaska']",
-            "xpath=//ot-side-panel//label[@title='Alaska']",
-            "xpath=//ot-side-panel//label[@title='Alberta']",
-            "xpath=//ot-side-panel//label[@title='Alberta']",
-            "xpath=//ot-side-panel//label[@title='Alaska']",
-            "xpath=//ot-side-panel//label[@title='Alaska']"
-        ]
+        }
     },
     {
         "Title": "Unselect Vehicle List",
@@ -1611,17 +1205,7 @@
                 "xpath=//ot-side-panel//label[@title='HUM_V1']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-side-panel//label[@title='0000000001']",
-            "xpath=//ot-side-panel//label[@title='0000000001']",
-            "xpath=//ot-side-panel//label[@title='HUM_V1']",
-            "xpath=//ot-side-panel//label[@title='HUM_V1']",
-            "xpath=//ot-side-panel//label[@title='0000000001']",
-            "xpath=//ot-side-panel//label[@title='0000000001']",
-            "xpath=//ot-side-panel//label[@title='HUM_V1']",
-            "xpath=//ot-side-panel//label[@title='HUM_V1']"
-        ]
+        }
     },
     {
         "Title": "Select From Vendor Dropdown",
@@ -1634,11 +1218,7 @@
                 "xpath=//label[contains(.,'Vendor')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//label[contains(.,'Vendor')]"
-        ]
+        }
     },
     {
         "Title": "Select From Fuel Units Dropdown",
@@ -1651,11 +1231,7 @@
                 "xpath=//label[contains(.,'Vendor')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//label[contains(.,'Vendor')]"
-        ]
+        }
     },
     {
         "Title": "Select From Currency Dropdown",
@@ -1668,11 +1244,7 @@
                 "xpath=//label[contains(.,'Vendor')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//label[contains(.,'Vendor')]"
-        ]
+        }
     },
     {
         "Title": "Save Import File",
@@ -1685,11 +1257,7 @@
                 "xpath=//button[contains(.,'Save')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//button[contains(.,'Save')]",
-            "xpath=//button[contains(.,'Save')]"
-        ]
+        }
     },
     {
         "Title": "Validate Value In Import Data Row",
@@ -1699,8 +1267,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Validate Value In Imported Fuel File Data Row",
@@ -1710,8 +1277,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Click On Import Data Row",
@@ -1721,8 +1287,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Click On Delete Button From Imported Fuel File",
@@ -1735,11 +1300,7 @@
                 "xpath=//button[contains(.,'Delete')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//button[contains(.,'Delete')]",
-            "xpath=//button[contains(.,'Delete')]"
-        ]
+        }
     },
     {
         "Title": "Click On Yes Button From Import Fuel File",
@@ -1752,11 +1313,7 @@
                 "xpath=//div/div[contains(.,'Yes')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div/div[contains(.,'Yes')]",
-            "xpath=//div/div[contains(.,'Yes')]"
-        ]
+        }
     },
     {
         "Title": "Click On Cancel Button",
@@ -1769,11 +1326,7 @@
                 "xpath=//i[@class='mdi mdi-close mdi-36px']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//i[@class='mdi mdi-close mdi-36px']",
-            "xpath=//i[@class='mdi mdi-close mdi-36px']"
-        ]
+        }
     },
     {
         "Title": "No Invalid Records From Imported Fuel File",
@@ -1787,12 +1340,7 @@
                 "xpath=//p[@class='title']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//p[contains(.,'Number of invalid records')]",
-            "xpath=//p[@class='title']",
-            "xpath=//p[@class='title']"
-        ]
+        }
     },
     {
         "Title": "There are Invalid Records From Imported Fuel File",
@@ -1806,12 +1354,7 @@
                 "xpath=//p[@class='title']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//p[contains(.,'Number of invalid records')]",
-            "xpath=//p[@class='title']",
-            "xpath=//p[@class='title']"
-        ]
+        }
     },
     {
         "Title": "Click On Replace File Button",
@@ -1824,11 +1367,7 @@
                 "xpath=//button[contains(.,'Replace File')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//button[contains(.,'Replace File')]",
-            "xpath=//button[contains(.,'Replace File')]"
-        ]
+        }
     },
     {
         "Title": "Click On Approve Button",
@@ -1841,11 +1380,7 @@
                 "xpath=//button[contains(.,'Approve')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//button[contains(.,'Approve')]",
-            "xpath=//button[contains(.,'Approve')]"
-        ]
+        }
     },
     {
         "Title": "Approve Button Is Not Visible",
@@ -1857,10 +1392,7 @@
                 "xpath=//button[contains(.,'Approve')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//button[contains(.,'Approve')]"
-        ]
+        }
     },
     {
         "Title": "Click On Close Button From Edit Fuel Receipt",
@@ -1873,11 +1405,7 @@
                 "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]",
-            "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]"
-        ]
+        }
     },
     {
         "Title": "Click On Delete Button From Edit Fuel Receipt",
@@ -1890,11 +1418,7 @@
                 "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]",
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
-        ]
+        }
     },
     {
         "Title": "Verify that Delete Button is Disabled From Edit Fuel Receipt",
@@ -1906,10 +1430,7 @@
                 "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete') and @disabled]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete') and @disabled]"
-        ]
+        }
     },
     {
         "Title": "Verify that Delete Button is Enabled From Edit Fuel Receipt",
@@ -1921,10 +1442,7 @@
                 "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
-        ]
+        }
     },
     {
         "Title": "Click On Edit Button From Edit Fuel Receipt",
@@ -1937,11 +1455,7 @@
                 "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]",
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
-        ]
+        }
     },
     {
         "Title": "Verify that Edit Button is Enabled From Edit Fuel Receipt",
@@ -1953,10 +1467,7 @@
                 "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
-        ]
+        }
     },
     {
         "Title": "Load Edit Fuel Receipt Page",
@@ -1998,40 +1509,7 @@
                 "xpath=//textarea[@id='comment']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//h1[contains(.,'Edit Fuel Receipt')]",
-            "xpath=//label[contains(.,'Jurisdiction')]",
-            "xpath=//label[contains(.,'City')]",
-            "xpath=//label[contains(.,'Vehicle ID')]",
-            "xpath=//label[contains(.,'Date')]",
-            "xpath=//label[contains(.,'Time')]",
-            "xpath=//label[contains(.,'Site')]",
-            "xpath=//label[contains(.,'Volume')]",
-            "xpath=//label[contains(.,'Units')]",
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//label[contains(.,'Fuel Card Number')]",
-            "xpath=//label[contains(.,'Total Price')]",
-            "xpath=//label[contains(.,'Currency')]",
-            "xpath=//label[contains(.,'Invoice')]",
-            "xpath=//label[contains(.,'Comments')]",
-            "xpath=//button[contains(.,'Cancel')]",
-            "xpath=//button[contains(.,'Save')]",
-            "xpath=//select[@id='jurisdiction']",
-            "xpath=//input[@id='city']",
-            "xpath=//select[@id='vehicleId']",
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='site']",
-            "xpath=//input[@id='volume']",
-            "xpath=//select[@id='units']",
-            "xpath=//input[@id='vendor']",
-            "xpath=//input[@id='fuelNumber']",
-            "xpath=//input[@id='totalPrice']",
-            "xpath=//select[@id='currency']",
-            "xpath=//input[@id='invoice']",
-            "xpath=//textarea[@id='comment']"
-        ]
+        }
     },
     {
         "Title": "Select An Option From Record Per Page Dropdown",
@@ -2044,11 +1522,7 @@
                 "xpath=//select[@id='page-select']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//div[@class='level-item' and contains(.,'Records per page')]",
-            "xpath=//select[@id='page-select']"
-        ]
+        }
     },
     {
         "Title": "Fill Date and Time With Default Empty Data",
@@ -2065,15 +1539,7 @@
                 "xpath=//input[@id='time']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='time']"
-        ]
+        }
     },
     {
         "Title": "Obtain a past year of Date",
@@ -2083,8 +1549,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Obtain a week after the past year of Date",
@@ -2094,8 +1559,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Search By Jurisdcition and Date and Value on Table",
@@ -2105,8 +1569,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Obtain a past year of date correct format Table",
@@ -2116,8 +1579,7 @@
             "URL": "https://ot1-qae-web.usdc.roadnet.com/fuel_page",
             "Locators": [],
             "Language": "Robot Framework"
-        },
-        "Locators": []
+        }
     },
     {
         "Title": "Load Login Page",
@@ -2132,13 +1594,7 @@
                 "xpath=//span[contains(.,'Log In')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='userid']",
-            "xpath=//input[@id='password']",
-            "xpath=//a[contains(.,'Forgot password')]",
-            "xpath=//span[contains(.,'Log In')]"
-        ]
+        }
     },
     {
         "Title": "Introduce User",
@@ -2151,11 +1607,7 @@
                 "xpath=//input[@id='userid']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='userid']",
-            "xpath=//input[@id='userid']"
-        ]
+        }
     },
     {
         "Title": "Introduce Password",
@@ -2168,11 +1620,7 @@
                 "xpath=//input[@id='password']"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//input[@id='password']",
-            "xpath=//input[@id='password']"
-        ]
+        }
     },
     {
         "Title": "Click On Login Button",
@@ -2185,10 +1633,6 @@
                 "xpath=//span[contains(.,'Log In')]"
             ],
             "Language": "Robot Framework"
-        },
-        "Locators": [
-            "xpath=//span[contains(.,'Log In')]",
-            "xpath=//span[contains(.,'Log In')]"
-        ]
+        }
     }
 ]

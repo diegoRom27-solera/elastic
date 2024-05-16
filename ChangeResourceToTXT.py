@@ -35,7 +35,7 @@ for archivos_txt in archivos_repo:
                 if key and code:
                     formatted_code = '\n'.join(code)
                     locators = obtener_locators(formatted_code)
-                    objetos.append({'KeywordName': key, 'KeywordCode': formatted_code, 'PageObject': nombre_archivo, 'Locators': locators})
+                    objetos.append({'KeywordName': key, 'KeywordCode': formatted_code, 'PageObject': nombre_archivo,})
                     key = ''
                     code = []
             else:

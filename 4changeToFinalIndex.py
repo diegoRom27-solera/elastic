@@ -17,7 +17,6 @@ for item in initial_data:
             "Locators": item["Locators"],
             "Language": "Robot Framework"
         },
-        "Locators": item["Locators"]
     }
     new_data.append(new_item)
 
