@@ -23,17 +23,17 @@ def guardar_datos_en_json(datos, archivo_json):
     with open(archivo_json, 'w') as file:
         json.dump(datos, file, indent=4)
 
-directorio_base = './TaxManager-robot-testSuite-main'  # Reemplaza '/ruta/del/directorio/base' con tu directorio base
+directorio_base = './TaxManager-robot-testSuite-main'  
 archivos_encontrados = cargar_archivos_yml(directorio_base)
 
 data_completa = {}
 for archivo_yml in archivos_encontrados:
     data = obtener_data_desde_yml(archivo_yml)
     if data is not None:
-        data_completa.update(data)  # Agrega los datos del archivo YAML directamente a data_completa
+        data_completa.update(data)  
     else:
         print("Error al cargar el archivo YAML.")
 
-archivo_json_salida = './datos_completos.json'  # Ruta donde se guardará el archivo JSON
+archivo_json_salida = './datos_completos.json' 
 guardar_datos_en_json(data_completa, archivo_json_salida)
 print(f"Se han guardado los datos encontrados en '{archivo_json_salida}'.")
