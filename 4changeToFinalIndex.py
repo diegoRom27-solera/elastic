@@ -13,7 +13,7 @@ for item in initial_data:
         "Content": item["Content"],
         "ApplicableTo": {
             "Keyword": item["Title"], #{item["URL"]}
-            "URL": f"https://ot1-qae-web.usdc.roadnet.com/{item['PageOb']}",  
+            "URL": f"https://taxmanager.int.omnitracs.com/{item['PageOb']}",  
             "Locators": item["Locators"],
             "Language": "Robot Framework"
         },

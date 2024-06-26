@@ -9,9 +9,10 @@ with open('locators.json', 'r') as file2:
 
 def replace_locators(obj):
     for locator_index, locator in enumerate(obj["Locators"]):
+        print(locator)
         for key, value in json2.items():
             if locator in value:
-                obj["Locators"][locator_index] = value[locator]
+                obj["Locators"][locator_index] = {locator:value[locator]}
 
 for item in json1:
     replace_locators(item)

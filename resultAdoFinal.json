@@ -4,11 +4,21 @@
         "Content": "Load Fuel Page \n 'Wait Until Element Is Visible    ${fuel_page_locators.fuel_tab}                            ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.imports_tab}                         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuel_title}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.add_fuel_button}                     ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel}                         ${LO_TIME}'",
         "ApplicableTo": "Load Fuel Page",
         "Locators": [
-            "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]",
-            "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]",
-            "xpath=//h3[contains(.,'Fuel Purchases')]",
-            "xpath=//span[contains(.,'Add Fuel Receipt')]",
-            "xpath=//i[contains(.,'tune')]"
+            {
+                "fuel_tab": "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]"
+            },
+            {
+                "imports_tab": "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]"
+            },
+            {
+                "fuel_title": "xpath=//h3[contains(.,'Fuel Purchases')]"
+            },
+            {
+                "add_fuel_button": "xpath=//span[contains(.,'Add Fuel Receipt')]"
+            },
+            {
+                "filter_fuel": "xpath=//i[contains(.,'tune')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -17,8 +27,12 @@
         "Content": "Add Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.add_fuel_button}                     ${LO_TIME}' 'Click Element                    ${fuel_page_locators.add_fuel_button}'",
         "ApplicableTo": "Add Fuel Receipt",
         "Locators": [
-            "xpath=//span[contains(.,'Add Fuel Receipt')]",
-            "xpath=//span[contains(.,'Add Fuel Receipt')]"
+            {
+                "add_fuel_button": "xpath=//span[contains(.,'Add Fuel Receipt')]"
+            },
+            {
+                "add_fuel_button": "xpath=//span[contains(.,'Add Fuel Receipt')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -27,37 +41,99 @@
         "Content": "Load Fuel Receipt Page \n 'Wait Until Element Is Visible    ${fuel_page_locators.fuel_title_receipt}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_label}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.city_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicleid_label}                     ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.date_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_label}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fueL_page_locators.units_label}                         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_label}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcardnumber_label}                ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_label}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_label}                      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_label}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_label}                      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.cancel_button}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.save_button}                         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_select}                 ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.city_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicleid_select}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.date_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_input}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.units_select}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_input}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcardnumber_input}                ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_input}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_select}                     ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_input}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_textarea}                   ${LO_TIME}'",
         "ApplicableTo": "Load Fuel Receipt Page",
         "Locators": [
-            "xpath=//h1[contains(.,'New Fuel Receipt')]",
-            "xpath=//label[contains(.,'Jurisdiction')]",
-            "xpath=//label[contains(.,'City')]",
-            "xpath=//label[contains(.,'Vehicle ID')]",
-            "xpath=//label[contains(.,'Date')]",
-            "xpath=//label[contains(.,'Time')]",
-            "xpath=//label[contains(.,'Site')]",
-            "xpath=//label[contains(.,'Volume')]",
-            "xpath=//label[contains(.,'Units')]",
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//label[contains(.,'Fuel Card Number')]",
-            "xpath=//label[contains(.,'Total Price')]",
-            "xpath=//label[contains(.,'Currency')]",
-            "xpath=//label[contains(.,'Invoice')]",
-            "xpath=//label[contains(.,'Comments')]",
-            "xpath=//button[contains(.,'Cancel')]",
-            "xpath=//button[contains(.,'Save')]",
-            "xpath=//select[@id='jurisdiction']",
-            "xpath=//input[@id='city']",
-            "xpath=//select[@id='vehicleId']",
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='site']",
-            "xpath=//input[@id='volume']",
-            "xpath=//select[@id='units']",
-            "xpath=//input[@id='vendor']",
-            "xpath=//input[@id='fuelNumber']",
-            "xpath=//input[@id='totalPrice']",
-            "xpath=//select[@id='currency']",
-            "xpath=//input[@id='invoice']",
-            "xpath=//textarea[@id='comment']"
+            {
+                "fuel_title_receipt": "xpath=//h1[contains(.,'New Fuel Receipt')]"
+            },
+            {
+                "jurisdiction_label": "xpath=//label[contains(.,'Jurisdiction')]"
+            },
+            {
+                "city_label": "xpath=//label[contains(.,'City')]"
+            },
+            {
+                "vehicleid_label": "xpath=//label[contains(.,'Vehicle ID')]"
+            },
+            {
+                "date_label": "xpath=//label[contains(.,'Date')]"
+            },
+            {
+                "time_label": "xpath=//label[contains(.,'Time')]"
+            },
+            {
+                "site_label": "xpath=//label[contains(.,'Site')]"
+            },
+            {
+                "volume_label": "xpath=//label[contains(.,'Volume')]"
+            },
+            {
+                "units_label": "xpath=//label[contains(.,'Units')]"
+            },
+            {
+                "vendor_label": "xpath=//label[contains(.,'Vendor')]"
+            },
+            {
+                "fuelcardnumber_label": "xpath=//label[contains(.,'Fuel Card Number')]"
+            },
+            {
+                "totalprice_label": "xpath=//label[contains(.,'Total Price')]"
+            },
+            {
+                "currency_label": "xpath=//label[contains(.,'Currency')]"
+            },
+            {
+                "invoice_label": "xpath=//label[contains(.,'Invoice')]"
+            },
+            {
+                "comments_label": "xpath=//label[contains(.,'Comments')]"
+            },
+            {
+                "cancel_button": "xpath=//button[contains(.,'Cancel')]"
+            },
+            {
+                "save_button": "xpath=//button[contains(.,'Save')]"
+            },
+            {
+                "jurisdiction_select": "xpath=//select[@id='jurisdiction']"
+            },
+            {
+                "city_input": "xpath=//input[@id='city']"
+            },
+            {
+                "vehicleid_select": "xpath=//select[@id='vehicleId']"
+            },
+            {
+                "date_input": "xpath=//input[@id='date']"
+            },
+            {
+                "time_input": "xpath=//input[@id='time']"
+            },
+            {
+                "site_input": "xpath=//input[@id='site']"
+            },
+            {
+                "volume_input": "xpath=//input[@id='volume']"
+            },
+            {
+                "units_select": "xpath=//select[@id='units']"
+            },
+            {
+                "vendor_input": "xpath=//input[@id='vendor']"
+            },
+            {
+                "fuelcardnumber_input": "xpath=//input[@id='fuelNumber']"
+            },
+            {
+                "totalprice_input": "xpath=//input[@id='totalPrice']"
+            },
+            {
+                "currency_select": "xpath=//select[@id='currency']"
+            },
+            {
+                "invoice_input": "xpath=//input[@id='invoice']"
+            },
+            {
+                "comments_textarea": "xpath=//textarea[@id='comment']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -66,8 +142,12 @@
         "Content": "Fill Jurisdiction \n '[Arguments]    ${jurisdiction}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_select}                 ${LO_TIME}' 'Select From List By Label        ${fuel_page_locators.jurisdiction_select}                 ${jurisdiction}'",
         "ApplicableTo": "Fill Jurisdiction",
         "Locators": [
-            "xpath=//select[@id='jurisdiction']",
-            "xpath=//select[@id='jurisdiction']"
+            {
+                "jurisdiction_select": "xpath=//select[@id='jurisdiction']"
+            },
+            {
+                "jurisdiction_select": "xpath=//select[@id='jurisdiction']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -76,9 +156,15 @@
         "Content": "Fill City \n '[Arguments]    ${city}' 'Wait Until Element Is Visible    ${fuel_page_locators.city_input}                          ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.city_input}' 'Input Text                       ${fuel_page_locators.city_input}                          ${city}'",
         "ApplicableTo": "Fill City",
         "Locators": [
-            "xpath=//input[@id='city']",
-            "xpath=//input[@id='city']",
-            "xpath=//input[@id='city']"
+            {
+                "city_input": "xpath=//input[@id='city']"
+            },
+            {
+                "city_input": "xpath=//input[@id='city']"
+            },
+            {
+                "city_input": "xpath=//input[@id='city']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -87,9 +173,15 @@
         "Content": "Fill Vehicle \n '[Arguments]    ${vehicle}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicleid_select}                    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.vehicleid_select}' 'Sleep                            ${SH_TIME}' 'Select From List By Label        ${fuel_page_locators.vehicleid_select}                    ${vehicle}'",
         "ApplicableTo": "Fill Vehicle",
         "Locators": [
-            "xpath=//select[@id='vehicleId']",
-            "xpath=//select[@id='vehicleId']",
-            "xpath=//select[@id='vehicleId']"
+            {
+                "vehicleid_select": "xpath=//select[@id='vehicleId']"
+            },
+            {
+                "vehicleid_select": "xpath=//select[@id='vehicleId']"
+            },
+            {
+                "vehicleid_select": "xpath=//select[@id='vehicleId']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -98,9 +190,15 @@
         "Content": "Fill Date \n '[Arguments]    ${date}' 'Wait Until Element Is Visible    ${fuel_page_locators.date_input}                          ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.date_input}' 'Input Text                       ${fuel_page_locators.date_input}                          ${date}'",
         "ApplicableTo": "Fill Date",
         "Locators": [
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='date']"
+            {
+                "date_input": "xpath=//input[@id='date']"
+            },
+            {
+                "date_input": "xpath=//input[@id='date']"
+            },
+            {
+                "date_input": "xpath=//input[@id='date']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -109,9 +207,15 @@
         "Content": "Fill Time \n '[Arguments]    ${time}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_input}                          ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.time_input}' 'Input Text                       ${fuel_page_locators.time_input}                          ${time}'",
         "ApplicableTo": "Fill Time",
         "Locators": [
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='time']"
+            {
+                "time_input": "xpath=//input[@id='time']"
+            },
+            {
+                "time_input": "xpath=//input[@id='time']"
+            },
+            {
+                "time_input": "xpath=//input[@id='time']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -120,9 +224,15 @@
         "Content": "Fill Site \n '[Arguments]    ${site}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_input}                          ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.site_input}' 'Input Text                       ${fuel_page_locators.site_input}                          ${site}'",
         "ApplicableTo": "Fill Site",
         "Locators": [
-            "xpath=//input[@id='site']",
-            "xpath=//input[@id='site']",
-            "xpath=//input[@id='site']"
+            {
+                "site_input": "xpath=//input[@id='site']"
+            },
+            {
+                "site_input": "xpath=//input[@id='site']"
+            },
+            {
+                "site_input": "xpath=//input[@id='site']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -131,9 +241,15 @@
         "Content": "Fill Volume \n '[Arguments]    ${volume}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_input}                        ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.volume_input}' 'Input Text                       ${fuel_page_locators.volume_input}                        ${volume}'",
         "ApplicableTo": "Fill Volume",
         "Locators": [
-            "xpath=//input[@id='volume']",
-            "xpath=//input[@id='volume']",
-            "xpath=//input[@id='volume']"
+            {
+                "volume_input": "xpath=//input[@id='volume']"
+            },
+            {
+                "volume_input": "xpath=//input[@id='volume']"
+            },
+            {
+                "volume_input": "xpath=//input[@id='volume']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -142,8 +258,12 @@
         "Content": "Fill Units \n '[Arguments]    ${units}' 'Wait Until Element Is Visible    ${fuel_page_locators.units_select}                        ${LO_TIME}' 'Select From List By Label        ${fuel_page_locators.units_select}                        ${units}'",
         "ApplicableTo": "Fill Units",
         "Locators": [
-            "xpath=//select[@id='units']",
-            "xpath=//select[@id='units']"
+            {
+                "units_select": "xpath=//select[@id='units']"
+            },
+            {
+                "units_select": "xpath=//select[@id='units']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -152,9 +272,15 @@
         "Content": "Fill Vendor \n '[Arguments]    ${vendor}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_input}                        ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.vendor_input}' 'Input Text                       ${fuel_page_locators.vendor_input}                        ${vendor}'",
         "ApplicableTo": "Fill Vendor",
         "Locators": [
-            "xpath=//input[@id='vendor']",
-            "xpath=//input[@id='vendor']",
-            "xpath=//input[@id='vendor']"
+            {
+                "vendor_input": "xpath=//input[@id='vendor']"
+            },
+            {
+                "vendor_input": "xpath=//input[@id='vendor']"
+            },
+            {
+                "vendor_input": "xpath=//input[@id='vendor']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -163,9 +289,15 @@
         "Content": "Fill Fuel Card \n '[Arguments]    ${card}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcardnumber_input}                ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.fuelcardnumber_input}' 'Input Text                       ${fuel_page_locators.fuelcardnumber_input}                ${card}'",
         "ApplicableTo": "Fill Fuel Card",
         "Locators": [
-            "xpath=//input[@id='fuelNumber']",
-            "xpath=//input[@id='fuelNumber']",
-            "xpath=//input[@id='fuelNumber']"
+            {
+                "fuelcardnumber_input": "xpath=//input[@id='fuelNumber']"
+            },
+            {
+                "fuelcardnumber_input": "xpath=//input[@id='fuelNumber']"
+            },
+            {
+                "fuelcardnumber_input": "xpath=//input[@id='fuelNumber']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -174,9 +306,15 @@
         "Content": "Fill Total Price \n '[Arguments]    ${price}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_input}                    ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.totalprice_input}' 'Input Text                       ${fuel_page_locators.totalprice_input}                    ${price}'",
         "ApplicableTo": "Fill Total Price",
         "Locators": [
-            "xpath=//input[@id='totalPrice']",
-            "xpath=//input[@id='totalPrice']",
-            "xpath=//input[@id='totalPrice']"
+            {
+                "totalprice_input": "xpath=//input[@id='totalPrice']"
+            },
+            {
+                "totalprice_input": "xpath=//input[@id='totalPrice']"
+            },
+            {
+                "totalprice_input": "xpath=//input[@id='totalPrice']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -185,8 +323,12 @@
         "Content": "Fill Currency \n '[Arguments]    ${currency}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_select}                     ${LO_TIME}' 'Select From List By Label        ${fuel_page_locators.currency_select}                     ${currency}'",
         "ApplicableTo": "Fill Currency",
         "Locators": [
-            "xpath=//select[@id='currency']",
-            "xpath=//select[@id='currency']"
+            {
+                "currency_select": "xpath=//select[@id='currency']"
+            },
+            {
+                "currency_select": "xpath=//select[@id='currency']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -195,9 +337,15 @@
         "Content": "Fill Invoice \n '[Arguments]    ${invoice}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_input}                       ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.invoice_input}' 'Input Text                       ${fuel_page_locators.invoice_input}                       ${invoice}'",
         "ApplicableTo": "Fill Invoice",
         "Locators": [
-            "xpath=//input[@id='invoice']",
-            "xpath=//input[@id='invoice']",
-            "xpath=//input[@id='invoice']"
+            {
+                "invoice_input": "xpath=//input[@id='invoice']"
+            },
+            {
+                "invoice_input": "xpath=//input[@id='invoice']"
+            },
+            {
+                "invoice_input": "xpath=//input[@id='invoice']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -206,9 +354,15 @@
         "Content": "Fill Comment \n '[Arguments]    ${comment}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_textarea}                   ${LO_TIME}' 'Clear Element Text               ${fuel_page_locators.comments_textarea}' 'Input Text                       ${fuel_page_locators.comments_textarea}                   ${comment}'",
         "ApplicableTo": "Fill Comment",
         "Locators": [
-            "xpath=//textarea[@id='comment']",
-            "xpath=//textarea[@id='comment']",
-            "xpath=//textarea[@id='comment']"
+            {
+                "comments_textarea": "xpath=//textarea[@id='comment']"
+            },
+            {
+                "comments_textarea": "xpath=//textarea[@id='comment']"
+            },
+            {
+                "comments_textarea": "xpath=//textarea[@id='comment']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -217,8 +371,12 @@
         "Content": "Save Receipt Fuel \n 'Wait Until Element Is Visible    ${fuel_page_locators.save_button}                         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.save_button}' 'Sleep                                                                                      ${SH_TIME}'",
         "ApplicableTo": "Save Receipt Fuel",
         "Locators": [
-            "xpath=//button[contains(.,'Save')]",
-            "xpath=//button[contains(.,'Save')]"
+            {
+                "save_button": "xpath=//button[contains(.,'Save')]"
+            },
+            {
+                "save_button": "xpath=//button[contains(.,'Save')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -227,19 +385,45 @@
         "Content": "Load Filter \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_title}                   ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_startdate_label}         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_startdate_input}         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_enddate_label}           ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_enddate_input}           ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_label}        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_select}       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_vehicles_label}          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_vehicles_input}          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_jurisdiction_label}      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_jurisdiction_input}      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_resetall_button}         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_apply_button}            ${LO_TIME}'",
         "ApplicableTo": "Load Filter",
         "Locators": [
-            "xpath=//h5[contains(.,'Filters')]",
-            "xpath=//label[contains(.,'Start Date')]",
-            "xpath=//input[@id='startDate']",
-            "xpath=//label[contains(.,'End Date')]",
-            "xpath=//input[@id='endDate']",
-            "xpath=//label[contains(.,'Tax Account')]",
-            "xpath=//select[@id='taxAccount']",
-            "xpath=//label[contains(.,'Vehicles')]",
-            "xpath=//input[@placeholder=\"Vehicles\"]",
-            "xpath=//label[contains(.,'Jurisdiction')]",
-            "xpath=//input[@placeholder=\"Jurisdiction\"]",
-            "xpath=//button[contains(.,'Reset All')]",
-            "xpath=//button[contains(.,'Apply')]"
+            {
+                "filter_fuel_title": "xpath=//h5[contains(.,'Filters')]"
+            },
+            {
+                "filter_fuel_startdate_label": "xpath=//label[contains(.,'Start Date')]"
+            },
+            {
+                "filter_fuel_startdate_input": "xpath=//input[@id='startDate']"
+            },
+            {
+                "filter_fuel_enddate_label": "xpath=//label[contains(.,'End Date')]"
+            },
+            {
+                "filter_fuel_enddate_input": "xpath=//input[@id='endDate']"
+            },
+            {
+                "filter_fuel_taxaccount_label": "xpath=//label[contains(.,'Tax Account')]"
+            },
+            {
+                "filter_fuel_taxaccount_select": "xpath=//select[@id='taxAccount']"
+            },
+            {
+                "filter_fuel_vehicles_label": "xpath=//label[contains(.,'Vehicles')]"
+            },
+            {
+                "filter_fuel_vehicles_input": "xpath=//input[@placeholder=\"Vehicles\"]"
+            },
+            {
+                "filter_fuel_jurisdiction_label": "xpath=//label[contains(.,'Jurisdiction')]"
+            },
+            {
+                "filter_fuel_jurisdiction_input": "xpath=//input[@placeholder=\"Jurisdiction\"]"
+            },
+            {
+                "filter_fuel_resetall_button": "xpath=//button[contains(.,'Reset All')]"
+            },
+            {
+                "filter_fuel_apply_button": "xpath=//button[contains(.,'Apply')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -248,8 +432,12 @@
         "Content": "Click On Filter Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel}                         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel}'",
         "ApplicableTo": "Click On Filter Button",
         "Locators": [
-            "xpath=//i[contains(.,'tune')]",
-            "xpath=//i[contains(.,'tune')]"
+            {
+                "filter_fuel": "xpath=//i[contains(.,'tune')]"
+            },
+            {
+                "filter_fuel": "xpath=//i[contains(.,'tune')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -258,9 +446,15 @@
         "Content": "Click On Vehicles List \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_vehicles_input}          ${LO_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_vehicles_input}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_vehicles_input}          ${LO_TIME}'",
         "ApplicableTo": "Click On Vehicles List",
         "Locators": [
-            "xpath=//input[@placeholder=\"Vehicles\"]",
-            "xpath=//input[@placeholder=\"Vehicles\"]",
-            "xpath=//input[@placeholder=\"Vehicles\"]"
+            {
+                "filter_fuel_vehicles_input": "xpath=//input[@placeholder=\"Vehicles\"]"
+            },
+            {
+                "filter_fuel_vehicles_input": "xpath=//input[@placeholder=\"Vehicles\"]"
+            },
+            {
+                "filter_fuel_vehicles_input": "xpath=//input[@placeholder=\"Vehicles\"]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -269,9 +463,15 @@
         "Content": "Click On Tax Account List \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_select}       ${LO_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_taxaccount_select}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_select}       ${LO_TIME}'",
         "ApplicableTo": "Click On Tax Account List",
         "Locators": [
-            "xpath=//select[@id='taxAccount']",
-            "xpath=//select[@id='taxAccount']",
-            "xpath=//select[@id='taxAccount']"
+            {
+                "filter_fuel_taxaccount_select": "xpath=//select[@id='taxAccount']"
+            },
+            {
+                "filter_fuel_taxaccount_select": "xpath=//select[@id='taxAccount']"
+            },
+            {
+                "filter_fuel_taxaccount_select": "xpath=//select[@id='taxAccount']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -280,10 +480,18 @@
         "Content": "Click On Jurisdiction List \n 'Scroll Element Into View         ${fuel_page_locators.jurisdiction_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_filter}                 ${LO_TIME}' 'Click Element                    ${fuel_page_locators.jurisdiction_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.search_input_text_filter}            ${LO_TIME}'",
         "ApplicableTo": "Click On Jurisdiction List",
         "Locators": [
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            {
+                "jurisdiction_filter": "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+            },
+            {
+                "jurisdiction_filter": "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+            },
+            {
+                "jurisdiction_filter": "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+            },
+            {
+                "search_input_text_filter": "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -292,7 +500,9 @@
         "Content": "Vehicles List Is Activated \n 'Wait Until Element Is Visible    ${fuel_page_locators.vehicles_filter_activated}           ${LO_TIME}'",
         "ApplicableTo": "Vehicles List Is Activated",
         "Locators": [
-            "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Vehicles']"
+            {
+                "vehicles_filter_activated": "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Vehicles']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -301,7 +511,9 @@
         "Content": "Jurisdiction List Is Activated \n 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_filter_activated}       ${LO_TIME}'",
         "ApplicableTo": "Jurisdiction List Is Activated",
         "Locators": [
-            "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Jurisdiction']"
+            {
+                "jurisdiction_filter_activated": "xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Jurisdiction']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -310,8 +522,12 @@
         "Content": "Click On Reset All \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_resetall_button}         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_resetall_button}'",
         "ApplicableTo": "Click On Reset All",
         "Locators": [
-            "xpath=//button[contains(.,'Reset All')]",
-            "xpath=//button[contains(.,'Reset All')]"
+            {
+                "filter_fuel_resetall_button": "xpath=//button[contains(.,'Reset All')]"
+            },
+            {
+                "filter_fuel_resetall_button": "xpath=//button[contains(.,'Reset All')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -320,8 +536,12 @@
         "Content": "Confirm Reset All \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_confirm_button}          ${LO_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_confirm_button}' 'Sleep    ${SH_TIME}'",
         "ApplicableTo": "Confirm Reset All",
         "Locators": [
-            "xpath=//button[contains(.,'Confirm')]",
-            "xpath=//button[contains(.,'Confirm')]"
+            {
+                "filter_fuel_confirm_button": "xpath=//button[contains(.,'Confirm')]"
+            },
+            {
+                "filter_fuel_confirm_button": "xpath=//button[contains(.,'Confirm')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -330,9 +550,15 @@
         "Content": "Click On Generate Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_apply_button}            ${LO_TIME}' 'Scroll Element Into View         ${fuel_page_locators.filter_fuel_apply_button}' 'Sleep    ${SH_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_apply_button}' 'Sleep    ${SH_TIME}'",
         "ApplicableTo": "Click On Generate Button",
         "Locators": [
-            "xpath=//button[contains(.,'Apply')]",
-            "xpath=//button[contains(.,'Apply')]",
-            "xpath=//button[contains(.,'Apply')]"
+            {
+                "filter_fuel_apply_button": "xpath=//button[contains(.,'Apply')]"
+            },
+            {
+                "filter_fuel_apply_button": "xpath=//button[contains(.,'Apply')]"
+            },
+            {
+                "filter_fuel_apply_button": "xpath=//button[contains(.,'Apply')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -341,10 +567,18 @@
         "Content": "Search By Vehicle \n '[Arguments]    ${vehicles}' 'Sleep                            ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.all_vehicles_checkbox_filter}        ${LO_TIME}' 'Click Element                    ${fuel_page_locators.all_vehicles_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicles_filter_search_input}        ${LO_TIME}' 'Input Text                       ${fuel_page_locators.vehicles_filter_search_input}        ${vehicles}' '${XPATH} =    list_xpath.Obtain Xpath By Label    ${vehicles}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}'",
         "ApplicableTo": "Search By Vehicle",
         "Locators": [
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            {
+                "all_vehicles_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Vehicles']"
+            },
+            {
+                "all_vehicles_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Vehicles']"
+            },
+            {
+                "vehicles_filter_search_input": "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            },
+            {
+                "vehicles_filter_search_input": "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -353,11 +587,21 @@
         "Content": "Search By Juridistion \n '[Arguments]    ${juridistion}' 'Wait Until Element Is Visible    ${fuel_page_locators.all_juridistion_checkbox_filter}    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.all_juridistion_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.search_input_text_filter}           ${LO_TIME}' 'Input Text                       ${fuel_page_locators.search_input_text_filter}           ${juridistion}' '${XPATH} =    list_xpath.Obtain Xpath By Label    ${juridistion}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}' 'Click Element                    ${fuel_page_locators.jurisdiction_filter}'",
         "ApplicableTo": "Search By Juridistion",
         "Locators": [
-            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
-            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+            {
+                "all_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Jurisdictions']"
+            },
+            {
+                "all_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Jurisdictions']"
+            },
+            {
+                "search_input_text_filter": "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            },
+            {
+                "search_input_text_filter": "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            },
+            {
+                "jurisdiction_filter": "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -366,8 +610,12 @@
         "Content": "Search By Tax Account \n '[Arguments]    ${vehicles}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_select}       ${LO_TIME}' 'Select From List By Label        ${fuel_page_locators.filter_fuel_taxaccount_select}       ${vehicles}' 'Sleep                            ${SH_TIME}'",
         "ApplicableTo": "Search By Tax Account",
         "Locators": [
-            "xpath=//select[@id='taxAccount']",
-            "xpath=//select[@id='taxAccount']"
+            {
+                "filter_fuel_taxaccount_select": "xpath=//select[@id='taxAccount']"
+            },
+            {
+                "filter_fuel_taxaccount_select": "xpath=//select[@id='taxAccount']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -376,12 +624,24 @@
         "Content": "Select Two Vehicles \n '[Arguments]    ${vehicles}    ${vehicle1}' 'Sleep                            ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.all_vehicles_checkbox_filter}        ${LO_TIME}' 'Click Element                    ${fuel_page_locators.all_vehicles_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicles_filter_search_input}        ${LO_TIME}' 'Input Text                       ${fuel_page_locators.vehicles_filter_search_input}        ${vehicles}' '${XPATH} =    list_xpath.Obtain Xpath By Label    ${vehicles}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}' 'Input Text                       ${fuel_page_locators.vehicles_filter_search_input}        ${vehicle1}' '${XPATH} =    list_xpath.Obtain Xpath By Label    ${vehicle1}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Scroll Element Into View         ${XPATH}' 'Click Element                    ${XPATH}' 'Sleep                            ${SH_TIME}' 'Click Element                    ${fuel_page_locators.filter_fuel_vehicles_input}'",
         "ApplicableTo": "Select Two Vehicles",
         "Locators": [
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//ot-multiselect//div[2]/div[1]/div/input",
-            "xpath=//input[@placeholder=\"Vehicles\"]"
+            {
+                "all_vehicles_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Vehicles']"
+            },
+            {
+                "all_vehicles_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Vehicles']"
+            },
+            {
+                "vehicles_filter_search_input": "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            },
+            {
+                "vehicles_filter_search_input": "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            },
+            {
+                "vehicles_filter_search_input": "xpath=//ot-multiselect//div[2]/div[1]/div/input"
+            },
+            {
+                "filter_fuel_vehicles_input": "xpath=//input[@placeholder=\"Vehicles\"]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -390,8 +650,12 @@
         "Content": "Warnings requiered fields \n 'Wait Until Element Is Visible    ${fuel_page_locators.vehicle_id_warning}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_warning}                      ${LO_TIME}'",
         "ApplicableTo": "Warnings requiered fields",
         "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is in an invalid format')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            {
+                "vehicle_id_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is in an invalid format')]"
+            },
+            {
+                "volume_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -400,8 +664,12 @@
         "Content": "Warnings requiered fields from Edit Fuel Receipt \n '# Wait Until Element Is Visible    ${fuel_page_locators.time_warning}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_warning}                      ${LO_TIME}'",
         "ApplicableTo": "Warnings requiered fields from Edit Fuel Receipt",
         "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            {
+                "time_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]"
+            },
+            {
+                "volume_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -410,8 +678,12 @@
         "Content": "No Warnings requiered fields \n 'Wait Until Element Is Not Visible    ${fuel_page_locators.time_warning}                    ${LO_TIME}' 'Wait Until Element Is Not Visible    ${fuel_page_locators.volume_warning}                  ${LO_TIME}'",
         "ApplicableTo": "No Warnings requiered fields",
         "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            {
+                "time_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]"
+            },
+            {
+                "volume_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -420,7 +692,9 @@
         "Content": "Date required field from Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.date_warning}                        ${LO_TIME}'",
         "ApplicableTo": "Date required field from Edit Fuel Receipt",
         "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Date is required.')]"
+            {
+                "date_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Date is required.')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -429,7 +703,9 @@
         "Content": "Time required field from Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.time_warning}                        ${LO_TIME}'",
         "ApplicableTo": "Time required field from Edit Fuel Receipt",
         "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]"
+            {
+                "time_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Time is required.')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -438,8 +714,12 @@
         "Content": "Enable Required warning fields \n 'Element Should Not Be Visible    ${fuel_page_locators.vehicle_id_warning}                  ${LO_TIME}' 'Element Should Not Be Visible    ${fuel_page_locators.volume_warning}                      ${LO_TIME}'",
         "ApplicableTo": "Enable Required warning fields",
         "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is in an invalid format')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            {
+                "vehicle_id_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is in an invalid format')]"
+            },
+            {
+                "volume_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume is required.')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -448,14 +728,30 @@
         "Content": "Warnings Exceeded Length \n 'Wait Until Element Is Visible    ${fuel_page_locators.city_characters_warning}             ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_characters_warning}             ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_characters_warning}           ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_character_warnig}             ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcard_character_warning}          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_character_warning}        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_character_warning}           ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_character_warning}          ${LO_TIME}'",
         "ApplicableTo": "Warnings Exceeded Length",
         "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'City must be no more than 25 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Site must be no more than 25 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be no more than 10 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vendor must be no more than 50 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Fuel Card Number must be no more than 50 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be no more than 2147483647.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Invoice must be no more than 25 characters long.')]",
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Comments must be no more than 60 characters long.')]"
+            {
+                "city_characters_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'City must be no more than 25 characters long.')]"
+            },
+            {
+                "site_characters_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Site must be no more than 25 characters long.')]"
+            },
+            {
+                "volume_characters_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be no more than 10 characters long.')]"
+            },
+            {
+                "vendor_character_warnig": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vendor must be no more than 50 characters long.')]"
+            },
+            {
+                "fuelcard_character_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Fuel Card Number must be no more than 50 characters long.')]"
+            },
+            {
+                "totalprice_character_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be no more than 2147483647.')]"
+            },
+            {
+                "invoice_character_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Invoice must be no more than 25 characters long.')]"
+            },
+            {
+                "comments_character_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Comments must be no more than 60 characters long.')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -464,8 +760,12 @@
         "Content": "Click On Fuel Tab \n 'Wait Until Element Is Visible    ${fuel_page_locators.fuel_tab}                           ${LO_TIME}' 'Click Element                    ${fuel_page_locators.fuel_tab}'",
         "ApplicableTo": "Click On Fuel Tab",
         "Locators": [
-            "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]",
-            "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]"
+            {
+                "fuel_tab": "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]"
+            },
+            {
+                "fuel_tab": "xpath=//ot-secondary-navbar//a[contains(.,'Fuel')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -474,8 +774,12 @@
         "Content": "Click On Import Tab \n 'Wait Until Element Is Visible    ${fuel_page_locators.imports_tab}                         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.imports_tab}'",
         "ApplicableTo": "Click On Import Tab",
         "Locators": [
-            "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]",
-            "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]"
+            {
+                "imports_tab": "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]"
+            },
+            {
+                "imports_tab": "xpath=//ot-secondary-navbar//a[contains(.,'Imports')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -484,8 +788,12 @@
         "Content": "Load Import Page \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_title}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_file_button}                  ${LO_TIME}'",
         "ApplicableTo": "Load Import Page",
         "Locators": [
-            "xpath=//h3[contains(.,'Imports')]",
-            "xpath=//span[contains(.,'Import File')]"
+            {
+                "import_title": "xpath=//h3[contains(.,'Imports')]"
+            },
+            {
+                "import_file_button": "xpath=//span[contains(.,'Import File')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -494,8 +802,12 @@
         "Content": "Click on Import File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_file_button}                  ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_file_button}'",
         "ApplicableTo": "Click on Import File",
         "Locators": [
-            "xpath=//span[contains(.,'Import File')]",
-            "xpath=//span[contains(.,'Import File')]"
+            {
+                "import_file_button": "xpath=//span[contains(.,'Import File')]"
+            },
+            {
+                "import_file_button": "xpath=//span[contains(.,'Import File')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -504,15 +816,33 @@
         "Content": "Load Import Fuel Receipt Tab \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_fuel_receipt_title}           ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_add_file_button}              ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_vendor_label}                 ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_vendor_select}                ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_fuel_uits_label}              ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_fuel_units_select}            ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_currency_label}               ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_currency_select}              ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_save_button}                  ${LO_TIME}'",
         "ApplicableTo": "Load Import Fuel Receipt Tab",
         "Locators": [
-            "xpath=//h3[contains(.,'Import Fuel Receipt')]",
-            "xpath=//span[contains(.,'Add File')]",
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//select[@id='vendor']",
-            "xpath=//label[contains(.,'Fuel Units')]",
-            "xpath=//select[@id='unit']",
-            "xpath=//label[contains(.,'Currency')]",
-            "xpath=//select[@id='currency']",
-            "xpath=//button[contains(.,'Save')]"
+            {
+                "import_fuel_receipt_title": "xpath=//h3[contains(.,'Import Fuel Receipt')]"
+            },
+            {
+                "import_add_file_button": "xpath=//span[contains(.,'Add File')]"
+            },
+            {
+                "import_vendor_label": "xpath=//label[contains(.,'Vendor')]"
+            },
+            {
+                "import_vendor_select": "xpath=//select[@id='vendor']"
+            },
+            {
+                "import_fuel_uits_label": "xpath=//label[contains(.,'Fuel Units')]"
+            },
+            {
+                "import_fuel_units_select": "xpath=//select[@id='unit']"
+            },
+            {
+                "import_currency_label": "xpath=//label[contains(.,'Currency')]"
+            },
+            {
+                "import_currency_select": "xpath=//select[@id='currency']"
+            },
+            {
+                "import_save_button": "xpath=//button[contains(.,'Save')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -521,8 +851,12 @@
         "Content": "Click On Add File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_add_file_button}              ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_add_file_button}'",
         "ApplicableTo": "Click On Add File",
         "Locators": [
-            "xpath=//span[contains(.,'Add File')]",
-            "xpath=//span[contains(.,'Add File')]"
+            {
+                "import_add_file_button": "xpath=//span[contains(.,'Add File')]"
+            },
+            {
+                "import_add_file_button": "xpath=//span[contains(.,'Add File')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -566,8 +900,12 @@
         "Content": "Default Value Jurisdiction \n '[Arguments]    ${jurisdiction}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_select}             ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.jurisdiction_select}             ${jurisdiction}'",
         "ApplicableTo": "Default Value Jurisdiction",
         "Locators": [
-            "xpath=//select[@id='jurisdiction']",
-            "xpath=//select[@id='jurisdiction']"
+            {
+                "jurisdiction_select": "xpath=//select[@id='jurisdiction']"
+            },
+            {
+                "jurisdiction_select": "xpath=//select[@id='jurisdiction']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -576,8 +914,12 @@
         "Content": "Default Value Date \n '${value} =    Get Text                      ${fuel_page_locators.date_input}' 'Selenium2Library.Element Text Should Be     ${fuel_page_locators.date_input}           ${value}'",
         "ApplicableTo": "Default Value Date",
         "Locators": [
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='date']"
+            {
+                "date_input": "xpath=//input[@id='date']"
+            },
+            {
+                "date_input": "xpath=//input[@id='date']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -586,8 +928,12 @@
         "Content": "Default Value Time \n '${time} =     Get Text                      ${fuel_page_locators.time_input}' 'Selenium2Library.Element Text Should Be     ${fuel_page_locators.time_input}           ${time}'",
         "ApplicableTo": "Default Value Time",
         "Locators": [
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='time']"
+            {
+                "time_input": "xpath=//input[@id='time']"
+            },
+            {
+                "time_input": "xpath=//input[@id='time']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -596,8 +942,12 @@
         "Content": "Default Value Unit \n '[Arguments]    ${unit}' 'Wait Until Element Is Visible    ${fuel_page_locators.units_select}                    ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.units_select}                    ${unit}'",
         "ApplicableTo": "Default Value Unit",
         "Locators": [
-            "xpath=//select[@id='units']",
-            "xpath=//select[@id='units']"
+            {
+                "units_select": "xpath=//select[@id='units']"
+            },
+            {
+                "units_select": "xpath=//select[@id='units']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -606,8 +956,12 @@
         "Content": "Default Value Currency \n '[Arguments]    ${currency}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_select}                 ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.currency_select}                 ${currency}'",
         "ApplicableTo": "Default Value Currency",
         "Locators": [
-            "xpath=//select[@id='currency']",
-            "xpath=//select[@id='currency']"
+            {
+                "currency_select": "xpath=//select[@id='currency']"
+            },
+            {
+                "currency_select": "xpath=//select[@id='currency']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -630,8 +984,12 @@
         "Content": "Click On Edit Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.edit_button}                 ${LO_TIME}' 'Click Element                    ${fuel_page_locators.edit_button}'",
         "ApplicableTo": "Click On Edit Button",
         "Locators": [
-            "xpath=//span[contains(.,'Edit')]",
-            "xpath=//span[contains(.,'Edit')]"
+            {
+                "edit_button": "xpath=//span[contains(.,'Edit')]"
+            },
+            {
+                "edit_button": "xpath=//span[contains(.,'Edit')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -654,8 +1012,12 @@
         "Content": "Click On Close Button From Filter \n 'Wait Until Element Is Visible    ${fuel_page_locators.close_filter_button}                       ${LO_TIME}' 'Click Element                    ${fuel_page_locators.close_filter_button}'",
         "ApplicableTo": "Click On Close Button From Filter",
         "Locators": [
-            "xpath=//ot-side-panel//i[contains(.,'close')]",
-            "xpath=//ot-side-panel//i[contains(.,'close')]"
+            {
+                "close_filter_button": "xpath=//ot-side-panel//i[contains(.,'close')]"
+            },
+            {
+                "close_filter_button": "xpath=//ot-side-panel//i[contains(.,'close')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -664,8 +1026,12 @@
         "Content": "Fill Start Date \n '[Arguments]    ${startDate}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_startdate_input}               ${LO_TIME}' 'Input Text                       ${fuel_page_locators.filter_fuel_startdate_input}               ${startDate}'",
         "ApplicableTo": "Fill Start Date",
         "Locators": [
-            "xpath=//input[@id='startDate']",
-            "xpath=//input[@id='startDate']"
+            {
+                "filter_fuel_startdate_input": "xpath=//input[@id='startDate']"
+            },
+            {
+                "filter_fuel_startdate_input": "xpath=//input[@id='startDate']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -674,8 +1040,12 @@
         "Content": "Fill End Date \n '[Arguments]    ${endDate}' 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_enddate_input}                 ${LO_TIME}' 'Input Text                       ${fuel_page_locators.filter_fuel_enddate_input}                 ${endDate}'",
         "ApplicableTo": "Fill End Date",
         "Locators": [
-            "xpath=//input[@id='endDate']",
-            "xpath=//input[@id='endDate']"
+            {
+                "filter_fuel_enddate_input": "xpath=//input[@id='endDate']"
+            },
+            {
+                "filter_fuel_enddate_input": "xpath=//input[@id='endDate']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -684,8 +1054,12 @@
         "Content": "Load Default Start Date \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_startdate_input}               ${LO_TIME}' 'Selenium2Library.Element Text Should Be     ${fuel_page_locators.filter_fuel_startdate_input}    ${Empty}'",
         "ApplicableTo": "Load Default Start Date",
         "Locators": [
-            "xpath=//input[@id='startDate']",
-            "xpath=//input[@id='startDate']"
+            {
+                "filter_fuel_startdate_input": "xpath=//input[@id='startDate']"
+            },
+            {
+                "filter_fuel_startdate_input": "xpath=//input[@id='startDate']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -694,8 +1068,12 @@
         "Content": "Load Default End Date \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_enddate_input}                 ${LO_TIME}' 'Selenium2Library.Element Text Should Be     ${fuel_page_locators.filter_fuel_enddate_input}      ${Empty}'",
         "ApplicableTo": "Load Default End Date",
         "Locators": [
-            "xpath=//input[@id='endDate']",
-            "xpath=//input[@id='endDate']"
+            {
+                "filter_fuel_enddate_input": "xpath=//input[@id='endDate']"
+            },
+            {
+                "filter_fuel_enddate_input": "xpath=//input[@id='endDate']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -704,8 +1082,12 @@
         "Content": "Load Default Tax Account \n 'Wait Until Element Is Visible    ${fuel_page_locators.filter_fuel_taxaccount_select}             ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.filter_fuel_taxaccount_select}             Any'",
         "ApplicableTo": "Load Default Tax Account",
         "Locators": [
-            "xpath=//select[@id='taxAccount']",
-            "xpath=//select[@id='taxAccount']"
+            {
+                "filter_fuel_taxaccount_select": "xpath=//select[@id='taxAccount']"
+            },
+            {
+                "filter_fuel_taxaccount_select": "xpath=//select[@id='taxAccount']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -714,9 +1096,15 @@
         "Content": "Load Default Vehicles \n 'Wait Until Element Is Visible    ${fuel_page_locators.all_vehicles_checkbox_filter}              ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.all_vehicles_checkbox_filter}              All Vehicles' 'Click Element                    ${fuel_page_locators.filter_fuel_vehicles_input}'",
         "ApplicableTo": "Load Default Vehicles",
         "Locators": [
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//ot-side-panel//label[@title='All Vehicles']",
-            "xpath=//input[@placeholder=\"Vehicles\"]"
+            {
+                "all_vehicles_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Vehicles']"
+            },
+            {
+                "all_vehicles_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Vehicles']"
+            },
+            {
+                "filter_fuel_vehicles_input": "xpath=//input[@placeholder=\"Vehicles\"]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -725,8 +1113,12 @@
         "Content": "Load Default Jurisdictions \n 'Wait Until Element Is Visible    ${fuel_page_locators.all_juridistion_checkbox_filter}           ${LO_TIME}' 'Element Should Contain           ${fuel_page_locators.all_juridistion_checkbox_filter}           All Jurisdictions'",
         "ApplicableTo": "Load Default Jurisdictions",
         "Locators": [
-            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
-            "xpath=//ot-side-panel//label[@title='All Jurisdictions']"
+            {
+                "all_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Jurisdictions']"
+            },
+            {
+                "all_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Jurisdictions']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -735,7 +1127,9 @@
         "Content": "Load Negative Volume Warning \n 'Wait Until Element Is Visible    ${fuel_page_locators.volume_negative_value_warning}           ${LO_TIME}'",
         "ApplicableTo": "Load Negative Volume Warning",
         "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be at least 0.')]"
+            {
+                "volume_negative_value_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Volume must be at least 0.')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -744,7 +1138,9 @@
         "Content": "Load Negative Total Price Warning \n 'Wait Until Element Is Visible    ${fuel_page_locators.total_price_negative_value_warning}      ${LO_TIME}'",
         "ApplicableTo": "Load Negative Total Price Warning",
         "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be at least 0.')]"
+            {
+                "total_price_negative_value_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be at least 0.')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -753,7 +1149,9 @@
         "Content": "Load Format Currency Total Price Warning \n 'Wait Until Element Is Visible    ${fuel_page_locators.total_price_format_value_warning}      ${LO_TIME}'",
         "ApplicableTo": "Load Format Currency Total Price Warning",
         "Locators": [
-            "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be in a currency format')]"
+            {
+                "total_price_format_value_warning": "xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Price must be in a currency format')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -762,8 +1160,12 @@
         "Content": "Click On Cancel Reset Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.reset_all_popup_menu_cancel}       ${LO_TIME}' 'Click Element                    ${fuel_page_locators.reset_all_popup_menu_cancel}'",
         "ApplicableTo": "Click On Cancel Reset Button",
         "Locators": [
-            "xpath=//ot-warning-window//button[contains(.,'Cancel')]",
-            "xpath=//ot-warning-window//button[contains(.,'Cancel')]"
+            {
+                "reset_all_popup_menu_cancel": "xpath=//ot-warning-window//button[contains(.,'Cancel')]"
+            },
+            {
+                "reset_all_popup_menu_cancel": "xpath=//ot-warning-window//button[contains(.,'Cancel')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -772,9 +1174,15 @@
         "Content": "Compare Jurisdiction \n '${jurisdiction} =    Get Text    ${fuel_page_locators.jurisdiction_filter}' 'Element Should Contain    ${fuel_page_locators.all_juridistion_checkbox_filter}          ${jurisdiction}' 'Click Element             ${fuel_page_locators.jurisdiction_filter}'",
         "ApplicableTo": "Compare Jurisdiction",
         "Locators": [
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']",
-            "xpath=//ot-side-panel//label[@title='All Jurisdictions']",
-            "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+            {
+                "jurisdiction_filter": "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+            },
+            {
+                "all_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='All Jurisdictions']"
+            },
+            {
+                "jurisdiction_filter": "xpath=//ot-side-panel//input[@placeholder='Jurisdiction']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -783,7 +1191,9 @@
         "Content": "Compare Tax Account \n 'Element Should Contain    ${fuel_page_locators.filter_fuel_taxaccount_select}            HUMBERTOS TAX ACCOUNT'",
         "ApplicableTo": "Compare Tax Account",
         "Locators": [
-            "xpath=//select[@id='taxAccount']"
+            {
+                "filter_fuel_taxaccount_select": "xpath=//select[@id='taxAccount']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -792,9 +1202,15 @@
         "Content": "Compare Vehicles \n '${vehicles} =    Get Text   ${fuel_page_locators.filter_fuel_vehicles_input}' 'Element Should Contain      ${fuel_page_locators.filter_fuel_vehicles_input}   ${vehicles}' 'Click Element               ${fuel_page_locators.filter_fuel_vehicles_input}'",
         "ApplicableTo": "Compare Vehicles",
         "Locators": [
-            "xpath=//input[@placeholder=\"Vehicles\"]",
-            "xpath=//input[@placeholder=\"Vehicles\"]",
-            "xpath=//input[@placeholder=\"Vehicles\"]"
+            {
+                "filter_fuel_vehicles_input": "xpath=//input[@placeholder=\"Vehicles\"]"
+            },
+            {
+                "filter_fuel_vehicles_input": "xpath=//input[@placeholder=\"Vehicles\"]"
+            },
+            {
+                "filter_fuel_vehicles_input": "xpath=//input[@placeholder=\"Vehicles\"]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -824,11 +1240,21 @@
         "Content": "Reorder Fuel Page Columns \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}               ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_label_table}    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_label_table}            ${LO_TIME}' 'Drag And Drop                    ${fuel_page_locators.jurisdiction_label_table}    ${fuel_page_locators.site_label_table}'",
         "ApplicableTo": "Reorder Fuel Page Columns",
         "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
-            "xpath=//span[@role='columnheader' and contains(.,'Site')]",
-            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
-            "xpath=//span[@role='columnheader' and contains(.,'Site')]"
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            },
+            {
+                "jurisdiction_label_table": "xpath=//span[@role='columnheader' and .='Jurisdiction']"
+            },
+            {
+                "site_label_table": "xpath=//span[@role='columnheader' and contains(.,'Site')]"
+            },
+            {
+                "jurisdiction_label_table": "xpath=//span[@role='columnheader' and .='Jurisdiction']"
+            },
+            {
+                "site_label_table": "xpath=//span[@role='columnheader' and contains(.,'Site')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -837,11 +1263,21 @@
         "Content": "Drag And Drop File Name Column To Last Position From Imports Tab \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}               ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.file_name_label_table}       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.status_label_table}          ${LO_TIME}' 'Drag And Drop                    ${fuel_page_locators.file_name_label_table}       ${fuel_page_locators.status_label_table}'",
         "ApplicableTo": "Drag And Drop File Name Column To Last Position From Imports Tab",
         "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
-            "xpath=//span[@role='columnheader' and contains(.,'Status')]",
-            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
-            "xpath=//span[@role='columnheader' and contains(.,'Status')]"
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            },
+            {
+                "file_name_label_table": "xpath=//span[@role='columnheader' and contains(.,'File Name')]"
+            },
+            {
+                "status_label_table": "xpath=//span[@role='columnheader' and contains(.,'Status')]"
+            },
+            {
+                "file_name_label_table": "xpath=//span[@role='columnheader' and contains(.,'File Name')]"
+            },
+            {
+                "status_label_table": "xpath=//span[@role='columnheader' and contains(.,'Status')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -850,8 +1286,12 @@
         "Content": "Validate That The Table Headers Are In New Position \n 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}    ${LO_TIME}' 'Sleep    ${SH_TIME}' '${headers} =     Get Text    ${fuel_page_locators.headers_table}' '${headers_default} =    Set Variable    Vehicle ID\\nVolume\\nTotal Price\\nDate\\nTime\\nCity\\nSite\\nJurisdiction\\nVendor\\nInvoice\\nCard Number' 'Should Be Equal As Strings    ${headers}    ${headers_default}'",
         "ApplicableTo": "Validate That The Table Headers Are In New Position",
         "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//div[@ref='eHeaderContainer']"
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            },
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -860,8 +1300,12 @@
         "Content": "Validate That The Table Headers Are In New Position From Imports Tab \n 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}    ${LO_TIME}' 'Sleep    ${SH_TIME}' '${headers} =     Get Text    ${fuel_page_locators.headers_table}' '${headers_default} =    Set Variable    Vendor\\nCurrency\\nUnits\\nDate Imported\\nTime\\nStatus\\nFile Name' 'Should Be Equal As Strings    ${headers}    ${headers_default}'",
         "ApplicableTo": "Validate That The Table Headers Are In New Position From Imports Tab",
         "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//div[@ref='eHeaderContainer']"
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            },
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -870,11 +1314,21 @@
         "Content": "Default Fuel Page Table Columns \n 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_label_table}       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicle_id_label_table}         ${LO_TIME}' 'Drag And Drop                    ${fuel_page_locators.jurisdiction_label_table}       ${fuel_page_locators.vehicle_id_label_table}' 'Sleep                            ${SH_TIME}'",
         "ApplicableTo": "Default Fuel Page Table Columns",
         "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
-            "xpath=//span[@role='columnheader' and .='Vehicle ID']",
-            "xpath=//span[@role='columnheader' and .='Jurisdiction']",
-            "xpath=//span[@role='columnheader' and .='Vehicle ID']"
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            },
+            {
+                "jurisdiction_label_table": "xpath=//span[@role='columnheader' and .='Jurisdiction']"
+            },
+            {
+                "vehicle_id_label_table": "xpath=//span[@role='columnheader' and .='Vehicle ID']"
+            },
+            {
+                "jurisdiction_label_table": "xpath=//span[@role='columnheader' and .='Jurisdiction']"
+            },
+            {
+                "vehicle_id_label_table": "xpath=//span[@role='columnheader' and .='Vehicle ID']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -883,11 +1337,21 @@
         "Content": "Drag And Drop File Name Column To First Position From Imports Tab \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}               ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.file_name_label_table}       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.status_label_table}          ${LO_TIME}' 'Drag And Drop                    ${fuel_page_locators.file_name_label_table}       ${fuel_page_locators.vendor_label_table}'",
         "ApplicableTo": "Drag And Drop File Name Column To First Position From Imports Tab",
         "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
-            "xpath=//span[@role='columnheader' and contains(.,'Status')]",
-            "xpath=//span[@role='columnheader' and contains(.,'File Name')]",
-            "xpath=//span[@role='columnheader' and contains(.,'Vendor')]"
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            },
+            {
+                "file_name_label_table": "xpath=//span[@role='columnheader' and contains(.,'File Name')]"
+            },
+            {
+                "status_label_table": "xpath=//span[@role='columnheader' and contains(.,'Status')]"
+            },
+            {
+                "file_name_label_table": "xpath=//span[@role='columnheader' and contains(.,'File Name')]"
+            },
+            {
+                "vendor_label_table": "xpath=//span[@role='columnheader' and contains(.,'Vendor')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -896,8 +1360,12 @@
         "Content": "Validate That The Table Headers Are In Default Position \n 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}    ${LO_TIME}' 'Sleep    ${SH_TIME}' '${headers} =     Get Text        ${fuel_page_locators.headers_table}' '${headers_default} =    Set Variable    Jurisdiction\\nVehicle ID\\nVolume\\nTotal Price\\nDate\\nTime\\nCity\\nSite\\nVendor\\nInvoice\\nCard Number' 'Should Be Equal As Strings    ${headers}    ${headers_default}'",
         "ApplicableTo": "Validate That The Table Headers Are In Default Position",
         "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//div[@ref='eHeaderContainer']"
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            },
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -906,8 +1374,12 @@
         "Content": "Validate That The Table Headers Are In Default Position From Imports Tab \n 'Wait Until Element Is Visible    ${fuel_page_locators.headers_table}    ${LO_TIME}' 'Sleep    ${SH_TIME}' '${headers} =     Get Text        ${fuel_page_locators.headers_table}' '${headers_default} =    Set Variable    File Name\\nVendor\\nCurrency\\nUnits\\nDate Imported\\nTime\\nStatus' 'Should Be Equal As Strings    ${headers}    ${headers_default}'",
         "ApplicableTo": "Validate That The Table Headers Are In Default Position From Imports Tab",
         "Locators": [
-            "xpath=//div[@ref='eHeaderContainer']",
-            "xpath=//div[@ref='eHeaderContainer']"
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            },
+            {
+                "headers_table": "xpath=//div[@ref='eHeaderContainer']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -916,14 +1388,30 @@
         "Content": "Unselect Jurisdictions List \n 'Scroll Element Into View         ${fuel_page_locators.AB_juridistion_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.AB_juridistion_checkbox_filter}    ${LO_TIME}' 'Scroll Element Into View         ${fuel_page_locators.AK_juridistion_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.AK_juridistion_checkbox_filter}    ${LO_TIME}' 'Scroll Element Into View         ${fuel_page_locators.AB_juridistion_checkbox_filter}' 'Click Element                    ${fuel_page_locators.AB_juridistion_checkbox_filter}' 'Scroll Element Into View         ${fuel_page_locators.AK_juridistion_checkbox_filter}' 'Click Element                    ${fuel_page_locators.AK_juridistion_checkbox_filter}'",
         "ApplicableTo": "Unselect Jurisdictions List",
         "Locators": [
-            "xpath=//ot-side-panel//label[@title='Alberta']",
-            "xpath=//ot-side-panel//label[@title='Alberta']",
-            "xpath=//ot-side-panel//label[@title='Alaska']",
-            "xpath=//ot-side-panel//label[@title='Alaska']",
-            "xpath=//ot-side-panel//label[@title='Alberta']",
-            "xpath=//ot-side-panel//label[@title='Alberta']",
-            "xpath=//ot-side-panel//label[@title='Alaska']",
-            "xpath=//ot-side-panel//label[@title='Alaska']"
+            {
+                "AB_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='Alberta']"
+            },
+            {
+                "AB_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='Alberta']"
+            },
+            {
+                "AK_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='Alaska']"
+            },
+            {
+                "AK_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='Alaska']"
+            },
+            {
+                "AB_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='Alberta']"
+            },
+            {
+                "AB_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='Alberta']"
+            },
+            {
+                "AK_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='Alaska']"
+            },
+            {
+                "AK_juridistion_checkbox_filter": "xpath=//ot-side-panel//label[@title='Alaska']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -932,14 +1420,30 @@
         "Content": "Unselect Vehicle List \n 'Scroll Element Into View         ${fuel_page_locators.one_vehicle_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.one_vehicle_checkbox_filter}        ${LO_TIME}' 'Scroll Element Into View         ${fuel_page_locators.humv1_vehicle_checkbox_filter}' 'Wait Until Element Is Visible    ${fuel_page_locators.humv1_vehicle_checkbox_filter}      ${LO_TIME}' 'Scroll Element Into View         ${fuel_page_locators.one_vehicle_checkbox_filter}' 'Click Element                    ${fuel_page_locators.one_vehicle_checkbox_filter}' 'Scroll Element Into View         ${fuel_page_locators.humv1_vehicle_checkbox_filter}' 'Click Element                    ${fuel_page_locators.humv1_vehicle_checkbox_filter}'",
         "ApplicableTo": "Unselect Vehicle List",
         "Locators": [
-            "xpath=//ot-side-panel//label[@title='0000000001']",
-            "xpath=//ot-side-panel//label[@title='0000000001']",
-            "xpath=//ot-side-panel//label[@title='HUM_V1']",
-            "xpath=//ot-side-panel//label[@title='HUM_V1']",
-            "xpath=//ot-side-panel//label[@title='0000000001']",
-            "xpath=//ot-side-panel//label[@title='0000000001']",
-            "xpath=//ot-side-panel//label[@title='HUM_V1']",
-            "xpath=//ot-side-panel//label[@title='HUM_V1']"
+            {
+                "one_vehicle_checkbox_filter": "xpath=//ot-side-panel//label[@title='0000000001']"
+            },
+            {
+                "one_vehicle_checkbox_filter": "xpath=//ot-side-panel//label[@title='0000000001']"
+            },
+            {
+                "humv1_vehicle_checkbox_filter": "xpath=//ot-side-panel//label[@title='HUM_V1']"
+            },
+            {
+                "humv1_vehicle_checkbox_filter": "xpath=//ot-side-panel//label[@title='HUM_V1']"
+            },
+            {
+                "one_vehicle_checkbox_filter": "xpath=//ot-side-panel//label[@title='0000000001']"
+            },
+            {
+                "one_vehicle_checkbox_filter": "xpath=//ot-side-panel//label[@title='0000000001']"
+            },
+            {
+                "humv1_vehicle_checkbox_filter": "xpath=//ot-side-panel//label[@title='HUM_V1']"
+            },
+            {
+                "humv1_vehicle_checkbox_filter": "xpath=//ot-side-panel//label[@title='HUM_V1']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -948,8 +1452,12 @@
         "Content": "Select From Vendor Dropdown \n '[Arguments]    ${VENDOR}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_vendor_label}    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_vendor_label}' '${XPATH} =    list_xpath.Obtain Xpath By Vendor Selector    ${VENDOR}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Click Element                    ${XPATH}'",
         "ApplicableTo": "Select From Vendor Dropdown",
         "Locators": [
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//label[contains(.,'Vendor')]"
+            {
+                "import_vendor_label": "xpath=//label[contains(.,'Vendor')]"
+            },
+            {
+                "import_vendor_label": "xpath=//label[contains(.,'Vendor')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -958,8 +1466,12 @@
         "Content": "Select From Fuel Units Dropdown \n '[Arguments]    ${UNITS}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_vendor_label}    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_vendor_label}' '${XPATH} =    list_xpath.Obtain Xpath By Fuel Units Selector    ${UNITS}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Click Element                    ${XPATH}'",
         "ApplicableTo": "Select From Fuel Units Dropdown",
         "Locators": [
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//label[contains(.,'Vendor')]"
+            {
+                "import_vendor_label": "xpath=//label[contains(.,'Vendor')]"
+            },
+            {
+                "import_vendor_label": "xpath=//label[contains(.,'Vendor')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -968,8 +1480,12 @@
         "Content": "Select From Currency Dropdown \n '[Arguments]    ${CURRENCY}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_vendor_label}    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_vendor_label}' '${XPATH} =    list_xpath.Obtain Xpath By Currency Selector    ${CURRENCY}' 'Wait Until Element Is Visible    ${XPATH}    ${LO_TIME}' 'Click Element                    ${XPATH}'",
         "ApplicableTo": "Select From Currency Dropdown",
         "Locators": [
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//label[contains(.,'Vendor')]"
+            {
+                "import_vendor_label": "xpath=//label[contains(.,'Vendor')]"
+            },
+            {
+                "import_vendor_label": "xpath=//label[contains(.,'Vendor')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -978,8 +1494,12 @@
         "Content": "Save Import File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_save_button}     ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_save_button}' 'Sleep                                                                         ${UL_TIME}'",
         "ApplicableTo": "Save Import File",
         "Locators": [
-            "xpath=//button[contains(.,'Save')]",
-            "xpath=//button[contains(.,'Save')]"
+            {
+                "import_save_button": "xpath=//button[contains(.,'Save')]"
+            },
+            {
+                "import_save_button": "xpath=//button[contains(.,'Save')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1009,8 +1529,12 @@
         "Content": "Click On Delete Button From Imported Fuel File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_delete_button}         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_delete_button}' 'Sleep                                                                               ${UL_TIME}'",
         "ApplicableTo": "Click On Delete Button From Imported Fuel File",
         "Locators": [
-            "xpath=//button[contains(.,'Delete')]",
-            "xpath=//button[contains(.,'Delete')]"
+            {
+                "import_delete_button": "xpath=//button[contains(.,'Delete')]"
+            },
+            {
+                "import_delete_button": "xpath=//button[contains(.,'Delete')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1019,8 +1543,12 @@
         "Content": "Click On Yes Button From Import Fuel File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_yes_delete_button}     ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_yes_delete_button}' 'Sleep                                                                               ${UL_TIME}'",
         "ApplicableTo": "Click On Yes Button From Import Fuel File",
         "Locators": [
-            "xpath=//div/div[contains(.,'Yes')]",
-            "xpath=//div/div[contains(.,'Yes')]"
+            {
+                "import_yes_delete_button": "xpath=//div/div[contains(.,'Yes')]"
+            },
+            {
+                "import_yes_delete_button": "xpath=//div/div[contains(.,'Yes')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1029,8 +1557,12 @@
         "Content": "Click On Cancel Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_cancel_button}         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_cancel_button}'",
         "ApplicableTo": "Click On Cancel Button",
         "Locators": [
-            "xpath=//i[@class='mdi mdi-close mdi-36px']",
-            "xpath=//i[@class='mdi mdi-close mdi-36px']"
+            {
+                "import_cancel_button": "xpath=//i[@class='mdi mdi-close mdi-36px']"
+            },
+            {
+                "import_cancel_button": "xpath=//i[@class='mdi mdi-close mdi-36px']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1039,9 +1571,15 @@
         "Content": "No Invalid Records From Imported Fuel File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_records_label}         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_records_value}         ${LO_TIME}' '${VALUE} =    Get Value          ${fuel_page_locators.import_records_value}' 'IF  '${VALUE}' == '0'' 'Log    There aren't invalid records' 'ELSE' 'Log    There are invalid records' 'Fail' 'END'",
         "ApplicableTo": "No Invalid Records From Imported Fuel File",
         "Locators": [
-            "xpath=//p[contains(.,'Number of invalid records')]",
-            "xpath=//p[@class='title']",
-            "xpath=//p[@class='title']"
+            {
+                "import_records_label": "xpath=//p[contains(.,'Number of invalid records')]"
+            },
+            {
+                "import_records_value": "xpath=//p[@class='title']"
+            },
+            {
+                "import_records_value": "xpath=//p[@class='title']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1050,9 +1588,15 @@
         "Content": "There are Invalid Records From Imported Fuel File \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_records_label}         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.import_records_value}         ${LO_TIME}' '${VALUE} =    Get Value          ${fuel_page_locators.import_records_value}' 'IF  '${VALUE}' != '0'' 'Log    There are invalid records' 'ELSE' 'Log    There aren't invalid records' 'Fail' 'END'",
         "ApplicableTo": "There are Invalid Records From Imported Fuel File",
         "Locators": [
-            "xpath=//p[contains(.,'Number of invalid records')]",
-            "xpath=//p[@class='title']",
-            "xpath=//p[@class='title']"
+            {
+                "import_records_label": "xpath=//p[contains(.,'Number of invalid records')]"
+            },
+            {
+                "import_records_value": "xpath=//p[@class='title']"
+            },
+            {
+                "import_records_value": "xpath=//p[@class='title']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1061,8 +1605,12 @@
         "Content": "Click On Replace File Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_replace_file_button}    ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_replace_file_button}'",
         "ApplicableTo": "Click On Replace File Button",
         "Locators": [
-            "xpath=//button[contains(.,'Replace File')]",
-            "xpath=//button[contains(.,'Replace File')]"
+            {
+                "import_replace_file_button": "xpath=//button[contains(.,'Replace File')]"
+            },
+            {
+                "import_replace_file_button": "xpath=//button[contains(.,'Replace File')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1071,8 +1619,12 @@
         "Content": "Click On Approve Button \n 'Wait Until Element Is Visible    ${fuel_page_locators.import_approve_button}         ${LO_TIME}' 'Click Element                    ${fuel_page_locators.import_approve_button}'",
         "ApplicableTo": "Click On Approve Button",
         "Locators": [
-            "xpath=//button[contains(.,'Approve')]",
-            "xpath=//button[contains(.,'Approve')]"
+            {
+                "import_approve_button": "xpath=//button[contains(.,'Approve')]"
+            },
+            {
+                "import_approve_button": "xpath=//button[contains(.,'Approve')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1081,7 +1633,9 @@
         "Content": "Approve Button Is Not Visible \n 'Wait Until Element Is Not Visible    ${fuel_page_locators.import_approve_button}     ${LO_TIME}'",
         "ApplicableTo": "Approve Button Is Not Visible",
         "Locators": [
-            "xpath=//button[contains(.,'Approve')]"
+            {
+                "import_approve_button": "xpath=//button[contains(.,'Approve')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1090,8 +1644,12 @@
         "Content": "Click On Close Button From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_close_button}              ${LO_TIME}' 'Click Element                    ${fuel_page_locators.row_close_button}'",
         "ApplicableTo": "Click On Close Button From Edit Fuel Receipt",
         "Locators": [
-            "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]",
-            "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]"
+            {
+                "row_close_button": "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]"
+            },
+            {
+                "row_close_button": "xpath=//ot-fuel-receipt-modal//i[contains(.,'close')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1100,8 +1658,12 @@
         "Content": "Click On Delete Button From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_delete_button}             ${LO_TIME}' 'Click Element                    ${fuel_page_locators.row_delete_button}'",
         "ApplicableTo": "Click On Delete Button From Edit Fuel Receipt",
         "Locators": [
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]",
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
+            {
+                "row_delete_button": "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
+            },
+            {
+                "row_delete_button": "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1110,7 +1672,9 @@
         "Content": "Verify that Delete Button is Disabled From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_delete_button_disabled}    ${LO_TIME}'",
         "ApplicableTo": "Verify that Delete Button is Disabled From Edit Fuel Receipt",
         "Locators": [
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete') and @disabled]"
+            {
+                "row_delete_button_disabled": "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete') and @disabled]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1119,7 +1683,9 @@
         "Content": "Verify that Delete Button is Enabled From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_delete_button}             ${LO_TIME}'",
         "ApplicableTo": "Verify that Delete Button is Enabled From Edit Fuel Receipt",
         "Locators": [
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
+            {
+                "row_delete_button": "xpath=//ot-fuel-receipt-modal//button[contains(.,'Delete')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1128,8 +1694,12 @@
         "Content": "Click On Edit Button From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_edit_button}               ${LO_TIME}' 'Click Element                    ${fuel_page_locators.row_edit_button}'",
         "ApplicableTo": "Click On Edit Button From Edit Fuel Receipt",
         "Locators": [
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]",
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
+            {
+                "row_edit_button": "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
+            },
+            {
+                "row_edit_button": "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1138,7 +1708,9 @@
         "Content": "Verify that Edit Button is Enabled From Edit Fuel Receipt \n 'Wait Until Element Is Visible    ${fuel_page_locators.row_edit_button}               ${LO_TIME}'",
         "ApplicableTo": "Verify that Edit Button is Enabled From Edit Fuel Receipt",
         "Locators": [
-            "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
+            {
+                "row_edit_button": "xpath=//ot-fuel-receipt-modal//button[contains(.,'Edit')]"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1147,37 +1719,99 @@
         "Content": "Load Edit Fuel Receipt Page \n 'Wait Until Element Is Visible    ${fuel_page_locators.edit_title_receipt}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_label}                  ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.city_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicleid_label}                     ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.date_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_label}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_label}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fueL_page_locators.units_label}                         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_label}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcardnumber_label}                ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_label}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_label}                      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_label}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_label}                      ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.cancel_button}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.save_button}                         ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.jurisdiction_select}                 ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.city_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vehicleid_select}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.date_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.site_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.volume_input}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.units_select}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.vendor_input}                        ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.fuelcardnumber_input}                ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.totalprice_input}                    ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.currency_select}                     ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.invoice_input}                       ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.comments_textarea}                   ${LO_TIME}'",
         "ApplicableTo": "Load Edit Fuel Receipt Page",
         "Locators": [
-            "xpath=//h1[contains(.,'Edit Fuel Receipt')]",
-            "xpath=//label[contains(.,'Jurisdiction')]",
-            "xpath=//label[contains(.,'City')]",
-            "xpath=//label[contains(.,'Vehicle ID')]",
-            "xpath=//label[contains(.,'Date')]",
-            "xpath=//label[contains(.,'Time')]",
-            "xpath=//label[contains(.,'Site')]",
-            "xpath=//label[contains(.,'Volume')]",
-            "xpath=//label[contains(.,'Units')]",
-            "xpath=//label[contains(.,'Vendor')]",
-            "xpath=//label[contains(.,'Fuel Card Number')]",
-            "xpath=//label[contains(.,'Total Price')]",
-            "xpath=//label[contains(.,'Currency')]",
-            "xpath=//label[contains(.,'Invoice')]",
-            "xpath=//label[contains(.,'Comments')]",
-            "xpath=//button[contains(.,'Cancel')]",
-            "xpath=//button[contains(.,'Save')]",
-            "xpath=//select[@id='jurisdiction']",
-            "xpath=//input[@id='city']",
-            "xpath=//select[@id='vehicleId']",
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='site']",
-            "xpath=//input[@id='volume']",
-            "xpath=//select[@id='units']",
-            "xpath=//input[@id='vendor']",
-            "xpath=//input[@id='fuelNumber']",
-            "xpath=//input[@id='totalPrice']",
-            "xpath=//select[@id='currency']",
-            "xpath=//input[@id='invoice']",
-            "xpath=//textarea[@id='comment']"
+            {
+                "edit_title_receipt": "xpath=//h1[contains(.,'Edit Fuel Receipt')]"
+            },
+            {
+                "jurisdiction_label": "xpath=//label[contains(.,'Jurisdiction')]"
+            },
+            {
+                "city_label": "xpath=//label[contains(.,'City')]"
+            },
+            {
+                "vehicleid_label": "xpath=//label[contains(.,'Vehicle ID')]"
+            },
+            {
+                "date_label": "xpath=//label[contains(.,'Date')]"
+            },
+            {
+                "time_label": "xpath=//label[contains(.,'Time')]"
+            },
+            {
+                "site_label": "xpath=//label[contains(.,'Site')]"
+            },
+            {
+                "volume_label": "xpath=//label[contains(.,'Volume')]"
+            },
+            {
+                "units_label": "xpath=//label[contains(.,'Units')]"
+            },
+            {
+                "vendor_label": "xpath=//label[contains(.,'Vendor')]"
+            },
+            {
+                "fuelcardnumber_label": "xpath=//label[contains(.,'Fuel Card Number')]"
+            },
+            {
+                "totalprice_label": "xpath=//label[contains(.,'Total Price')]"
+            },
+            {
+                "currency_label": "xpath=//label[contains(.,'Currency')]"
+            },
+            {
+                "invoice_label": "xpath=//label[contains(.,'Invoice')]"
+            },
+            {
+                "comments_label": "xpath=//label[contains(.,'Comments')]"
+            },
+            {
+                "cancel_button": "xpath=//button[contains(.,'Cancel')]"
+            },
+            {
+                "save_button": "xpath=//button[contains(.,'Save')]"
+            },
+            {
+                "jurisdiction_select": "xpath=//select[@id='jurisdiction']"
+            },
+            {
+                "city_input": "xpath=//input[@id='city']"
+            },
+            {
+                "vehicleid_select": "xpath=//select[@id='vehicleId']"
+            },
+            {
+                "date_input": "xpath=//input[@id='date']"
+            },
+            {
+                "time_input": "xpath=//input[@id='time']"
+            },
+            {
+                "site_input": "xpath=//input[@id='site']"
+            },
+            {
+                "volume_input": "xpath=//input[@id='volume']"
+            },
+            {
+                "units_select": "xpath=//select[@id='units']"
+            },
+            {
+                "vendor_input": "xpath=//input[@id='vendor']"
+            },
+            {
+                "fuelcardnumber_input": "xpath=//input[@id='fuelNumber']"
+            },
+            {
+                "totalprice_input": "xpath=//input[@id='totalPrice']"
+            },
+            {
+                "currency_select": "xpath=//select[@id='currency']"
+            },
+            {
+                "invoice_input": "xpath=//input[@id='invoice']"
+            },
+            {
+                "comments_textarea": "xpath=//textarea[@id='comment']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1186,8 +1820,12 @@
         "Content": "Select An Option From Record Per Page Dropdown \n '[Arguments]    ${number}' 'Wait Until Element Is Visible    ${fuel_page_locators.records_per_page_label}              ${LO_TIME}' 'Select From List By Label        ${fuel_page_locators.records_per_page_dropdown}           ${number}'",
         "ApplicableTo": "Select An Option From Record Per Page Dropdown",
         "Locators": [
-            "xpath=//div[@class='level-item' and contains(.,'Records per page')]",
-            "xpath=//select[@id='page-select']"
+            {
+                "records_per_page_label": "xpath=//div[@class='level-item' and contains(.,'Records per page')]"
+            },
+            {
+                "records_per_page_dropdown": "xpath=//select[@id='page-select']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1196,12 +1834,24 @@
         "Content": "Fill Date and Time With Default Empty Data \n 'Wait Until Element Is Visible    ${fuel_page_locators.date_input}                          ${LO_TIME}' 'Wait Until Element Is Visible    ${fuel_page_locators.time_input}                          ${LO_TIME}' 'Click Element                    ${fuel_page_locators.date_input}' 'Press Keys                       ${fuel_page_locators.date_input}                          \\DELETE' 'Click Element                    ${fuel_page_locators.time_input}' 'Press Keys                       ${fuel_page_locators.time_input}                          \\DELETE'",
         "ApplicableTo": "Fill Date and Time With Default Empty Data",
         "Locators": [
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='date']",
-            "xpath=//input[@id='time']",
-            "xpath=//input[@id='time']"
+            {
+                "date_input": "xpath=//input[@id='date']"
+            },
+            {
+                "time_input": "xpath=//input[@id='time']"
+            },
+            {
+                "date_input": "xpath=//input[@id='date']"
+            },
+            {
+                "date_input": "xpath=//input[@id='date']"
+            },
+            {
+                "time_input": "xpath=//input[@id='time']"
+            },
+            {
+                "time_input": "xpath=//input[@id='time']"
+            }
         ],
         "PageOb": "fuel_page"
     },
@@ -1238,10 +1888,18 @@
         "Content": "Load Login Page \n 'Wait Until Element Is Visible    ${login_page_locators.user_id}            ${ME_TIME}' 'Wait Until Element Is Visible    ${login_page_locators.password}           ${TIME}' 'Wait Until Element Is Visible    ${login_page_locators.forgot_password}    ${TIME}' 'Wait Until Element Is Visible    ${login_page_locators.login_button}       ${TIME}'",
         "ApplicableTo": "Load Login Page",
         "Locators": [
-            "xpath=//input[@id='userid']",
-            "xpath=//input[@id='password']",
-            "xpath=//a[contains(.,'Forgot password')]",
-            "xpath=//span[contains(.,'Log In')]"
+            {
+                "user_id": "xpath=//input[@id='userid']"
+            },
+            {
+                "password": "xpath=//input[@id='password']"
+            },
+            {
+                "forgot_password": "xpath=//a[contains(.,'Forgot password')]"
+            },
+            {
+                "login_button": "xpath=//span[contains(.,'Log In')]"
+            }
         ],
         "PageOb": "login_page"
     },
@@ -1250,8 +1908,12 @@
         "Content": "Introduce User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${login_page_locators.user_id}    ${TIME}' 'Input Text                       ${login_page_locators.user_id}    ${credentials}[0]'",
         "ApplicableTo": "Introduce User",
         "Locators": [
-            "xpath=//input[@id='userid']",
-            "xpath=//input[@id='userid']"
+            {
+                "user_id": "xpath=//input[@id='userid']"
+            },
+            {
+                "user_id": "xpath=//input[@id='userid']"
+            }
         ],
         "PageOb": "login_page"
     },
@@ -1260,8 +1922,12 @@
         "Content": "Introduce Password \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${login_page_locators.password}    ${TIME}' 'Input Text                       ${login_page_locators.password}    ${credentials}[1]'",
         "ApplicableTo": "Introduce Password",
         "Locators": [
-            "xpath=//input[@id='password']",
-            "xpath=//input[@id='password']"
+            {
+                "password": "xpath=//input[@id='password']"
+            },
+            {
+                "password": "xpath=//input[@id='password']"
+            }
         ],
         "PageOb": "login_page"
     },
@@ -1270,8 +1936,12 @@
         "Content": "Click On Login Button \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${login_page_locators.login_button}    ${TIME}' 'Click Element                    ${login_page_locators.login_button}'",
         "ApplicableTo": "Click On Login Button",
         "Locators": [
-            "xpath=//span[contains(.,'Log In')]",
-            "xpath=//span[contains(.,'Log In')]"
+            {
+                "login_button": "xpath=//span[contains(.,'Log In')]"
+            },
+            {
+                "login_button": "xpath=//span[contains(.,'Log In')]"
+            }
         ],
         "PageOb": "login_page"
     }
