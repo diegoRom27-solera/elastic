@@ -22,9 +22,8 @@ jobs:
       - name: "Show Message"
         run: echo "Hello, World!"
       - name: "Show Platform"
-        if: ${{ env.secret == 'AWS' }}
         run: |
-          echo "Platform: ${{ env.platform }}"
+          echo "Platform: ${{ env.secret }}"
       - name: "Sho default variables"
         run: |
           echo "event: ${{ toJson(github.event) }}"
