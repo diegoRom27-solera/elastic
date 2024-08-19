@@ -26,7 +26,7 @@ jobs:
           echo "Platform: ${{ env.platform }}"
       - name: "Sho default variables"
         run: |
-          echo "event: ${{ github.event }}"
+          echo "event: ${{ toJson(github.event) }}"
           echo "event_name: ${{ github.event_name }}"
           echo "event_path: ${{ github.event_path }}"
 
