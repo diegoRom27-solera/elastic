@@ -1,0 +1,34 @@
+app_launcher_locators:
+  iframe:                           document.querySelector("#main-content-iframe")
+  
+  #Left Slide
+  home_button_left:               xpath=//ui-component-icon-button[1]
+  home_button_left_focus:         xpath=//ui-component-icon-button[1]//button[@class='active focus']
+  home_button_left_active:        xpath=//ui-component-icon-button[1]//button[@class='active']
+  home_tooltip_left:              xpath=//div[@class='tooltip tooltip--visible tooltip--right' and contains(.,'Home')]
+  favorites_button_left:          xpath=//ui-component-icon-button[2]
+  favorites_button_left_focus:    xpath=//ui-component-icon-button[2]//button[@class='focus']
+  system_console_button_left:     xpath=//ui-component-icon-button[9]
+  system_console_left_focus:      xpath=//ui-component-icon-button[9]//button[@class='focus']
+  system_console_left_active:     xpath=//ui-component-icon-button[9]//button[@class='active']
+
+  #Main Top
+  favorites_button_main:          xpath=//a[contains(.,'Favorites')]
+  favorites_button_main_active:   xpath=//a[contains(.,'Favorites') and @class='active']
+  all_apps_button_main:           xpath=//a[contains(.,'All Apps')]
+  all_apps_button_main_active:    xpath=//a[contains(.,'All Apps') and @class='active']
+  system_button_main:             xpath=//a[contains(.,'System Console')]
+  system_button_main_active:      xpath=//a[contains(.,'System Console') and @class='active']
+
+  #All Applications
+  #System Console
+  device_manager_app:             xpath=//span[@class='title' and contains(.,'Device Manager')]
+
+  #System Console Sidebar Flyout
+  device_manager_sidebar:         xpath=//submenu-item/div/a[contains(.,'Device Manager')]
+  device_manager_sidebar_fvic:    xpath=//submenu-item/div[contains(.,'Device Manager')]/fdn-icon
+
+  #Information User Flyer
+  sign_out_button:                xpath=//span[contains(.,'Sign Out')]
+  app_launcher_version:           xpath=//span[contains(.,'Version 1.0')]
+  app_launcher_user_label:        xpath=//ot-platform-user-menu-list/div[contains(.,'USER ACCOUNT')]

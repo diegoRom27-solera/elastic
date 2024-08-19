@@ -1,0 +1,323 @@
+accounts_page_locators:
+  #Account Main Page
+  accounts_tab:               document.querySelector("body > ot-root > ot-module-loader > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#layout-container-v2 > ot-navigation > nav > ot-nav-body").shadowRoot.querySelector("div > ot-nav-list").shadowRoot.querySelector("ul > ot-nav-item:nth-child(4)").shadowRoot.querySelector("#\\34  > ot-nav-item-option").shadowRoot.querySelector("div > span")
+  accounts_iframe:            document.querySelector("body > ot-root > ot-module-loader > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#main-content-iframe")
+  add_button:                 xpath=//button[@id='addBtn']                              #Add button
+  account_searched:           xpath=//span[@id='accountName']                           #Account Name Searched
+  created_data:               xpath=//th[@id='createdDate']                             #Create Data Button
+  entitlement_summary:        xpath=//th[@id='entSummary']                              #Entitlement Summary Text
+  name_information:           xpath=//th[@id='nameContact']                             #Name and Contact Information Button
+  search_text:                xpath=//input[@id='searchText']                           #Searcher Text Input
+  title:                      dom:document.querySelector("#main-body > app-root > div.page-content > app-accounts > div > div > div.header-content > div.left-header > h1")
+
+  #Account Main Page New UI
+  search_text_ui:             xpath=//input[@name='searchText']
+  title_ui:                   xpath=//div[@class='header' and contains(.,'All Business Accounts')]
+     
+  #Businees Account Details
+  account_title:              dom:document.querySelector("#accountName")                #Account Name Title
+  account_title_ui:           xpath=//h1[@id='account-name']                            #Account Name
+  arrow_back:                 xpath=//mat-icon[contains(.,'arrow_back')]                #Go Back Arrow
+  business_account_id:        xpath=//input[@id='businessAccId']                        #Business Account ID Input Text
+  cancel_button:              xpath=//button[@id="cancelBtn"]                           #Cancel Button
+  fleet_size:                 xpath=//input[@id='fleetSize']                            #Fleet Size Input Text
+  last_txn_num:               xpath=//input[@id='txnNumber']                            #Last Txn Number Input Text
+  last_txn_date:              xpath=//input[@id='txnDtm']                               #Last Txt Date/Time Input Text
+  legal_name:                 xpath=//input[@id='txnType']                              #Legal Name Input Text
+  message_info:               xpath=//div[@id="swal2-content"]                          #Message Confirmation
+  message_success:            xpath=//h2[@id="swal2-title"]                             #Message Success
+  name_entitlement_id:        xpath=//mat-card[2]/div/mat-table/mat-row[1]/mat-cell[1]  #Name Entitlement ID
+  no_button:                  xpath=//button[contains(.,'NO')]                          #No Button
+  ok_button:                  xpath=//button[contains(.,'OK')]                          #Ok Button
+  one_entitlement:            xpath=//input[@id='mat-checkbox-1-input']                 #Someone Entitlement
+  quantity_entiltlement:      xpath=//mat-row[1]/mat-cell[7]/input                      #Someone Entitlement Quantity
+  yes_button:                 xpath=//button[contains(.,'YES')]                         #Yes Button
+  save_button:                xpath=//button[@id="saveBtn"]                             #Save Buttonn
+  page_listbox:               xpath=//mat-select[@role='listbox']
+  pagination_title:           xpath=//mat-paginator/div[contains(.,'Records per page:')]
+
+  #General Tab
+  general_tab_ui:             xpath=//a[contains(.,'GENERAL')]
+  business_account_id_ui:     xpath=//input[@name='businessAccountId']
+  cancel_button_ui:           xpath=//button[@id='btn-cancel']
+  edit_button_ui:             xpath=//button[@id='btn-action' and contains(.,'EDIT')]
+  pencil_button_ui:           xpath=//form//button[@class='btn-edit-item']
+  save_button_ui:             xpath=//button[@id='btn-action' and contains(.,'SAVE')]
+  company_name_ui:            xpath=//input[@name='accountName']
+  address_ui:                 xpath=//input[@id='address1']
+  address_ui_label:           xpath=//h2[@id='titleSectionId']
+  phone_ui:                   xpath=//label[@id='phoneNumber']
+  phone_ui_label:             xpath=//h2[contains(.,'Phone Number')]
+  contact_information_ui:     xpath=//label[@id='contactInformation']
+  contact_inf_ui_label:       xpath=//h2[contains(.,'Contact Information')]
+  ok_button_general:          xpath=//button[contains(.,'OK')]
+  success_company_name:       xpath=//div/div/div[contains(.,'Company Name successfully updated')]
+  ok_button_name_company:     xpath=//button[contains(.,'OK')]
+
+  #Company Name
+  edit_company_name_title:    xpath=//h2[contains(.,'Edit Company Name')]
+  company_name_input:         xpath=//app-edit-company-name/form/mat-form-field[1]//input
+  business_account_input:     xpath=//app-edit-company-name/form/mat-form-field[2]//input
+
+  #Address Information
+  add_address_button:         xpath=//div[@id="addressSection"]//button/label
+  edit_address_button:        xpath=//div[@id="addressSection"]//button[@class='btn-edit-item']
+  remove_address_button:      xpath=//div[@id="addressSection"]//button[@class='btn-delete-item']
+  address_title:              xpath=//h2[contains(.,'Add New Address')]
+  edit_address_title:         xpath=//h2[contains(.,'Edit Address')]
+  address_type_select:        xpath=//app-add-new-address/form/div[1]//mat-select
+  edit_address_type_select:   xpath=//app-edit-address-details/form/div[1]//mat-select
+  street_address_1_input:     xpath=//app-add-new-address/form/div[2]//input
+  edit_street_address_1_in:   xpath=//app-edit-address-details/form/div[2]//input
+  street_address_2_input:     xpath=//app-add-new-address/form/div[3]//input
+  edit_street_address_2_in:   xpath=//app-edit-address-details/form/div[3]//input
+  country_select:             xpath=//app-add-new-address/form/div[4]//mat-select
+  edit_country_select:        xpath=//app-edit-address-details/form/div[4]//mat-select
+  province_select:            xpath=//app-add-new-address/form/div[5]//mat-select
+  edit_province_select:       xpath=//app-edit-address-details/form/div[5]//mat-select
+  city_input:                 xpath=//app-add-new-address/form/div[6]//input
+  edit_city_input:            xpath=//app-edit-address-details/form/div[6]//input
+  postal_code_input:          xpath=//app-add-new-address/form/div[7]//input
+  edit_postal_code_input:     xpath=//app-edit-address-details/form/div[7]//input
+  address_deleted_message:    xpath=//div/div/div/div[contains(.,'Address has been successfully deleted')]
+  address_edited_message:     xpath=//div/div/div/div[contains(.,'Address has been successfully updated')]
+  address_added_message:      xpath=//div/div/div/div[contains(.,'Address has been successfully added')]
+  delete_address:             xpath=//div[contains(.,'Are you sure you want to delete this Address?')]
+  delete_address_button:      xpath=//button[contains(.,'Delete')]
+
+  #Phone Number
+  add_phone_button:           xpath=//div[@id="phoneNumberSection"]//button/label
+  edit_phone_button:          xpath=//div[@id="phoneNumberSection"]//button[@class='btn-edit-item']
+  remove_phone_button:        xpath=//div[@id="phoneNumberSection"]//button[@class='btn-delete-item']
+  phone_title:                xpath=//h2[contains(.,'Add New Phone')]
+  edit_phone_title:           xpath=//h2[contains(.,'Edit Phone')]
+  phone_type_select:          xpath=//app-add-new-phone-number/form/div[1]//mat-select
+  edit_phone_type_select:     xpath=//app-edit-phone-number/form/div[1]//mat-select
+  phone_number_input:         xpath=//app-add-new-phone-number/form/div[2]//input
+  edit_phone_number_input:    xpath=//app-edit-phone-number/form/div[2]//input
+  phone_deleted_message:      xpath=//div/div/div/div[contains(.,'Phone Number has been successfully deleted')]
+  phone_edited_message:       xpath=//div/div/div/div[contains(.,'Phone Number has been successfully updated')]
+  phone_added_message:        xpath=//div/div/div/div[contains(.,'Phone Number has been successfully added')]
+  delete_phone_number:        xpath=//div[contains(.,'Are you sure you want to delete this Phone Number?')]
+  delete_phone_button:        xpath=//button[contains(.,'Delete')]
+
+  #Contact Information
+  add_contact_button:         xpath=//div[@id="contactInfoSection"]//button/label
+  edit_contact_button:        xpath=//button[@role='menuitem' and contains(.,'Edit')]
+  remove_contact_button:      xpath=//button[@role='menuitem' and contains(.,'Remove')]
+  contact_title:              xpath=//h2[contains(.,'Add New Contact')]
+  edit_contact_title:         xpath=//h2[contains(.,'Edit Contact')]
+  full_name_input:            xpath=//app-add-new-contact/form/div[1]//input
+  edit_full_name_input:       xpath=//app-edit-contact-details/form/div[1]//input
+  primary_contact_input:      xpath=//app-add-new-contact/form/div[2]
+  edit_primary_contact_input: xpath=//app-edit-contact-details/form/div[2]
+  job_title_input:            xpath=//app-add-new-contact/form/div[3]//input
+  edit_job_title_input:       xpath=//app-edit-contact-details/form/div[3]//input
+  email_address_input:        xpath=//app-add-new-contact/form/div[4]//input
+  edit_email_address_input:   xpath=//app-edit-contact-details/form/div[4]//input
+  mobile_number_input:        xpath=//app-add-new-contact/form/div[5]//input
+  edit_mobile_number_input:   xpath=//app-edit-contact-details/form/div[5]//input
+  pho_number_input:           xpath=//app-add-new-contact/form/div[6]//input
+  edit_pho_number_input:      xpath=//app-edit-contact-details/form/div[6]//input
+  contact_deleted_message:    xpath=//div/div/div/div[contains(.,'Contact') and contains(.,'has been successfully deleted')]
+  contact_edited_message:     xpath=//div/div/div/div[contains(.,'Contact') and contains(.,'has been successfully updated')]
+  contact_added_message:      xpath=//div/div/div/div[contains(.,'Contact') and contains(.,'has been successfully added')]
+  delete_contact_information: xpath=//div[contains(.,'Are you sure you want to delete this contact information?')]
+  delete_contact_button:      xpath=//button[contains(.,'Delete')]
+
+  #Alternate Accounts Tab
+  alternate_tab_ui:           xpath=//a[contains(.,'ALTERNATE')]
+  add_alternate_button:       xpath=//button[@id='new-entitlement-button']
+  map_alt_account_title:      xpath=//h2[contains(.,'Map Alternate Account')]
+  map_alt_account_close:      xpath=//button[@aria-label='close dialog']
+  platform_select:            xpath=//mat-select[@role='listbox']
+  cancel_button_map_alt_acc:  xpath=//button[@name='cancel']
+  add_button_map_alt_acc:     xpath=//button[@name='save']
+  add_but_map_alt_acc_dis:    xpath=//button[@name='save' and @disabled='true']
+  primary_id_input_text:      xpath=//div[@class='row ng-star-inserted' and contains(.,'Primary ID')]//input
+  xrs_company_id_input_text:  xpath=//div[@class='row ng-star-inserted' and contains(.,'XRS Company ID')]//input
+  xrs_company_login_input:    xpath=//div[@class='row ng-star-inserted' and contains(.,'XRS Company Login ID')]//input
+  xrs_company_guid_input:     xpath=//div[@class='row ng-star-inserted' and contains(.,'XRS Company GUID')]//input
+  xrs_instance_input_text:    xpath=//div[@class='row ng-star-inserted' and contains(.,'XRS Instance')]//input
+  rn_buid_input_text:         xpath=//div[@class='row ng-star-inserted' and contains(.,'RN BUID')]//input
+  rn_customer_id_input_text:  xpath=//div[@class='row ng-star-inserted' and contains(.,'RN Customer ID')]//input
+  rn_instance_id_input_text:  xpath=//div[@class='row ng-star-inserted' and contains(.,'RN Instance')]//input
+  success_message_alternate:  xpath=//div[contains(.,'Alternate Account has been successfully added')]
+  remove_alternate_account:   xpath=//span[contains(.,'Remove')]
+  remove_title_alternate:     xpath=//h2[contains(.,'Remove Alternate Account')]
+  remove_button_alternate:    xpath=//button[contains(.,'Remove')]
+  cancel_button_alternate:    xpath=//button[contains(.,'Cancel')]
+  success_remove_alternate:   xpath=//div[contains(.,'Alternate Account has been successfully deleted')]
+  warning_pending_alternate:  xpath=//div[contains(.,'Entitlement has pending setup')]
+
+  #Entitlements Tab
+  entitlements_tab_ui:        xpath=//a[contains(.,'ENTITLEMENTS')]
+  search_bar_entitlements_ui: xpath=//input[@placeholder='Search']
+
+  #Add Account Details
+  account_name:               xpath=//input[@id='accountName']                          #Account Name Input Text
+  account_details_title:      xpath=//span[@id='addAccount']                            #Add Account Tittle
+  address_1:                  xpath=//input[@id='streetAddress1']                       #Street Addess 1 Input Text
+  address_2:                  xpath=//input[@id='streetAddress2']                       #Street Addess 2 Input Text
+  city:                       xpath=//input[@id='city']                                 #City Input Text
+  confirmation_message:       xpath=//div[@id='swal2-content']                          #Confirmation Message of Success Creation
+  country:                    xpath=//mat-select[@id='country']                         #Country Drop Menu
+  country_selected:           xpath=//*[contains(.,'United States')]/span               #United States
+  dot_number:                 xpath=//input[@id='dotNumber']                            #DOT Number Input Text
+  error_message:              xpath=//div[contains(.,'Error')]                          #Error Message
+  email:                      xpath=//input[@id='email']                                #Email Input Text
+  first_name:                 xpath=//input[@id='firstName']                            #First Name Input Text
+  information_message:        xpath=//div[@id='swal2-content']                          #Information Message for the Confirmation
+  last_name:                  xpath=//input[@id='lastName']                             #Last Name Input Text
+  ok_button:                  xpath=//button[contains(.,'OK')]                          #No Button
+  no_button:                  xpath=//button[contains(.,'NO')]                          #No Button
+  phone_number_legal:         xpath=//input[@id='legalPhoneNumber']                     #Phone Number Legal Input Text
+  phone_number_notice:        xpath=//input[@id='noticePhoneNumber']                    #Phone Number Notice Input Text
+  phone_number_primary:       xpath=//input[@id='primaryPhoneNumber']                   #Phone Number Primary Input Text
+  phone_number_mobile:        xpath=//input[@id='mobilePhoneNumber']                    #Phone Number Mobile Input Text
+  postal_code:                xpath=//input[@id='postalCode']                           #Postal Code Input Text
+  reset_button:               xpath=//button[@id='resetBtn']                            #Reset Button
+  save_button:                xpath=//button[@id='saveBtn']                             #Save Button
+  state:                      xpath=//input[@id='state']                                #State Input Text
+  yes_button:                 xpath=//button[contains(.,'YES')]                         #Yes Button
+  website:                    xpath=//input[@id='website']                              #Website Input Text
+
+  #Entitlement Summary from Manual Transactions
+  OT1_HOS:                    xpath=//span[contains(.,'OT1-HOS')]                       #OT1-HOS Entitlement Summary
+  OT1_GM:                     xpath=//span[contains(.,'OT1-GM')]                        #OT1-GM Entitlement Summary
+
+  #Entitlements Details
+  #Service Plans (SKU Bundles)
+  _OT1_EP_AMGC: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[1]/mat-table/mat-row[1]/mat-cell[1]/mat-checkbox
+  _OTA_EP_REPLAY: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[1]/mat-table/mat-row[2]/mat-cell[1]/mat-checkbox
+  _OT1_MA: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[1]/mat-table/mat-row[3]/mat-cell[1]/mat-checkbox
+  _OT1_PP_AMGC: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[1]/mat-table/mat-row[4]/mat-cell[1]/mat-checkbox
+  _OT1_PP_REPLAY: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[1]/mat-table/mat-row[5]/mat-cell[1]/mat-checkbox
+  #Itemized SKUs
+  _OT1_CER: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[1]/mat-cell[1]/mat-checkbox
+  _OT1_DAWF: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[2]/mat-cell[1]/mat-checkbox
+  _OT1_DVIR: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[3]/mat-cell[1]/mat-checkbox
+  _OT1_DWF_POD: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[4]/mat-cell[1]/mat-checkbox
+  _OT1_EF: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[5]/mat-cell[1]/mat-checkbox
+  _OT1_FM_EFM: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[6]/mat-cell[1]/mat-checkbox
+  _OT1_FT: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[7]/mat-cell[1]/mat-checkbox
+  _OT1_GM: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[8]/mat-cell[1]/mat-checkbox
+  _OT1_HOS: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[9]/mat-cell[1]/mat-checkbox
+  _OT1_ODM: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[10]/mat-cell[1]/mat-checkbox
+  _OT1_PM: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[11]/mat-cell[1]/mat-checkbox
+  _OT1_SCVP: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[12]/mat-cell[1]/mat-checkbox
+  _OT1_TM: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[2]/mat-table/mat-row[13]/mat-cell[1]/mat-checkbox
+  #Components
+  _aa: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[1]/mat-cell[1]/mat-checkbox
+  _aad: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[2]/mat-cell[1]/mat-checkbox
+  _aig: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[3]/mat-cell[1]/mat-checkbox
+  _ame: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[4]/mat-cell[1]/mat-checkbox
+  _amgc: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[5]/mat-cell[1]/mat-checkbox
+  _aus: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[6]/mat-cell[1]/mat-checkbox
+  _brg: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[7]/mat-cell[1]/mat-checkbox
+  _cer: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[8]/mat-cell[1]/mat-checkbox
+  _cev: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[9]/mat-cell[1]/mat-checkbox
+  _clr: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[10]/mat-cell[1]/mat-checkbox
+  _cpl: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[11]/mat-cell[1]/mat-checkbox
+  _crer: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[12]/mat-cell[1]/mat-checkbox
+  _cps: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[13]/mat-cell[1]/mat-checkbox
+  _cus: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[14]/mat-cell[1]/mat-checkbox
+  _cxrs: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[15]/mat-cell[1]/mat-checkbox
+  _czm: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[16]/mat-cell[1]/mat-checkbox
+  _d: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[17]/mat-cell[1]/mat-checkbox
+  _das: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[18]/mat-cell[1]/mat-checkbox
+  _dat: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[19]/mat-cell[1]/mat-checkbox
+  _dat1g: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[20]/mat-cell[1]/mat-checkbox
+  _dbr: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[21]/mat-cell[1]/mat-checkbox
+  _dc: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[22]/mat-cell[1]/mat-checkbox
+  _dm: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[23]/mat-cell[1]/mat-checkbox
+  _dor: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[24]/mat-cell[1]/mat-checkbox
+  _dot: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[25]/mat-cell[1]/mat-checkbox
+  _dp: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[26]/mat-cell[1]/mat-checkbox
+  _drc: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[27]/mat-cell[1]/mat-checkbox
+  _dtc: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[28]/mat-cell[1]/mat-checkbox
+  _dvir: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[29]/mat-cell[1]/mat-checkbox
+  _dwf: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[30]/mat-cell[1]/mat-checkbox
+  _dwfa: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[31]/mat-cell[1]/mat-checkbox
+  _dxd: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[32]/mat-cell[1]/mat-checkbox
+  _edd: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[33]/mat-cell[1]/mat-checkbox
+  _ef: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[34]/mat-cell[1]/mat-checkbox
+  _ehw: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[35]/mat-cell[1]/mat-checkbox
+  _emp: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[36]/mat-cell[1]/mat-checkbox
+  _env: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[37]/mat-cell[1]/mat-checkbox
+  _eqv: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[38]/mat-cell[1]/mat-checkbox
+  _fm: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[39]/mat-cell[1]/mat-checkbox
+  _fme: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[40]/mat-cell[1]/mat-checkbox
+  _fv: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[41]/mat-cell[1]/mat-checkbox
+  _gm: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[42]/mat-cell[1]/mat-checkbox
+  _h: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[43]/mat-cell[1]/mat-checkbox
+  _idd: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[44]/mat-cell[1]/mat-checkbox
+  _idp: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[45]/mat-cell[1]/mat-checkbox
+  _ifta: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[46]/mat-cell[1]/mat-checkbox
+  _igk: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[47]/mat-cell[1]/mat-checkbox
+  _ina: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[48]/mat-cell[1]/mat-checkbox
+  _ins: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[49]/mat-cell[1]/mat-checkbox
+  _irt: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[50]/mat-cell[1]/mat-checkbox
+  _isc: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[51]/mat-cell[1]/mat-checkbox
+  _itl: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[52]/mat-cell[1]/mat-checkbox
+  _ixp: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[53]/mat-cell[1]/mat-checkbox
+  _ini: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[54]/mat-cell[1]/mat-checkbox
+  _mfm: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[55]/mat-cell[1]/mat-checkbox
+  _mrs: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[56]/mat-cell[1]/mat-checkbox
+  _mss: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[57]/mat-cell[1]/mat-checkbox
+  _n: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[58]/mat-cell[1]/mat-checkbox
+  _nav: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[59]/mat-cell[1]/mat-checkbox
+  _nvp: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[60]/mat-cell[1]/mat-checkbox
+  _ocm: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[61]/mat-cell[1]/mat-checkbox
+  _one: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[62]/mat-cell[1]/mat-checkbox
+  _ost: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[63]/mat-cell[1]/mat-checkbox
+  _pbh: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[64]/mat-cell[1]/mat-checkbox
+  _pbp: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[65]/mat-cell[1]/mat-checkbox
+  _pbt: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[66]/mat-cell[1]/mat-checkbox
+  _pic: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[67]/mat-cell[1]/mat-checkbox
+  _pln: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[68]/mat-cell[1]/mat-checkbox
+  _pm: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[69]/mat-cell[1]/mat-checkbox
+  _r: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[70]/mat-cell[1]/mat-checkbox
+  _rag: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[71]/mat-cell[1]/mat-checkbox
+  _ral: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[72]/mat-cell[1]/mat-checkbox
+  _ras: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[73]/mat-cell[1]/mat-checkbox
+  _rat: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[74]/mat-cell[1]/mat-checkbox
+  _rcr: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[75]/mat-cell[1]/mat-checkbox
+  _relay: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[76]/mat-cell[1]/mat-checkbox
+  _rer: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[77]/mat-cell[1]/mat-checkbox
+  _rfc: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[78]/mat-cell[1]/mat-checkbox
+  _rhp: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[79]/mat-cell[1]/mat-checkbox
+  _rls: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[80]/mat-cell[1]/mat-checkbox
+  _rml: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[81]/mat-cell[1]/mat-checkbox
+  _rmn: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[82]/mat-cell[1]/mat-checkbox
+  _rmr: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[83]/mat-cell[1]/mat-checkbox
+  _rna: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[84]/mat-cell[1]/mat-checkbox
+  _rol: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[85]/mat-cell[1]/mat-checkbox
+  _ror: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[86]/mat-cell[1]/mat-checkbox
+  _rpr: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[87]/mat-cell[1]/mat-checkbox
+  _rps: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[88]/mat-cell[1]/mat-checkbox
+  _rrl: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[89]/mat-cell[1]/mat-checkbox
+  _rsa: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[90]/mat-cell[1]/mat-checkbox
+  _rss: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[91]/mat-cell[1]/mat-checkbox
+  _rst: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[92]/mat-cell[1]/mat-checkbox
+  _rsw: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[93]/mat-cell[1]/mat-checkbox
+  _rwt: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[94]/mat-cell[1]/mat-checkbox
+  _sat: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[95]/mat-cell[1]/mat-checkbox
+  _scan: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[96]/mat-cell[1]/mat-checkbox
+  _scp: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[97]/mat-cell[1]/mat-checkbox
+  _sms: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[98]/mat-cell[1]/mat-checkbox
+  _spa: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[99]/mat-cell[1]/mat-checkbox
+  _stu: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[100]/mat-cell[1]/mat-checkbox
+  _svcp: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[101]/mat-cell[1]/mat-checkbox
+  _svdp: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[102]/mat-cell[1]/mat-checkbox
+  _svlm: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[103]/mat-cell[1]/mat-checkbox
+  _sys: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[104]/mat-cell[1]/mat-checkbox
+  _tax: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[105]/mat-cell[1]/mat-checkbox
+  _tel: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[106]/mat-cell[1]/mat-checkbox
+  _tl: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[107]/mat-cell[1]/mat-checkbox
+  _urh: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[108]/mat-cell[1]/mat-checkbox
+  _utr: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[109]/mat-cell[1]/mat-checkbox
+  _vphs: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[110]/mat-cell[1]/mat-checkbox
+  _wsi: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[111]/mat-cell[1]/mat-checkbox
+  _xrs: xpath=//*[@id='main-body']/app-root/div[2]/app-account-details-page/div/div[2]/mat-card[3]/div/div[3]/mat-table/mat-row[112]/mat-cell[1]/mat-checkbox
+

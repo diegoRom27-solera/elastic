@@ -2,7 +2,7 @@ import os
 import json
 import re
 
-directorio_p = './TaxManager-robot-testSuite-main'
+directorio_p = './automation-superbarlauncher-robot-main'
 archivo_json = 'indice.json'
 
 objetos = []

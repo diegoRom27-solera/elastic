@@ -1,0 +1,28 @@
+hierarchy_groups_page_locators:
+  #Hierarchy Main Page
+  hierarchy_iframe:           document.querySelector("body > ot-root > ot-module-loader-v2 > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#main-content-iframe")
+  # hierarchy_tab:              document.querySelector("body > ot-root > ot-module-loader-v2 > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#layout-container > div.sidenav > a:nth-child(3)")
+  hierarchy_tab:              document.querySelector("body > ot-root > ot-module-loader-v2 > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#layout-container-v2 > ot-navigation > nav > ot-nav-body").shadowRoot.querySelector("div > ot-nav-list").shadowRoot.querySelector("ul > ot-nav-item:nth-child(3)").shadowRoot.querySelector("#\\33  > ot-nav-item-option").shadowRoot.querySelector("div > span")
+  hierarchy_title:            xpath=//h1[contains(.,'Hierarchy')]
+  hierarchy_groups_button:    xpath=//li[@id="homemu-admin.operations.hierarchygroups"]/a
+  add_hierachy_group:         xpath=//button[@id="addGroup"]
+  input_name:                 xpath=//input[@id="name"]
+  root_parent_node_list:      xpath=//mat-select[@id="parentId"]
+  root_list_option:           xpath=//mat-icon[@class="mat-icon notranslate mat-icon-rtl-mirror material-icons mat-icon-no-color"]
+  parent_node_root:           xpath=//mat-option[@id="mat-option-1"]
+  input_description:          xpath=//input[@id="description"]
+  save_button:                xpath=//button[@id="saveGroup"]
+  cancel_button:              xpath=//button[@id="cancelGroup"]
+  confirmation_button:        xpath=//button[@class="swal2-confirm mat-button confirm-swal-button"]
+  delete_button:              xpath=//button[@id="deleteGroup"]
+  confirm_deletion:           xpath=//button[@class="swal2-confirm mat-button remove-swal-button"]
+  edit_button:                xpath=//button[@id="editGroup"]
+  name_label:                 xpath=//mat-label[contains(.,'Name')]
+  parent_node_label:          xpath=//mat-label[contains(.,'Parent Node')]
+  description_label:          xpath=//mat-label[contains(.,'Description')]
+
+  #Tree
+  root_tree:                  xpath=//span[contains(.,'ROOT')]
+  icon_root_tree:             xpath=//mat-tree-node[1]/button/span/mat-icon[@role='img']
+  icon_root_test:             xpath=//mat-tree-node[2]/button/span/mat-icon[@role='img']
+  search_input_text:          xpath=//input[@id='searchText']

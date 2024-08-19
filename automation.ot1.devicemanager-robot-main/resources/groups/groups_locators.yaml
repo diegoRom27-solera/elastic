@@ -1,0 +1,83 @@
+groups_locators:
+  #Groups Page
+  search_bar:           xpath=//input[@placeholder='search']
+  kebab_button:         xpath=//mat-icon[contains(.,'more_vert')]
+  add_device_button:    xpath=//button[contains(.,'Add Device Group')]
+  phone_settings_but:   xpath=//button[contains(.,'Phone Group Settings')]
+
+  #Phone Settings
+  group_configuration:  xpath=//h2[contains(.,'Select Device Group Configuration')]
+  simple_button:        xpath=//label/span[contains(.,'Simple Configuration')]
+  group_button:         xpath=//label/span[contains(.,'Group Configuration')]
+  save_configuration:   xpath=//button[contains(.,'Save')]
+  cancel_configuration: xpath=//button[contains(.,'Cancel')]
+
+  #Group Details
+  apps_tab:             xpath=//a[contains(.,'APPS')]
+  devices_tab:          xpath=//a[contains(.,'DEVICES')]
+  info_tab:             xpath=//a[contains(.,'INFO')]
+
+  #Apps Tab
+  search_appcat:        xpath=//input[@placeholder='Enter APPCAT Name']
+  arrow_back_button:    xpath=//mat-icon[contains(.,'arrow_back_ios')]
+  setting_button:       xpath=//mat-icon[contains(.,'settings')]
+  override_button:      xpath=//button[contains(.,'Override')]
+  edit_button_appcat:   xpath=//button[contains(.,'Edit')]
+  inherit_value_button: xpath=//button[contains(.,'Inherit value')]
+  edit_option:          xpath=//textarea
+  send_button:          xpath=//mat-icon[contains(.,'send')]
+  success_message:      xpath=//div[contains(.,'The attribute value is overriden.')]
+  inherit_message:      xpath=//div[contains(.,'The attribute value is inherited.')]
+  ok_button:            xpath=//button[contains(.,'OK')]
+  appcat_text:          xpath=//mat-label
+  enable_title:         xpath=//p[contains(.,'ENABLED')]
+  disable_title:        xpath=//p[contains(.,'DISABLED')]
+  enable_button:        xpath=//div[@class='mat-slide-toggle-thumb']
+  enable_message:       xpath=//div[contains(.,'Application is updated for the group.')]
+
+  #Different Apps
+  amgc_card:            xpath=//mat-card-title[contains(.,'AMGC')]
+  bendix_card:          xpath=//mat-card-title[contains(.,'Bendix')]
+  fault_card:           xpath=//mat-card-title[contains(.,'Fault Monitoring Group')]
+  panic_card:           xpath=//mat-card-title[contains(.,'Panic')]
+  ivgb_card:            xpath=//mat-card-title[contains(.,'IVGB')]
+  sr4_card:             xpath=//h3[contains(.,'SR4 OT1')]
+  sr4_ot1_v2_card:      xpath=//mat-card-title[contains(.,'SD-SR4CONTSROTDM')]
+  sr4_ot1_v3_card:      xpath=//mat-card-title[contains(.,'SD-SR4CONT Group')]
+  sr5_card:             xpath=//h3[contains(.,'SR5 OT1')]
+
+  #Group Info
+  name_input:           xpath=//input[@name='name']
+  group_type_selector:  xpath=//mat-select[@name='groupType']
+  apps_selector:        xpath=//mat-select[@name='apps']
+  cancel_button:        xpath=//a[contains(.,'CANCEL')]
+  save_button:          xpath=//button[contains(.,'SAVE')]
+  group_message:        xpath=//div[contains(.,'Group is created.')]
+  group_updated:        xpath=//div[contains(.,'Group info is updated.')]
+  ok_button:            xpath=//button[contains(.,'OK')]
+  
+  #Devices Tab
+  search_device_tab:    xpath=//input[@name='searchText']
+
+  #Info Tab
+  delete_button:        xpath=//a[contains(.,'DELETE')]
+  edit_button:          xpath=//button[contains(.,'EDIT')]
+  continue_button:      xpath=//button[contains(.,'CONTINUE')]
+  cancel_button:        xpath=//button[contains(.,'CANCEL')]
+  delete_message:       xpath=//div[contains(.,'Continue and delete group?')]
+  success_deleted:      xpath=//div[contains(.,'Group is deleted.')]
+  favorite_button:      xpath=//mat-icon[contains(.,'star')]
+  default_group_mes:    xpath=//div[contains(.,'Default Group')]
+  favorite_success:     xpath=//div[contains(.,'Group is set as default.')]
+  apps_combobox:        xpath=//mat-select[@name='apps']
+
+  #Filter Type From Device Groups
+  close_button:        xpath=//mat-chip/mat-icon[contains(.,'close')]
+  type_amgc:           xpath=//span[contains(.,'AMGC')]
+  type_ivg:            xpath=//span[contains(.,'IVG')]
+  type_ivgb:           xpath=//span[contains(.,'IVGB')]
+  type_phone:          xpath=//span[contains(.,'PHONE')]
+  type_sdsr4cont:      xpath=//span[contains(.,'SD-SR4CONT')]
+  type_relay:          xpath=//span[contains(.,'XRS-RELAY')]
+  type_ng21:           xpath=//span[contains(.,'NG21')]
+  type_sr5:            xpath=//span[contains(.,'SR5')]

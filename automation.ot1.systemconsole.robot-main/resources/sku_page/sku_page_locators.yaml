@@ -1,0 +1,37 @@
+sku_page_locators:
+  #SKU Builder Main Page
+  edit_button:            xpath=//button[@id='edit-sku']
+  new_sku:                xpath=//button[@id='new-sku']
+  sku_iframe:             document.querySelector("body > ot-root > ot-module-loader > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#main-content-iframe")
+  sku_tab:                document.querySelector("body > ot-root > ot-module-loader > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#layout-container-v2 > ot-navigation > nav > ot-nav-body").shadowRoot.querySelector("div > ot-nav-list").shadowRoot.querySelector("ul > ot-nav-item:nth-child(2)").shadowRoot.querySelector("#\\32  > ot-nav-item-option").shadowRoot.querySelector("div > span")
+  search_text:            xpath=//input[@name='searchText']
+  title:                  xpath=//h1[contains(.,'SKU Configuration')]
+
+  #Edit Form
+  entitlement_label:      xpath=//div/div/div/app-tree-table/div/table/thead/tr/th/span/strong[contains(.,'ENTITLEMENT')]
+  entitlement_type_label: xpath=//div/div/div/app-tree-table/div/table/thead/tr/th/strong[contains(.,'ENTITLEMENT TYPE')]
+  category_label:         xpath=//div/div/div/app-tree-table/div/table/thead/tr/th/strong[contains(.,'CATEGORY')]
+  includes_label:         xpath=//div/div/div/app-tree-table/div/table/thead/tr/th/strong[contains(.,'INCLUDES')]
+  sku_if_label:           xpath=//mat-label[contains(.,'SKU ID')]
+  name_label:             xpath=//mat-label[contains(.,'Name')]
+  type_label:             xpath=//mat-label[contains(.,'Type')]
+  description_label:      xpath=//mat-label[contains(.,'Description')]
+  parent_label:           xpath=//mat-label[contains(.,'Parent')]
+  prov_type_label:        xpath=//mat-label[contains(.,'Prov Type')]
+  sku_if_input:           xpath=//input[@name='skuId']
+  name_input:             xpath=//input[@name='name']
+  type_menu:              xpath=//mat-select[@name='skuType']
+  description_input:      xpath=//textarea[@name='description']
+  parent_menu:            xpath=//mat-select[@name='skuParent']
+  prov_type_menu:         xpath=//mat-select[@name='provType']
+  save_button_disabled:   xpath=//*[contains(.,'SAVE')]/button[@disabled='true']
+  save_button:            xpath=//button[@name='save']
+  cancel_button:          xpath=//button[@name='cancel']
+  close_button:           xpath=//mat-icon[contains(.,'close')]
+
+  #Message Information
+  pop_up_success_message: xpath=//h2[contains(.,'Success')]
+  ok_button:              xpath=//button[contains(.,'OK')]
+
+  #Pagination
+  pagination_listbox:     xpath=//mat-select[@role='listbox']

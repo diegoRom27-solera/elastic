@@ -1,0 +1,62 @@
+devices_page_locators:
+  #Devices Page
+  account_button:       xpath=//button/span/mat-icon[contains(.,'domain')]
+  add_device_button:    xpath=//button[contains(.,'Add Device')]
+  importdevices_button: xpath=//button[contains(.,'Import Devices')]
+  export_pdf_button:    xpath=//button[contains(.,'Export as PDF')]
+  export_csv_button:    xpath=//button[contains(.,'Export as CSV')]
+  kebab_button:         xpath=//mat-icon[contains(.,'more_vert')]
+  search_bar:           xpath=//input[@placeholder='Enter DeviceID or Serial Number']
+  title_devices:        xpath=//h1[contains(.,'Devices')]
+  first_checkbox:       xpath=//mat-header-row[contains(.,'Device')]//mat-checkbox
+  no_devices_found:     xpath=//p[contains(.,'No Devices Found')]
+
+  #Device Info
+  device_combo:         xpath=//mat-select[@name='deviceGroupGuid']
+  device_id_input:      xpath=//input[@name='deviceId']
+  description_input:    xpath=//input[@name='description']
+  phone_number_input:   xpath=//input[@name='phoneNumber']
+  network_combo:        xpath=//mat-select[@name='network']
+  platform_combo:       xpath=//mat-select[@name='platform']
+  cancel_button:        xpath=//span[contains(.,'Cancel')]
+  save_button:          xpath=//button[contains(.,'Save')]
+  success_message_add:  xpath=//h2[contains(.,'Success')]
+
+  #Customer Account
+  search_bar_customer:  xpath=//input[@placeholder='Search']
+
+  #Device Details
+  info_tab:             xpath=//a[contains(.,'INFO')]
+  apps_tab:             xpath=//a[contains(.,'APPS')]
+  tools_tab:            xpath=//a[contains(.,'TOOLS')]
+  search_appcat:        xpath=//input[@placeholder='Enter APPCAT Name']
+  arrow_back_button:    xpath=//mat-icon[contains(.,'arrow_back_ios')]
+
+  #Apps Tab
+  setting_button:       xpath=//mat-icon[contains(.,'settings')]
+  override_button:      xpath=//button[contains(.,'Override')]
+  edit_button:          xpath=//button[contains(.,'Edit')]
+  inherit_value_button: xpath=//button[contains(.,'Inherit value')]
+  edit_option:          xpath=//mat-card-content//input
+  send_button:          xpath=//mat-icon[contains(.,'send')]
+  clear_button:         xpath=//mat-icon[contains(.,'clear')]
+  success_message:      xpath=//div[contains(.,'Appcat updated successfully!')]
+  inherit_message:      xpath=//div[contains(.,'Appcat updated successfully!')]
+  ok_button:            xpath=//button[contains(.,'OK')]
+  appcat_text:          xpath=//mat-label
+  appcat_text_phone:    xpath=//mat-label[contains(.,'ZoomDistanceInMilesForAdvisoriesSearch')]
+  edit_option_phone:    xpath=//mat-card-content[contains(.,'Advisor')]//input
+  activation_status:    xpath=//mat-form-field[contains(.,'Activation Status')]
+  sr4_card:             xpath=//h3[contains(.,'SR4 OT1')]
+
+  #Tools Tab
+  group_drop:           xpath=//mat-select[@name='grpList']
+  group_checkbox:       xpath=//mat-select[@id='mat-select-20']
+  move_message:         xpath=//div[contains(.,'Continue and move the device to device group?')]
+  move_success:         xpath=//div[contains(.,'Device is moved to the selected group.')]
+
+  #Info Tab
+  delete_button:        xpath=//a[contains(.,'Delete')]
+  delete_message:       xpath=//h2[contains(.,'Delete Device')]
+  continue_button:      xpath=//button[contains(.,'Continue')]
+  success_deleted:      xpath=//h2[contains(.,'Deleted')]

@@ -1,0 +1,3 @@
+portal_page_locators:
+  hierarchy_groups_button:  xpath=//*[@id='homemu-admin.operations.hierarchygroups']
+  menu_options:             xpath=//*[@class='menu-group']

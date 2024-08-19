@@ -1,0 +1,3636 @@
+[
+    {
+        "Title": "Load The Device Manager Devices Page",
+        "Content": "Load The Device Manager Devices Page \n 'Wait Until Element Is Visible    ${devices_page_locators.title_devices}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load The Device Manager Devices Page",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "title_devices": "xpath=//h1[contains(.,'Devices')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Switch Company",
+        "Content": "Switch Company \n '[Arguments]    ${companyName}' 'Wait Until Element Is Visible    ${devices_page_locators.account_button}         ${TIME}' 'Click Element                    ${devices_page_locators.account_button}' 'Wait Until Element Is Visible    ${devices_page_locators.search_bar_customer}    ${TIME}' 'Input Text                       ${devices_page_locators.search_bar_customer}    ${companyName}' 'Press Keys                       ${devices_page_locators.search_bar_customer}    ENTER' '${XPATH} =    list_xpath.Obtain Xpath For Customer Account                       ${companyName}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}' 'Sleep    ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Switch Company",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "account_button": "xpath=//button/span/mat-icon[contains(.,'domain')]"
+                },
+                {
+                    "account_button": "xpath=//button/span/mat-icon[contains(.,'domain')]"
+                },
+                {
+                    "search_bar_customer": "xpath=//input[@placeholder='Search']"
+                },
+                {
+                    "search_bar_customer": "xpath=//input[@placeholder='Search']"
+                },
+                {
+                    "search_bar_customer": "xpath=//input[@placeholder='Search']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Search An Platform from Search Bar",
+        "Content": "Search An Platform from Search Bar \n '[Arguments]    ${platform}' 'Wait Until Element Is Visible    ${devices_page_locators.search_bar}    ${TIME}' 'Click Element                    ${devices_page_locators.search_bar}' '${XPATH} =    list_xpath.Obtain Xpath For Select A Platform             ${platform}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}' 'Sleep    ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Search An Platform from Search Bar",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                },
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Search An DeviceID from Search Bar",
+        "Content": "Search An DeviceID from Search Bar \n '[Arguments]    ${deviceId}' 'Wait Until Element Is Visible    ${devices_page_locators.search_bar}    ${TIME}' 'Input Text                       ${devices_page_locators.search_bar}    ${deviceId}' 'Press Keys                       ${devices_page_locators.search_bar}    ENTER' 'IF    '${BROWSER}'=='ff'' 'Sleep    ${MI_TIME}' 'Mouse Over    ${devices_page_locators.account_button}' 'END'",
+        "ApplicableTo": {
+            "Keyword": "Search An DeviceID from Search Bar",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                },
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                },
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                },
+                {
+                    "account_button": "xpath=//button/span/mat-icon[contains(.,'domain')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Select An DeviceID",
+        "Content": "Select An DeviceID \n '[Arguments]    ${deviceId}' '${XPATH} =    list_xpath.Obtain Xpath Click First Device    ${deviceId}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Select An DeviceID",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On The First Device",
+        "Content": "Click On The First Device \n '[Arguments]    ${platform}' '${XPATH} =    list_xpath.Obtain Xpath Click First Device    ${platform}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Click On The First Device",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate The First Device",
+        "Content": "Validate The First Device \n '[Arguments]    ${platform}' '${XPATH} =    list_xpath.Obtain Xpath Click First Device    ${platform}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate The First Device",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Swith To Apps Tab",
+        "Content": "Swith To Apps Tab \n 'Wait Until Element Is Visible    ${devices_page_locators.apps_tab}    ${TIME}' 'Click Element                    ${devices_page_locators.apps_tab}'",
+        "ApplicableTo": {
+            "Keyword": "Swith To Apps Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "apps_tab": "xpath=//a[contains(.,'APPS')]"
+                },
+                {
+                    "apps_tab": "xpath=//a[contains(.,'APPS')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Swith To Tools Tab",
+        "Content": "Swith To Tools Tab \n 'Wait Until Element Is Visible    ${devices_page_locators.tools_tab}    ${TIME}' 'Click Element                    ${devices_page_locators.tools_tab}'",
+        "ApplicableTo": {
+            "Keyword": "Swith To Tools Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "tools_tab": "xpath=//a[contains(.,'TOOLS')]"
+                },
+                {
+                    "tools_tab": "xpath=//a[contains(.,'TOOLS')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Swith To Info Tab",
+        "Content": "Swith To Info Tab \n 'Wait Until Element Is Visible    ${devices_page_locators.info_tab}    ${TIME}' 'Click Element                    ${devices_page_locators.info_tab}'",
+        "ApplicableTo": {
+            "Keyword": "Swith To Info Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "info_tab": "xpath=//a[contains(.,'INFO')]"
+                },
+                {
+                    "info_tab": "xpath=//a[contains(.,'INFO')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Search Appcat",
+        "Content": "Search Appcat \n '[Arguments]    ${appcatName}' 'Wait Until Element Is Visible    ${devices_page_locators.search_appcat}    ${TIME}' 'Clear Element Text               ${devices_page_locators.search_appcat}' 'Input Text                       ${devices_page_locators.search_appcat}    ${appcatName}' '${XPATH} =    list_xpath.Obtain Xpath Click Appcat    ${appcatName}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Search Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "search_appcat": "xpath=//input[@placeholder='Enter APPCAT Name']"
+                },
+                {
+                    "search_appcat": "xpath=//input[@placeholder='Enter APPCAT Name']"
+                },
+                {
+                    "search_appcat": "xpath=//input[@placeholder='Enter APPCAT Name']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Arrow Back from Device Details",
+        "Content": "Click On Arrow Back from Device Details \n 'Wait Until Element Is Visible    ${devices_page_locators.arrow_back_button}    ${TIME}' 'Click Element                    ${devices_page_locators.arrow_back_button}' 'Sleep    ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Arrow Back from Device Details",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "arrow_back_button": "xpath=//mat-icon[contains(.,'arrow_back_ios')]"
+                },
+                {
+                    "arrow_back_button": "xpath=//mat-icon[contains(.,'arrow_back_ios')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Override to Appcat",
+        "Content": "Override to Appcat \n '[Arguments]    ${value}' 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.appcat_text}        ${TIME}' 'Mouse Over                       ${devices_page_locators.appcat_text}' 'Wait Until Element Is Visible    ${devices_page_locators.setting_button}     ${TIME}' 'Click Element                    ${devices_page_locators.setting_button}' '${INHERIT} =    Run Keyword And Ignore Error    Wait Until Element Is Visible    ${devices_page_locators.inherit_value_button}    ${UL_TIME}' 'IF    '${INHERIT}[0]'=='PASS'' 'Click Element                    ${devices_page_locators.inherit_value_button}' 'Wait Until Element Is Visible    ${devices_page_locators.inherit_message}    ${TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.ok_button}          ${TIME}' 'Click Element                    ${devices_page_locators.ok_button}' 'Wait Until Element Is Visible    ${devices_page_locators.appcat_text}        ${TIME}' 'Mouse Over                       ${devices_page_locators.appcat_text}' 'Wait Until Element Is Visible    ${devices_page_locators.setting_button}     ${TIME}' 'Click Element                    ${devices_page_locators.setting_button}' 'END' 'Wait Until Element Is Visible    ${devices_page_locators.override_button}    ${TIME}' 'Click Element                    ${devices_page_locators.override_button}' 'Wait Until Element Is Visible    ${devices_page_locators.edit_option}        ${TIME}' 'Clear Element Text               ${devices_page_locators.edit_option}' 'Input Text                       ${devices_page_locators.edit_option}        ${value}' 'Wait Until Element Is Visible    ${devices_page_locators.send_button}        ${TIME}' 'Click Element                    ${devices_page_locators.send_button}'",
+        "ApplicableTo": {
+            "Keyword": "Override to Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                },
+                {
+                    "inherit_message": "xpath=//div[contains(.,'The attribute value is inherited.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "override_button": "xpath=//button[contains(.,'Override')]"
+                },
+                {
+                    "override_button": "xpath=//button[contains(.,'Override')]"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Edit to Appcat",
+        "Content": "Edit to Appcat \n '[Arguments]    ${value}' 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.appcat_text}       ${TIME}' 'Mouse Over                       ${devices_page_locators.appcat_text}' 'Wait Until Element Is Visible    ${devices_page_locators.setting_button}    ${TIME}' 'Click Element                    ${devices_page_locators.setting_button}' 'Wait Until Element Is Visible    ${devices_page_locators.edit_button}       ${TIME}' 'Click Element                    ${devices_page_locators.edit_button}' 'Wait Until Element Is Visible    ${devices_page_locators.edit_option}       ${TIME}' 'Clear Element Text               ${devices_page_locators.edit_option}' 'Input Text                       ${devices_page_locators.edit_option}       ${value}' 'Wait Until Element Is Visible    ${devices_page_locators.send_button}       ${TIME}' 'Click Element                    ${devices_page_locators.send_button}'",
+        "ApplicableTo": {
+            "Keyword": "Edit to Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Edit to Appcat and Cancel",
+        "Content": "Edit to Appcat and Cancel \n 'Sleep    ${MI_TIME}' '[Arguments]    ${value}' 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.appcat_text}       ${TIME}' 'Mouse Over                       ${devices_page_locators.appcat_text}' 'Wait Until Element Is Visible    ${devices_page_locators.setting_button}    ${TIME}' 'Click Element                    ${devices_page_locators.setting_button}' 'Wait Until Element Is Visible    ${devices_page_locators.edit_button}       ${TIME}' 'Click Element                    ${devices_page_locators.edit_button}' 'Wait Until Element Is Visible    ${devices_page_locators.edit_option}       ${TIME}' 'Clear Element Text               ${devices_page_locators.edit_option}' 'Input Text                       ${devices_page_locators.edit_option}       ${value}' 'Wait Until Element Is Visible    ${devices_page_locators.clear_button}      ${TIME}' 'Click Element                    ${devices_page_locators.clear_button}'",
+        "ApplicableTo": {
+            "Keyword": "Edit to Appcat and Cancel",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "clear_button": "xpath=//mat-icon[contains(.,'clear')]"
+                },
+                {
+                    "clear_button": "xpath=//mat-icon[contains(.,'clear')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Inherit Value to Appcat",
+        "Content": "Inherit Value to Appcat \n 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.appcat_text}             ${TIME}' 'Mouse Over                       ${devices_page_locators.appcat_text}' 'Wait Until Element Is Visible    ${devices_page_locators.setting_button}          ${TIME}' 'Click Element                    ${devices_page_locators.setting_button}' 'Wait Until Element Is Visible    ${devices_page_locators.inherit_value_button}    ${TIME}' 'Click Element                    ${devices_page_locators.inherit_value_button}'",
+        "ApplicableTo": {
+            "Keyword": "Inherit Value to Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Override to Appcat about Phone",
+        "Content": "Override to Appcat about Phone \n '[Arguments]    ${value}' 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.appcat_text_phone}        ${TIME}' 'Mouse Over                       ${devices_page_locators.appcat_text_phone}' 'Wait Until Element Is Visible    ${devices_page_locators.setting_button}     ${TIME}' 'Click Element                    ${devices_page_locators.setting_button}' 'Wait Until Element Is Visible    ${devices_page_locators.override_button}    ${TIME}' 'Click Element                    ${devices_page_locators.override_button}' 'Wait Until Element Is Visible    ${devices_page_locators.edit_option_phone}        ${TIME}' 'Clear Element Text               ${devices_page_locators.edit_option_phone}' 'Input Text                       ${devices_page_locators.edit_option_phone}        ${value}' 'Wait Until Element Is Visible    ${devices_page_locators.send_button}        ${TIME}' 'Click Element                    ${devices_page_locators.send_button}'",
+        "ApplicableTo": {
+            "Keyword": "Override to Appcat about Phone",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "appcat_text_phone": "xpath=//mat-label[contains(.,'ZoomDistanceInMilesForAdvisoriesSearch')]"
+                },
+                {
+                    "appcat_text_phone": "xpath=//mat-label[contains(.,'ZoomDistanceInMilesForAdvisoriesSearch')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "override_button": "xpath=//button[contains(.,'Override')]"
+                },
+                {
+                    "override_button": "xpath=//button[contains(.,'Override')]"
+                },
+                {
+                    "edit_option_phone": "xpath=//mat-card-content[contains(.,'Advisor')]//input"
+                },
+                {
+                    "edit_option_phone": "xpath=//mat-card-content[contains(.,'Advisor')]//input"
+                },
+                {
+                    "edit_option_phone": "xpath=//mat-card-content[contains(.,'Advisor')]//input"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Edit to Appcat about Phone",
+        "Content": "Edit to Appcat about Phone \n '[Arguments]    ${value}' 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.appcat_text_phone}       ${TIME}' 'Mouse Over                       ${devices_page_locators.appcat_text_phone}' 'Wait Until Element Is Visible    ${devices_page_locators.setting_button}    ${TIME}' 'Click Element                    ${devices_page_locators.setting_button}' 'Wait Until Element Is Visible    ${devices_page_locators.edit_button}       ${TIME}' 'Click Element                    ${devices_page_locators.edit_button}' 'Wait Until Element Is Visible    ${devices_page_locators.edit_option_phone}       ${TIME}' 'Clear Element Text               ${devices_page_locators.edit_option_phone}' 'Input Text                       ${devices_page_locators.edit_option_phone}       ${value}' 'Wait Until Element Is Visible    ${devices_page_locators.send_button}       ${TIME}' 'Click Element                    ${devices_page_locators.send_button}'",
+        "ApplicableTo": {
+            "Keyword": "Edit to Appcat about Phone",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "appcat_text_phone": "xpath=//mat-label[contains(.,'ZoomDistanceInMilesForAdvisoriesSearch')]"
+                },
+                {
+                    "appcat_text_phone": "xpath=//mat-label[contains(.,'ZoomDistanceInMilesForAdvisoriesSearch')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_option_phone": "xpath=//mat-card-content[contains(.,'Advisor')]//input"
+                },
+                {
+                    "edit_option_phone": "xpath=//mat-card-content[contains(.,'Advisor')]//input"
+                },
+                {
+                    "edit_option_phone": "xpath=//mat-card-content[contains(.,'Advisor')]//input"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Inherit Value to Appcat about Phone",
+        "Content": "Inherit Value to Appcat about Phone \n 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.appcat_text_phone}             ${TIME}' 'Mouse Over                       ${devices_page_locators.appcat_text_phone}' 'Wait Until Element Is Visible    ${devices_page_locators.setting_button}          ${TIME}' 'Click Element                    ${devices_page_locators.setting_button}' 'Wait Until Element Is Visible    ${devices_page_locators.inherit_value_button}    ${TIME}' 'Click Element                    ${devices_page_locators.inherit_value_button}'",
+        "ApplicableTo": {
+            "Keyword": "Inherit Value to Appcat about Phone",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "appcat_text_phone": "xpath=//mat-label[contains(.,'ZoomDistanceInMilesForAdvisoriesSearch')]"
+                },
+                {
+                    "appcat_text_phone": "xpath=//mat-label[contains(.,'ZoomDistanceInMilesForAdvisoriesSearch')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify Success Message",
+        "Content": "Verify Success Message \n 'Wait Until Element Is Visible    ${devices_page_locators.success_message}    ${TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.ok_button}          ${TIME}' 'Click Element                    ${devices_page_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Verify Success Message",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "success_message": "xpath=//h2[contains(.,'Success')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify Success Inherited Message",
+        "Content": "Verify Success Inherited Message \n 'Wait Until Element Is Visible    ${devices_page_locators.inherit_message}    ${TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.ok_button}          ${TIME}' 'Click Element                    ${devices_page_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Verify Success Inherited Message",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "inherit_message": "xpath=//div[contains(.,'The attribute value is inherited.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Select A Group From Move To Group",
+        "Content": "Select A Group From Move To Group \n '[Arguments]    ${groupName}' 'Wait Until Element Is Visible    ${devices_page_locators.group_drop}    ${TIME}' 'Click Element                    ${devices_page_locators.group_drop}' '${XPATH} =    list_xpath.Obtain Xpath To Select A Group Type    ${groupName}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Select A Group From Move To Group",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "group_drop": "xpath=//mat-select[@name='grpList']"
+                },
+                {
+                    "group_drop": "xpath=//mat-select[@name='grpList']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Move Device",
+        "Content": "Validate Move Device \n 'Wait Until Element Is Visible    ${devices_page_locators.move_message}    ${TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.ok_button}       ${TIME}' 'Click Element                    ${devices_page_locators.ok_button}' 'Wait Until Element Is Visible    ${devices_page_locators.move_success}    ${TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.ok_button}       ${TIME}' 'Click Element                    ${devices_page_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Move Device",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "move_message": "xpath=//div[contains(.,'Continue and move the device to device group?')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "move_success": "xpath=//div[contains(.,'Device is moved to the selected group.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On The All Checkbox",
+        "Content": "Click On The All Checkbox \n 'Wait Until Element Is Visible    ${devices_page_locators.first_checkbox}    ${TIME}' 'Click Element                    ${devices_page_locators.first_checkbox}'",
+        "ApplicableTo": {
+            "Keyword": "Click On The All Checkbox",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "first_checkbox": "xpath=//mat-header-row[contains(.,'Device')]//mat-checkbox"
+                },
+                {
+                    "first_checkbox": "xpath=//mat-header-row[contains(.,'Device')]//mat-checkbox"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Kebab Option",
+        "Content": "Click On Kebab Option \n 'Wait Until Element Is Visible    ${devices_page_locators.kebab_button}    ${TIME}' 'Click Element                    ${devices_page_locators.kebab_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Kebab Option",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "kebab_button": "xpath=//mat-icon[contains(.,'more_vert')]"
+                },
+                {
+                    "kebab_button": "xpath=//mat-icon[contains(.,'more_vert')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Export as PDF file",
+        "Content": "Export as PDF file \n 'Wait Until Element Is Visible    ${devices_page_locators.export_pdf_button}    ${TIME}' 'Click Element                    ${devices_page_locators.export_pdf_button}'",
+        "ApplicableTo": {
+            "Keyword": "Export as PDF file",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "export_pdf_button": "xpath=//button[contains(.,'Export as PDF')]"
+                },
+                {
+                    "export_pdf_button": "xpath=//button[contains(.,'Export as PDF')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Export as CVS file",
+        "Content": "Export as CVS file \n 'Wait Until Element Is Visible    ${devices_page_locators.export_csv_button}    ${TIME}' 'Click Element                    ${devices_page_locators.export_csv_button}'",
+        "ApplicableTo": {
+            "Keyword": "Export as CVS file",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "export_csv_button": "xpath=//button[contains(.,'Export as CSV')]"
+                },
+                {
+                    "export_csv_button": "xpath=//button[contains(.,'Export as CSV')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Add Device",
+        "Content": "Click On Add Device \n 'Wait Until Element Is Visible    ${devices_page_locators.add_device_button}    ${TIME}' 'Click Element                    ${devices_page_locators.add_device_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Add Device",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "add_device_button": "xpath=//button[contains(.,'Add Device Group')]"
+                },
+                {
+                    "add_device_button": "xpath=//button[contains(.,'Add Device Group')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Fill Device Info fields",
+        "Content": "Fill Device Info fields \n '[Arguments]    ${deviceGroup}    ${deviceId}    ${description}    ${phoneNumber}    ${network}    ${platform}' 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.device_combo}          ${TIME}' 'Click Element                    ${devices_page_locators.device_combo}' '${XPATH} =    list_xpath.Obtain Xpath For Combo                                 ${deviceGroup}' 'Wait Until Element Is Visible    ${XPATH}                                       ${TIME}' 'Click Element                    ${XPATH}' 'Wait Until Element Is Visible    ${devices_page_locators.device_id_input}       ${TIME}' 'Clear Element Text               ${devices_page_locators.device_id_input}' 'Input Text                       ${devices_page_locators.device_id_input}       ${deviceId}' 'Wait Until Element Is Visible    ${devices_page_locators.description_input}     ${TIME}' 'Clear Element Text               ${devices_page_locators.description_input}' 'Input Text                       ${devices_page_locators.description_input}     ${description}' 'Wait Until Element Is Visible    ${devices_page_locators.phone_number_input}    ${TIME}' 'Clear Element Text               ${devices_page_locators.phone_number_input}' 'Input Text                       ${devices_page_locators.phone_number_input}    ${phoneNumber}' 'Wait Until Element Is Visible    ${devices_page_locators.network_combo}         ${TIME}' 'Click Element                    ${devices_page_locators.network_combo}' '${XPATH} =    list_xpath.Obtain Xpath For Combo                                 ${network}' 'Wait Until Element Is Visible    ${XPATH}                                       ${TIME}' 'Click Element                    ${XPATH}' 'Wait Until Element Is Visible    ${devices_page_locators.platform_combo}        ${TIME}' 'Click Element                    ${devices_page_locators.platform_combo}' '${XPATH} =    list_xpath.Obtain Xpath For Combo                                 ${platform}' 'Wait Until Element Is Visible    ${XPATH}                                       ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Device Info fields",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "device_combo": "xpath=//mat-select[@name='deviceGroupGuid']"
+                },
+                {
+                    "device_combo": "xpath=//mat-select[@name='deviceGroupGuid']"
+                },
+                {
+                    "device_id_input": "xpath=//input[@name='deviceGuid']"
+                },
+                {
+                    "device_id_input": "xpath=//input[@name='deviceGuid']"
+                },
+                {
+                    "device_id_input": "xpath=//input[@name='deviceGuid']"
+                },
+                {
+                    "description_input": "xpath=//input[@name='description']"
+                },
+                {
+                    "description_input": "xpath=//input[@name='description']"
+                },
+                {
+                    "description_input": "xpath=//input[@name='description']"
+                },
+                {
+                    "phone_number_input": "xpath=//input[@name='phoneNumber']"
+                },
+                {
+                    "phone_number_input": "xpath=//input[@name='phoneNumber']"
+                },
+                {
+                    "phone_number_input": "xpath=//input[@name='phoneNumber']"
+                },
+                {
+                    "network_combo": "xpath=//mat-select[@name='network']"
+                },
+                {
+                    "network_combo": "xpath=//mat-select[@name='network']"
+                },
+                {
+                    "platform_combo": "xpath=//mat-select[@name='platform']"
+                },
+                {
+                    "platform_combo": "xpath=//mat-select[@name='platform']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Edit Device Info fields",
+        "Content": "Edit Device Info fields \n '[Arguments]    ${description}    ${phoneNumber}    ${network}    ${platform}' 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.description_input}     ${TIME}' 'Clear Element Text               ${devices_page_locators.description_input}' 'Input Text                       ${devices_page_locators.description_input}     ${description}' 'Wait Until Element Is Visible    ${devices_page_locators.phone_number_input}    ${TIME}' 'Clear Element Text               ${devices_page_locators.phone_number_input}' 'Input Text                       ${devices_page_locators.phone_number_input}    ${phoneNumber}' 'Wait Until Element Is Visible    ${devices_page_locators.network_combo}         ${TIME}' 'Click Element                    ${devices_page_locators.network_combo}' '${XPATH} =    list_xpath.Obtain Xpath For Combo                                 ${network}' 'Wait Until Element Is Visible    ${XPATH}                                       ${TIME}' 'Click Element                    ${XPATH}' 'Wait Until Element Is Visible    ${devices_page_locators.platform_combo}        ${TIME}' 'Click Element                    ${devices_page_locators.platform_combo}' '${XPATH} =    list_xpath.Obtain Xpath For Combo                                 ${platform}' 'Wait Until Element Is Visible    ${XPATH}                                       ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Edit Device Info fields",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "description_input": "xpath=//input[@name='description']"
+                },
+                {
+                    "description_input": "xpath=//input[@name='description']"
+                },
+                {
+                    "description_input": "xpath=//input[@name='description']"
+                },
+                {
+                    "phone_number_input": "xpath=//input[@name='phoneNumber']"
+                },
+                {
+                    "phone_number_input": "xpath=//input[@name='phoneNumber']"
+                },
+                {
+                    "phone_number_input": "xpath=//input[@name='phoneNumber']"
+                },
+                {
+                    "network_combo": "xpath=//mat-select[@name='network']"
+                },
+                {
+                    "network_combo": "xpath=//mat-select[@name='network']"
+                },
+                {
+                    "platform_combo": "xpath=//mat-select[@name='platform']"
+                },
+                {
+                    "platform_combo": "xpath=//mat-select[@name='platform']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Save Button",
+        "Content": "Click On Save Button \n 'Wait Until Element Is Visible    ${devices_page_locators.save_button}    ${TIME}' 'Click Element                    ${devices_page_locators.save_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Save Button",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "save_button": "xpath=//span[contains(.,'Save')]"
+                },
+                {
+                    "save_button": "xpath=//span[contains(.,'Save')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Edit Button",
+        "Content": "Click On Edit Button \n 'Wait Until Element Is Visible    ${devices_page_locators.edit_button}    ${TIME}' 'Click Element                    ${devices_page_locators.edit_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Edit Button",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Cancel Button",
+        "Content": "Click On Cancel Button \n 'Wait Until Element Is Visible    ${devices_page_locators.cancel_button}    ${TIME}' 'Click Element                    ${devices_page_locators.cancel_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Cancel Button",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "cancel_button": "xpath=//button[contains(.,'Cancel')]"
+                },
+                {
+                    "cancel_button": "xpath=//button[contains(.,'Cancel')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Succes Message Verification",
+        "Content": "Succes Message Verification \n 'Wait Until Element Is Visible    ${devices_page_locators.success_message_add}    ${TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.ok_button}              ${TIME}' 'Click Element                    ${devices_page_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Succes Message Verification",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "success_message_add": "xpath=//h2[contains(.,'Success')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Activation Status Verification",
+        "Content": "Activation Status Verification \n 'Wait Until Element Is Visible    ${devices_page_locators.activation_status}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Activation Status Verification",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "activation_status": "xpath=//mat-form-field[contains(.,'Activation Status')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Device Info Verification",
+        "Content": "Device Info Verification \n '[Arguments]    ${deviceId}    ${description}    ${network}    ${platform}' '${XPATH} =    list_xpath.Obtain Xpath For Details    ${deviceId}' 'Wait Until Element Is Visible    ${XPATH}            ${TIME}' '${XPATH} =    list_xpath.Obtain Xpath For Details    ${description}' 'Wait Until Element Is Visible    ${XPATH}            ${TIME}' '${XPATH} =    list_xpath.Obtain Xpath For Details    ${network}' 'Wait Until Element Is Visible    ${XPATH}            ${TIME}' '${XPATH} =    list_xpath.Obtain Xpath For Details    ${platform}' 'Wait Until Element Is Visible    ${XPATH}            ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Device Info Verification",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Delete Button",
+        "Content": "Click On Delete Button \n 'Wait Until Element Is Visible    ${devices_page_locators.delete_button}    ${TIME}' 'Click Element                    ${devices_page_locators.delete_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Delete Button",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "delete_button": "xpath=//a[contains(.,'DELETE')]"
+                },
+                {
+                    "delete_button": "xpath=//a[contains(.,'DELETE')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Continue With Device Delete",
+        "Content": "Continue With Device Delete \n 'Wait Until Element Is Visible    ${devices_page_locators.delete_message}     ${TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.continue_button}    ${TIME}' 'Click Element                    ${devices_page_locators.continue_button}'",
+        "ApplicableTo": {
+            "Keyword": "Continue With Device Delete",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "delete_message": "xpath=//div[contains(.,'Continue and delete group?')]"
+                },
+                {
+                    "continue_button": "xpath=//button[contains(.,'Continue')]"
+                },
+                {
+                    "continue_button": "xpath=//button[contains(.,'Continue')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify That Device is Deleted",
+        "Content": "Verify That Device is Deleted \n 'Wait Until Element Is Visible    ${devices_page_locators.success_deleted}    ${TIME}' 'Wait Until Element Is Visible    ${devices_page_locators.ok_button}          ${TIME}' 'Click Element                    ${devices_page_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Verify That Device is Deleted",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "success_deleted": "xpath=//div[contains(.,'Group is deleted.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Scroll To Row Number",
+        "Content": "Scroll To Row Number \n '[Arguments]    ${rowNumber}' '${XPATH} =    list_xpath.Obtain Xpath For Row    ${rowNumber}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Scroll Element Into View         ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Scroll To Row Number",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Current Devices Number",
+        "Content": "Validate Current Devices Number \n '[Arguments]    ${current}' '${XPATH} =    list_xpath.Obtain Xpath For Current Devices    ${current}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Current Devices Number",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On The Up Icon For The Column",
+        "Content": "Click On The Up Icon For The Column \n '[Arguments]    ${column}' '${XPATH} =    list_xpath.Obtain Xpath For Column    ${column}' 'Wait Until Element Is Visible    ${XPATH}           ${TIME}' 'Click Element                    ${XPATH}' '${XPATH} =    list_xpath.Obtain Xpath For Up        ${column}' 'Wait Until Element Is Visible    ${XPATH}           ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On The Up Icon For The Column",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On The Down Icon For The Column",
+        "Content": "Click On The Down Icon For The Column \n '[Arguments]    ${column}' '${XPATH} =    list_xpath.Obtain Xpath For Column    ${column}' 'Wait Until Element Is Visible    ${XPATH}           ${TIME}' 'Click Element                    ${XPATH}' '${XPATH} =    list_xpath.Obtain Xpath For Down      ${column}' 'Wait Until Element Is Visible    ${XPATH}           ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On The Down Icon For The Column",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A SR4 OT1 Application",
+        "Content": "Validate Fields From A SR4 OT1 Application \n 'Wait Until Element Is Visible    ${devices_page_locators.sr4_card}       ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A SR4 OT1 Application",
+            "URL": "https://fleetsolutions-qae.solera.com/device_page",
+            "Locators": [
+                {
+                    "sr4_card": "xpath=//h3[contains(.,'SR4 OT1')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Load Fleet Config Page From Device Manager",
+        "Content": "Load Fleet Config Page From Device Manager \n 'Wait Until Element Is Visible    ${fleet_config_locators.search_bar}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Fleet Config Page From Device Manager",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Select An Platform From Search Bar",
+        "Content": "Select An Platform From Search Bar \n '[Arguments]    ${platform}' 'Wait Until Element Is Visible    ${fleet_config_locators.search_bar}      ${TIME}' 'Click Element                    ${fleet_config_locators.search_bar}' '${XPATH} =    list_xpath.Obtain Xpath For Select A Platform From Fleet    ${platform}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}' 'Sleep    ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Select An Platform From Search Bar",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                },
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Search Appcat",
+        "Content": "Search Appcat \n '[Arguments]    ${appcatName}' 'Wait Until Element Is Visible    ${fleet_config_locators.search_appcat}    ${TIME}' 'Clear Element Text               ${fleet_config_locators.search_appcat}' 'Input Text                       ${fleet_config_locators.search_appcat}    ${appcatName}' '${XPATH} =    list_xpath.Obtain Xpath Click Appcat    ${appcatName}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Search Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "search_appcat": "xpath=//input[@placeholder='Enter APPCAT Name']"
+                },
+                {
+                    "search_appcat": "xpath=//input[@placeholder='Enter APPCAT Name']"
+                },
+                {
+                    "search_appcat": "xpath=//input[@placeholder='Enter APPCAT Name']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Override to Appcat",
+        "Content": "Override to Appcat \n '[Arguments]    ${value}' 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.appcat_text}        ${TIME}' 'Mouse Over                       ${fleet_config_locators.appcat_text}' 'Wait Until Element Is Visible    ${fleet_config_locators.setting_button}     ${TIME}' 'Click Element                    ${fleet_config_locators.setting_button}' '${INHERIT} =    Run Keyword And Ignore Error    Wait Until Element Is Visible    ${fleet_config_locators.inherit_value_button}    ${UL_TIME}' 'IF    '${INHERIT}[0]'=='PASS'' 'Click Element                    ${fleet_config_locators.inherit_value_button}' 'Wait Until Element Is Visible    ${fleet_config_locators.inherit_message}    ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.ok_button}          ${TIME}' 'Click Element                    ${fleet_config_locators.ok_button}' 'Wait Until Element Is Visible    ${fleet_config_locators.appcat_text}        ${TIME}' 'Mouse Over                       ${fleet_config_locators.appcat_text}' 'Wait Until Element Is Visible    ${fleet_config_locators.setting_button}     ${TIME}' 'Click Element                    ${fleet_config_locators.setting_button}' 'END' 'Wait Until Element Is Visible    ${fleet_config_locators.override_button}    ${TIME}' 'Click Element                    ${fleet_config_locators.override_button}' 'Wait Until Element Is Visible    ${fleet_config_locators.edit_option}        ${TIME}' 'Clear Element Text               ${fleet_config_locators.edit_option}' 'Input Text                       ${fleet_config_locators.edit_option}        ${value}' 'Wait Until Element Is Visible    ${fleet_config_locators.send_button}        ${TIME}' 'Click Element                    ${fleet_config_locators.send_button}'",
+        "ApplicableTo": {
+            "Keyword": "Override to Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                },
+                {
+                    "inherit_message": "xpath=//div[contains(.,'The attribute value is inherited.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "override_button": "xpath=//button[contains(.,'Override')]"
+                },
+                {
+                    "override_button": "xpath=//button[contains(.,'Override')]"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Edit to Appcat",
+        "Content": "Edit to Appcat \n '[Arguments]    ${value}' 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.appcat_text}       ${TIME}' 'Mouse Over                       ${fleet_config_locators.appcat_text}' 'Wait Until Element Is Visible    ${fleet_config_locators.setting_button}    ${TIME}' 'Click Element                    ${fleet_config_locators.setting_button}' 'Wait Until Element Is Visible    ${fleet_config_locators.edit_button}       ${TIME}' 'Click Element                    ${fleet_config_locators.edit_button}' 'Wait Until Element Is Visible    ${fleet_config_locators.edit_option}       ${TIME}' 'Clear Element Text               ${fleet_config_locators.edit_option}' 'Input Text                       ${fleet_config_locators.edit_option}       ${value}' 'Wait Until Element Is Visible    ${fleet_config_locators.send_button}       ${TIME}' 'Click Element                    ${fleet_config_locators.send_button}'",
+        "ApplicableTo": {
+            "Keyword": "Edit to Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Inherit Value to Appcat",
+        "Content": "Inherit Value to Appcat \n 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.appcat_text}             ${TIME}' 'Mouse Over                       ${fleet_config_locators.appcat_text}' 'Wait Until Element Is Visible    ${fleet_config_locators.setting_button}          ${TIME}' 'Click Element                    ${fleet_config_locators.setting_button}' 'Wait Until Element Is Visible    ${fleet_config_locators.inherit_value_button}    ${TIME}' 'Click Element                    ${fleet_config_locators.inherit_value_button}'",
+        "ApplicableTo": {
+            "Keyword": "Inherit Value to Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify Success Message",
+        "Content": "Verify Success Message \n 'Wait Until Element Is Visible    ${fleet_config_locators.success_message}    ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.ok_button}          ${TIME}' 'Click Element                    ${fleet_config_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Verify Success Message",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "success_message": "xpath=//h2[contains(.,'Success')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify Success Inherited Message",
+        "Content": "Verify Success Inherited Message \n 'Wait Until Element Is Visible    ${fleet_config_locators.inherit_message}    ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.ok_button}          ${TIME}' 'Click Element                    ${fleet_config_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Verify Success Inherited Message",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "inherit_message": "xpath=//div[contains(.,'The attribute value is inherited.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A AMGC Platform",
+        "Content": "Validate Fields From A AMGC Platform \n 'Wait Until Element Is Visible    ${fleet_config_locators.amgc_card}      ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.bendix_card}    ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.fault_card}     ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.panic_card}     ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A AMGC Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "amgc_card": "xpath=//mat-card-title[contains(.,'AMGC')]"
+                },
+                {
+                    "bendix_card": "xpath=//mat-card-title[contains(.,'Bendix')]"
+                },
+                {
+                    "fault_card": "xpath=//mat-card-title[contains(.,'Fault Monitoring Group')]"
+                },
+                {
+                    "panic_card": "xpath=//mat-card-title[contains(.,'Panic')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A IVG Platform",
+        "Content": "Validate Fields From A IVG Platform \n 'Wait Until Element Is Visible    ${fleet_config_locators.title_ivg}      ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A IVG Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "title_ivg": "xpath=//h3[contains(.,'Omnitracs Nav')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A IVGB Platform",
+        "Content": "Validate Fields From A IVGB Platform \n 'Wait Until Element Is Visible    ${fleet_config_locators.ivgb_card}      ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.bendix_card}    ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.fault_card}     ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.panic_card}     ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A IVGB Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "ivgb_card": "xpath=//mat-card-title[contains(.,'IVGB')]"
+                },
+                {
+                    "bendix_card": "xpath=//mat-card-title[contains(.,'Bendix')]"
+                },
+                {
+                    "fault_card": "xpath=//mat-card-title[contains(.,'Fault Monitoring Group')]"
+                },
+                {
+                    "panic_card": "xpath=//mat-card-title[contains(.,'Panic')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A PHONE Platform",
+        "Content": "Validate Fields From A PHONE Platform \n 'Wait Until Element Is Visible    ${fleet_config_locators.preauthenticate_card}    ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.title_phone}             ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A PHONE Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "preauthenticate_card": "xpath=//mat-card-title[contains(.,'Preauthenticate')]"
+                },
+                {
+                    "title_phone": "xpath=//h3[contains(.,'Omnitracs Nav')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A SD-SR2CONT Platform",
+        "Content": "Validate Fields From A SD-SR2CONT Platform \n 'Wait Until Element Is Visible    ${fleet_config_locators.empty_field}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A SD-SR2CONT Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "empty_field": "xpath=//div[contains(.,'There are no applications granted.')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A SD-SR3CONT Platform",
+        "Content": "Validate Fields From A SD-SR3CONT Platform \n 'Wait Until Element Is Visible    ${fleet_config_locators.empty_field}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A SD-SR3CONT Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "empty_field": "xpath=//div[contains(.,'There are no applications granted.')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A SD-SR4CONT Platform",
+        "Content": "Validate Fields From A SD-SR4CONT Platform \n 'Wait Until Element Is Visible    ${fleet_config_locators.sr4cont_group_card}    ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.sr4cont_card}          ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A SD-SR4CONT Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "sr4cont_group_card": "xpath=//mat-card-title[contains(.,'SD-SR4CONT Group')]"
+                },
+                {
+                    "sr4cont_card": "xpath=//mat-card-title[contains(.,'SD-SR4CONTSROTDM')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A NG21 Platform",
+        "Content": "Validate Fields From A NG21 Platform \n 'Wait Until Element Is Visible    ${fleet_config_locators.amgc_card}                ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.bendix_card}              ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.fault_card}               ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.preauthenticate_card}     ${TIME}' 'Wait Until Element Is Visible    ${fleet_config_locators.ng21_phone}               ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A NG21 Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/fleet_config_page",
+            "Locators": [
+                {
+                    "amgc_card": "xpath=//mat-card-title[contains(.,'AMGC')]"
+                },
+                {
+                    "bendix_card": "xpath=//mat-card-title[contains(.,'Bendix')]"
+                },
+                {
+                    "fault_card": "xpath=//mat-card-title[contains(.,'Fault Monitoring Group')]"
+                },
+                {
+                    "preauthenticate_card": "xpath=//mat-card-title[contains(.,'Preauthenticate')]"
+                },
+                {
+                    "ng21_phone": "xpath=//h3[contains(.,'Omnitracs Nav')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Load Groups Page From Device Manager",
+        "Content": "Load Groups Page From Device Manager \n 'Wait Until Element Is Visible    ${groups_locators.search_bar}    ${TIME}' 'Sleep                            ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Groups Page From Device Manager",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Search A Group from Search Bar",
+        "Content": "Search A Group from Search Bar \n '[Arguments]    ${groupName}' 'Wait Until Element Is Visible    ${groups_locators.search_bar}    ${TIME}' 'Input Text                       ${groups_locators.search_bar}    ${groupName}'",
+        "ApplicableTo": {
+            "Keyword": "Search A Group from Search Bar",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                },
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Select A Group",
+        "Content": "Select A Group \n '[Arguments]    ${groupName}' '${XPATH} =    list_xpath.Obtain Xpath To Select A Group    ${groupName}' 'Wait Until Element Is Visible    ${XPATH}                  ${ME_TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Select A Group",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Switch To Apps Tab",
+        "Content": "Switch To Apps Tab \n 'Wait Until Element Is Visible    ${groups_locators.apps_tab}       ${TIME}' 'Click Element                    ${groups_locators.apps_tab}'",
+        "ApplicableTo": {
+            "Keyword": "Switch To Apps Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "apps_tab": "xpath=//a[contains(.,'APPS')]"
+                },
+                {
+                    "apps_tab": "xpath=//a[contains(.,'APPS')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Switch To Devices Tab",
+        "Content": "Switch To Devices Tab \n 'Wait Until Element Is Visible    ${groups_locators.devices_tab}    ${TIME}' 'Click Element                    ${groups_locators.devices_tab}'",
+        "ApplicableTo": {
+            "Keyword": "Switch To Devices Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "devices_tab": "xpath=//a[contains(.,'DEVICES')]"
+                },
+                {
+                    "devices_tab": "xpath=//a[contains(.,'DEVICES')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Switch To Info Tab",
+        "Content": "Switch To Info Tab \n 'Wait Until Element Is Visible    ${groups_locators.info_tab}       ${TIME}' 'Click Element                    ${groups_locators.info_tab}'",
+        "ApplicableTo": {
+            "Keyword": "Switch To Info Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "info_tab": "xpath=//a[contains(.,'INFO')]"
+                },
+                {
+                    "info_tab": "xpath=//a[contains(.,'INFO')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Arrow Back from Group Details",
+        "Content": "Click On Arrow Back from Group Details \n 'Wait Until Element Is Visible    ${groups_locators.arrow_back_button}    ${TIME}' 'Click Element                    ${groups_locators.arrow_back_button}' 'Sleep    ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Arrow Back from Group Details",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "arrow_back_button": "xpath=//mat-icon[contains(.,'arrow_back_ios')]"
+                },
+                {
+                    "arrow_back_button": "xpath=//mat-icon[contains(.,'arrow_back_ios')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Search Appcat",
+        "Content": "Search Appcat \n '[Arguments]    ${appcatName}' 'Wait Until Element Is Visible    ${groups_locators.search_appcat}    ${TIME}' 'Clear Element Text               ${groups_locators.search_appcat}' 'Input Text                       ${groups_locators.search_appcat}    ${appcatName}' '${XPATH} =    list_xpath.Obtain Xpath Click Appcat    ${appcatName}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Search Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "search_appcat": "xpath=//input[@placeholder='Enter APPCAT Name']"
+                },
+                {
+                    "search_appcat": "xpath=//input[@placeholder='Enter APPCAT Name']"
+                },
+                {
+                    "search_appcat": "xpath=//input[@placeholder='Enter APPCAT Name']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Override to Appcat",
+        "Content": "Override to Appcat \n '[Arguments]    ${value}' 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${groups_locators.appcat_text}            ${TIME}' 'Mouse Over                       ${groups_locators.appcat_text}' 'Wait Until Element Is Visible    ${groups_locators.setting_button}         ${TIME}' 'Click Element                    ${groups_locators.setting_button}' '${INHERIT} =    Run Keyword And Ignore Error    Wait Until Element Is Visible    ${groups_locators.inherit_value_button}    ${UL_TIME}' 'IF    '${INHERIT}[0]'=='PASS'' 'Click Element                    ${groups_locators.inherit_value_button}' 'Wait Until Element Is Visible    ${groups_locators.inherit_message}    ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.ok_button}          ${TIME}' 'Click Element                    ${groups_locators.ok_button}' 'Wait Until Element Is Visible    ${groups_locators.appcat_text}        ${TIME}' 'Mouse Over                       ${groups_locators.appcat_text}' 'Wait Until Element Is Visible    ${groups_locators.setting_button}     ${TIME}' 'Click Element                    ${groups_locators.setting_button}' 'END' 'Wait Until Element Is Visible    ${groups_locators.override_button}        ${TIME}' 'Click Element                    ${groups_locators.override_button}' 'Wait Until Element Is Visible    ${groups_locators.edit_option}            ${TIME}' 'Clear Element Text               ${groups_locators.edit_option}' 'Input Text                       ${groups_locators.edit_option}            ${value}' 'Wait Until Element Is Visible    ${groups_locators.send_button}            ${TIME}' 'Click Element                    ${groups_locators.send_button}'",
+        "ApplicableTo": {
+            "Keyword": "Override to Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                },
+                {
+                    "inherit_message": "xpath=//div[contains(.,'The attribute value is inherited.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "override_button": "xpath=//button[contains(.,'Override')]"
+                },
+                {
+                    "override_button": "xpath=//button[contains(.,'Override')]"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Edit to Appcat",
+        "Content": "Edit to Appcat \n '[Arguments]    ${value}' 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${groups_locators.appcat_text}        ${TIME}' 'Mouse Over                       ${groups_locators.appcat_text}' 'Wait Until Element Is Visible    ${groups_locators.setting_button}    ${TIME}' 'Click Element                    ${groups_locators.setting_button}' 'Wait Until Element Is Visible    ${groups_locators.edit_button_appcat}       ${TIME}' 'Click Element                    ${groups_locators.edit_button_appcat}' 'Wait Until Element Is Visible    ${groups_locators.edit_option}       ${TIME}' 'Clear Element Text               ${groups_locators.edit_option}' 'Input Text                       ${groups_locators.edit_option}       ${value}' 'Wait Until Element Is Visible    ${groups_locators.send_button}       ${TIME}' 'Click Element                    ${groups_locators.send_button}'",
+        "ApplicableTo": {
+            "Keyword": "Edit to Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "edit_button_appcat": "xpath=//button[contains(.,'Edit')]"
+                },
+                {
+                    "edit_button_appcat": "xpath=//button[contains(.,'Edit')]"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "edit_option": "xpath=//textarea"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                },
+                {
+                    "send_button": "xpath=//mat-icon[contains(.,'send')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Inherit Value to Appcat",
+        "Content": "Inherit Value to Appcat \n 'Sleep    ${MI_TIME}' 'Wait Until Element Is Visible    ${groups_locators.appcat_text}             ${TIME}' 'Mouse Over                       ${groups_locators.appcat_text}' 'Wait Until Element Is Visible    ${groups_locators.setting_button}          ${TIME}' 'Click Element                    ${groups_locators.setting_button}' 'Wait Until Element Is Visible    ${groups_locators.inherit_value_button}    ${TIME}' 'Click Element                    ${groups_locators.inherit_value_button}'",
+        "ApplicableTo": {
+            "Keyword": "Inherit Value to Appcat",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "appcat_text": "xpath=//mat-label"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "setting_button": "xpath=//mat-icon[contains(.,'settings')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                },
+                {
+                    "inherit_value_button": "xpath=//button[contains(.,'Inherit value')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify Success Message",
+        "Content": "Verify Success Message \n 'Wait Until Element Is Visible    ${groups_locators.success_message}    ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.ok_button}          ${TIME}' 'Click Element                    ${groups_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Verify Success Message",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "success_message": "xpath=//h2[contains(.,'Success')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify Success Inherited Message",
+        "Content": "Verify Success Inherited Message \n 'Wait Until Element Is Visible    ${groups_locators.inherit_message}    ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.ok_button}          ${TIME}' 'Click Element                    ${groups_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Verify Success Inherited Message",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "inherit_message": "xpath=//div[contains(.,'The attribute value is inherited.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Add Device Group",
+        "Content": "Click On Add Device Group \n 'Wait Until Element Is Visible    ${groups_locators.kebab_button}           ${TIME}' 'Click Element                    ${groups_locators.kebab_button}' 'Wait Until Element Is Visible    ${groups_locators.add_device_button}      ${TIME}' 'Click Element                    ${groups_locators.add_device_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Add Device Group",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "kebab_button": "xpath=//mat-icon[contains(.,'more_vert')]"
+                },
+                {
+                    "kebab_button": "xpath=//mat-icon[contains(.,'more_vert')]"
+                },
+                {
+                    "add_device_button": "xpath=//button[contains(.,'Add Device Group')]"
+                },
+                {
+                    "add_device_button": "xpath=//button[contains(.,'Add Device Group')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Phone Group Settings",
+        "Content": "Click On Phone Group Settings \n 'Wait Until Element Is Visible    ${groups_locators.kebab_button}          ${TIME}' 'Click Element                    ${groups_locators.kebab_button}' 'Wait Until Element Is Visible    ${groups_locators.phone_settings_but}    ${TIME}' 'Click Element                    ${groups_locators.phone_settings_but}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Phone Group Settings",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "kebab_button": "xpath=//mat-icon[contains(.,'more_vert')]"
+                },
+                {
+                    "kebab_button": "xpath=//mat-icon[contains(.,'more_vert')]"
+                },
+                {
+                    "phone_settings_but": "xpath=//button[contains(.,'Phone Group Settings')]"
+                },
+                {
+                    "phone_settings_but": "xpath=//button[contains(.,'Phone Group Settings')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Fill Device Group Name",
+        "Content": "Fill Device Group Name \n '[Arguments]    ${groupName}' 'Wait Until Element Is Visible    ${groups_locators.name_input}             ${TIME}' 'Input Text                       ${groups_locators.name_input}             ${groupName}'",
+        "ApplicableTo": {
+            "Keyword": "Fill Device Group Name",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "name_input": "xpath=//input[@name='name']"
+                },
+                {
+                    "name_input": "xpath=//input[@name='name']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Select A Group Type",
+        "Content": "Select A Group Type \n '[Arguments]    ${platform}' 'Wait Until Element Is Visible    ${groups_locators.group_type_selector}    ${TIME}' 'Click Element                    ${groups_locators.group_type_selector}' '${XPATH} =    list_xpath.Obtain Xpath To Select A Group Type    ${platform}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Select A Group Type",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "group_type_selector": "xpath=//mat-select[@name='groupType']"
+                },
+                {
+                    "group_type_selector": "xpath=//mat-select[@name='groupType']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Apps Menu",
+        "Content": "Click On Apps Menu \n 'Sleep    ${UL_TIME}' 'Wait Until Element Is Visible    ${groups_locators.apps_selector}    ${TIME}' 'Click Element                    ${groups_locators.apps_selector}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Apps Menu",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "apps_selector": "xpath=//mat-select[@name='apps']"
+                },
+                {
+                    "apps_selector": "xpath=//mat-select[@name='apps']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Check Or Uncheck An App",
+        "Content": "Check Or Uncheck An App \n '[Arguments]    ${App}' '${XPATH} =    list_xpath.Obtain Xpath To Select A Group Type    ${App}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Check Or Uncheck An App",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate that the application is not found in the dropdown",
+        "Content": "Validate that the application is not found in the dropdown \n '[Arguments]    ${App}' '${XPATH} =    list_xpath.Obtain Xpath To Select A Group Type Do Not Found    ${App}' 'Sleep    ${MI_TIME}' 'Wait Until Element Is Not Visible    ${XPATH}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate that the application is not found in the dropdown",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Press Escape Keyword",
+        "Content": "Press Escape Keyword \n 'Wait Until Element Is Visible    ${groups_locators.name_input}    ${TIME}' '# Click Element                    ${groups_locators.name_input}' 'Press Keys                       ${groups_locators.name_input}    ESC'",
+        "ApplicableTo": {
+            "Keyword": "Press Escape Keyword",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "name_input": "xpath=//input[@name='name']"
+                },
+                {
+                    "name_input": "xpath=//input[@name='name']"
+                },
+                {
+                    "name_input": "xpath=//input[@name='name']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Save Button",
+        "Content": "Click On Save Button \n 'Wait Until Element Is Visible    ${groups_locators.save_button}    ${TIME}' 'Click Element                    ${groups_locators.save_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Save Button",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "save_button": "xpath=//span[contains(.,'Save')]"
+                },
+                {
+                    "save_button": "xpath=//span[contains(.,'Save')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify Success Message from Add Device Group",
+        "Content": "Verify Success Message from Add Device Group \n 'Wait Until Element Is Visible    ${groups_locators.group_message}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Verify Success Message from Add Device Group",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "group_message": "xpath=//div[contains(.,'Group is created.')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify Updated Message from Add Device Group",
+        "Content": "Verify Updated Message from Add Device Group \n 'Wait Until Element Is Visible    ${groups_locators.group_updated}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Verify Updated Message from Add Device Group",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "group_updated": "xpath=//div[contains(.,'Group info is updated.')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On OK Button",
+        "Content": "Click On OK Button \n 'Wait Until Element Is Visible    ${groups_locators.ok_button}    ${TIME}' 'Click Element                    ${groups_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On OK Button",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Search A Device With Serial Number",
+        "Content": "Search A Device With Serial Number \n '[Arguments]    ${deviceId}' 'Wait Until Element Is Visible    ${groups_locators.search_device_tab}    ${TIME}' 'Input Text                       ${groups_locators.search_device_tab}    ${deviceId}'",
+        "ApplicableTo": {
+            "Keyword": "Search A Device With Serial Number",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "search_device_tab": "xpath=//input[@name='searchText']"
+                },
+                {
+                    "search_device_tab": "xpath=//input[@name='searchText']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Select A Device With Serial Number",
+        "Content": "Select A Device With Serial Number \n '[Arguments]    ${deviceId}' '${XPATH} =    list_xpath.Obtain Xpath Device Searched    ${deviceId}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Select A Device With Serial Number",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Delete Button from Info Tab",
+        "Content": "Click On Delete Button from Info Tab \n 'Wait Until Element Is Visible    ${groups_locators.delete_button}    ${TIME}' 'Click Element                    ${groups_locators.delete_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Delete Button from Info Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "delete_button": "xpath=//a[contains(.,'DELETE')]"
+                },
+                {
+                    "delete_button": "xpath=//a[contains(.,'DELETE')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Edit Button from Info Tab",
+        "Content": "Click On Edit Button from Info Tab \n 'Wait Until Element Is Visible    ${groups_locators.edit_button}    ${TIME}' 'Click Element                    ${groups_locators.edit_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Edit Button from Info Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Continue With Group Delete",
+        "Content": "Continue With Group Delete \n 'Wait Until Element Is Visible    ${groups_locators.delete_message}     ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.continue_button}    ${TIME}' 'Click Element                    ${groups_locators.continue_button}'",
+        "ApplicableTo": {
+            "Keyword": "Continue With Group Delete",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "delete_message": "xpath=//div[contains(.,'Continue and delete group?')]"
+                },
+                {
+                    "continue_button": "xpath=//button[contains(.,'Continue')]"
+                },
+                {
+                    "continue_button": "xpath=//button[contains(.,'Continue')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify That Groups is Deleted",
+        "Content": "Verify That Groups is Deleted \n 'Wait Until Element Is Visible    ${groups_locators.success_deleted}    ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.ok_button}          ${TIME}' 'Click Element                    ${groups_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Verify That Groups is Deleted",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "success_deleted": "xpath=//div[contains(.,'Group is deleted.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Select Group Type Filter",
+        "Content": "Select Group Type Filter \n '[Arguments]    ${groupName}' 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${groups_locators.search_bar}    ${TIME}' 'Click Element                    ${groups_locators.search_bar}' '${XPATH} =    list_xpath.Obtain Xpath For Select A Group    ${groupName}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Select Group Type Filter",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                },
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Enbale Delete Button",
+        "Content": "Enbale Delete Button \n 'Wait Until Element Is Visible    ${groups_locators.delete_button}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Enbale Delete Button",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "delete_button": "xpath=//a[contains(.,'DELETE')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Disable Delete Button",
+        "Content": "Disable Delete Button \n 'Wait Until Element Is Not Visible    ${groups_locators.delete_button}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Disable Delete Button",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "delete_button": "xpath=//a[contains(.,'DELETE')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Favorite Button",
+        "Content": "Click On Favorite Button \n 'Wait Until Element Is Visible    ${groups_locators.favorite_button}    ${TIME}' 'Click Element                        ${groups_locators.favorite_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Favorite Button",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "favorite_button": "xpath=//mat-icon[contains(.,'star')]"
+                },
+                {
+                    "favorite_button": "xpath=//mat-icon[contains(.,'star')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Default Group Sucess Message",
+        "Content": "Default Group Sucess Message \n 'Wait Until Element Is Visible    ${groups_locators.default_group_mes}    ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.ok_button}            ${TIME}' 'Click Element                    ${groups_locators.ok_button}' 'Wait Until Element Is Visible    ${groups_locators.favorite_success}     ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.ok_button}            ${TIME}' 'Click Element                    ${groups_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Default Group Sucess Message",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "default_group_mes": "xpath=//div[contains(.,'Default Group')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "favorite_success": "xpath=//div[contains(.,'Group is set as default.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Simple Configuration Option",
+        "Content": "Click On Simple Configuration Option \n 'Wait Until Element Is Visible    ${groups_locators.simple_button}   ${TIME}' 'Click Element                    ${groups_locators.simple_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Simple Configuration Option",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "simple_button": "xpath=//label/span[contains(.,'Simple Configuration')]"
+                },
+                {
+                    "simple_button": "xpath=//label/span[contains(.,'Simple Configuration')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Group Configuration Option",
+        "Content": "Click On Group Configuration Option \n 'Wait Until Element Is Visible    ${groups_locators.group_button}   ${TIME}' 'Click Element                    ${groups_locators.group_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Group Configuration Option",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "group_button": "xpath=//label/span[contains(.,'Group Configuration')]"
+                },
+                {
+                    "group_button": "xpath=//label/span[contains(.,'Group Configuration')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Save From Group Configuration",
+        "Content": "Click On Save From Group Configuration \n 'Wait Until Element Is Visible    ${groups_locators.save_configuration}   ${TIME}' 'Click Element                    ${groups_locators.save_configuration}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Save From Group Configuration",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "save_configuration": "xpath=//button[contains(.,'Save')]"
+                },
+                {
+                    "save_configuration": "xpath=//button[contains(.,'Save')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Cancel From Group Configuration",
+        "Content": "Click On Cancel From Group Configuration \n 'Wait Until Element Is Visible    ${groups_locators.cancel_configuration}   ${TIME}' 'Click Element                    ${groups_locators.cancel_configuration}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Cancel From Group Configuration",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "cancel_configuration": "xpath=//button[contains(.,'Cancel')]"
+                },
+                {
+                    "cancel_configuration": "xpath=//button[contains(.,'Cancel')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A AMGC Platform",
+        "Content": "Validate Fields From A AMGC Platform \n 'Wait Until Element Is Visible    ${groups_locators.amgc_card}      ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.bendix_card}    ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.fault_card}     ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.panic_card}     ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A AMGC Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "amgc_card": "xpath=//mat-card-title[contains(.,'AMGC')]"
+                },
+                {
+                    "bendix_card": "xpath=//mat-card-title[contains(.,'Bendix')]"
+                },
+                {
+                    "fault_card": "xpath=//mat-card-title[contains(.,'Fault Monitoring Group')]"
+                },
+                {
+                    "panic_card": "xpath=//mat-card-title[contains(.,'Panic')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A IVGB Platform",
+        "Content": "Validate Fields From A IVGB Platform \n 'Wait Until Element Is Visible    ${groups_locators.ivgb_card}      ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.bendix_card}    ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.fault_card}     ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.panic_card}     ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A IVGB Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "ivgb_card": "xpath=//mat-card-title[contains(.,'IVGB')]"
+                },
+                {
+                    "bendix_card": "xpath=//mat-card-title[contains(.,'Bendix')]"
+                },
+                {
+                    "fault_card": "xpath=//mat-card-title[contains(.,'Fault Monitoring Group')]"
+                },
+                {
+                    "panic_card": "xpath=//mat-card-title[contains(.,'Panic')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A SR4 Platform",
+        "Content": "Validate Fields From A SR4 Platform \n 'Wait Until Element Is Visible    ${groups_locators.sr4_ot1_v2_card}    ${TIME}' 'Wait Until Element Is Visible    ${groups_locators.sr4_ot1_v3_card}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A SR4 Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "sr4_ot1_v2_card": "xpath=//mat-card-title[contains(.,'SD-SR4CONTSROTDM')]"
+                },
+                {
+                    "sr4_ot1_v3_card": "xpath=//mat-card-title[contains(.,'SD-SR4CONT Group')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A SR4 OT1 Application",
+        "Content": "Validate Fields From A SR4 OT1 Application \n 'Wait Until Element Is Visible    ${groups_locators.sr4_card}       ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A SR4 OT1 Application",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "sr4_card": "xpath=//h3[contains(.,'SR4 OT1')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Fields From A SR5 Platform",
+        "Content": "Validate Fields From A SR5 Platform \n 'Wait Until Element Is Visible    ${groups_locators.sr5_card}       ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Fields From A SR5 Platform",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "sr5_card": "xpath=//h3[contains(.,'SR5 OT1')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Ensure That Bendix Appcat Is Not Visible",
+        "Content": "Ensure That Bendix Appcat Is Not Visible \n 'Wait Until Element Is Not Visible    ${groups_locators.bendix_card}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Ensure That Bendix Appcat Is Not Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "bendix_card": "xpath=//mat-card-title[contains(.,'Bendix')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Ensure That Fault Monitoring Group Appcat Is Not Visible",
+        "Content": "Ensure That Fault Monitoring Group Appcat Is Not Visible \n 'Wait Until Element Is Not Visible    ${groups_locators.fault_card}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Ensure That Fault Monitoring Group Appcat Is Not Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "fault_card": "xpath=//mat-card-title[contains(.,'Fault Monitoring Group')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Ensure That Panic Appcat Is Not Visible",
+        "Content": "Ensure That Panic Appcat Is Not Visible \n 'Wait Until Element Is Not Visible    ${groups_locators.panic_card}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Ensure That Panic Appcat Is Not Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "panic_card": "xpath=//mat-card-title[contains(.,'Panic')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Ensure That SR5 App Is Not Visible",
+        "Content": "Ensure That SR5 App Is Not Visible \n 'Wait Until Element Is Not Visible    ${groups_locators.sr5_card}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Ensure That SR5 App Is Not Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "sr5_card": "xpath=//h3[contains(.,'SR5 OT1')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Ensure That SD-SR4CONTSROTDM Group App Is Not Visible",
+        "Content": "Ensure That SD-SR4CONTSROTDM Group App Is Not Visible \n 'Wait Until Element Is Not Visible    ${groups_locators.sr4_ot1_v2_card}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Ensure That SD-SR4CONTSROTDM Group App Is Not Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "sr4_ot1_v2_card": "xpath=//mat-card-title[contains(.,'SD-SR4CONTSROTDM')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Ensure That SD-SR4CONT Group App Is Not Visible",
+        "Content": "Ensure That SD-SR4CONT Group App Is Not Visible \n 'Wait Until Element Is Not Visible    ${groups_locators.sr4_ot1_v3_card}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Ensure That SD-SR4CONT Group App Is Not Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "sr4_ot1_v3_card": "xpath=//mat-card-title[contains(.,'SD-SR4CONT Group')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate That Only AMGC Is Visible",
+        "Content": "Validate That Only AMGC Is Visible \n 'Wait Until Element Is Visible        ${groups_locators.type_amgc}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivg}           ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivgb}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_phone}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_sdsr4cont}     ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_relay}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ng21}          ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That Only AMGC Is Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "type_amgc": "xpath=//span[contains(.,'AMGC')]"
+                },
+                {
+                    "type_ivg": "xpath=//span[contains(.,'IVG')]"
+                },
+                {
+                    "type_ivgb": "xpath=//span[contains(.,'IVGB')]"
+                },
+                {
+                    "type_phone": "xpath=//span[contains(.,'PHONE')]"
+                },
+                {
+                    "type_sdsr4cont": "xpath=//span[contains(.,'SD-SR4CONT')]"
+                },
+                {
+                    "type_relay": "xpath=//span[contains(.,'XRS-RELAY')]"
+                },
+                {
+                    "type_ng21": "xpath=//span[contains(.,'NG21')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate That Only IVG Is Visible",
+        "Content": "Validate That Only IVG Is Visible \n 'Wait Until Element Is Visible        ${groups_locators.type_ivg}           ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_amgc}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivgb}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_phone}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_sdsr4cont}     ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_relay}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ng21}          ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That Only IVG Is Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "type_ivg": "xpath=//span[contains(.,'IVG')]"
+                },
+                {
+                    "type_amgc": "xpath=//span[contains(.,'AMGC')]"
+                },
+                {
+                    "type_ivgb": "xpath=//span[contains(.,'IVGB')]"
+                },
+                {
+                    "type_phone": "xpath=//span[contains(.,'PHONE')]"
+                },
+                {
+                    "type_sdsr4cont": "xpath=//span[contains(.,'SD-SR4CONT')]"
+                },
+                {
+                    "type_relay": "xpath=//span[contains(.,'XRS-RELAY')]"
+                },
+                {
+                    "type_ng21": "xpath=//span[contains(.,'NG21')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate That Only IVGB Is Visible",
+        "Content": "Validate That Only IVGB Is Visible \n 'Wait Until Element Is Visible        ${groups_locators.type_ivgb}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_amgc}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_phone}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_sdsr4cont}     ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_relay}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ng21}          ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That Only IVGB Is Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "type_ivgb": "xpath=//span[contains(.,'IVGB')]"
+                },
+                {
+                    "type_amgc": "xpath=//span[contains(.,'AMGC')]"
+                },
+                {
+                    "type_phone": "xpath=//span[contains(.,'PHONE')]"
+                },
+                {
+                    "type_sdsr4cont": "xpath=//span[contains(.,'SD-SR4CONT')]"
+                },
+                {
+                    "type_relay": "xpath=//span[contains(.,'XRS-RELAY')]"
+                },
+                {
+                    "type_ng21": "xpath=//span[contains(.,'NG21')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate That Only PHONE Is Visible",
+        "Content": "Validate That Only PHONE Is Visible \n 'Wait Until Element Is Visible        ${groups_locators.type_phone}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_amgc}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivg}           ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivgb}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_sdsr4cont}     ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_relay}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ng21}          ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That Only PHONE Is Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "type_phone": "xpath=//span[contains(.,'PHONE')]"
+                },
+                {
+                    "type_amgc": "xpath=//span[contains(.,'AMGC')]"
+                },
+                {
+                    "type_ivg": "xpath=//span[contains(.,'IVG')]"
+                },
+                {
+                    "type_ivgb": "xpath=//span[contains(.,'IVGB')]"
+                },
+                {
+                    "type_sdsr4cont": "xpath=//span[contains(.,'SD-SR4CONT')]"
+                },
+                {
+                    "type_relay": "xpath=//span[contains(.,'XRS-RELAY')]"
+                },
+                {
+                    "type_ng21": "xpath=//span[contains(.,'NG21')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate That Only SD-SR4CONT Is Visible",
+        "Content": "Validate That Only SD-SR4CONT Is Visible \n 'Wait Until Element Is Visible        ${groups_locators.type_sdsr4cont}     ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_amgc}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivg}           ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivgb}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_phone}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_relay}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ng21}          ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That Only SD-SR4CONT Is Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "type_sdsr4cont": "xpath=//span[contains(.,'SD-SR4CONT')]"
+                },
+                {
+                    "type_amgc": "xpath=//span[contains(.,'AMGC')]"
+                },
+                {
+                    "type_ivg": "xpath=//span[contains(.,'IVG')]"
+                },
+                {
+                    "type_ivgb": "xpath=//span[contains(.,'IVGB')]"
+                },
+                {
+                    "type_phone": "xpath=//span[contains(.,'PHONE')]"
+                },
+                {
+                    "type_relay": "xpath=//span[contains(.,'XRS-RELAY')]"
+                },
+                {
+                    "type_ng21": "xpath=//span[contains(.,'NG21')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate That Only XRS-RELAY Is Visible",
+        "Content": "Validate That Only XRS-RELAY Is Visible \n 'Wait Until Element Is Visible        ${groups_locators.type_relay}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_amgc}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivg}           ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivgb}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_phone}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_sdsr4cont}     ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ng21}          ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That Only XRS-RELAY Is Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "type_relay": "xpath=//span[contains(.,'XRS-RELAY')]"
+                },
+                {
+                    "type_amgc": "xpath=//span[contains(.,'AMGC')]"
+                },
+                {
+                    "type_ivg": "xpath=//span[contains(.,'IVG')]"
+                },
+                {
+                    "type_ivgb": "xpath=//span[contains(.,'IVGB')]"
+                },
+                {
+                    "type_phone": "xpath=//span[contains(.,'PHONE')]"
+                },
+                {
+                    "type_sdsr4cont": "xpath=//span[contains(.,'SD-SR4CONT')]"
+                },
+                {
+                    "type_ng21": "xpath=//span[contains(.,'NG21')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate That Only NG21 Is Visible",
+        "Content": "Validate That Only NG21 Is Visible \n 'Wait Until Element Is Visible        ${groups_locators.type_ng21}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_amgc}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivg}           ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivgb}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_phone}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_sdsr4cont}     ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_relay}         ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That Only NG21 Is Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "type_ng21": "xpath=//span[contains(.,'NG21')]"
+                },
+                {
+                    "type_amgc": "xpath=//span[contains(.,'AMGC')]"
+                },
+                {
+                    "type_ivg": "xpath=//span[contains(.,'IVG')]"
+                },
+                {
+                    "type_ivgb": "xpath=//span[contains(.,'IVGB')]"
+                },
+                {
+                    "type_phone": "xpath=//span[contains(.,'PHONE')]"
+                },
+                {
+                    "type_sdsr4cont": "xpath=//span[contains(.,'SD-SR4CONT')]"
+                },
+                {
+                    "type_relay": "xpath=//span[contains(.,'XRS-RELAY')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate That Only SR5 Is Visible",
+        "Content": "Validate That Only SR5 Is Visible \n 'Wait Until Element Is Visible        ${groups_locators.type_sr5}           ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_amgc}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivg}           ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_ivgb}          ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_phone}         ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_sdsr4cont}     ${TIME}' 'Wait Until Element Is Not Visible    ${groups_locators.type_relay}         ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That Only SR5 Is Visible",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "type_sr5": "xpath=//span[contains(.,'SR5')]"
+                },
+                {
+                    "type_amgc": "xpath=//span[contains(.,'AMGC')]"
+                },
+                {
+                    "type_ivg": "xpath=//span[contains(.,'IVG')]"
+                },
+                {
+                    "type_ivgb": "xpath=//span[contains(.,'IVGB')]"
+                },
+                {
+                    "type_phone": "xpath=//span[contains(.,'PHONE')]"
+                },
+                {
+                    "type_sdsr4cont": "xpath=//span[contains(.,'SD-SR4CONT')]"
+                },
+                {
+                    "type_relay": "xpath=//span[contains(.,'XRS-RELAY')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Close Button",
+        "Content": "Click On Close Button \n 'Wait Until Element Is Visible        ${groups_locators.close_button}    ${TIME}' 'Click Element                        ${groups_locators.close_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Close Button",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "close_button": "xpath=//mat-chip/mat-icon[contains(.,'close')]"
+                },
+                {
+                    "close_button": "xpath=//mat-chip/mat-icon[contains(.,'close')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Enable or Disable Slider",
+        "Content": "Click On Enable or Disable Slider \n 'Wait Until Element Is Visible        ${groups_locators.enable_button}    ${TIME}' 'Click Element                        ${groups_locators.enable_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Enable or Disable Slider",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "enable_button": "xpath=//div[@class='mat-slide-toggle-thumb']"
+                },
+                {
+                    "enable_button": "xpath=//div[@class='mat-slide-toggle-thumb']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Enable Title",
+        "Content": "Validate Enable Title \n 'Wait Until Element Is Visible        ${groups_locators.enable_title}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Enable Title",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "enable_title": "xpath=//p[contains(.,'ENABLED')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Disable Title",
+        "Content": "Validate Disable Title \n 'Wait Until Element Is Visible        ${groups_locators.disable_title}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Disable Title",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "disable_title": "xpath=//p[contains(.,'DISABLED')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Update Message From Slider Button",
+        "Content": "Validate Update Message From Slider Button \n 'Wait Until Element Is Visible        ${groups_locators.enable_message}    ${TIME}' 'Wait Until Element Is Visible        ${groups_locators.ok_button}         ${TIME}' 'Click Element                        ${groups_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Update Message From Slider Button",
+            "URL": "https://fleetsolutions-qae.solera.com/groups_page",
+            "Locators": [
+                {
+                    "enable_message": "xpath=//div[contains(.,'Application is updated for the group.')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Load App Launcher Home Page",
+        "Content": "Load App Launcher Home Page \n 'Wait Until Element Is Visible    ${app_launcher_locators.favorites_button_left}         ${TIME}' 'Wait Until Element Is Visible    ${app_launcher_locators.home_button_left}              ${TIME}' 'Wait Until Element Is Visible    ${app_launcher_locators.system_console_button_left}    ${TIME}' 'Wait Until Element Is Visible    ${app_launcher_locators.favorites_button_main}         ${TIME}' 'Wait Until Element Is Visible    ${app_launcher_locators.all_apps_button_main}          ${TIME}' 'Wait Until Element Is Visible    ${app_launcher_locators.system_button_main}            ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load App Launcher Home Page",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "favorites_button_left": "xpath=//ui-component-icon-button[2]"
+                },
+                {
+                    "home_button_left": "xpath=//ui-component-icon-button[1]"
+                },
+                {
+                    "system_console_button_left": "xpath=//ui-component-icon-button[9]"
+                },
+                {
+                    "favorites_button_main": "xpath=//a[contains(.,'Favorites')]"
+                },
+                {
+                    "all_apps_button_main": "xpath=//a[contains(.,'All Apps')]"
+                },
+                {
+                    "system_button_main": "xpath=//a[contains(.,'System Console')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Home Menu",
+        "Content": "Click On Home Menu \n 'Wait Until Element Is Visible    ${app_launcher_locators.home_button_left}               ${TIME}' 'Click Element                    ${app_launcher_locators.home_button_left}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Home Menu",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "home_button_left": "xpath=//ui-component-icon-button[1]"
+                },
+                {
+                    "home_button_left": "xpath=//ui-component-icon-button[1]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Device Manager Card",
+        "Content": "Click On Device Manager Card \n 'Wait Until Element Is Visible    ${app_launcher_locators.device_manager_app}            ${TIME}' 'Click Element                    ${app_launcher_locators.device_manager_app}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Device Manager Card",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "device_manager_app": "xpath=//span[@class='title' and contains(.,'Device Manager')]"
+                },
+                {
+                    "device_manager_app": "xpath=//span[@class='title' and contains(.,'Device Manager')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Mouse Over On System Console Left Button",
+        "Content": "Mouse Over On System Console Left Button \n 'Wait Until Element Is Visible    ${app_launcher_locators.system_console_button_left}    ${TIME}' 'Mouse Over                       ${app_launcher_locators.system_console_button_left}' 'Wait Until Element Is Visible    ${app_launcher_locators.system_console_left_focus}     ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Mouse Over On System Console Left Button",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "system_console_button_left": "xpath=//ui-component-icon-button[9]"
+                },
+                {
+                    "system_console_button_left": "xpath=//ui-component-icon-button[9]"
+                },
+                {
+                    "system_console_left_focus": "xpath=//ui-component-icon-button[9]//button[@class='focus']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On System Console Main Button",
+        "Content": "Click On System Console Main Button \n 'Wait Until Element Is Visible    ${app_launcher_locators.system_button_main}            ${TIME}' 'Click Element                    ${app_launcher_locators.system_button_main}'",
+        "ApplicableTo": {
+            "Keyword": "Click On System Console Main Button",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "system_button_main": "xpath=//a[contains(.,'System Console')]"
+                },
+                {
+                    "system_button_main": "xpath=//a[contains(.,'System Console')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Device Manager Option",
+        "Content": "Click On Device Manager Option \n 'Wait Until Element Is Visible    ${app_launcher_locators.device_manager_sidebar}        ${TIME}' 'Click Element                    ${app_launcher_locators.device_manager_sidebar}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Device Manager Option",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "device_manager_sidebar": "xpath=//submenu-item/div/a[contains(.,'Device Manager')]"
+                },
+                {
+                    "device_manager_sidebar": "xpath=//submenu-item/div/a[contains(.,'Device Manager')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Device Manager Favorite Icon From Sidebar",
+        "Content": "Click On Device Manager Favorite Icon From Sidebar \n 'Wait Until Element Is Visible    ${app_launcher_locators.device_manager_sidebar_fvic}    ${TIME}' 'Click Element                    ${app_launcher_locators.device_manager_sidebar_fvic}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Device Manager Favorite Icon From Sidebar",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "device_manager_sidebar_fvic": "xpath=//submenu-item/div[contains(.,'Device Manager')]/fdn-icon"
+                },
+                {
+                    "device_manager_sidebar_fvic": "xpath=//submenu-item/div[contains(.,'Device Manager')]/fdn-icon"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Mouse Over On Favorites Left Button",
+        "Content": "Mouse Over On Favorites Left Button \n 'Wait Until Element Is Visible    ${app_launcher_locators.favorites_button_left}          ${TIME}' 'Mouse Over                       ${app_launcher_locators.favorites_button_left}' 'Wait Until Element Is Visible    ${app_launcher_locators.favorites_button_left_focus}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Mouse Over On Favorites Left Button",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "favorites_button_left": "xpath=//ui-component-icon-button[2]"
+                },
+                {
+                    "favorites_button_left": "xpath=//ui-component-icon-button[2]"
+                },
+                {
+                    "favorites_button_left_focus": "xpath=//ui-component-icon-button[2]//button[@class='focus']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Favorites Main Button",
+        "Content": "Click On Favorites Main Button \n 'Wait Until Element Is Visible    ${app_launcher_locators.favorites_button_main}          ${TIME}' 'Click Element                    ${app_launcher_locators.favorites_button_main}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Favorites Main Button",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "favorites_button_main": "xpath=//a[contains(.,'Favorites')]"
+                },
+                {
+                    "favorites_button_main": "xpath=//a[contains(.,'Favorites')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Verify That Favorites Main Button Is Active",
+        "Content": "Verify That Favorites Main Button Is Active \n 'Wait Until Element Is Visible    ${app_launcher_locators.favorites_button_main_active}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Verify That Favorites Main Button Is Active",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "favorites_button_main_active": "xpath=//a[contains(.,'Favorites') and @class='active']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Select Frame                                 dom",
+        "Content": "Select Main Iframe from App Launcher Page \n ${app_launcher_locators.iframe}        ${TIME} ${app_launcher_locators.iframe}",
+        "ApplicableTo": {
+            "Keyword": "Select Frame                                 dom",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "iframe": "document.querySelector(\"#main-content-iframe\")"
+                },
+                {
+                    "iframe": "document.querySelector(\"#main-content-iframe\")"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Unselect Main Iframe from App Launcher Page",
+        "Content": "Unselect Main Iframe from App Launcher Page \n 'Unselect Frame'",
+        "ApplicableTo": {
+            "Keyword": "Unselect Main Iframe from App Launcher Page",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On User Avatar",
+        "Content": "Click On User Avatar \n '[Arguments]    ${user}' '${XPATH} =    list_xpath.Obtain Xpath Initals User Name    ${user}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Click Element                    ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Click On User Avatar",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Sign Out Button",
+        "Content": "Click On Sign Out Button \n 'Wait Until Element Is Visible    ${app_launcher_locators.sign_out_button}    ${TIME}' 'Click Element                    ${app_launcher_locators.sign_out_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Sign Out Button",
+            "URL": "https://fleetsolutions-qae.solera.com/app_launcher",
+            "Locators": [
+                {
+                    "sign_out_button": "xpath=//span[contains(.,'Sign Out')]"
+                },
+                {
+                    "sign_out_button": "xpath=//span[contains(.,'Sign Out')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Load Solera Login Page",
+        "Content": "Load Solera Login Page \n 'Wait Until Element Is Visible    ${solera_login_page_locators.welcome_message}         ${TIME}' 'Wait Until Element Is Visible    ${solera_login_page_locators.next_solera_button}      ${TIME}' 'Sleep    ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Solera Login Page",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "welcome_message": "xpath=//span[contains(.,'Welcome')]"
+                },
+                {
+                    "next_solera_button": "xpath=//button[@type='submit']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce User",
+        "Content": "Introduce User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.email_input}             ${TIME}' 'Input Text    ${solera_login_page_locators.email_input}    ${credentials}[0]'",
+        "ApplicableTo": {
+            "Keyword": "Introduce User",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "email_input": "xpath=//input[@name='user-id']"
+                },
+                {
+                    "email_input": "xpath=//input[@name='user-id']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce User With An External User",
+        "Content": "Introduce User With An External User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.email_input}             ${TIME}' 'Input Text    ${solera_login_page_locators.email_input}    ${credentials}[2]'",
+        "ApplicableTo": {
+            "Keyword": "Introduce User With An External User",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "email_input": "xpath=//input[@name='user-id']"
+                },
+                {
+                    "email_input": "xpath=//input[@name='user-id']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce Password With An External User",
+        "Content": "Introduce Password With An External User \n '[Arguments]    ${credentials}' '# IF    '${ENVIRONMENT}'=='INT'' 'Wait Until Element Is Visible    ${solera_login_page_locators.password_input2}         ${TIME}' 'Input Text    ${solera_login_page_locators.password_input2}    ${credentials}[3]' '# ELSE' '#     Wait Until Element Is Visible    ${solera_login_page_locators.password_input}          ${TIME}' '#     Input Text    ${solera_login_page_locators.password_input}    ${credentials}[3]' '# END'",
+        "ApplicableTo": {
+            "Keyword": "Introduce Password With An External User",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "password_input2": "xpath=//input[@name='password']"
+                },
+                {
+                    "password_input2": "xpath=//input[@name='password']"
+                },
+                {
+                    "password_input": "xpath=//input[@id='password']"
+                },
+                {
+                    "password_input": "xpath=//input[@id='password']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce User With A Wrong User",
+        "Content": "Introduce User With A Wrong User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.email_input}             ${TIME}' 'Input Text    ${solera_login_page_locators.email_input}    ${credentials}[4]'",
+        "ApplicableTo": {
+            "Keyword": "Introduce User With A Wrong User",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "email_input": "xpath=//input[@name='user-id']"
+                },
+                {
+                    "email_input": "xpath=//input[@name='user-id']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce Password With A Wrong User",
+        "Content": "Introduce Password With A Wrong User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.password_input2}         ${TIME}' 'Input Text    ${solera_login_page_locators.password_input2}    ${credentials}[5]'",
+        "ApplicableTo": {
+            "Keyword": "Introduce Password With A Wrong User",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "password_input2": "xpath=//input[@name='password']"
+                },
+                {
+                    "password_input2": "xpath=//input[@name='password']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Login Button",
+        "Content": "Click On Login Button \n 'Sleep    ${SH_TIME}' '# IF    '${ENVIRONMENT}'=='INT'' 'Wait Until Element Is Visible    ${solera_login_page_locators.login_button2}           ${TIME}' 'Click Element    ${solera_login_page_locators.login_button2}' '# ELSE' '#     Wait Until Element Is Visible    ${solera_login_page_locators.login_button}            ${TIME}' '#     Click Element    ${solera_login_page_locators.login_button}' '# END'",
+        "ApplicableTo": {
+            "Keyword": "Click On Login Button",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "login_button2": "xpath=//button[contains(.,'Login')]"
+                },
+                {
+                    "login_button2": "xpath=//button[contains(.,'Login')]"
+                },
+                {
+                    "login_button": "xpath=//button[contains(.,'LOGIN')]"
+                },
+                {
+                    "login_button": "xpath=//button[contains(.,'LOGIN')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click Next Button",
+        "Content": "Click Next Button \n 'Wait Until Element Is Visible    ${solera_login_page_locators.next_solera_button}      ${TIME}' 'Click Element    ${solera_login_page_locators.next_solera_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click Next Button",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "next_solera_button": "xpath=//button[@type='submit']"
+                },
+                {
+                    "next_solera_button": "xpath=//button[@type='submit']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Load Solera Page",
+        "Content": "Load Solera Page \n 'Wait Until Element Is Visible    ${solera_login_page_locators.solera_title}            ${TIME}' 'Title Should Be    Sign in to your account'",
+        "ApplicableTo": {
+            "Keyword": "Load Solera Page",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "solera_title": "xpath=//div[@role='heading']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce Username To Solera With An Internal User",
+        "Content": "Introduce Username To Solera With An Internal User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.email_input_text}        ${TIME}' 'Input Text    ${solera_login_page_locators.email_input_text}    ${credentials}[0]' 'Wait Until Element Is Visible    ${solera_login_page_locators.next_button}             ${TIME}' 'Click Element    ${solera_login_page_locators.next_button}'",
+        "ApplicableTo": {
+            "Keyword": "Introduce Username To Solera With An Internal User",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "email_input_text": "xpath=//input[@name='loginfmt']"
+                },
+                {
+                    "email_input_text": "xpath=//input[@name='loginfmt']"
+                },
+                {
+                    "next_button": "xpath=//input[@id='idSIButton9']"
+                },
+                {
+                    "next_button": "xpath=//input[@id='idSIButton9']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce Password To Solera With An Internal User",
+        "Content": "Introduce Password To Solera With An Internal User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.password_input_text}     ${TIME}' 'Input Text    ${solera_login_page_locators.password_input_text}    ${credentials}[1]' 'Wait Until Element Is Visible    ${solera_login_page_locators.next_button}             ${TIME}' 'Click Element    ${solera_login_page_locators.next_button}'",
+        "ApplicableTo": {
+            "Keyword": "Introduce Password To Solera With An Internal User",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "password_input_text": "xpath=//input[@name='passwd']"
+                },
+                {
+                    "password_input_text": "xpath=//input[@name='passwd']"
+                },
+                {
+                    "next_button": "xpath=//input[@id='idSIButton9']"
+                },
+                {
+                    "next_button": "xpath=//input[@id='idSIButton9']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce Username To Solera With An External User",
+        "Content": "Introduce Username To Solera With An External User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.email_input_text}        ${TIME}' 'Input Text    ${solera_login_page_locators.email_input_text}    ${credentials}[2]' 'Wait Until Element Is Visible    ${solera_login_page_locators.next_button}             ${TIME}' 'Click Element    ${solera_login_page_locators.next_button}'",
+        "ApplicableTo": {
+            "Keyword": "Introduce Username To Solera With An External User",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "email_input_text": "xpath=//input[@name='loginfmt']"
+                },
+                {
+                    "email_input_text": "xpath=//input[@name='loginfmt']"
+                },
+                {
+                    "next_button": "xpath=//input[@id='idSIButton9']"
+                },
+                {
+                    "next_button": "xpath=//input[@id='idSIButton9']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce Password To Solera With An External User",
+        "Content": "Introduce Password To Solera With An External User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.password_input_text}     ${TIME}' 'Input Text    ${solera_login_page_locators.password_input_text}    ${credentials}[3]' 'Wait Until Element Is Visible    ${solera_login_page_locators.next_button}             ${TIME}' 'Click Element    ${solera_login_page_locators.next_button}'",
+        "ApplicableTo": {
+            "Keyword": "Introduce Password To Solera With An External User",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "password_input_text": "xpath=//input[@name='passwd']"
+                },
+                {
+                    "password_input_text": "xpath=//input[@name='passwd']"
+                },
+                {
+                    "next_button": "xpath=//input[@id='idSIButton9']"
+                },
+                {
+                    "next_button": "xpath=//input[@id='idSIButton9']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Stay Signed In",
+        "Content": "Stay Signed In \n 'Wait Until Element Is Visible    ${solera_login_page_locators.solera_title}            ${TIME}' 'Wait Until Element Is Visible    ${solera_login_page_locators.no_button}               ${TIME}' 'Click Element    ${solera_login_page_locators.no_button}'",
+        "ApplicableTo": {
+            "Keyword": "Stay Signed In",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "solera_title": "xpath=//div[@role='heading']"
+                },
+                {
+                    "no_button": "xpath=//input[@id='idBtn_Back']"
+                },
+                {
+                    "no_button": "xpath=//input[@id='idBtn_Back']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "#New GP2 Login Page",
+        "Content": "#New GP2 Login Page \n 'Load GP2 Login Page' 'Wait Until Element Is Visible    ${solera_login_page_locators.solera_logo}           ${TIME}' 'Wait Until Element Is Visible    ${solera_login_page_locators.next_solera_button}    ${TIME}' 'Wait Until Element Is Visible    ${solera_login_page_locators.email_textbox}         ${TIME}' 'Wait Until Element Is Visible    ${solera_login_page_locators.bus_perf_label}        ${TIME}' 'Wait Until Element Is Visible    ${solera_login_page_locators.driv_expe_label}       ${TIME}' 'Wait Until Element Is Visible    ${solera_login_page_locators.fleet_saf_label}       ${TIME}' 'Wait Until Element Is Visible    ${solera_login_page_locators.rout_plan_label}       ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "#New GP2 Login Page",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "solera_logo": "xpath=//img[@class='fleet-solutions-logo']"
+                },
+                {
+                    "next_solera_button": "xpath=//button[@type='submit']"
+                },
+                {
+                    "email_textbox": "xpath=//input[@id='email']"
+                },
+                {
+                    "bus_perf_label": "xpath=//div[@class='main-text' and contains(.,'Business Performance')]"
+                },
+                {
+                    "driv_expe_label": "xpath=//div[@class='main-text' and contains(.,'Driver Experience')]"
+                },
+                {
+                    "fleet_saf_label": "xpath=//div[@class='main-text' and contains(.,'Fleet Safety')]"
+                },
+                {
+                    "rout_plan_label": "xpath=//div[@class='main-text' and contains(.,'Route Planning & Optimization')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce Email Address To GP2 Authorization",
+        "Content": "Introduce Email Address To GP2 Authorization \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.email_textbox}      ${TIME}' 'Input Text    ${solera_login_page_locators.email_textbox}                         ${credentials}' 'Click Element    ${solera_login_page_locators.next_solera_button}'",
+        "ApplicableTo": {
+            "Keyword": "Introduce Email Address To GP2 Authorization",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "email_textbox": "xpath=//input[@id='email']"
+                },
+                {
+                    "email_textbox": "xpath=//input[@id='email']"
+                },
+                {
+                    "next_solera_button": "xpath=//button[@type='submit']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Introduce Password To GP2 Authorization from External User",
+        "Content": "Introduce Password To GP2 Authorization from External User \n '[Arguments]    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.password_textbox}     ${TIME}' 'Input Text    ${solera_login_page_locators.password_textbox}    ${credentials}' 'Wait Until Element Is Visible    ${solera_login_page_locators.sign_in_button}       ${TIME}' 'Click Element    ${solera_login_page_locators.sign_in_button}'",
+        "ApplicableTo": {
+            "Keyword": "Introduce Password To GP2 Authorization from External User",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "password_textbox": "xpath=//input[@id='password']"
+                },
+                {
+                    "password_textbox": "xpath=//input[@id='password']"
+                },
+                {
+                    "sign_in_button": "xpath=//button[@id='next']"
+                },
+                {
+                    "sign_in_button": "xpath=//button[@id='next']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Message About Failed Username Or Password Is Displayed",
+        "Content": "Validate Message About Failed Username Or Password Is Displayed \n 'Wait Until Element Is Visible    ${solera_login_page_locators.pass_fail_message}      ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Message About Failed Username Or Password Is Displayed",
+            "URL": "https://fleetsolutions-qae.solera.com/login_page",
+            "Locators": [
+                {
+                    "pass_fail_message": "xpath=//small[contains(.,'The credentials and/or password you entered did not match our records. Please try again')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Devices Tab",
+        "Content": "Click On Devices Tab \n 'Wait Until Element Is Visible    ${super_bar_page_locators.devices_button}         ${TIME}' 'Click Element                    ${super_bar_page_locators.devices_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Devices Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/super_bar",
+            "Locators": [
+                {
+                    "devices_button": "dom:document.querySelector(\"body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(1)\")"
+                },
+                {
+                    "devices_button": "dom:document.querySelector(\"body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(1)\")"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Fleet Config Tab",
+        "Content": "Click On Fleet Config Tab \n 'Wait Until Element Is Visible    ${super_bar_page_locators.fleet_config_button}    ${TIME}' 'Click Element                    ${super_bar_page_locators.fleet_config_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Fleet Config Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/super_bar",
+            "Locators": [
+                {
+                    "fleet_config_button": "dom:document.querySelector(\"body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(2)\")"
+                },
+                {
+                    "fleet_config_button": "dom:document.querySelector(\"body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(2)\")"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Groups Tab",
+        "Content": "Click On Groups Tab \n 'Wait Until Element Is Visible    ${super_bar_page_locators.groups_button}          ${TIME}' 'Click Element                    ${super_bar_page_locators.groups_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Groups Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/super_bar",
+            "Locators": [
+                {
+                    "groups_button": "dom:document.querySelector(\"body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(3)\")"
+                },
+                {
+                    "groups_button": "dom:document.querySelector(\"body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(3)\")"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Vehicles Tab",
+        "Content": "Click On Vehicles Tab \n 'Wait Until Element Is Visible    ${super_bar_page_locators.vehicles_button}        ${TIME}' 'Click Element                    ${super_bar_page_locators.vehicles_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Vehicles Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/super_bar",
+            "Locators": [
+                {
+                    "vehicles_button": "dom:document.querySelector(\"body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(4)\")"
+                },
+                {
+                    "vehicles_button": "dom:document.querySelector(\"body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(4)\")"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Admin Tab",
+        "Content": "Click On Admin Tab \n 'Wait Until Element Is Visible    ${super_bar_page_locators.admin_button}           ${TIME}' 'Click Element                    ${super_bar_page_locators.admin_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Admin Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/super_bar",
+            "Locators": [
+                {
+                    "admin_button": "dom:document.querySelector(\"body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(5)\")"
+                },
+                {
+                    "admin_button": "dom:document.querySelector(\"body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(5)\")"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Log Out Tab",
+        "Content": "Click On Log Out Tab \n 'Wait Until Element Is Visible    ${super_bar_page_locators.log_out_button}         ${TIME}' 'Click Element                    ${super_bar_page_locators.log_out_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Log Out Tab",
+            "URL": "https://fleetsolutions-qae.solera.com/super_bar",
+            "Locators": [
+                {
+                    "log_out_button": "dom:document.querySelector(\"body > device-manager > div.page-content > ot-global-navbar\").shadowRoot.querySelector(\"div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(6)\")"
+                },
+                {
+                    "log_out_button": "dom:document.querySelector(\"body > device-manager > div.page-content > ot-global-navbar\").shadowRoot.querySelector(\"div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(6)\")"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Load Vehicles Page From Device Manager",
+        "Content": "Load Vehicles Page From Device Manager \n 'Wait Until Element Is Visible    ${vehicles_page_locators.total_title}            ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Load Vehicles Page From Device Manager",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "total_title": "xpath=//span[contains(.,'Total Devices')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Pair A Vehicle",
+        "Content": "Click On Pair A Vehicle \n 'Sleep    ${SH_TIME}' 'Wait Until Element Is Visible    ${vehicles_page_locators.kebab_button}           ${TIME}' 'Click Element                    ${vehicles_page_locators.kebab_button}' 'Wait Until Element Is Visible    ${vehicles_page_locators.pair_vehicle_button}    ${TIME}' 'Click Element                    ${vehicles_page_locators.pair_vehicle_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Pair A Vehicle",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "kebab_button": "xpath=//mat-icon[contains(.,'more_vert')]"
+                },
+                {
+                    "kebab_button": "xpath=//mat-icon[contains(.,'more_vert')]"
+                },
+                {
+                    "pair_vehicle_button": "xpath=//button[contains(.,'Pair Vehicle')]"
+                },
+                {
+                    "pair_vehicle_button": "xpath=//button[contains(.,'Pair Vehicle')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Pair A Vehicle",
+        "Content": "Pair A Vehicle \n '[Arguments]    ${deviceId}    ${vehicleGUID}    ${vehicleId}' 'Wait Until Element Is Visible    ${vehicles_page_locators.device_info}            ${TIME}' 'Wait Until Element Is Visible    ${vehicles_page_locators.device_id_input}        ${TIME}' 'Input Text                       ${vehicles_page_locators.device_id_input}        ${deviceId}' 'Wait Until Element Is Visible    ${vehicles_page_locators.vehicle_guid_input}     ${TIME}' 'Input Text                       ${vehicles_page_locators.vehicle_guid_input}     ${vehicleGUID}' 'Wait Until Element Is Visible    ${vehicles_page_locators.vehicle_id_input}       ${TIME}' 'Input Text                       ${vehicles_page_locators.vehicle_id_input}       ${vehicleId}'",
+        "ApplicableTo": {
+            "Keyword": "Pair A Vehicle",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "device_info": "xpath=//h3[contains(.,'Device Info')]"
+                },
+                {
+                    "device_id_input": "xpath=//input[@name='deviceGuid']"
+                },
+                {
+                    "device_id_input": "xpath=//input[@name='deviceGuid']"
+                },
+                {
+                    "vehicle_guid_input": "xpath=//input[@name='vehicleGuid']"
+                },
+                {
+                    "vehicle_guid_input": "xpath=//input[@name='vehicleGuid']"
+                },
+                {
+                    "vehicle_id_input": "xpath=//input[@name='vehicleId']"
+                },
+                {
+                    "vehicle_id_input": "xpath=//input[@name='vehicleId']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Save Button From Add Vehicle",
+        "Content": "Click On Save Button From Add Vehicle \n 'Wait Until Element Is Visible    ${vehicles_page_locators.save_button}            ${TIME}' 'Click Element                    ${vehicles_page_locators.save_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Save Button From Add Vehicle",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "save_button": "xpath=//span[contains(.,'Save')]"
+                },
+                {
+                    "save_button": "xpath=//span[contains(.,'Save')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Success Message",
+        "Content": "Success Message \n 'Wait Until Element Is Visible    ${vehicles_page_locators.success_message}        ${TIME}' 'Wait Until Element Is Visible    ${vehicles_page_locators.ok_button}              ${TIME}' 'Click Element                    ${vehicles_page_locators.ok_button}' 'Sleep    ${SH_TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Success Message",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "success_message": "xpath=//h2[contains(.,'Success')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Error Message",
+        "Content": "Error Message \n 'Wait Until Element Is Visible    ${vehicles_page_locators.error_message}        ${TIME}' 'Wait Until Element Is Visible    ${vehicles_page_locators.ok_button}              ${TIME}' 'Click Element                    ${vehicles_page_locators.ok_button}'",
+        "ApplicableTo": {
+            "Keyword": "Error Message",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "error_message": "xpath=//h2[contains(.,'Error')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                },
+                {
+                    "ok_button": "xpath=//button[contains(.,'OK')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Search A Vehicle",
+        "Content": "Search A Vehicle \n '[Arguments]    ${deviceId}' 'Wait Until Element Is Visible    ${vehicles_page_locators.search_bar}        ${TIME}' 'Input Text                       ${vehicles_page_locators.search_bar}        ${deviceId}' 'Press Keys                       ${vehicles_page_locators.search_bar}        ENTER'",
+        "ApplicableTo": {
+            "Keyword": "Search A Vehicle",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                },
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                },
+                {
+                    "search_bar": "xpath=//input[@placeholder='Enter VehicleId']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate That A Vechicle Is Found",
+        "Content": "Validate That A Vechicle Is Found \n '[Arguments]    ${deviceId}' '${XPATH} =    list_xpath.Obtain Xpath For Checkbox Device Id    ${deviceId}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate That A Vechicle Is Found",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Remove Vehicle From Vehicles Page",
+        "Content": "Remove Vehicle From Vehicles Page \n '[Arguments]    ${deviceId}' '${XPATH} =    list_xpath.Obtain Xpath For Checkbox Device Id                      ${deviceId}' 'Wait Until Element Is Visible    ${XPATH}                                         ${TIME}' 'Click Element                    ${XPATH}' 'Wait Until Element Is Visible    ${vehicles_page_locators.trash_enable_button}    ${TIME}' 'Click Element                    ${vehicles_page_locators.trash_enable_button}' 'Wait Until Element Is Visible    ${vehicles_page_locators.message}                ${TIME}' 'Wait Until Element Is Visible    ${vehicles_page_locators.continue_button}        ${TIME}' 'Click Element                    ${vehicles_page_locators.continue_button}'",
+        "ApplicableTo": {
+            "Keyword": "Remove Vehicle From Vehicles Page",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "trash_enable_button": "xpath=//button[@class='mat-focus-indicator primary-fab-float-icon mat-fab mat-button-base mat-accent ng-star-inserted']"
+                },
+                {
+                    "trash_enable_button": "xpath=//button[@class='mat-focus-indicator primary-fab-float-icon mat-fab mat-button-base mat-accent ng-star-inserted']"
+                },
+                {
+                    "message": "xpath=//h2[contains(.,'Delete Pairing')]"
+                },
+                {
+                    "continue_button": "xpath=//button[contains(.,'Continue')]"
+                },
+                {
+                    "continue_button": "xpath=//button[contains(.,'Continue')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Edit Icon",
+        "Content": "Click On Edit Icon \n 'Wait Until Element Is Visible    ${vehicles_page_locators.edit_button}        ${TIME}' 'Click Element                    ${vehicles_page_locators.edit_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Edit Icon",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                },
+                {
+                    "edit_button": "xpath=//i[contains(.,'edit')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Edit Device Info From Vehicle Page",
+        "Content": "Edit Device Info From Vehicle Page \n '[Arguments]    ${vehicleGUID2}    ${vehicleId2}' 'Wait Until Element Is Visible    ${vehicles_page_locators.device_info}            ${TIME}' 'Wait Until Element Is Visible    ${vehicles_page_locators.vehicle_guid_input}     ${TIME}' 'Clear Element Text               ${vehicles_page_locators.vehicle_guid_input}' 'Sleep                            ${SH_TIME}' 'Input Text                       ${vehicles_page_locators.vehicle_guid_input}     ${vehicleGUID2}' 'Wait Until Element Is Visible    ${vehicles_page_locators.vehicle_id_input}       ${TIME}' 'Clear Element Text               ${vehicles_page_locators.vehicle_id_input}' 'Input Text                       ${vehicles_page_locators.vehicle_id_input}       ${vehicleId2}'",
+        "ApplicableTo": {
+            "Keyword": "Edit Device Info From Vehicle Page",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "device_info": "xpath=//h3[contains(.,'Device Info')]"
+                },
+                {
+                    "vehicle_guid_input": "xpath=//input[@name='vehicleGuid']"
+                },
+                {
+                    "vehicle_guid_input": "xpath=//input[@name='vehicleGuid']"
+                },
+                {
+                    "vehicle_guid_input": "xpath=//input[@name='vehicleGuid']"
+                },
+                {
+                    "vehicle_id_input": "xpath=//input[@name='vehicleId']"
+                },
+                {
+                    "vehicle_id_input": "xpath=//input[@name='vehicleId']"
+                },
+                {
+                    "vehicle_id_input": "xpath=//input[@name='vehicleId']"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On Update Button",
+        "Content": "Click On Update Button \n 'Wait Until Element Is Visible    ${vehicles_page_locators.update_button}       ${TIME}' 'Click Element                    ${vehicles_page_locators.update_button}'",
+        "ApplicableTo": {
+            "Keyword": "Click On Update Button",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [
+                {
+                    "update_button": "xpath=//button/span[contains(.,'Update')]"
+                },
+                {
+                    "update_button": "xpath=//button/span[contains(.,'Update')]"
+                }
+            ],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Scroll To Row Number",
+        "Content": "Scroll To Row Number \n '[Arguments]    ${rowNumber}' '${XPATH} =    list_xpath.Obtain Xpath For Row    ${rowNumber}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}' 'Scroll Element Into View         ${XPATH}'",
+        "ApplicableTo": {
+            "Keyword": "Scroll To Row Number",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Validate Total Devices Number",
+        "Content": "Validate Total Devices Number \n '[Arguments]    ${total}' '${XPATH} =    list_xpath.Obtain Xpath For Total Devices    ${total}' 'Wait Until Element Is Visible    ${XPATH}    ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Validate Total Devices Number",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On The Up Icon For The Column",
+        "Content": "Click On The Up Icon For The Column \n '[Arguments]    ${column}' '${XPATH} =    list_xpath.Obtain Xpath For Column    ${column}' 'Wait Until Element Is Visible    ${XPATH}           ${TIME}' 'Click Element                    ${XPATH}' '${XPATH} =    list_xpath.Obtain Xpath For Up        ${column}' 'Wait Until Element Is Visible    ${XPATH}           ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On The Up Icon For The Column",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    },
+    {
+        "Title": "Click On The Down Icon For The Column",
+        "Content": "Click On The Down Icon For The Column \n '[Arguments]    ${column}' '${XPATH} =    list_xpath.Obtain Xpath For Column    ${column}' 'Wait Until Element Is Visible    ${XPATH}           ${TIME}' 'Click Element                    ${XPATH}' '${XPATH} =    list_xpath.Obtain Xpath For Down      ${column}' 'Wait Until Element Is Visible    ${XPATH}           ${TIME}'",
+        "ApplicableTo": {
+            "Keyword": "Click On The Down Icon For The Column",
+            "URL": "https://fleetsolutions-qae.solera.com/vehicles_page",
+            "Locators": [],
+            "Language": "Robot Framework"
+        }
+    }
+]

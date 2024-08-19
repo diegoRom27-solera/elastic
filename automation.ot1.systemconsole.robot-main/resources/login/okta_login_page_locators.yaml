@@ -1,0 +1,8 @@
+okta_login_page_locators:
+  # Okta Login Page
+  forgot_password: xpath=//a[@class='link help js-help']    #Need Help Signing In?
+  username: xpath=//input[@name='username']                 #Username Input Text
+  password: xpath=//input[@name='password']                 #Password Input Text
+  remember: xpath=//input[@name='remember']                 #Remember Checkbox
+  sign_in:  xpath=//input[@type='submit']                   #Sign In Button
+  sign_in_message: xpath=//form[@id='form18']/div/h2        #Sign In Title Message

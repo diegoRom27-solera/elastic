@@ -1,0 +1,46 @@
+fleet_config_locators:
+  #Fleet Config Page
+  account_button:       xpath=//button/span/mat-icon[contains(.,'domain')]
+  search_bar:           xpath=//mat-select[@name='platform']
+  search_appcat:        xpath=//input[@placeholder='Enter APPCAT Name']
+  setting_button:       xpath=//mat-icon[contains(.,'settings')]
+  override_button:      xpath=//button[contains(.,'Override')]
+  edit_button:          xpath=//button[contains(.,'Edit')]
+  inherit_value_button: xpath=//button[contains(.,'Inherit value')]
+  edit_option:          xpath=//textarea
+  send_button:          xpath=//mat-icon[contains(.,'send')]
+  success_message:      xpath=//div[contains(.,'The attribute value is overriden.')]
+  inherit_message:      xpath=//div[contains(.,'The attribute value is inherited.')]
+  ok_button:            xpath=//button[contains(.,'OK')]
+  appcat_text:          xpath=//textarea
+
+  #Fields from AMGC
+  amgc_card:            xpath=//mat-card-title[contains(.,'AMGC')]
+  bendix_card:          xpath=//mat-card-title[contains(.,'Bendix')]
+  fault_card:           xpath=//mat-card-title[contains(.,'Fault Monitoring Group')]
+  panic_card:           xpath=//mat-card-title[contains(.,'Panic')]
+
+  #Fields from IVG
+  title_ivg:            xpath=//h3[contains(.,'Omnitracs Nav')]
+
+  #Fields from IVGB
+  bendix_card:          xpath=//mat-card-title[contains(.,'Bendix')]
+  fault_card:           xpath=//mat-card-title[contains(.,'Fault Monitoring Group')]
+  panic_card:           xpath=//mat-card-title[contains(.,'Panic')]
+  ivgb_card:            xpath=//mat-card-title[contains(.,'IVGB')]
+
+  #Fields from Phone
+  preauthenticate_card: xpath=//mat-card-title[contains(.,'Preauthenticate')]
+  title_phone:          xpath=//h3[contains(.,'Omnitracs Nav')]
+
+  #Fields from SD-SR
+  empty_field:           xpath=//div[contains(.,'There are no applications granted.')]
+  sr4cont_group_card:    xpath=//mat-card-title[contains(.,'SD-SR4CONT Group')]
+  sr4cont_card:          xpath=//mat-card-title[contains(.,'SD-SR4CONTSROTDM')]
+
+  #Fields from NG21
+  amgc_card:            xpath=//mat-card-title[contains(.,'AMGC')]
+  bendix_card:          xpath=//mat-card-title[contains(.,'Bendix')]
+  preauthenticate_card: xpath=//mat-card-title[contains(.,'Preauthenticate')]
+  fault_card:           xpath=//mat-card-title[contains(.,'Fault Monitoring Group')]
+  ng21_phone:           xpath=//h3[contains(.,'Omnitracs Nav')]

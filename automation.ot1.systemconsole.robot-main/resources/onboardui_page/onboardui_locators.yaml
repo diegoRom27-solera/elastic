@@ -1,0 +1,92 @@
+onboardui_locators:
+  #Onboard UI Page
+  first_page_ui:      dom:document.querySelector("body > app-root > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a.navbar-item.is-link.is-active")
+  dashboard_ui:       dom:document.querySelector("body > app-root > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(1)")
+  entitlements_ui:    dom:document.querySelector("body > app-root > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(2)")
+  accounts_ui:        dom:document.querySelector("body > app-root > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(3)")
+
+  #Accounts Tab
+  account_title:      xpath=//h1[contains(.,'Account List')]
+  add_button:         xpath=//button[@mattooltip='Add Account']
+  search_text:        xpath=//input[@name='searchText']
+  account_searched:   xpath=//span[@class='account-name']
+
+  #Add Account Details
+  account_details_title:      xpath=//span[contains(.,'Add Account')]
+  account_name:               xpath=//input[@name='accountName']
+  dot_number:                 xpath=//input[@name='dotNumber']
+  website:                    xpath=//input[@name='website']
+  address_1:                  xpath=//input[@name='streetAddress1']
+  address_2:                  xpath=//input[@name='streetAddress2']
+  city:                       xpath=//input[@name='city']
+  state:                      xpath=//input[@name='state']
+  country:                    xpath=//mat-select[@name='country']
+  postal_code:                xpath=//input[@name='postalCode']
+  phone_number_legal:         xpath=//input[@name='legalPhoneNumber']
+  phone_number_notice:        xpath=//input[@name='noticePhoneNumber']
+  first_name:                 xpath=//input[@name='firstName']
+  last_name:                  xpath=//input[@name='lastName']
+  phone_number_notice:        xpath=//input[@name='noticePhoneNumber']
+  phone_number_primary:       xpath=//input[@name='primaryPhoneNumber']
+  phone_number_mobile:        xpath=//input[@name='mobilePhoneNumber']
+  email:                      xpath=//input[@name='email']
+  country_selected:           xpath=//*[contains(.,'United States')]/span
+  reset_button:               xpath=//span[contains(.,'RESET')]
+  save_button:                xpath=//span[contains(.,'SAVE')]
+
+  confirmation_message:       xpath=//div[@id='swal2-content']
+  error_message:              xpath=//div[contains(.,'Error')]
+  information_message:        xpath=//div[@id='swal2-content']
+  ok_button:                  xpath=//button[contains(.,'OK')]
+  no_button:                  xpath=//button[contains(.,'NO')]
+  yes_button:                 xpath=//button[contains(.,'YES')]
+
+  #Businees Account Details
+  arrow_back:                 xpath=//mat-icon[contains(.,'arrow_back')]
+  business_account_id:        xpath=//input[@name='businessAccId']
+
+  #Dashboard Page
+  dashboard_title:               xpath=//h1[contains(.,'Entitlement Transactions')]
+  add_dashboard_button:          xpath=//mat-icon[contains(.,'add')]
+  select_business_title:         xpath=//span[contains(.,'Select Business Account')]
+  search_transaction:            xpath=//input[@name='searchText']
+  account_searched_transaction:  xpath=//mat-radio-button
+  radio_button_account:          xpath=//mat-radio-button[@id='mat-radio-1']
+  submit_button_transaction:     xpath=//button[contains(.,'Submit')]
+  back_arrow:                    xpath=//mat-icon[contains(.,'arrow_back')]
+  inprogress_tab:                xpath=//a[contains(.,'In-progress')]
+  completed_tab:                 xpath=//a[contains(.,'Completed')]
+  failed_tab:                    xpath=//a[contains(.,'Failed')]
+  transaction_total:             xpath=//span/span[contains(.,'Transactions Total')]
+  details_button1:               xpath=//mat-card[1]/div/button
+
+  #Transaction Details 
+  new_entitlements_row1:         xpath=//mat-card[3]/div/mat-table/mat-row[1]/mat-cell[1]
+  existing_entitlements_row1:    xpath=//mat-card[2]/div/mat-table/mat-row[1]/mat-cell[1]
+  log_row1:                      xpath=//mat-card[4]/div/mat-table/mat-row[1]/mat-cell[1]
+  save_entitlement_button:       xpath=//mat-card[3]/div/div[4]/button[2]/span
+
+  #Entitlements Rows
+  firts_entitlement:             xpath=//div[1]/mat-table[1]/mat-row[1]/mat-cell/mat-checkbox
+  _OT1_EP_AMGC:                  xpath=//div[1]/mat-table/mat-row[1]/mat-cell[1]/mat-checkbox
+  _OT1_GM:                       xpath=//div[2]/mat-table/mat-row[10]/mat-cell[1]/mat-checkbox
+  _OT1_CER:                      xpath=//div[2]/mat-table/mat-row[3]/mat-cell[1]/mat-checkbox
+  _OT1_TM:                       xpath=//div[2]/mat-table/mat-row[15]/mat-cell[1]/mat-checkbox
+  _aa:                           xpath=//div[3]/mat-table/mat-row[38]/mat-cell[1]/mat-checkbox
+  _ame:                          xpath=//div[3]/mat-table/mat-row[41]/mat-cell[1]/mat-checkbox
+  _h:                            xpath=//div[3]/mat-table/mat-row[87]/mat-cell[1]/mat-checkbox
+  _r:                            xpath=//div[3]/mat-table/mat-row[126]/mat-cell[1]/mat-checkbox
+  # _wsi:                          xpath=//div[3]/mat-table/mat-row[173]/mat-cell[1]/mat-checkbox
+  _wsi:                          xpath=//div[3]/mat-table/mat-row[233]/mat-cell[1]/mat-checkbox
+
+  #Entitlements Page
+  search_entitlement:            xpath=//input[@name='searchText']
+  entitlement_id:                xpath=//input[@name="entitlementId"]
+  select_add_registry_title:     xpath=//span[contains(.,'Add Registry')]
+  prov_type_list:                xpath=//mat-select[@name="provType"]
+  category_list:                 xpath=//mat-select[@name="category"]
+  name_entitlements:             xpath=//input[@name="name"]
+  delete_entitlement:            xpath=//button[contains(.,'DELETE')]
+  yes_button_entitlement:        xpath=//button[@class="swal2-confirm mat-raised-button confirm-swal-button"]
+  includes_selector_entitlement: xpath=//div[@class="mat-chip-list-wrapper"] 
+  includes_input_entitlement:    xpath=//input[@name="includes"]

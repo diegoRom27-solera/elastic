@@ -1,0 +1,108 @@
+super_bar_portal_locators:
+  #Left Slide
+  favorites_button_left:          xpath=//ui-component-icon-button[1]
+  favorites_button_left_focus:    xpath=//ui-component-icon-button[1]//button[@class='focus']
+  home_button_left:               xpath=//ui-component-icon-button[2]
+  home_button_left_focus:         xpath=//ui-component-icon-button[2]//button[@class='active focus']
+  home_button_left_active:        xpath=//ui-component-icon-button[2]//button[@class='active']
+  home_tooltip_left:              xpath=//div[@class='tooltip tooltip--visible tooltip--right' and contains(.,'Home')]
+  delivery_button_left:           xpath=//ui-component-icon-button[3]
+  delivery_button_left_focus:     xpath=//ui-component-icon-button[3]//button[@class='focus']
+  safety_button_left:             xpath=//ui-component-icon-button[4]
+  safety_button_left_focus:       xpath=//ui-component-icon-button[4]//button[@class='focus']
+  compliance_button_left:         xpath=//ui-component-icon-button[5]
+  compliance_button_left_focus:   xpath=//ui-component-icon-button[5]//button[@class='focus']
+  insights_button_left:           xpath=//ui-component-icon-button[6]
+  insights_button_left_focus:     xpath=//ui-component-icon-button[6]//button[@class='focus']
+  administration_button_left:     xpath=//ui-component-icon-button[7]
+  admin_button_left_focus:        xpath=//ui-component-icon-button[7]//button[@class='focus']
+  smart_drive_button_left:        xpath=//ui-component-icon-button[8]
+
+  #Main Top
+  favorites_button_main:          xpath=//a[contains(.,'Favorites')]
+  favorites_button_main_active:   xpath=//a[contains(.,'Favorites') and @class='active']
+  all_apps_button_main:           xpath=//a[contains(.,'All Apps')]
+  all_apps_button_main_active:    xpath=//a[contains(.,'All Apps') and @class='active']
+  delivery_button_main:           xpath=//a[contains(.,'Delivery')]
+  delivery_button_main_active:    xpath=//a[contains(.,'Delivery') and @class='active']
+  safety_button_main:             xpath=//a[contains(.,'Safety')]
+  safety_button_main_active:      xpath=//a[contains(.,'Safety') and @class='active']
+  compliance_button_main:         xpath=//a[contains(.,'Compliance')]
+  compliance_button_main_active:  xpath=//a[contains(.,'Compliance') and @class='active']
+  insights_button_main:           xpath=//a[contains(.,'Insights')]
+  insights_button_main_active:    xpath=//a[contains(.,'Insights') and @class='active']
+  administration_button_main:     xpath=//a[contains(.,'Administration')]
+  admin_button_main_active:       xpath=//a[contains(.,'Administration') and @class='active']
+
+  #Error Page
+  error_code_message:             xpath=//span[@class='number' and contains(.,'404')]
+  error_title_message:            xpath=//span[@class='title' and contains(.,'Oops, We can')]
+  error_description_message:      xpath=//p[contains(.,'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable')]
+  error_home_page_link:           xpath=//a[contains(.,'home page')]
+  error_help_link:                xpath=//a[contains(.,'help')]
+
+  #Maintenance Page
+  maintenance_title_message:      xpath=//span[@class='title' and contains(.,'Scheduled Maintenance')]
+  maintenance_descrip_message:    xpath=//p[contains(.,'The Platform is temporarily unable due to scheduled maintenance. Please try again later')]
+  maintenance_contact_us_link:    xpath=//a[contains(.,'Contact Us')]
+  maintenance_help_link:          xpath=//a[contains(.,'help')]
+
+  #Information User Flyer
+  sign_out_button:                xpath=//span[contains(.,'Sign Out')]
+
+  #Favorite Page
+  favorite_title_message:         xpath=//span[@class='title' and contains(.,'No Favorites Yet!')]
+  favorite_description_message:   xpath=//p[contains(.,'Click the “star” icon next to the application to add a favorite')]
+
+  #All Applications
+  home_app:                       xpath=//a/div[contains(.,'Home')]
+  fleetview_app:                  xpath=//a/div[contains(.,'Fleetview')]
+  equipment_history_app:          xpath=//a/div[contains(.,'Equipment History')]
+  order_status_app:               xpath=//a/div[contains(.,'Order Status')]
+  service_history_app:            xpath=//a/div[contains(.,'Service History')]
+  travel_path_app:                xpath=//a/div[contains(.,'Travel Path Estimator')]
+  messaging_app:                  xpath=//a/div[contains(.,'Messaging')]
+  safety_app:                     xpath=//a/div[contains(.,'Safety')]
+  driver_log_editor_app:          xpath=//a/div[contains(.,'Driver Log Editor')]
+  unidentified_driving_app:       xpath=//a/div[contains(.,'Unidentified Driving')]
+  ifta_app:                       xpath=//a/div[contains(.,'IFTA')]
+  equipment_maintenance_app:      xpath=//a/div[contains(.,'Equipment Maintenance Planning')]
+  fault_monitoring_app:           xpath=//a/div[contains(.,'Fault Monitoring')]
+  reporting_app:                  xpath=//a/div[contains(.,'Reporting')]
+  insight_app:                    xpath=//a/div[contains(.,'Insight')]
+  performance_monitoring_app:     xpath=//a/div[contains(.,'Performance Monitoring')]
+  diver_scorecard_app:            xpath=//a/div[contains(.,'Diver Scorecard')]
+  administration_app:             xpath=//a/div[contains(.,'Administration')]
+
+  #Delivery Sidebar Flyout
+  fleetview_sidebar:              xpath=//submenu-item/div/a[contains(.,'Fleetview')]
+  equipment_history_sidebar:      xpath=//submenu-item/div/a[contains(.,'Equipment History')]
+  order_status_sidebar:           xpath=//submenu-item/div/a[contains(.,'Order Status')]
+  service_history_sidebar:        xpath=//submenu-item/div/a[contains(.,'Service History')]
+  travel_path_sidebar:            xpath=//submenu-item/div/a[contains(.,'Travel Path Estimator')]
+  messaging_sidebar:              xpath=//submenu-item/div/a[contains(.,'Messaging')]
+
+  #Safety Sidebar Flyout
+  safety_sidebar:                 xpath=//submenu-item/div/a[contains(.,'Safety')]
+
+  #Compliance Sidebar Flyout
+  driver_log_editor_sidebar:      xpath=//submenu-item/div/a[contains(.,'Driver Log Editor')]
+  unidentified_driving_sidebar:   xpath=//submenu-item/div/a[contains(.,'Unidentified Driving')]
+  ifta_sidebar:                   xpath=//submenu-item/div/a[contains(.,'IFTA')]
+  equipment_maintenance_sidebar:  xpath=//submenu-item/div/a[contains(.,'Equipment Maintenance Planning')]
+  fault_monitoring_sidebar:       xpath=//submenu-item/div/a[contains(.,'Fault Monitoring')]
+
+  #Insights Sidebar Flyout
+  reporting_sidebar:              xpath=//submenu-item/div/a[contains(.,'Reporting')]
+  insight_sidebar:                xpath=//submenu-item/div/a[contains(.,'Insight')]
+  performance_monitoring_sidebar: xpath=//submenu-item/div/a[contains(.,'Performance Monitoring')]
+  diver_scorecard_sidebar:        xpath=//submenu-item/div/a[contains(.,'Diver Scorecard')]
+
+  #Administration Sidebar Flyout
+  administration_sidebar:         xpath=//submenu-item/div/a[contains(.,'Administration')]
+
+  #Long Description For Tooltip
+  fleetview_tooltip:              xpath=//tooltip[contains(.,'Omnitracs FleetView allows you')]
+  order_status_tooltip:           xpath=//tooltip[contains(.,'Order Status displays live')]
+  service_history_tooltip:        xpath=//tooltip[contains(.,'Service History uses historical data')]
+  unidentified_driving_tooltip:   xpath=//tooltip[contains(.,'The Unassigned Vehicle Activity (UVA)')]

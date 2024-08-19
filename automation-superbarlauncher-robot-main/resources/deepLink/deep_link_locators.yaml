@@ -1,0 +1,147 @@
+deep_link_locators:
+  iframe:                           document.querySelector("#main-content-iframe")
+
+## Assets
+# Asset Management
+#Certify Repair
+  certify_repair_title:             xpath=//h2[contains(.,'CERTIFY REPAIR')]
+  search_button_certify_repair:     xpath=//div[@id='btn_search_toggle']
+  reset_button_certify_repair:      xpath=//input[@title='Reset']
+
+#Equipment Maintenance Planning
+  past_due_eq_man_plan:             xpath=//a[contains(.,'Past Due')]
+  upcoming_eq_man_plan:             xpath=//a[contains(.,'Upcoming')]
+  schaduled_eq_man_plan:            xpath=//a[contains(.,'Scheduled')]
+
+#Equipment History
+  history_for_equipment_label:      xpath=//span[contains(.,'History for Equipment')]
+  position_history_button:          xpath=//li/div/a[contains(.,'Position History')]
+
+# Device Management
+#Mobile Device Management
+  mdd_option_button:                xpath=//a[contains(.,'Mobile Device Diagnostics')]
+  mmd_refresh_button:               xpath=//span[contains(.,'Refresh')]
+  mmd_export_button:                xpath=//button[@id='mobileDeviceDeviceExport']
+
+#Telematics Diagnostics
+  telematic_dia_filter_button:      xpath=//a[contains(.,'Filter Regions')]
+  telematic_dia_refresh_button:     xpath=//span[contains(.,'Refresh')]
+  telematic_dia_export_button:      xpath=//button[@id='telematicsDeviceExport']
+
+#FleetLocate Trailer
+  username_textbox_fleetlocate:     xpath=//input[@name='username']
+  password_textbox_fleetlocate:     xpath=//input[@name='password']
+
+## Compliance
+# Hours of Service
+#Driver Log Editor
+  driver_label_home:                xpath=//label[contains(.,'DRIVER')]
+  go_button_driver:                 xpath=//input[@value='Go']
+
+#Unassigned Vehicle Activity
+  reload_uva_button:                xpath=//div[@class='reload-button']
+  export_uva_button:                xpath=//a[@id='btnExportExternal']
+  save_uva_button:                  xpath=//a[@id='reclassifyId']
+
+#IFTA Assign Fuel Purchases
+  reload_ifta_afp_button:           xpath=//div[@class='reload-button']
+  load_list_ifta_afp_button:        xpath=//a[@id='loadList']
+  delete_selected_ifta_afp_button:  xpath=//input[@id='DeleteSelected']
+
+#IFTA Manage Fuel Recipts
+  reload_ifta_mfr_button:           xpath=//div[@class='reload-button']
+  import_fuel_ifta_mfr_button:      xpath=//a[@id='import_fuel_file']
+  delete_selected_ifta_mfr_button:  xpath=//input[@id='DeleteSelected']
+
+#IFTA Manage Manual Distance
+  reload_ifta_mmd_button:           xpath=//div[@class='reload-button']
+  go_ifta_mmd_button:               xpath=//button[@id='Btn_QueryManualDistance']
+  add_manual_ifta_mmd_button:       xpath=//div[@id='Div_ManualDistanceTopBtnBar']
+
+## Logistics
+#Fleetview
+  fleetview_routes_button:          xpath=//div/a[@id='splitButtonOption' and contains(.,'Routes')]
+  fleetview_refresh_button:         xpath=//button[@id='refreshLink']
+  fleetview_search_button:          xpath=//button[@id='navSearchBtn']
+
+# Order Management
+#Order Status
+  basic_search_button:              xpath=//button[contains(.,'Basic Search')]
+  search_orders_drop_down:          xpath=//button[@title='Search Latest Orders']
+  find_orders_button:               xpath=//button[@type='submit' and contains(.,'Find Orders')]
+
+#Service History
+  service_history_summary_title:    xpath=//h3[contains(.,'Service Summary')]
+  service_history_detail_title:     xpath=//h4[contains(.,'Service Details')]
+  service_history_location_title:   xpath=//label[contains(.,'Service Locations')]
+
+# Routing and Planning
+#Map Editor
+  map_editor_map:                   xpath=//div[@id='mapEditorVerticalSplitter']
+  travel_info_label:                xpath=//span[contains(.,'Travel Info')]
+  clear_button_map_editor:          xpath=//button[contains(.,'Clear')]
+
+#Modeling
+  modeling_title_home:              xpath=//h2[contains(.,'Model')]
+  session_button_modeling:          xpath=//a[contains(.,'Session')]
+
+#Stop Analyzer
+  stop_analyzer_home:               xpath=//h2[contains(.,'Stop Analy')]
+  search_ison:                      xpath=//i[@class='fa fa-search fa-lg']
+  stop_analyzer_panel:              xpath=//div[@id='stopAnalyzerStartupPanel']
+
+#Service Pattern Analyzer
+  service_pattern_anal_home:        xpath=//h2[contains(.,'Service Pattern Analy')]
+  ser_pat_ana_search_icon:          xpath=//i[@class='fa fa-search-plus fa-lg']
+  service_pat_analyzer_panel:       xpath=//div[@id='servicePatternAnalyzerLowerPanel']
+
+## Performance
+# Performance Insights
+#Insight
+  search_bar_insight:               xpath=//input[@name='kpiSearch']
+  home_button_insight:              xpath=//i[@class='fa fa-lg fa-home']
+  save_new_button_insight:          xpath=//button[@title='Save as new KPI']
+
+#Reporting
+  region_label_reporting:           xpath=//span[contains(.,'Region')]
+  reports_button_reporting:         xpath=//a[contains(.,'Reports')]
+  categories_title_reporting:       xpath=//section[@class='filter-container']/div[contains(.,'Categories')]
+
+#Scorecards
+  scorecards_button_scorecards:     xpath=//a[@id='showScorecardScoresBtn']
+  setup_button_scorecards:          xpath=//a[@id='showScorecardSetupBtn']
+  add_scorecard_button:             xpath=//button[contains(.,'Add Scorecard')]
+
+## Safety
+#Safety
+  cr_events_report_button_safety:   xpath=//li//a[contains(.,'Critical Events Report')]
+  general_report_button_safety:     xpath=//input[@id='generate_report']
+  black_box_label_safety:           xpath=//div[@id='reportTitle']
+  safety_iframe:                    dom:document.querySelector("#criticalEventsReportIframe")
+
+#Driver App
+  company_text_box_driver:          xpath=//input[@name='company']
+  user_name_text_box_driver:        xpath=//input[@name='userName']
+  password_text_box_driver:         xpath=//input[@name='password']
+
+#Response Center
+  company_text_box_response:        xpath=//input[@id='company_name']
+  user_name_text_box_response:      xpath=//input[@id='login_id']
+  password_text_box_response:       xpath=//input[@type='password']
+
+## Command
+# Drive Workflow Configuration
+  command_sign_in_label:            xpath=//strong[contains(.,'Redirecting to Sign In...')]
+  action_button_rna_mobile_workf:   xpath=//a[contains(.,'Action') and contains(.,'utton') and contains(.,'liasing')]
+  save_button_rna_mobile_workf:     xpath=//button[@class='btn btn-default btn-sm' and contains(.,'Save')]
+  ar_a_wait_label_rna_mobile_workf: xpath=//label[@for='arriveAndWait']
+
+## System Console
+#Device Manager
+  devices_button:       dom:document.querySelector("body > device-manager > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(1)")
+  fleet_config_button:  dom:document.querySelector("body > device-manager > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(2)")
+  groups_button:        dom:document.querySelector("body > device-manager > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(3)")
+  vehicles_button:      dom:document.querySelector("body > device-manager > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(4)")
+  admin_button:         dom:document.querySelector("body > device-manager > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(5)")
+  log_out_button:       dom:document.querySelector("body > device-manager > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(6)")
+  title_device:         dom:document.querySelector("body > device-manager > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-start > span")

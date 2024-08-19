@@ -1,7 +1,7 @@
 import json
 
 input_file = 'resultAdoFinal.json'
-output_file = 'output_data.json'
+output_file = 'SuperAPPlauncher.json'
 
 with open(input_file, 'r') as file:
     initial_data = json.load(file)
@@ -13,7 +13,7 @@ for item in initial_data:
         "Content": item["Content"],
         "ApplicableTo": {
             "Keyword": item["Title"], #{item["URL"]}
-            "URL": f"https://taxmanager.int.omnitracs.com/{item['PageOb']}",  
+            "URL": f"https://fleetsolutions-dev.solera.com/{item['PageOb']}",  
             "Locators": item["Locators"],
             "Language": "Robot Framework"
         },

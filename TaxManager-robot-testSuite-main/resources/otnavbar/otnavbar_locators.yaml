@@ -1,0 +1,11 @@
+otnavbar_locators:
+  fuel_button:            xpath=//ot-primary-navbar//a[contains(.,'Fuel')]
+  distance_button:        xpath=//ot-primary-navbar//a[contains(.,'Distance')]
+  reports_button:         xpath=//ot-primary-navbar//a[contains(.,'Reports')]
+  tax_filings_button:     xpath=//ot-primary-navbar//a[contains(.,'Tax Filings')]
+  vehicles_button:        xpath=//ot-primary-navbar//a[contains(.,'Vehicles')]
+  administration_button:  xpath=//ot-primary-navbar//a[contains(.,'Administration')]
+  app_admin_button:       xpath=//ot-primary-navbar//a[contains(.,'App Admin')]
+  legal_button:           xpath=//ot-primary-navbar//a[contains(.,'Legal')]
+  logout_button:          xpath=//ot-primary-navbar//a[contains(.,'Log out')]
+  title:                  xpath=//ot-primary-navbar//span[contains(.,'Omnitracs Tax Manager')]

@@ -1,0 +1,5 @@
+login_page_locators:
+  # Login Page
+  email_input:      xpath=//input[@name='user-id']           #Emaile Input Text
+  next_button:      xpath=//button[@type='submit']           #Next Button
+  welcome_message:  xpath=//span[contains(.,'Welcome')]  #Welcome Title Message

@@ -1,0 +1,8 @@
+super_bar_page_locators:
+  devices_button:       dom:document.querySelector("body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(1)")
+  fleet_config_button:  dom:document.querySelector("body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(2)")
+  groups_button:        dom:document.querySelector("body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(3)")
+  vehicles_button:      dom:document.querySelector("body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(4)")
+  admin_button:         dom:document.querySelector("body > device-manager > div.page-content > app-menu-nav-bar > nav > div > div.navbar-right > a:nth-child(5)")
+  log_out_button:       dom:document.querySelector("body > device-manager > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-end > a:nth-child(6)")
+  title_device:         dom:document.querySelector("body > device-manager > div.page-content > ot-global-navbar").shadowRoot.querySelector("div > ot-primary-navbar > nav.navbar.is-spaced.is-global.is-hidden-mobile > div.navbar-start > span")

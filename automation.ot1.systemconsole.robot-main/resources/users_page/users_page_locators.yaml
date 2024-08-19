@@ -1,0 +1,7 @@
+users_page_locators:
+  #User Tab
+  invite_user_button:     xpath=//button[contains(.,'Invite User')]
+  users_iframe:           document.querySelector("body > ot-root > ot-module-loader-v2 > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#main-content-iframe")
+  users_tab:              document.querySelector("body > ot-root > ot-module-loader-v2 > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#layout-container-v2 > ot-navigation > nav > ot-nav-body").shadowRoot.querySelector("div > ot-nav-list").shadowRoot.querySelector("ul > ot-nav-item:nth-child(1)").shadowRoot.querySelector("#\\31  > ot-nav-item-option").shadowRoot.querySelector("div > span")
+  search_input:           xpath=//input[@type='text']
+  title:                  xpath=//span[contains(.,'Users')]

@@ -1,0 +1,108 @@
+distance_page_locators:
+  distance_title:                       xpath=//h3[contains(.,'Distances')]
+  add_distance_button:                  xpath=//span[contains(.,'Add Distance')]
+  pagination_nav:                       xpath=//nav[@class='pagination is-centered']
+  page_select_select:                   xpath=//select[@id='page-select']
+
+#Add Distance Page Locators
+  add_distance_title:                   xpath=//h1[contains(.,'Add Distance')]
+  jurisdiction_label:                   xpath=//label[contains(.,'Jurisdiction')]
+  jurisdiction_select:                  xpath=//select[@id='jurisdictionCode']
+  total_miles_label:                    xpath=//label[contains(.,'Total Miles')] 
+  total_miles_input:                    xpath=//input[@id='totalMiles']
+  date_label:                           xpath=//label[contains(.,'Date')] 
+  date_input:                           xpath=//input[@id='startTimestamp']
+  vehicle_id_label:                     xpath=//label[contains(.,'Vehicle ID')]
+  vehicle_id_select:                    xpath=//select[@id='vehicleId']
+  unit_type_label:                      xpath=//label[contains(.,'Unit Type')]
+  unit_type_select:                     xpath=//select[@id='distanceUnit']
+  beginning_odometer_label:             xpath=//label[contains(.,'Beginning Odometer')]
+  beginning_odometer_input:             xpath=//input[@id='beginningOdometer']
+  ending_odometer_label:                xpath=//label[contains(.,'Ending Odometer')]
+  ending_odometer_input:                xpath=//input[@id='endingOdometer']
+  toll_miles_label:                     xpath=//label[contains(.,'Toll Miles')]
+  toll_miles_input:                     xpath=//input[@id='tollMiles']
+  comments_label:                       xpath=//label[contains(.,'Comments')]
+  comments_input:                       xpath=//input[@id='comment']
+  cancel_button:                        xpath=//button[contains(.,'Cancel')]
+  save_button:                          xpath=//button[contains(.,'Save')]
+
+#Warning Locators 
+  vehicle_id_required:                  xpath=//div[@class='has-text-danger']
+  
+#Filter Side Panel
+  filter_button:                        xpath=//i[contains(.,'tune')]
+  close_filter_button:                  xpath=//ot-side-panel//i[contains(.,'close')]
+  start_date_filter:                    xpath=//ot-side-panel//input[@id='startDate']
+  end_date_filter:                      xpath=//ot-side-panel//input[@id='endDate']
+  ifta_reportable_filter:               xpath=//ot-side-panel//select[@id='iftaReportable']
+  jurisdiction_filter:                  xpath=//ot-side-panel//input[@placeholder='Jurisdiction']
+  jurisdiction_filter_activated:        xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Jurisdiction']
+  jurisdiction_filter_deactivated:      xpath=//ot-side-panel//ot-multiselect[@class='ng-touched ng-dirty ng-invalid']//input[@placeholder='Jurisdiction']
+  labels_filter:                        xpath=//ot-side-panel//input[@placeholder='Labels']
+  labels_filter_activated:              xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Labels']
+  labels_filter_deactivated:            xpath=//ot-side-panel//ot-multiselect[@class='ng-touched ng-dirty ng-invalid']//input[@placeholder='Labels']
+  vehicles_filter:                      xpath=//ot-side-panel//input[@placeholder='Vehicles']
+  vehicles_filter_activated:            xpath=//ot-side-panel//ot-multiselect[@class='ng-untouched ng-pristine ng-valid']//input[@placeholder='Vehicles']
+  vehicles_filter_deactivated:          xpath=//ot-side-panel//ot-multiselect[@class='ng-touched ng-dirty ng-invalid']//input[@placeholder='Vehicles']
+  reset_all_button_filter:              xpath=//ot-side-panel//button[@type='reset']
+  generate_button_filter:               xpath=//ot-side-panel//button[@type='submit']
+  disable_generate_button_filter:       xpath=//ot-side-panel//button[@type='submit' and @disabled]
+  search_input_text_filter:             xpath=//ot-multiselect//div[2]/div[1]/div/input
+  all_label_checkbox_filter:            xpath=//ot-side-panel//label[@title='All Labels']
+  all_juridistion_checkbox_filter:      xpath=//ot-side-panel//label[@title='All Jurisdictions']
+  all_vehicles_checkbox_filter:         xpath=//ot-side-panel//label[@title='All Vehicles']
+  reset_all_popup_menu_title:           xpath=//ot-warning-window//div/div/div[contains(.,'Reset All')]
+  reset_all_popup_menu_confirm:         xpath=//ot-warning-window//button[contains(.,'Confirm')]
+  reset_all_popup_menu_cancel:          xpath=//ot-warning-window//button[contains(.,'Cancel')]
+  error_message_about_92_days:          xpath=//ot-side-panel//ot-datepicker-question/div[contains(.,'Date Range cannot be more than 92 days')]
+  tax_account_label:                    xpath=//label[contains(.,'Tax Account')]
+  tax_account_select:                   xpath=//select[@id='taxAccount']
+  AB_juridistion_checkbox_filter:       xpath=//ot-side-panel//label[@title='Alberta']
+  AK_juridistion_checkbox_filter:       xpath=//ot-side-panel//label[@title='Alaska']
+  one_vehicle_checkbox_filter:          xpath=//ot-side-panel//label[@title='0000000001']
+  humv1_vehicle_checkbox_filter:        xpath=//ot-side-panel//label[@title='HUM_V1']
+
+
+#Warnings 
+  beginning_odometer_warning:           xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Beginning Odometer must be at least 0.')]
+  ending_odometer_warning:              xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Ending Odometer must be at least 0.')]
+  miles_required_warning:               xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Miles is required.')]
+  date_required_warning:                xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Date is required.')]
+  vehicleid_required_warning:           xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Vehicle ID is required.')]
+  end_Date_warning:                     xpath=//div[contains(@class, 'has-text-danger') and contains(., 'End date must be after start date.')]
+
+#Length
+  total_miles_warning_length:                  xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Total Miles must be no more than 8 characters long.')]
+  beginning_odometer_warning_length:           xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Beginning Odometer must be no more than 10 characters long.')]
+  ending_odometer_warning_length:              xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Ending Odometer must be no more than 10 characters long.')]
+  toll_miles_warning_length:                   xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Toll Miles must be no more than 8 characters long.')] 
+  comments_warning_length:                     xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Comments must be no more than 60 characters long.')] 
+
+
+#Edit Tab
+  edit_title:                           xpath=//h1[contains(.,'Edit Distance')]
+  edit_distance_button:                 xpath=//span[contains(.,'Edit')]
+  starting_latitude_label:              xpath=//label[contains(.,'Starting Latitude')]
+  starting_latitude_input:              xpath=//input[@id='start.latitude']
+  starting_longitude_label:             xpath=//label[contains(.,'Starting Longitude')]
+  starting_longitude_input:             xpath=//input[@id='start.longitude']
+  ending_latitude_label:                xpath=//label[contains(.,'Ending Latitude')]
+  ending_latitude_input:                xpath=//input[@id='end.latitude']
+  ending_longitude_label:               xpath=//label[contains(.,'Ending Longitude')]
+  ending_longitude_input:               xpath=//input[@id='end.longitude']    
+
+#TABLE 
+  headers_table:                              xpath=//div[@ref='eHeaderContainer']
+  jurisdiction_label_table:                   xpath=//span[@role='columnheader' and .='Jurisdiction']
+  vehicle_id_label_table:                     xpath=//span[@role='columnheader' and .='Vehicle ID']
+  total_miles_label_table:                    xpath=//span[@role='columnheader' and contains(.,'Total Miles')]
+  date_label_table:                           xpath=//span[@role='columnheader' and .='Date']
+  time_label_table:                           xpath=//span[@role='columnheader' and contains(.,'Time')]
+  toll_miles_label_table:                     xpath=//span[@role='columnheader' and contains(.,'Toll Miles')]
+  beginning_Odometer_label_table:             xpath=//span[@role='columnheader' and contains(.,'Beginning Odometer')]
+  ending_odometer_label_table:                xpath=//span[@role='columnheader' and contains(.,'Ending Odometer')]
+  type_label_table:                           xpath=//span[@role='columnheader' and contains(.,'Type')]
+  userreview_label_table:                     xpath=//span[@role='columnheader' and contains(.,'User Review Required')]
+
+  

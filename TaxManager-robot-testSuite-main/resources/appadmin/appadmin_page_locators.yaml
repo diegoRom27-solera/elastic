@@ -1,0 +1,121 @@
+appadmin_page_locators:
+  appadmin_title:        xpath=//h3[contains(.,'Tax Accounts')]
+  add_tax_account:       xpath=//button[contains(.,'Add Tax Account')]
+  page_select_select:            xpath=//select[@id='page-select']
+
+  #Add Tax Account Locators
+
+  #Company Information
+  appadmin_title_taxaccount:                   xpath=//h3[contains(.,'Company Information')]
+  company_name_label:                          xpath=//label[contains(.,'Company Name')]
+  company_name_input:                          xpath=//input[@id='companyName']
+  street_label:                                xpath=//label[contains(.,'Street')]
+  street_input:                                xpath=//input[@id='streetAddress']
+  city_label:                                  xpath=//label[contains(.,'City')]
+  city_input:                                  xpath=//input[@id='city']
+  state_province_label:                        xpath=//label[contains(.,'State/Province')]
+  state_province_select:                       xpath=//select[@id='jurisdiction']
+  zip_postal_code_label:                       xpath=//label[contains(.,'Zip/Postal Code')]
+  zip_postal_code_input:                       xpath=//input[@id='postalCode']
+  unit_of_measure_label:                       xpath=//label[contains(.,'Unit of Measure')]
+  usd_gallon_label:                            xpath=//label[contains(.,'USD/Gallon')]
+  cad_litre_label:                             xpath=//label[contains(.,'CAD/Litre')]
+  
+
+  #Tax Account Information
+  appadmin_title_taxaccount_information:       xpath=//h3[contains(.,'Tax Account Information')]
+  federal_id_label:                            xpath=//label[contains(.,'Federal ID')]
+  federal_id_input:                            xpath=//input[@id='federalTaxId'] 
+  us_dot_number_label:                         xpath=//label[contains(.,'US DOT Number')]
+  us_dot_number_input:                         xpath=//input[@id='usDotNumber']
+  ifta_label:                                  xpath=//label[contains(.,'iftaEnabled')] 
+  ifta_account_number_label:                   xpath=//label[contains(.,'IFTA Account Number')]
+  ifta_account_number_input:                   xpath=//input[@id='accountNumber']
+  ifta_filing_jurisdiction_label:              xpath=//label[contains(.,'IFTA Filing Jurisdiction')]
+  ifta_filing_jurisdiction_select:             xpath=//select[@id='filingJurisdiction']
+  ifta_frequency_label:                        xpath=//label[contains(.,'IFTA Frequency')]
+  ifta_frequency_select:                       xpath=//select[@id='iftaFrequency']
+  acceptable_fuel_efficiency_min_label:        xpath=//label[contains(.,'Acceptable Fuel Efficiency Min')]   
+  acceptable_fuel_efficiency_min_input:        xpath=//input[@id='fuelEfficiencyMin']
+  acceptable_fuel_efficiency_max_label:        xpath=//label[contains(.,'Acceptable Fuel Efficiency Max')]
+  acceptable_fuel_efficiency_max_input:        xpath=//input[@id='fuelEfficiencyMax']
+
+  #HUT Jurisdiction
+  ny_hut_label:                                xpath=//label[contains(.,'NY HUT')]
+  ny_hut_tax_payer_id_label:                   xpath=//label[contains(.,'NY HUT Tax Payer ID')]
+  ny_hut_tax_payer_id_input:                   xpath=//input[@id='nyHutTaxPayerId']
+  ny_hut_frequency:                            xpath=//label[contains(.,'NY HUT Frequency')]
+  ny_hut_frequency_select:                     xpath=//select[@id='nyHutFrequency']
+  
+  ky_hut_label:                                xpath=//label[contains(.,'KY HUT')]
+  ky_hut_tax_payer_id_label:                   xpath=//label[contains(.,'KY HUT Tax Payer ID')]
+  ky_hut_tax_payer_id_input:                   xpath=//input[@id='kyHutTaxPayerId']
+  ky_hut_frequency:                            xpath=//label[contains(.,'KY HUT Frequency')]
+  ky_hut_frequency_select:                     xpath=//select[@id='kyHutFrequency']/option[@value='QUARTERLY']
+
+  nm_hut_label:                                xpath=//label[contains(.,'NM HUT')]
+  nm_hut_tax_payer_id_label:                   xpath=//label[contains(.,'NM HUT Tax Payer ID')]
+  nm_hut_tax_payer_id_input:                   xpath=//input[@id='nmHutTaxPayerId']
+  nm_hut_frequency:                            xpath=//label[contains(.,'NM HUT Frequency')]
+  nm_hut_frequency_select:                     xpath=//select[@id='nmHutFrequency']/option[@value='QUARTERLY']
+
+  or_hut_label:                                xpath=//label[contains(.,'OR HUT')]
+  or_hut_tax_payer_id_label:                   xpath=//label[contains(.,'OR HUT Tax Payer ID')]
+  or_hut_tax_payer_id_input:                   xpath=//input[@id='orHutTaxPayerId']
+  or_hut_frequency:                            xpath=//label[contains(.,'OR HUT Frequency')]
+  or_hut_frequency_select:                     xpath=//select[@id='orHutFrequency']
+
+  ct_hut_label:                                xpath=//label[contains(.,'CT HUT')]
+  ct_hut_tax_payer_id_label:                   xpath=//label[contains(.,'CT HUT Tax Payer ID')]
+  ct_hut_tax_payer_id_input:                   xpath=//input[@id='ctHutTaxPayerId']
+  ct_hut_frequency:                            xpath=//label[contains(.,'CT HUT Frequency')]
+  ct_hut_frequency_select:                     xpath=//select[@id='ctHutFrequency']/option[@value='MONTHLY']
+
+  #Vehicle Information 
+  available_vehicles_label:                    xpath=//label[contains(.,'Available Vehicles')]
+  selected_vehicles_label:                     xpath=//label[contains(.,'Selected Vehicles')]
+  clear_all_button:                            xpath=//button[contains(.,'Clear All')]
+  search_vehicle_id_rigth:                     xpath=//div[@class='column multi-select-column selected']//input[@placeholder='Search Vehicle ID']
+  search_vehicle_id_left:                      xpath=//div[@class='column multi-select-column']//input[@placeholder='Search Vehicle ID'] 
+  vehicles_ul:                                 xpath=//ul[@class='options']
+  add_selections_button:                       xpath=//button[contains(.,'Add Selections')]
+  cancel_button:                               xpath=//button[contains(.,'Cancel')]    
+  save_button:                                 xpath=//button[contains(.,'Save')]
+
+  #Warnings 
+  company_name_warning:                        xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Company Name is required.')]
+  street_warning:                              xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Street is required.')]
+  city_warning:                                xpath=//div[contains(@class, 'has-text-danger') and contains(., 'City is required.')]
+  zip_code_warning:                            xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Zip/Postal Code is required.')]
+  unit_measure_warning:                        xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Unit of Measure is required.')]
+  federal_id_warning:                          xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Federal ID is required.')]
+  ifta_account_warning:                        xpath=//div[contains(@class, 'has-text-danger') and contains(., 'IFTA Account Number is required.')]
+
+  #Length Warnigns 
+  company_name_length_warning:                 xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Company Name must be no more than 50 characters long.')]
+  street_length_warning:                       xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Street must be no more than 50 characters long.')]
+  city_length_warning:                         xpath=//div[contains(@class, 'has-text-danger') and contains(., 'City must be no more than 25 characters long.')] 
+  zip_code_length_warning:                     xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Zip/Postal Code must be no more than 10 characters long.')]
+  federal_id_length_warning:                   xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Federal ID must be no more than 60 characters long.')]
+  us_dot_number_length_warning:                xpath=//div[contains(@class, 'has-text-danger') and contains(., 'US DOT Number must be no more than 25 characters long.')]
+  ifta_account_length_warning:                 xpath=//div[contains(@class, 'has-text-danger') and contains(., 'IFTA Account Number must be no more than 60 characters long.')]
+  fuel_efficiency_min_length_warning:          xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Acceptable Fuel Efficiency Min must be no more than 5 characters long.')]
+  fuel_efficiency_max_length_warning:          xpath=//div[contains(@class, 'has-text-danger') and contains(., 'Acceptable Fuel Efficiency Max must be no more than 5 characters long.')]
+  ny_hut_length_warning:                       xpath=//div[contains(@class, 'has-text-danger') and contains(., 'NY HUT Tax Payer ID must be no more than 60 characters long.')]
+  ky_hut_length_warning:                       xpath=//div[contains(@class, 'has-text-danger') and contains(., 'KY HUT Tax Payer ID must be no more than 60 characters long.')]
+  nm_hut_length_warning:                       xpath=//div[contains(@class, 'has-text-danger') and contains(., 'NM HUT Tax Payer ID must be no more than 60 characters long.')]
+  or_hut_length_warning:                       xpath=//div[contains(@class, 'has-text-danger') and contains(., 'OR HUT Tax Payer ID must be no more than 60 characters long.')]
+  ct_hut_length_warning:                       xpath=//div[contains(@class, 'has-text-danger') and contains(., 'CT HUT Tax Payer ID must be no more than 60 characters long.')]
+
+  #Invalid Format Warnings
+  zip_code_invalid_format_warning:             xpath=//div[contains(@class, 'has-text-danger') and contains(.,'Zip/Postal Code is in an invalid format')]
+
+  #Edit
+  edit_button:                                 xpath=//span[contains(.,'Edit')]
+
+  #Error Message
+  existing_tax_account_error:                  xpath=//p[contains(.,'Error')]
+  error_message:                               xpath=//section[contains(.,'There is already an existing Tax account with this Company Name. Please rename the company name or Cancel.')] 
+  accept_error_message:                        xpath=//button[contains(.,'Accept')]
+
+  

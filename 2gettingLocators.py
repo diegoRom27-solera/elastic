@@ -23,7 +23,7 @@ def guardar_datos_en_json(datos, archivo_json):
     with open(archivo_json, 'w') as file:
         json.dump(datos, file, indent=4)
 
-directorio_base = './TaxManager-robot-testSuite-main'  
+directorio_base = './automation-superbarlauncher-robot-main'  
 archivos_encontrados = cargar_archivos_yml(directorio_base)
 
 data_completa = {}

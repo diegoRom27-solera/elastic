@@ -1,0 +1,37 @@
+mdm_page_locators:
+  #MDM Profile Main Page
+  mdm_iframe:             document.querySelector("body > ot-root > ot-module-loader > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#main-content-iframe")
+  mdm_tab:                document.querySelector("body > ot-root > ot-module-loader > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#layout-container-v2 > ot-navigation > nav > ot-nav-body").shadowRoot.querySelector("div > ot-nav-list").shadowRoot.querySelector("ul > ot-nav-item:nth-child(5)").shadowRoot.querySelector("#\\35  > ot-nav-item-option").shadowRoot.querySelector("div > span")
+  title:                  xpath=//h1[contains(.,'MDM Profile')]
+  regular_mdm_tab:        xpath=//div[@role='tab' and contains(.,'REGULAR')]
+  beta_mdm_tab:           xpath=//div[@role='tab' and contains(.,'BETA')]
+  search_text:            xpath=//input[@name='searchText']
+  new_button:             xpath=//button[@id='new-mdm']
+  page_listbox:           xpath=//mat-select[@role='listbox']
+  pagination_title:       xpath=//mat-paginator/div[contains(.,'Records per page:')]
+  regular_row:            xpath=//tr[contains(.,'REGULAR')]
+  beta_row:               xpath=//tr[contains(.,'BETA')]
+
+  #New/Update a MDM Profile
+  app_title:              xpath=//mat-label[contains(.,'Application Values')]
+  new_title:              xpath=//h2[contains(.,'Create a new MDM Profile')]
+  update_title:           xpath=//h2[contains(.,'Update a MDM Profile')]
+  profile_type_select:    xpath=//mat-select[@name='mdmType']
+  profile_type_disabled:  xpath=//mat-select[@name='mdmType' and @aria-disabled='true']
+  status_select:          xpath=//mat-select[@name='mdmStatus']
+  platform_select:        xpath=//mat-select[@name='mdmPlatform']
+  platform_disabled:      xpath=//mat-select[@name='mdmPlatform' and @aria-disabled='true']
+  profile_name_input:     xpath=//input[@name='profileName']
+  description_input:      xpath=//input[@name='profileDescription']
+  close_button:           xpath=//mat-icon[contains(.,'close')]
+  cancel_button:          xpath=//button[@name='cancel']
+  detele_button:          xpath=//button[@name='delete']
+  save_button:            xpath=//button[@name='save' and contains(.,'SAVE')]
+  save_button_disabled:   xpath=//button[@name='save' and contains(.,'SAVE') and @disabled='true']
+  ok_button:              xpath=//button[contains(.,'OK')]
+  message_success:        xpath=//div/div/div[contains(.,'The MDM Profile') and contains(.,'was created')]
+  delete_success:         xpath=//div/div/div[contains(.,'The mdm has been changed to delete state')]
+  updated_success:        xpath=//div/div/div[contains(.,'Entitlement MDM Profile is now updated')]
+  confirm_delete_messag:  xpath=//div/div/div[contains(.,'Are you sure you want to delete this MDM?')]
+  confirm_delete_button:  xpath=//button[contains(.,'Delete')]
+  cancel_delete_button:   xpath=//button[contains(.,'Cancel')]

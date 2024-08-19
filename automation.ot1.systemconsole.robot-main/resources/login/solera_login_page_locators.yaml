@@ -1,0 +1,11 @@
+solera_login_page_locators:
+  # Solera Login Page
+  solera_title:          xpath=//div[@role='heading']
+  email_input_text:      xpath=//input[@name='loginfmt']
+  password_input_text:   xpath=//input[@name='passwd']
+  back_button:           xpath=//input[@id='idBtn_Back']
+  next_button:           xpath=//input[@id='idSIButton9']
+  remember_password:     xpath=//a[@id='cantAccessAccount']
+  forgot_password:       xpath=//a[@id='idA_PWD_ForgotPassword']
+  no_button:             xpath=//input[@id='idBtn_Back']
+  yes_button:            xpath=//input[@id='idSIButton9']

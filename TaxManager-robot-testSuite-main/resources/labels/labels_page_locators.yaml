@@ -1,0 +1,21 @@
+labels_page_locators:
+  labels_nav:                 xpath=//a[contains(.,'Labels')]
+  label_title:                xpath=//h3[contains(.,'Labels')]
+  add_label_button:           xpath=//button[contains(.,'Add Label Category')]
+
+  #Add Label Category 
+  label_category_input:       xpath=//input[@placeholder="Name label key"]
+  label_category_button:      xpath=//button[contains(.,'Submit')]
+
+  #Warning label Category
+  warning_label_category:     xpath=//p[contains(.,'Label key can only contain alpha characters or numbers, use "_" or "-" instead of spaces.')]
+
+  #Add Label Value 
+  label_value_input:          xpath=//input[@placeholder="Name label value"]
+
+  #Warning label Value
+  warning_label_value:        xpath=//p[contains(.,'Label value can only contain alpha characters or numbers, use "_" or "-" instead of spaces.')]
+
+  
+
+

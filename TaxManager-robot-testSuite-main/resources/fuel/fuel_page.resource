@@ -1,4 +1,3 @@
-
 Load Fuel Page
     Wait Until Element Is Visible    ${fuel_page_locators.fuel_tab}                            ${LO_TIME}
     Wait Until Element Is Visible    ${fuel_page_locators.imports_tab}                         ${LO_TIME}
@@ -305,7 +304,7 @@ Click On Add File
     Click Element                    ${fuel_page_locators.import_add_file_button}
 
 Obtain Current Date
-    ${date} =    Get Current Date    UTC
+    ${date} =    Get Current Date    UTC    - 1 day
     ${date} =    list_xpath.Obtain Date Correct Format    ${date}
     [Return]    ${date}
 
@@ -374,8 +373,8 @@ Generate Random Values
     [Return]    ${totalMiles}
 
 Search By Time on Table
-    [Arguments]    ${time}    ${row}
-    ${XPATH} =    list_xpath.obtain_xpath_by_time_row_distance    ${time}    ${row}
+    [Arguments]    ${jurisdiction}    ${volume}
+    ${XPATH} =    list_xpath.obtain_xpath_by_time_row_distance    ${jurisdiction}    ${volume}
     Wait Until Element Is Visible    ${XPATH}    ${SH_TIME}
     Scroll Element Into View         ${XPATH}
     Click Element                    ${XPATH}

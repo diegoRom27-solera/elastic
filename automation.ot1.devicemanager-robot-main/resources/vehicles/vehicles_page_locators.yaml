@@ -1,0 +1,27 @@
+vehicles_page_locators:
+  #Vehicles Page
+  kebab_button:         xpath=//mat-icon[contains(.,'more_vert')]
+  pair_vehicle_button:  xpath=//button[contains(.,'Pair Vehicle')]
+  total_title:          xpath=//span[contains(.,'Total Devices')]
+  search_bar:           xpath=//input[@placeholder='Enter VehicleId']
+  trash_enable_button:  xpath=//button[@class='mat-focus-indicator primary-fab-float-icon mat-fab mat-button-base mat-accent ng-star-inserted']
+  trash_disable_button: xpath=//button[@class='mat-focus-indicator primary-fab-float-icon disabled mat-fab mat-button-base mat-accent mat-button-disabled ng-star-inserted']
+  edit_button:          xpath=//i[contains(.,'edit')]
+
+  #Add Vehicle Pairign
+  device_info:          xpath=//h3[contains(.,'Device Info')]
+  device_id_input:      xpath=//input[@name='deviceGuid']
+  vehicle_guid_input:   xpath=//input[@name='vehicleGuid']
+  vehicle_id_input:     xpath=//input[@name='vehicleId']
+  cancel_button:        xpath=//span[contains(.,'Cancel')]
+  save_button:          xpath=//span[contains(.,'Save')]
+  update_button:        xpath=//button/span[contains(.,'Update')]
+  success_message:      xpath=//h2[contains(.,'Success')]
+  ok_button:            xpath=//button[contains(.,'OK')]
+  error_message:        xpath=//h2[contains(.,'Error')]
+  no_record_message:    xpath=//b[contains(.,'There is no record to show')]
+
+  #Remove Options
+  message:              xpath=//h2[contains(.,'Delete Pairing')]
+  cancel_button:        xpath=//button[contains(.,'Cancel')]
+  continue_button:      xpath=//button[contains(.,'Continue')]

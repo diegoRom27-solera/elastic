@@ -1,0 +1,104 @@
+onboarding_page_locators:
+  #Onboarding Main Page
+  add_button:         xpath=//button[@id='addBtn']                        #Add button
+  completed_tab:      xpath=//*[@id="COMPLETEDTab"]                       #Completed Tab
+  failed_tab:         xpath=//*[@id="FAILEDTab"]                          #Failed Tab
+  in_progress_tab:    xpath=//*[@id="IN-PROGRESSTab"]                     #In Progress Tab
+  onboarding_tab:     document.querySelector("body > ot-root > ot-module-loader > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#layout-container-v2 > ot-navigation > nav > ot-nav-body").shadowRoot.querySelector("div > ot-nav-list").shadowRoot.querySelector("ul > ot-nav-item:nth-child(1)").shadowRoot.querySelector("#\\31  > ot-nav-item-option").shadowRoot.querySelector("div")
+  onboarding_iframe:  document.querySelector("body > ot-root > ot-module-loader > div > app-module-container > ot-platform-layout-lefttnav-iframe").shadowRoot.querySelector("#main-content-iframe")
+  results_total:      xpath=//*[@id="main-body"]/app-root/div[2]/app-dashboard/div/div[2]/div[3]/pagination-template/div/span
+  title:              xpath=//h1[contains(.,'Entitlement')]               #Entitlement Transactions Title
+  transaction_total:  xpath=//*[@id="main-body"]/app-root/div[2]/app-dashboard/div/div[2]/div[1]/span/span[2]
+  search_text:        document.querySelector("#searchText")               #Searcher Text Input
+
+  #Txn Card Elements
+  txn_id:           xpath=//*[@id='txnInfo']                                                                                                #Txn ID Label
+  start:            xpath=//span[@id='txtStart']                                                                                            #Start Label
+  erp:              xpath=//span[@id='ERPKey']                                                                                              #ERP Label
+  nmc:              xpath=//span[@id='NMCKey']                                                                                              #NMC Label
+  one:              xpath=//span[@id='ONEKey']                                                                                              #ONE Label
+  rna:              xpath=//span[@id='RNAKey']                                                                                              #RNA Label
+  sp:               xpath=//span[@id='SPKey']                                                                                               #SP Label
+  xrs:              xpath=//span[@id='XRSKey']                                                                                              #XRS Label
+  secondary:        xpath=//span[@id='secondaryKey']                                                                                        #Secondary Label
+  status:           xpath=//*[@id="status"]                                                                                                 #Status Label
+  progress_bar1:    xpath=//*[@id="main-body"]/app-root/div[2]/app-dashboard/div/div[2]/div[2]/mat-card[1]/mat-progress-bar/div[1]          #Progress Bar
+  details_button1:  xpath=//div[@id="main-body"]/app-root/div[2]/app-dashboard/div/div[2]/div[2]/mat-card[1]/div/button                     #Details Button
+  footer_title:     dom:document.querySelector("#main-content > ot-footer").shadowRoot.querySelector("footer > div > a.link-without-cursor")
+
+  #Details Page
+  business_account_id:             xpath=//input[@id='businessAccId']                                #Business Account ID Input Text
+  back_arrow_details:              xpath=//*[@id="backBtn"]                                          #Back Arrow from Details Page
+  txn_number:                      xpath=//input[@id="txnNumber"]                                    #Txn Number Input Text
+  txn_date:                        xpath=//input[@id="txnDtm"]                                       #Txn Date/Time Input Text
+  txn_type:                        xpath=//input[@id="txnType"]                                      #Txn Type Input Text
+  client_id:                       xpath=//input[@id="disabledInput"]                                #Client ID Input Text
+  txn_status:                      xpath=//input[@id="txnStatus"]                                    #Txn Status Input Text
+  comment:                         xpath=//input[@id="txnComments"]                                  #Txn Comment Input Text
+  alternate_accounts_maps:         xpath=//mat-card-title[@id='ALTERNATE ACCOUNT MAPSCard']          #Alternate Account Maps Title
+  existing_entitlements_label:     xpath=//mat-card-title[@id='EXISTING ENTITLEMENTSCard']           #Existing Entitlements Label
+  new_entitlements_label:          xpath=//mat-card-title[@id='NEW ENTITLEMENTSCard']                #New Entitlements Label
+  log_label:                       xpath=//mat-card-title[@id='LOGCard']                             #Log Label
+  existing_entitlements_row1:      xpath=//*[@id="main-body"]/app-root/div[2]/app-details-page/div/div[2]/mat-card[2]/div/mat-table/mat-row[1]/mat-cell[1]
+  new_entitlements_row1:           xpath=//*[@id="main-body"]/app-root/div[2]/app-details-page/div/div[2]/mat-card[3]/div/mat-table/mat-row[1]/mat-cell[1]
+  log_row1:                        xpath=//*[@id="main-body"]/app-root/div[2]/app-details-page/div/div[2]/mat-card[4]/div/mat-table/mat-row[1]/mat-cell[1]
+  new_entitlment_arrow_down:       xpath=//mat-card[3]/div/mat-table/mat-row/mat-cell/div/mat-icon[contains(.,'keyboard_arrow_down')]
+  existing_entitlement_arrow_down: xpath=//mat-card[2]/div/mat-table/mat-row/mat-cell/div/mat-icon[contains(.,'keyboard_arrow_down')]
+  entitlement_arrow_up:            xpath=//mat-icon[contains(.,'keyboard_arrow_up')]
+  email_input_text:                xpath=//input[@name='email']                         #Shadow Email Input Text
+  fn_input_text:                   xpath=//input[@name='fName']                         #Shadow First Name Input Text
+  ln_input_text:                   xpath=//input[@name='lName']                         #Shadow Last Name Input Text
+
+  #Manual Transactions Page
+  account_searched_transaction:    xpath=//*[@id="main-body"]/app-root/div[2]/app-hos-onboard/div/div/mat-card/mat-card-content/div[1]/mat-table/mat-row
+  account_name_transaction:        xpath=//input[@name='companyName']                         #Account Name Input Text
+  address_transaction:             xpath=//input[@name='address']                             #Address  Input Text
+  back_arrow:                      xpath=//*[@id="backBtn"]/mat-icon                          #Back Arrow
+  business_account_id_transaction: xpath=//input[@name='companyGuid']                         #Business Account ID Input Text
+  cancel_button:                   xpath=//button[@id='cancelBtn']                            #Cancel button
+  message_info:                    xpath=//div[@id='swal2-content']                           #Information Message
+  ok_button:                       xpath=//button[contains(.,'OK')]                           #Ok Button
+  no_button:                       xpath=//button[contains(.,'NO')]                           #No button
+  radio_button_account:            xpath=//mat-radio-button[@id='mat-radio-1']                #Select Account Radio Button
+  radio_button_type1:              xpath=//mat-radio-button[@id='mat-radio-2']                #Select Type Of Transaction OT1-HOS Radio Button
+  radio_button_type2:              xpath=//mat-radio-button[@id='mat-radio-3']                #Select Type Of Transaction OT1-GM Radio Button
+  search_transaction:              xpath=//input[@id='searchText']                            #Search Transactions Input Text
+  select_business_title:           xpath=//span[@id='selectBA']                               #Select Business Account Title
+  submit_button_transaction:       xpath=//button[@id='submitBtn']                            #Submit Button
+  success_message:                 xpath=//h2[@id='swal2-title']                              #Success Message
+  yes_button:                      xpath=//button[contains(.,'YES')]                          #Yes Button
+
+  #Pending Setup
+  bussiness_account_id_form:   xpath=//form//div/div/span/input[@name='businessAccId']    #Business Account From A Form
+  cancel_button_form:          xpath=//button[@id='cancelBtn']                            #Cancel Button From A Pop-up
+  pending_setup_button:        xpath=//a[contains(.,'pending')]                           #Pending Setup Button
+  enable_selection:            xpath=//*[contains(.,'Enable')]/span/span                  #Enable Selection
+  enable2_selection:           xpath=//span[@class='mat-option-text']                     #Second Enable Selection
+  disable_selection:           xpath=//*[contains(.,'Disable')]/span                      #Disable Selection
+  save_button_form:            xpath=//button[@id='saveBtn']                              #Save Button From A Pop-up
+
+  #Transaction Details Keback
+  kebab_button:                xpath=//button[@id="menu"]
+  refresh_button:              xpath=//button[@id='refreshRNAEntitlements']
+  erp_response_button:         xpath=//button[contains(.,'ERP Response')]
+  rna_response_button:         xpath=//button[contains(.,'RNA Response')]
+  xrs_response_button:         xpath=//button[contains(.,'XRS Response')]
+  es_hos_response_button:      xpath=//button[contains(.,'ES HOS Response')]
+  es_nmc_response_button:      xpath=//button[contains(.,'ES NMC Response')]
+  es_sp_response_button:       xpath=//button[contains(.,'ES SP Response')]
+  cancel_button:               xpath=//button[@id='cancelBtn']
+  save_button:                 xpath=//button[@id='saveBtn']
+  business_account_id_input:   xpath=//mat-card-content/form/div/div/span/input[@name='businessAccId']
+  customer_id_input:           xpath=//input[@name='customerId']
+  status_listbox:              xpath=//mat-select[@role='listbox']
+  rna_id_input:                xpath=//input[@name='RNAcompanyId']
+  xrs_id_input:                xpath=//input[@name='XRScompanyId']
+  xrs_instance_input:          xpath=//input[@name='XRSInstance']
+  xrs_login_id_input:          xpath=//input[@name='XRSLoginId']
+  hos_id_input:                xpath=//input[@name='EScompanyId']
+  hos_instance_id_input:       xpath=//input[@name='InstanceId']
+  nmc_account_id_input:        xpath=//input[@name='NMCId']
+  nmc_instance_id_input:       xpath=//input[@name='NMCAuxId']
+  nmc_hub_id_input:            xpath=//input[@name='HubId']
+  sp_id_input:                 xpath=//input[@name='ServicesId']
+  sp_instance_id_input:        xpath=//input[@name='ServicesInstanceId']
